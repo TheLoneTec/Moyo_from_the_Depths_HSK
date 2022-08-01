@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		
+		<operations>
+			<li Class="PatchOperationFindMod">
+			<mods><li>Moyo-From the depth HSK</li></mods>
+			<match Class="PatchOperationSequence">
+			<operations>
+			
+			<!-- ==========  Abyssteel  =========== -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Moyo_Abyssteel"]/statBases/StuffPower_Armor_Sharp</xpath>
+				<value>
+				  <StuffPower_Armor_Sharp>2</StuffPower_Armor_Sharp>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Moyo_Abyssteel"]/statBases/StuffPower_Armor_Blunt</xpath>
+				<value>
+				  <StuffPower_Armor_Blunt>3.5</StuffPower_Armor_Blunt>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Moyo_Abyssteel"]/statBases/StuffPower_Armor_Heat</xpath>
+				<value>
+				  <StuffPower_Armor_Heat>0.05</StuffPower_Armor_Heat>
+				  <StuffPower_Armor_Electric>0.05</StuffPower_Armor_Electric>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Moyo_Abyssteel"]/stuffProps/categories</xpath>
+				<value>
+					<li>Metallic_Weapon</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="Make_Moyo_Abyssteel"]/ingredients</xpath>
+				<value>
+					<ingredients>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Plasteel</li>
+								</thingDefs>
+							</filter>
+							<count>35</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>DepletedUranium</li>
+								</thingDefs>
+							</filter>
+							<count>40</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Tungsten</li>
+								</thingDefs>
+							</filter>
+							<count>10</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Cobalt</li>
+								</thingDefs>
+							</filter>
+							<count>20</count>
+						</li>
+					</ingredients>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="Make_Moyo_Abyssteel"]/fixedIngredientFilter</xpath>
+				<value>
+					<fixedIngredientFilter>
+						<thingDefs>
+							<li>Plasteel</li>
+							<li>DepletedUranium</li>
+							<li>Tungsten</li>
+							<li>Cobalt</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+				</value>
+			</li>
+
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Minerals</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+				<operations>
+				
+					<li Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<RecipeDef>
+								<defName>Make_Moyo_Abyssteel_Gem</defName>
+								<label>make abyssteel using gems</label>
+								<description>Make abyssteel, a commonly used alloy in the lighthouse. It is necessary for producing their items.\n\nCertain rare gems have found to work as a substitute.</description>
+								<jobString>Making abyssteel.</jobString>
+								<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+								<effectWorking>Cook</effectWorking>
+								<soundWorking>Recipe_Machining</soundWorking>
+								<workAmount>10000</workAmount>
+								<recipeUsers>
+									<li>Moyo_FabricationBench</li>
+								</recipeUsers>			
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>Plasteel</li>
+											</thingDefs>
+										</filter>
+										<count>35</count>
+									</li>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>DepletedUranium</li>
+											</thingDefs>
+										</filter>
+										<count>40</count>
+									</li>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>RoughUltrahardGem</li>
+											</thingDefs>
+										</filter>
+										<count>2</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>Plasteel</li>
+										<li>DepletedUranium</li>
+										<li>RoughUltrahardGem</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<Moyo_Abyssteel>75</Moyo_Abyssteel>
+								</products>
+								<skillRequirements>
+									<Crafting>10</Crafting>
+								</skillRequirements>
+								<workSkill>Crafting</workSkill>
+								<researchPrerequisite>MoyoProduction</researchPrerequisite>
+							</RecipeDef>
+						</value>
+					</li>
+				
+				</operations>
+				</match>
+			</li>
+
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>MineralsCraft_SK</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+				<operations>
+				
+					<li Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<RecipeDef>
+								<defName>Make_Moyo_Abyssteel_adamant</defName>
+								<label>make abyssteel using adamant</label>
+								<description>Make abyssteel, a commonly used alloy in the lighthouse. It is necessary for producing their items.\n\nA time consuming and wastful process can utilise adamant as a substitute. the stone is destroyed, leaving the rare gems behind.</description>
+								<jobString>Making abyssteel.</jobString>
+								<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+								<effectWorking>Cook</effectWorking>
+								<soundWorking>Recipe_Machining</soundWorking>
+								<workAmount>10000</workAmount>
+								<recipeUsers>
+									<li>Moyo_FabricationBench</li>
+								</recipeUsers>			
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>Plasteel</li>
+											</thingDefs>
+										</filter>
+										<count>35</count>
+									</li>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>DepletedUranium</li>
+											</thingDefs>
+										</filter>
+										<count>40</count>
+									</li>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>BlocksAdamant</li>
+											</thingDefs>
+										</filter>
+										<count>150</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>Plasteel</li>
+										<li>DepletedUranium</li>
+										<li>BlocksAdamant</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<Moyo_Abyssteel>75</Moyo_Abyssteel>
+								</products>
+								<skillRequirements>
+									<Crafting>10</Crafting>
+								</skillRequirements>
+								<workSkill>Crafting</workSkill>
+								<researchPrerequisite>MoyoProduction</researchPrerequisite>
+							</RecipeDef>
+						</value>
+					</li>
+				
+				</operations>
+				</match>
+			</li>
+
+			<!-- ==========  Depthweave  =========== -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Moyo_Depthweave"]/statBases/StuffPower_Armor_Sharp</xpath>
+				<value>
+				  <StuffPower_Armor_Sharp>0.85</StuffPower_Armor_Sharp>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Moyo_Depthweave"]/statBases/StuffPower_Armor_Blunt</xpath>
+				<value>
+				  <StuffPower_Armor_Blunt>0.35</StuffPower_Armor_Blunt>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Moyo_Depthweave"]/statBases/StuffPower_Armor_Heat</xpath>
+				<value>
+				  <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+				  <StuffPower_Armor_Electric>0.025</StuffPower_Armor_Electric>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="Make_Moyo_Depthweave"]/ingredients</xpath>
+				<value>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>Leathers</li>
+								</categories>
+								<disallowedThingDefs>
+									<li>Leather_Thrumbo</li>
+								</disallowedThingDefs>
+							</filter>
+							<count>100</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Cloth</li>
+								</thingDefs>
+							</filter>
+							<count>10</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Plasteel</li>
+								</thingDefs>
+							</filter>
+							<count>20</count>
+						</li>			
+					</ingredients>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="Make_Moyo_Depthweave"]/fixedIngredientFilter</xpath>
+				<value>
+					<fixedIngredientFilter>
+						<thingDefs>
+							<li>Cloth</li>
+							<li>Plasteel</li>
+						</thingDefs>
+						<categories>
+							<li>Leathers</li>
+						</categories>
+						<disallowedThingDefs>
+							<li>Leather_Patch</li>
+							<li>Leather_Human</li>
+							<li>Leather_Thrumbo</li>
+						</disallowedThingDefs>			
+					</fixedIngredientFilter>
+				</value>
+			</li>		
+			
+			</operations>
+			</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

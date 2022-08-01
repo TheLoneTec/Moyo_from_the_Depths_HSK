@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+	<operations>
+	  <li Class="PatchOperationFindMod">
+			
+		<mods><li>Moyo-From the depth HSK</li></mods>
+			
+		<match Class="PatchOperationSequence">
+		<operations>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Moyo_FabricationBench"]/costList</xpath>
+				<value>
+				<costList>
+					<Moyo_Abyssteel>50</Moyo_Abyssteel>
+					<SyntheticFibers>45</SyntheticFibers>
+					<Electronics>10</Electronics>
+					<ComponentIndustrial>15</ComponentIndustrial>
+					<Mechanism>10</Mechanism>
+				</costList>
+				</value>
+			</li>
+				
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Moyo_FabricationBench"]</xpath>
+				<value>
+				<stuffCategories>
+					<li>StrongMetallic</li>
+				</stuffCategories>
+				<costStuffCount>75</costStuffCount>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="MoyoGRModule"]/costList</xpath>
+				<value>
+				<costList>
+					<Moyo_Abyssteel>75</Moyo_Abyssteel>
+					<ComponentSpacer>4</ComponentSpacer>
+					<AIPersonaCore>1</AIPersonaCore>
+					<Plastic>15</Plastic>
+					<Glass>10</Glass>
+					<Electronics>5</Electronics>
+					<ComponentIndustrial>5</ComponentIndustrial>
+				</costList>
+				</value>
+			</li>
+				<!--
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="MoyoGRModule"]</xpath>
+				<value>
+				<stuffCategories>
+					<li>StrongMetallic</li>
+				</stuffCategories>
+				<costStuffCount>75</costStuffCount>
+				</value>
+			</li>
+			-->
+
+		</operations>
+		</match>	
+	  </li>
+	</operations>	
+  </Operation>
+</Patch>

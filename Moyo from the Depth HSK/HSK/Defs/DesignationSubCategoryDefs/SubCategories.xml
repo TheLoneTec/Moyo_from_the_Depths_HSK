@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>Moyo_Production</defName>
+		<label>Moyo</label>
+		<description>All the production buildings for the moyo race.</description>
+		<defNames>
+			<li>Moyo_DBS</li>
+			<li>Moyo_DBLS</li>
+			<li>Moyo_FabricationBench</li>
+		</defNames>
+		<designationCategory>Production</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>
+
+
+

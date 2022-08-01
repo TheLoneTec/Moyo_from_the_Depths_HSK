@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Core SK</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="MoyoProduction"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+						<li>Research_table_C2</li>
+						<li>Metals_C3</li>
+					</prerequisites>
+				</value>
+			</li>
+		
+		</operations>
+		</match>
+	</Operation>
+
+</Patch>
