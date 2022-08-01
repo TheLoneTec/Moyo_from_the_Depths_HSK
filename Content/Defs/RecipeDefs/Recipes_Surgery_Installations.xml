@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallFakeTail_Moyo</defName>
+		<label>install fake tail</label>
+		<description>Install a fake tail.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing fake tail.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>3</Medicine>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Alien_Moyo</li>
+		</recipeUsers>			
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Moyo_FakeTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Moyo_FakeTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Moyo_Tail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Moyo_FakeTail</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallBionicTail_Moyo</defName>
+		<label>install bionic tail</label>
+		<description>Install a bionic tail.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic tail.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Alien_Moyo</li>
+		</recipeUsers>			
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Moyo_BionicTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Moyo_BionicTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Moyo_Tail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Moyo_BionicTail</addsHediff>
+	</RecipeDef>
+
+	<!-- 모요 심장이식 -->
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+		<defName>InstallNaturalHeart_Moyo</defName>
+		<label>install heart</label>
+		<description>Install a biological heart.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Moyo_Heart</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing heart.</jobString>
+		<deathOnFailedSurgeryChance>0.25</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Moyo_Heart</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Moyo_Heart</li>
+			</thingDefs>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>MoyoHeart</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallSimpleProstheticHeart_Moyo</defName>
+		<label>install prosthetic heart</label>
+		<description>Install a prosthetic heart.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticHeart</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic heart.</jobString>
+		<deathOnFailedSurgeryChance>0.25</deathOnFailedSurgeryChance>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticHeart</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticHeart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>MoyoHeart</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticHeart</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallBionicHeart_Moyo</defName>
+		<label>install bionic heart</label>
+		<description>Install a bionic heart.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicHeart</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing bionic heart.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicHeart</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicHeart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>MoyoHeart</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicHeart</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallAdvancedHeart_Moyo</defName>
+		<label>install abysstech heart</label>
+		<description>Install a abysstech heart.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Moyo_AdvancedHeart</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing abysstech heart.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Moyo_AdvancedHeart</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Moyo_AdvancedHeart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>MoyoHeart</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Moyo_AdvancedHeart</addsHediff>
+	</RecipeDef> 	
+</Defs>

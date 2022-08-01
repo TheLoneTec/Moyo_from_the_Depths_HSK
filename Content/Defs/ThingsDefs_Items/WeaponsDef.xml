@@ -1,0 +1,1339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingCategoryDef>
+		<defName>Moyo_WeaponsRanged</defName>
+		<label>moyo ranged weapons</label>
+		<parent>WeaponsRanged</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>Moyo_WeaponsMelee</defName>
+		<label>moyo melee weapons</label>
+		<parent>WeaponsMelee</parent>
+	</ThingCategoryDef>
+
+	<ThingDef Name="MoyoBaseGun" Abstract="true" ParentName="BaseHumanMakeableGun">
+		<techLevel>Spacer</techLevel>
+		<soundInteract>Moyo_WeaponInteractLight</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>MoyoChargedBolt</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+		<thingCategories Inherit="False">
+			<li>Moyo_WeaponsRanged</li>
+		</thingCategories>
+		<weaponTags Inherit="False">
+			<li>Moyo_TagToSell</li>
+		</weaponTags>		
+	</ThingDef>
+
+	<ThingDef Name="MoyoBaseMelee" Abstract="true" ParentName="BaseMeleeWeapon">
+		<techLevel>Spacer</techLevel>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<thingCategories Inherit="False">
+			<li>Moyo_WeaponsMelee</li>
+		</thingCategories>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>		
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>		
+	</ThingDef>
+
+	<!-- 모요 렌치 -->
+	<ThingDef ParentName="MoyoBaseMelee">
+		<defName>Moyo_Wrench</defName>
+		<label>moyo wrench</label>
+		<description>A tool for bending metal and tightening bolts. Or bashing in heads, if you need to.</description>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoWrench</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<equippedAngleOffset>-45</equippedAngleOffset>		
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<WorkToMake>6500</WorkToMake>
+			<Mass>2.25</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>Machining</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<weaponTags>
+			<li>Moyo_Melee</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18.2</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.1</ConstructionSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+	<!-- 모요 나이프 -->
+	<ThingDef ParentName="MoyoBaseMelee">
+		<defName>Moyo_Knife</defName>
+		<label>moyo diving knife</label>
+		<techLevel>Industrial</techLevel>
+		<description>A knife is always handy to have, and under the sea is no exception. The sharp and light blade made from plasteel is a favorite among moyo divers.</description>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoKnife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<equippedAngleOffset>-45</equippedAngleOffset>		
+		<weaponTags>
+			<li>Moyo_Melee</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+		<costList>
+			<Plasteel>25</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Machining</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>	
+	<!-- 모요 볼트드라이버 -->
+	<ThingDef ParentName="MoyoBaseMelee">
+		<defName>Moyo_Piledriver</defName>
+		<label>Moyo piledriver</label>
+		<techLevel>Spacer</techLevel>
+		<description>A mining tool designed to drive metal stakes into stone. The machine is cumbersome and firing a stake takes a long time, but it can easily break rocks and pierce steel.\n\nAs the number of operable mechanoids decreased, the need for moyo miners increased.</description>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoBoltDriver</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<equippedAngleOffset>0</equippedAngleOffset>		
+		<weaponTags>
+			<li>Moyo_Melee</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>38000</WorkToMake>
+			<Mass>4.5</Mass>
+		</statBases>
+		<costList>
+			<Moyo_Abyssteel>10</Moyo_Abyssteel>
+			<Steel>50</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<tools>
+			<li>
+				<label>body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>Stake</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>40</power>
+				<cooldownTime>6</cooldownTime>
+			</li>
+		</tools>
+		<equippedStatOffsets>
+			<MiningSpeed>0.2</MiningSpeed>
+		</equippedStatOffsets>				
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>LongBlades</li>
+				<li>GasOperation</li>
+			</researchPrerequisites>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>		
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+	<!-- 모요 창 -->
+	<ThingDef ParentName="MoyoBaseGun">
+		<defName>Moyo_Spear</defName>
+		<label>moyo battleaxe</label>
+		<description>Heavy battleaxe prototype forged with abysteel. Has a cryogenic blade intended to minimize bleeding from cuts. well, so said the development team. Its a weapon that can split open a diving suit helmet, bloodloss will be the least concern.</description>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoSpear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<recipeMaker>
+			<researchPrerequisite>MoyoCryoBlaster</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<thingCategories Inherit="False">
+			<li>Moyo_WeaponsRanged</li>
+		</thingCategories>		
+		<weaponTags>
+			<li>Moyo_SpacerMeleeUnique</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>60000</WorkToMake>
+			<Mass>4</Mass>
+		</statBases>
+		<costList>
+			<Moyo_Abyssteel>60</Moyo_Abyssteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>2.5</cooldownTime>
+			</li>		
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>3.5</cooldownTime>
+				<armorPenetration>0.33</armorPenetration>
+				<extraMeleeDamages>
+					<li>
+						<def>Moyo_Cryo</def>
+						<amount>7</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- 모요 파워피스트 -->
+	<ThingDef ParentName="MoyoBaseMelee">
+		<defName>Moyo_PowerFist</defName>
+		<label>moyo powerfist</label>
+		<techLevel>Spacer</techLevel>
+		<description>A mechanical glove that enhances the user’s strength to aid in underwater work. It’s designed to be used in conjunction with the diving suit, but can be used without.</description>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoFist</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<equippedAngleOffset>-15</equippedAngleOffset>
+		<weaponTags>
+			<li>Moyo_SpacerMelee</li>
+		</weaponTags>
+		<statBases>
+			<MarketValue>1050</MarketValue>
+			<WorkToMake>45000</WorkToMake>
+			<Mass>2.1</Mass>
+		</statBases>
+		<costList>
+			<Moyo_Abyssteel>55</Moyo_Abyssteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<tools>
+			<li>
+				<label>Fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>Body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.1</ConstructionSpeed>
+			<CarryingCapacity>20</CarryingCapacity>
+		</equippedStatOffsets>		
+		<recipeMaker>
+			<researchPrerequisite>DeepSeaProtection</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>			
+	</ThingDef>
+	<!-- 모요 근위대 창 -->
+	<ThingDef ParentName="MoyoBaseGun">
+		<defName>Moyo_GDSpear</defName>
+		<label>moyo royal battleaxe</label>
+		<description>Heavy battleaxe used by the royal guard. It has been refined for ease of use and equipped with advanced cryogenic blade\n\nA modified version of the prototype battleaxe, the white body and the royal guard’s symbol etched upon it are the blades of the elders.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Royal/MoyoGHalberd</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>	
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<weaponTags>
+			<li>Moyo_GuardianMeleeUnique</li>
+		</weaponTags>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<WorkToMake>99999</WorkToMake>
+			<Mass>5.6</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>GuardianModule</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo_Abyssteel>50</Moyo_Abyssteel>
+			<Gold>6</Gold>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<thingCategories Inherit="False">
+			<li>Moyo_WeaponsRanged</li>
+		</thingCategories>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>2.3</cooldownTime>
+			</li>		
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>3.3</cooldownTime>
+				<armorPenetration>0.33</armorPenetration>
+				<extraMeleeDamages>
+					<li>
+						<def>Moyo_Cryo</def>
+						<amount>10</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+	</ThingDef>	
+	<!-- 모요 근위대 파워피스트 -->
+	<ThingDef ParentName="MoyoBaseMelee">
+		<defName>Moyo_GDPowerFist</defName>
+		<label>moyo royal powerfist</label>
+		<techLevel>Spacer</techLevel>
+		<description>Combat powerfist used by the royal guard. In truth, there is little difference in function compared to an ordinary powerfist.\n\nThe powerfist was chosen as one of the royal guard’s equipment for its versatility. The white shell and the royal guard’s symbol etched upon it are the iron fists of the elders.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Royal/MoyoGFist</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<weaponTags>
+			<li>Moyo_GuardianMelee</li>
+		</weaponTags>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<!-- <MarketValue>1950</MarketValue> -->
+			<WorkToMake>99999</WorkToMake>
+			<Mass>7.6</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>GuardianModule</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo_Abyssteel>50</Moyo_Abyssteel>
+			<Gold>6</Gold>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<tools>
+			<li>
+				<label>Fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>Body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.1</ConstructionSpeed>
+			<CarryingCapacity>35</CarryingCapacity>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<!-- 모요 권총 -->
+	<ThingDef ParentName="MoyoBaseGun">
+		<defName>Moyo_Pistol</defName>
+		<label>moyo nail gun</label>
+		<description>A common contruction tool of the Lighthouse. It has strong firing mechanism to make it reliable in most places. which also makes it fantastic as a improvised weapon.</description>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoPistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<soundInteract>moyo_smallWeaponInteract</soundInteract>	
+		<recipeMaker>
+			<researchPrerequisite>GasOperation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<weaponTags>
+			<li>MoyoBasicGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>1.2</Mass>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MoyoRivet</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>18.5</range>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MoyoRivet</defName>
+		<label>Moyo rivet</label>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoNail</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>8.5</damageAmountBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>	
+	<!-- 모요 전자기소총 -->
+	<ThingDef ParentName="MoyoBaseGun">
+		<defName>Moyo_ChargeRifle</defName>
+		<label>moyo charge rifle</label>
+		<description>Moyo assult rifle that shows much similarities with a traditional charge rifle. The charged bolt and accelerated through the barrel and fired. Each bolt is designed to minimize energy loss over distance.\n\nThe lighthouse uses traditional charge rifles as well, but once the new rifles proved its efficiency, the moyo charge rifles became the standard.</description>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoAR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>	
+		</graphicData>
+		<soundInteract>moyo_smallWeaponInteract</soundInteract>
+		<statBases>
+			<WorkToMake>49500</WorkToMake>
+			<Mass>6.5</Mass>
+			<AccuracyTouch>0.48</AccuracyTouch>
+			<AccuracyShort>0.61</AccuracyShort>
+			<AccuracyMedium>0.48</AccuracyMedium>
+			<AccuracyLong>0.36</AccuracyLong>
+			<RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo_Abyssteel>55</Moyo_Abyssteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>Moyo_SpacerGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MoyoAssaultBolt</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>26.5</range>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<burstShotCount>4</burstShotCount>
+				<!-- <soundAiming>moyo_smallWeaponCharge</soundAiming> -->
+				<soundCast>moyo_defaultFire</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- 모요 돌격총알 -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MoyoAssaultBolt</defName>
+		<label>Moyo chargebolt</label>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoSmallBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<armorPenetrationBase>0.38</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>80</speed>
+		</projectile>
+	</ThingDef>
+	<!-- 모요 소총-->
+	<ThingDef ParentName="MoyoBaseGun">
+		<defName>Moyo_PrecisionRifle</defName>
+		<label>moyo precision rifle</label>
+		<description>Moyo sniper rifle that shows much similarities with a traditional charge rifle. The firerate is low, but each shot boasts an impressive range and accuracy.\n\nAn experimental model made with the development of bolt caster technology, they where seldom used in the confines of the lighthouse, but will prove to be an effective weapon in the open surface of the rim.</description>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoRF</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<soundInteract>moyo_smallWeaponInteract</soundInteract>
+		<statBases>
+			<WorkToMake>49500</WorkToMake>
+			<Mass>6.2</Mass>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.82</AccuracyShort>
+			<AccuracyMedium>0.91</AccuracyMedium>
+			<AccuracyLong>0.79</AccuracyLong>
+			<RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo_Abyssteel>50</Moyo_Abyssteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>Moyo_SpacerGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MoyoSniperBolt</defaultProjectile>
+				<warmupTime>1.4</warmupTime>
+				<range>35.6</range>
+				<!-- <soundAiming>moyo_smallWeaponCharge</soundAiming> -->
+				<soundCast>moyo_longFire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedAngleOffset>45</equippedAngleOffset>
+	</ThingDef>	
+	<!--모요 저격총알 -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MoyoSniperBolt</defName>
+		<label>moyo energy shot</label>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoSmallBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>26</damageAmountBase>
+			<armorPenetrationBase>0.42</armorPenetrationBase>
+			<stoppingPower>1.8</stoppingPower>
+			<speed>120</speed>
+		</projectile>
+	</ThingDef>
+	<!-- 모요 SMG -->
+	<ThingDef ParentName="MoyoBaseGun">
+		<defName>Moyo_ChargeSMG</defName>
+		<label>moyo charge SMG</label>
+		<description>Small moyo submachine gun. Light and easy to use, these were the most commonly used weapons in the lighthouse.\n\nBefore, most firearms where locked in the armories, but in the civil war, firearms both new and old quickly spread to all levels of the lighthouse.</description>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>	
+		</graphicData>
+		<soundInteract>moyo_smallWeaponInteract</soundInteract>
+		<statBases>
+			<WorkToMake>41500</WorkToMake>
+			<Mass>3</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.71</AccuracyShort>
+			<AccuracyMedium>0.46</AccuracyMedium>
+			<AccuracyLong>0.11</AccuracyLong>
+			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo_Abyssteel>35</Moyo_Abyssteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>Moyo_SpacerGun</li>
+			<li>Moyo_SpacerLightGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MoyoSMGBolt</defaultProjectile>
+				<warmupTime>1.55</warmupTime>
+				<range>18.5</range>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<!-- <soundAiming>moyo_smallWeaponCharge</soundAiming> -->
+				<soundCast>moyo_lightFire</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>5</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- 모요 SMG총알 -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MoyoSMGBolt</defName>
+		<label>moyo chargebolt</label>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoSmallBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<armorPenetrationBase>0.20</armorPenetrationBase>
+			<stoppingPower>0.5</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>	
+	<!-- 모요 볼트캐스터 -->
+	<ThingDef ParentName="MoyoBaseGun">
+		<defName>Moyo_BoltCaster</defName>
+		<label>moyo balista</label>
+		<description>Large boltcaster made to fight off the leviathans that threaten the lighthouse. The weapon accelerates overcharged energy bolts through the barrel and fires them. On impact, the bolts release the stored energy in a violent explosion.\n\nBoltcaster weapons were developed when traditional charge weapons proved less effective underwater. This boltcaster is the first charge bolt weapon, and every subsequent moyo firearm can be traced back to it..</description>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoBC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>	
+		</graphicData>
+		<soundInteract>moyo_mediumWeaponInteract</soundInteract>	
+		<statBases>
+			<WorkToMake>75000</WorkToMake>
+			<Mass>9.5</Mass>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.82</AccuracyShort>
+			<AccuracyMedium>0.91</AccuracyMedium>
+			<AccuracyLong>0.78</AccuracyLong>
+			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>MoyoChargedBolt</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo_Abyssteel>80</Moyo_Abyssteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<weaponTags>
+			<li>Moyo_SpacerHeavyGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MoyoChargeBolt</defaultProjectile>
+				<forcedMissRadius>0.01</forcedMissRadius>
+				<warmupTime>4</warmupTime>
+				<range>47.5</range>
+				<!-- <soundAiming>moyo_mediumWeaponCharge</soundAiming> -->
+				<soundCast>moyo_longFire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>	
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>		
+	</ThingDef>	
+	<!--모요 볼트 -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MoyoChargeBolt</defName>
+		<label>moyo heavy chargebolt</label>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<explosionRadius>1</explosionRadius>
+			<damageDef>Moyo_ChargeBolt</damageDef>
+			<damageAmountBase>36</damageAmountBase>
+			<armorPenetrationBase>0.62</armorPenetrationBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>120</speed>
+		</projectile>
+	</ThingDef>
+	<!-- 모요 오토캐논-->
+	<ThingDef ParentName="MoyoBaseGun">
+		<defName>Moyo_AutoCannon</defName>
+		<label>moyo autocannon</label>
+		<description>Large boltcaster with a high rate of fire. The bolts fired from this weapon is effective on both armored and unarmored targets.n\nAs the battles in the lighthouse grew more complex, more weapons where developed to deal with the changing situation. This weapon in particular seems to have been inspired by a surface weapon.</description>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoHMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<soundInteract>moyo_mediumWeaponInteract</soundInteract>	
+		<statBases>
+			<WorkToMake>67000</WorkToMake>
+			<Mass>9</Mass>
+			<AccuracyTouch>0.38</AccuracyTouch>
+			<AccuracyShort>0.51</AccuracyShort>
+			<AccuracyMedium>0.37</AccuracyMedium>
+			<AccuracyLong>0.17</AccuracyLong>
+			<RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>MoyoChargedBolt</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo_Abyssteel>90</Moyo_Abyssteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<weaponTags>
+			<li>Moyo_SpacerHeavyGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MoyoAutoCannon</defaultProjectile>
+				<ticksBetweenBurstShots>14</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<warmupTime>2</warmupTime>
+				<range>26.5</range>
+				<!-- <soundAiming>moyo_mediumWeaponCharge</soundAiming> -->
+				<soundCast>moyo_defaultFire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+		</equippedStatOffsets>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>		
+	</ThingDef>	
+	<!--모요 오토캐논샷 -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MoyoAutoCannon</defName>
+		<label>moyo heavy chargebolt</label>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Moyo_ChargeBolt</damageDef>
+			<damageAmountBase>21</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<stoppingPower>2.5</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>	
+	<!-- 모요 중전자기소총 -->
+	<ThingDef ParentName="MoyoBaseGun">
+		<defName>Moyo_HeavyChargeRifle</defName>
+		<label>moyo royal charge rifle</label>
+		<description>Heavy rifle used by the royal guard. A model focusing almost entirely on firepower, this model is supiror to the original charge rifle in nearly every way save weight and ease of use.\n\nThe first weapon chosen as the armament of the royal guard, the white body etched with the symbol of the royal guard are the spears of the elders.</description>
+		<techLevel>Spacer</techLevel>
+		<soundInteract>moyo_smallWeaponInteract</soundInteract>	
+		<graphicData>
+			<texPath>Things/Weapons/Royal/MoyoGAR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<WorkToMake>70000</WorkToMake>
+			<!-- <MarketValue>1870</MarketValue> -->
+			<Mass>7</Mass>
+			<AccuracyTouch>0.58</AccuracyTouch>
+			<AccuracyShort>0.67</AccuracyShort>
+			<AccuracyMedium>0.58</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>GuardianModule</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo_Abyssteel>50</Moyo_Abyssteel>
+			<Gold>6</Gold>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>		
+		<thingCategories Inherit="False">
+			<li>Moyo_WeaponsRanged</li>
+		</thingCategories>		
+		<weaponTags>
+			<li>Moyo_GuardianGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MoyoAssaultBolt</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>28.5</range>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<burstShotCount>4</burstShotCount>
+				<!-- <soundAiming>moyo_smallWeaponCharge</soundAiming> -->
+				<soundCast>moyo_defaultFire</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>11</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<thingSetMakerTags>	
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>			
+	</ThingDef>
+	<!-- 모요 근위대 오토캐논-->
+	<ThingDef ParentName="MoyoBaseGun">
+		<defName>Moyo_HeavyAutoCannon</defName>
+		<label>moyo royal autocannon</label>
+		<description>Heavy autocannon used by the royal guard. The bolts fired from this weapon is effective on both armored and unarmored targets.\n\nOne of the armaments of the royal guard, the white body etched with the symbol of the royal guard are the hammers of the elders.</description>
+		<techLevel>Spacer</techLevel>
+		<soundInteract>moyo_mediumWeaponInteract</soundInteract>		
+		<graphicData>
+			<texPath>Things/Weapons/Royal/MoyoGHMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<WorkToMake>75000</WorkToMake>
+			<!-- <MarketValue>2250</MarketValue> -->
+			<Mass>11</Mass>
+			<AccuracyTouch>0.48</AccuracyTouch>
+			<AccuracyShort>0.56</AccuracyShort>
+			<AccuracyMedium>0.44</AccuracyMedium>
+			<AccuracyLong>0.17</AccuracyLong>
+			<RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>GuardianModule</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo_Abyssteel>90</Moyo_Abyssteel>
+			<Gold>6</Gold>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>		
+		<thingCategories Inherit="False">
+			<li>Moyo_WeaponsRanged</li>
+		</thingCategories>		
+		<weaponTags>
+			<li>Moyo_GuardianGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MoyoAutoCannon</defaultProjectile>
+				<ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>	
+				<warmupTime>2</warmupTime>
+				<range>30.5</range>
+				<!-- <soundAiming>moyo_mediumWeaponCharge</soundAiming> -->
+				<soundCast>moyo_defaultFire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>11</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+		</equippedStatOffsets>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>		
+	</ThingDef>		
+	<!-- 모요 근위대 발리스타 -->
+	<ThingDef ParentName="MoyoBaseGun">
+		<defName>Moyo_HeavyBoltCaster</defName>
+		<label>moyo royal balista</label>
+		<description>Heavy boltcaster used by the royal guard. Compared to the original, it can fire chargebolts faster, more accurately over longer distance.\n\nThe symbolic weapon approved to be a part of royal arsenal, the white body etched with the symbol of the royal guard are the mace of the elders.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Royal/MoyoGBC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>	
+		</graphicData>
+		<soundInteract>moyo_mediumWeaponInteract</soundInteract>	
+		<statBases>
+			<WorkToMake>75000</WorkToMake>
+			<Mass>11</Mass>
+			<AccuracyTouch>0.64</AccuracyTouch>
+			<AccuracyShort>0.91</AccuracyShort>
+			<AccuracyMedium>1</AccuracyMedium>
+			<AccuracyLong>0.87</AccuracyLong>
+			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>GuardianModule</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo_Abyssteel>90</Moyo_Abyssteel>
+			<Gold>6</Gold>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<weaponTags>
+			<li>Moyo_GuardianGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MoyoChargeBolt</defaultProjectile>
+				<forcedMissRadius>0.01</forcedMissRadius>
+				<warmupTime>3</warmupTime>
+				<range>50.9</range>
+				<!-- <soundAiming>moyo_mediumWeaponCharge</soundAiming> -->
+				<soundCast>moyo_longFire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>	
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>		
+	</ThingDef>			
+	<!-- 모요 크라이오 방사기 -->
+	<ThingDef ParentName="MoyoBaseGun">
+		<defName>Moyo_CryoBlaster</defName>
+		<label>moyo cryoblaster</label>
+		<description>Weapon developed for riot control. Fires cryogenic material that quickly freezes on its victims and causes severe frostbite.\n\nCyrogenic weapons where developed with intent to reduce bleeding during suppression and capture targets with relatively less injuries.</description>
+		<soundInteract>Moyo_WeaponInteract</soundInteract>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoCB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>75000</WorkToMake>
+			<Mass>9.5</Mass>
+			<AccuracyTouch>0.91</AccuracyTouch>
+			<AccuracyShort>0.72</AccuracyShort>
+			<AccuracyMedium>0.54</AccuracyMedium>
+			<AccuracyLong>0.12</AccuracyLong>
+			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>MoyoCryoBlaster</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo_Abyssteel>80</Moyo_Abyssteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<weaponTags>
+			<li>Moyo_SpacerHeavyGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MoyoCBBlast</defaultProjectile>
+				<forcedMissRadius>1.5</forcedMissRadius>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>14</burstShotCount>
+				<warmupTime>4</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<range>22.5</range>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>					
+				<soundCast>MoyoCryoSpray</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>11</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+	</ThingDef>	
+	<!--모요 냉매 -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MoyoCBBlast</defName>
+		<label>moyo cryoblast</label>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoCBBlast2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<explosionRadius>1.4</explosionRadius>
+			<damageDef>Moyo_Cryo</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationBase>0</armorPenetrationBase>
+			<speed>20</speed>
+		</projectile>
+	</ThingDef>	
+</Defs>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<Moyo_Tribal.label>모요 몸싸개</Moyo_Tribal.label>
+	<Moyo_Tribal.description>붕대로 몸을 감은 뒤 그 위에 조잡한 의복을 덧댄 옷입니다. 몸을 감싸는데에 시간이 많이 걸리며, 세련되었다고 할 순 없지만 이것 하나만으로 목숨을 유지한 모요들이 많습니다.</Moyo_Tribal.description>
+	<Moyo_BodyStrap.label>모요 노예 구속구</Moyo_BodyStrap.label>
+	<Moyo_BodyStrap.description>노예의 움직임을 제한하기 위한 구속구입니다. 착용자에게 자신의 처지를 일깨워주고 물리적으로도 압박을 가해, 노예 반란 확률을 낮춥니다.</Moyo_BodyStrap.description>	
+	<Moyo_Parka.label>모요 파카</Moyo_Parka.label>
+	<Moyo_Parka.description>몸을 따듯하게 유지하기 위해 입는 두꺼운 파카입니다.</Moyo_Parka.description>
+	<Moyo_SnB.label>모요 셔츠와 부츠</Moyo_SnB.label>
+	<Moyo_SnB.description>셔츠와 한 쌍의 부츠가 돋보이는, 상하의가 모두 포함된 의복입니다.</Moyo_SnB.description>
+	<Moyo_Jacket.label>모요 조끼</Moyo_Jacket.label>
+	<Moyo_Jacket.description>몸을 상처로부터 보호해주는 든든한 자켓입니다.</Moyo_Jacket.description>
+	<Moyo_Duster.label>모요 바람막이</Moyo_Duster.label>
+	<Moyo_Duster.description>뜨거운 햇빛과 건조한 바람을 막아주는 긴 코트입니다.</Moyo_Duster.description>
+	<Moyo_Tuque.label>모요 털모자</Moyo_Tuque.label>
+	<Moyo_Tuque.description>두툼하고 부드러운 털모자입니다. 몸을 따듯하게 유지하는데 좋습니다.</Moyo_Tuque.description>
+	<Moyo_CowboyHat.label>모요 카우보이 모자</Moyo_CowboyHat.label>
+	<Moyo_CowboyHat.description>햇빛과 비를 막아주면서도 특별한 매력을 더해주는 모자입니다. 더듬이를 배려하는 디자인은 아닙니다.</Moyo_CowboyHat.description>
+	<Moyo_BowlerHat.label>모요 중산모</Moyo_BowlerHat.label>
+	<Moyo_BowlerHat.description>자본가의 인상을 주는 세련된 모자입니다. 더듬이를 배려하는 디자인은 아닙니다.</Moyo_BowlerHat.description>
+	<Moyo_Bodysuit.label>모요 바디슈트</Moyo_Bodysuit.label>
+	<Moyo_Bodysuit.description>모요들의 도시, 등대에서의 평상복입니다. 몸에 착 달라붙음에도 단열성능은 뛰어납니다. 세련된 외관은 덤입니다.</Moyo_Bodysuit.description>
+	<Moyo_EGsuit.label>모요 기술자 복장</Moyo_EGsuit.label>
+	<Moyo_EGsuit.description>모요 기술자들이 입는 복장입니다. 중층에 즐비한 뜨거운 열기와 잠재적 위험을 막아줍니다.</Moyo_EGsuit.description>
+	<Moyo_EGmask.label>모요 용접마스크</Moyo_EGmask.label>
+	<Moyo_EGmask.description>뜨거운 열과 빛을 막아주는 마스크입니다. 얼굴을 보호해 줄 수 있을 만큼 충분히 단단합니다.</Moyo_EGmask.description>
+	<Moyo_Evasuit.label>모요 복합소재 바디슈트</Moyo_Evasuit.label>
+	<Moyo_Evasuit.description>다양한 소재를 이용해 보강한 옷입니다. 복잡하게 짜여진 원단은 매우 질기며, 강력한 단열성능을 제공합니다.</Moyo_Evasuit.description>
+	<Moyo_DDgear.label>모요 심층잠수복</Moyo_DDgear.label>
+	<Moyo_DDgear.description>깊은 바다속에서 활동하기 위해 설계된 잠수복입니다. 심해의 압력을 버티기 위해 다양한 보조장치가 탑재되면서 동시에 두꺼운 어비스틸 판으로 제작되기 때문에 매우 크고 무겁습니다.\n\n모요의 도시인 등대는 심해 활동을 대부분 메카노이드에게 의존하지만, 가용할 수 있는 메카노이드가 점점 적어져 인력에 크게 의존해야 했습니다.</Moyo_DDgear.description>
+	<Moyo_DDhelmet.label>모요 심층잠수복 헬멧</Moyo_DDhelmet.label>
+	<Moyo_DDhelmet.description>심층잠수복과 짝을 이루는 헬멧입니다 역시 크고 무거우며 뛰어난 방어력을 제공해줍니다. 지상에서는 그렇지 않으나 심해에서는 반드시 두 장비를 같이 착용해야만 합니다.\n\n이 장비의 방어력은 두 세력간의 전쟁에서 군용으로 이용되기에 충분할 만큼 인상적입니다.</Moyo_DDhelmet.description>
+	<Moyo_LDgear.label>모요 잠수복</Moyo_LDgear.label>
+	<Moyo_LDgear.description>바다속 활동을 위한 잠수복입니다. 사용자의 움직임을 방해하지 않으면서 외부의 위협을 차단합니다.\n\n모요 사회에서 잠수복은 원래 이것을 지칭하는 말이었으나 심해에서도 인력을 요구하는 일들이 많아짐에 따라 점차 두껍고 견고하게 개조한 결과 심층잠수복이 만들졌습니다.</Moyo_LDgear.description>
+	<Moyo_LDhelmet.label>모요 잠수복 헬멧</Moyo_LDhelmet.label>
+	<Moyo_LDhelmet.description>잠수복과 짝을 이루는 헬멧입니다. 큰 바이저는 넒은 시야를 제공해주며 작업을 도와주는 HUD도 내장되어있습니다.\n\n상층과 중층에서 주로 사용된 이 잠수복은 밀수업자들이 접근하기 용이한 환경이 있었던 탓에 내전에서 방어구로서 이용되기도 했습니다.</Moyo_LDhelmet.description>
+	
+	<Moyo_SShelmet.label>모요 감각제어 헬멧(억압)</Moyo_SShelmet.label>
+	<Moyo_SShelmet.description>시청각 인터페이스가 장착된 헬멧입니다. 설정에 따라 사용자의 수용 감각을 조절할 수 있습니다. 이 헬멧은 억압모드로 설정되어있습니다.\n\n억압은 이 헬멧이 사용될 수 있는 '다양한 분야'중 하나이며, 의심스러운 경찰이나 장로의 요원들에 의해 사용되었습니다.</Moyo_SShelmet.description>
+	<Moyo_PShelmet.label>모요 감각제어 헬멧(진정)</Moyo_PShelmet.label>
+	<Moyo_PShelmet.description>시청각 인터페이스가 장착된 헬멧입니다. 설정에 따라 사용자의 수용 감각을 조작할 수 있습니다. 이 헬멧은 진정모드로 설정되어있습니다.\n\n이 헬멧은 해당되는 소프트웨어가 제공된다면 예능용부터 의료목적까지 다양한 용도로 이용될 수 있지만 변경계에선 해당 소프트웨어들이 흔히 발견되지 않는 것이 아쉬운 점입니다.</Moyo_PShelmet.description>
+	
+	<Moyo_Royalsuit.label>모요 고위 바디슈트</Moyo_Royalsuit.label>
+	<Moyo_Royalsuit.description>등대의 고위계층이 입는 화려한 옷입니다. 외형도 깔끔하지만 착용자를 보호해주는 능력 역시 우수합니다.</Moyo_Royalsuit.description>
+	<Moyo_RoyalRobeA.label>모요 고위 예복 A</Moyo_RoyalRobeA.label>
+	<Moyo_RoyalRobeA.description>등대의 고위계층이 입는 사치스러울 정도로 화려하게 장식된 옷입니다. 사용된 재료로 인해 보기와는 다르게 내구성이 좋습니다.\n\n이 옷에는 세 장로중 한명을 상징하는 문양이 새겨져 있습니다.</Moyo_RoyalRobeA.description>
+	<Moyo_RoyalRobeB.label>모요 고위 예복 B</Moyo_RoyalRobeB.label>
+	<Moyo_RoyalRobeB.description>등대의 고위계층이 입는 사치스러울 정도로 화려하게 장식된 옷입니다. 사용된 재료로 인해 보기와는 다르게 내구성이 좋습니다.\n\n이 옷에는 세 장로중 한명을 상징하는 문양이 새겨져 있습니다.</Moyo_RoyalRobeB.description>
+	<Moyo_RoyalRobeC.label>모요 고위 예복 C</Moyo_RoyalRobeC.label>
+	<Moyo_RoyalRobeC.description>등대의 고위계층이 입는 사치스러울 정도로 화려하게 장식된 옷입니다. 사용된 재료로 인해 보기와는 다르게 내구성이 좋습니다.\n\n이 옷에는 세 장로중 한명을 상징하는 문양이 새겨져 있습니다.</Moyo_RoyalRobeC.description>
+	<Moyo_RoyalBlackDress.label>모요 이국적인 검은 드레스</Moyo_RoyalBlackDress.label>
+	<Moyo_RoyalBlackDress.description>등대의 고위계층이 입는 사치스러울 정도로 화려하게 장식된 옷입니다. 사용된 재료로 인해 보기와는 다르게 내구성이 좋습니다.\n\n특이한 스타일의 검은 드레스입니다. 장로들과의 연결점이 전혀 보이지 않는 이 옷이 누구를 위해 만들어졌는지는 알려지지 않았습니다.</Moyo_RoyalBlackDress.description>
+	<Moyo_RoyalHologramA.label>모요 소형 홀로그램 영사기 A</Moyo_RoyalHologramA.label>
+	<Moyo_RoyalHologramA.description>등대의 고위계층이 머리를 장식하기 위해 사용하는 소형 홀로그램 영사기입니다. 방어능력은 없지만 영사기가 만들어내는 홀로그램은 착용자로 하여금 상대방과 의사소통하는데 보조적인 도움을 줍니다.\n\n이 영사기는 세 장로중 한명을 상징하는 문양을 띄우고 있습니다.</Moyo_RoyalHologramA.description>
+	<Moyo_RoyalHologramB.label>모요 소형 홀로그램 영사기 B</Moyo_RoyalHologramB.label>
+	<Moyo_RoyalHologramB.description>등대의 고위계층이 머리를 장식하기 위해 사용하는 소형 홀로그램 영사기입니다. 방어능력은 없지만 영사기가 만들어내는 홀로그램은 착용자로 하여금 상대방과 의사소통하는데 보조적인 도움을 줍니다.\n\n이 영사기는 세 장로중 한명을 상징하는 문양을 띄우고 있습니다.</Moyo_RoyalHologramB.description>
+	<Moyo_RoyalHologramC.label>모요 소형 홀로그램 영사기 C</Moyo_RoyalHologramC.label>
+	<Moyo_RoyalHologramC.description>등대의 고위계층이 머리를 장식하기 위해 사용하는 소형 홀로그램 영사기입니다. 방어능력은 없지만 영사기가 만들어내는 홀로그램은 착용자로 하여금 상대방과 의사소통하는데 보조적인 도움을 줍니다.\n\n이 영사기는 세 장로중 한명을 상징하는 문양을 띄우고 있습니다.</Moyo_RoyalHologramC.description>
+	<Moyo_Holosuit.label>모요 홀로슈트</Moyo_Holosuit.label>
+	<Moyo_Holosuit.description>등대의 유명인사들이 입는 고품질의 옷입니다. 사용된 재료로 인해 보기와는 다르게 내구성이 좋습니다.\n\n지상의 물품들이 인기를 끌기 시작하면서 연예인들과 디자이너들도 오래 지나지 않아 그 흐름에 참여했습니다. 이 스타일을 처음으로 받아들인 이들은 등대의 가장 유명한 인플루언서들인 '세이렌'들이었습니다.</Moyo_Holosuit.description>
+	<Moyo_HoloJacket.label>모요 홀로자켓</Moyo_HoloJacket.label>
+	<Moyo_HoloJacket.description>등대의 유명인사들이 입는 고품질의 옷입니다. 사용된 재료로 인해 보기와는 다르게 내구성이 좋습니다.\n\n지상의 물품들이 인기를 끌기 시작하면서 연예인들과 디자이너들도 오래 지나지 않아 그 흐름에 참여했습니다. 이 스타일을 처음으로 받아들인 이들은 등대의 가장 유명한 인플루언서들인 '세이렌'들이었습니다.</Moyo_HoloJacket.description>
+	
+	<Moyo_GDsuit.label>모요 근위대 갑옷</Moyo_GDsuit.label>
+	<Moyo_GDsuit.description>전투용으로 개조된 심층잠수복으로, 세 장로의 근위대가 착용하는 갑옷입니다.\n\n거세지는 내전에 신변의 위협을 느낀 세 장로들은 급하게 창설된 근위대의 갑옷으로서 잠수복을 긍정적으로 검토했습니다.</Moyo_GDsuit.description>
+	<Moyo_GDhelmet.label>모요 근위대 헬멧</Moyo_GDhelmet.label>
+	<Moyo_GDhelmet.description>보조기능을 모조리 전투용으로 바꾼 세 장로의 근위대가 착용하는 헬멧입니다.\n\n근위대는 장로의 신변보호 뿐 아니라 섬멸작전, 소탕작전등 다양한 역할을 수행했습니다. 그 결과 근위대 헬멧 특유의 흰 몸체와 바이저모양은 공포의 대상이 되었습니다.</Moyo_GDhelmet.description>
+	<Moyo_GSsuit.label>모요 근위대 경량 갑옷</Moyo_GSsuit.label>
+	<Moyo_GSsuit.description>전투용으로 개조된 잠수복으로, 세 장로의 근위대가 착용하는 갑옷입니다.\n\n근위대의 병기고에 추가된 신식 장비로, 근위대의 기동력과 범용성을 확장시키기는데에 초점을 두었습니다. 이 흰 갑옷은 단독으로 활동하는 근위대 요원들에게 선호받습니다.\n\n실험용 역장 발생기가 갑옷에 내장되어있지만, 작동시키기 위해선 적절한 동력원이 필요할 것입니다.</Moyo_GSsuit.description>
+	<Moyo_GSsuit.verbs.0.label>저각 보호막 배치</Moyo_GSsuit.verbs.0.label>
+	<Moyo_GSsuit.comps.CompReloadable.chargeNoun>보호막</Moyo_GSsuit.comps.CompReloadable.chargeNoun>
+	<Moyo_GShelmet.label>모요 근위대 경량 헬멧</Moyo_GShelmet.label>
+	<Moyo_GShelmet.description>보조기능을 모조리 전투용으로 바꾼 세 장로의 근위대가 착용하는 헬멧입니다.\n\n어떤 일들은 조용히 해결되어야 합니다. 근위대 요원들은 이런 일에 파견되어 그림자 속에서 장로들에게 헌신하고 있습니다.</Moyo_GShelmet.description>
+</LanguageData>

@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>Moyo_DBS</defName>
+		<label>deepblue station</label>
+		<description>A machine that utilizes Moyo's organ to produce more deepblue. Both electricity and nutrition is needed for production.\n\nI don't recommend looking through the glass...</description>
+		<descriptionHyperlinks>
+			<ThingDef>Moyo_BloodBag</ThingDef>
+			<ThingDef>Moyo_DBSF</ThingDef>
+			<ThingDef>Moyo_Heart</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Buildings/MoyoDBStation</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Buildings/MoyoDBStationIcon</uiIconPath>
+		<uiIconScale>1</uiIconScale>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<building>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<designationCategory>Production</designationCategory>
+		<costList>
+			<Moyo_Abyssteel>75</Moyo_Abyssteel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Moyo_Heart>2</Moyo_Heart>
+		</costList>
+		<researchPrerequisites>
+			<li>DBS_Research</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(80,80,217,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>1.33333</fuelConsumptionRate>
+				<fuelCapacity>20.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Moyo_DBSF</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>0</initialFuelPercent>
+				<minimumFueledThreshold>0.1</minimumFueledThreshold>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="FuPoSpa.CompProperties_FuelPoweredSpawner">
+				<thingToSpawn>Moyo_BloodBag</thingToSpawn>
+				<requiresFuel>true</requiresFuel>
+				<requiresPower>true</requiresPower>
+				<spawnCount>4</spawnCount>
+				<spawnIntervalRange>133333</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<spawnMaxAdjacent>7</spawnMaxAdjacent>
+				<spawnForbidden>false</spawnForbidden>
+				<saveKeysPrefix>bloodbag</saveKeysPrefix>
+			</li>
+			<li Class="OLB.CompProperties_Decorate">
+				<mote>
+					<li>
+						<label>DBS1</label>
+						<moteDef>Mote_DBS</moteDef>
+						<condition>
+							<ifPowered>true</ifPowered>
+							<ifFueled>true</ifFueled>
+						</condition>
+						<origin>BuildingCenter</origin>
+						<transformation>
+							<scale>2.5~2.5</scale>
+						</transformation>
+						<graceTicks>80</graceTicks>
+						<coexistsWithOther>true</coexistsWithOther>
+					</li>
+					<li>
+						<label>DBS2</label>
+						<moteDef>Mote_DBSB</moteDef>
+						<condition>
+							<ifPowered>true</ifPowered>
+							<ifFueled>true</ifFueled>
+						</condition>
+						<origin>BuildingCenter</origin>
+						<transformation>
+							<scale>2.5~2.5</scale>
+						</transformation>
+						<graceTicks>80</graceTicks>
+						<coexistsWithOther>true</coexistsWithOther>
+					</li>
+				</mote>
+			</li>
+		</comps>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Beauty>-20</Beauty>
+			<Mass>20</Mass>
+			<WorkToBuild>8000</WorkToBuild>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,1)</size>
+		<fillPercent>1.0</fillPercent>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<passability>Impassable</passability>
+		<rotatable>false</rotatable>
+		<canOverlapZones>false</canOverlapZones>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<tradeability>Sellable</tradeability>
+		<tradeTags>
+			<li>ExoticBuilding</li>
+		</tradeTags>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>Moyo_DBLS</defName>
+		<label>large deepblue station</label>
+		<description>A larger deepblue station. Both electricity and nutrition is needed for production.\n\nI serouisly don't recommend looking through the glass...</description>
+		<descriptionHyperlinks>
+			<ThingDef>Moyo_BloodBag</ThingDef>
+			<ThingDef>Moyo_DBSF</ThingDef>
+			<ThingDef>Moyo_Heart</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Buildings/MoyoDBLStation</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Buildings/MoyoDBLStationIcon</uiIconPath>
+		<uiIconScale>1</uiIconScale>
+		<building>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<designationCategory>Production</designationCategory>
+		<costList>
+			<Moyo_Abyssteel>200</Moyo_Abyssteel>
+			<ComponentSpacer>8</ComponentSpacer>
+			<Moyo_Heart>8</Moyo_Heart>
+		</costList>
+		<researchPrerequisites>
+			<li>DBS_Research</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>1500</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(80,80,217,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>5</fuelConsumptionRate>
+				<fuelCapacity>100.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Moyo_DBSF</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>0</initialFuelPercent>
+				<minimumFueledThreshold>0.1</minimumFueledThreshold>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="FuPoSpa.CompProperties_FuelPoweredSpawner">
+				<thingToSpawn>Moyo_BloodBag</thingToSpawn>
+				<requiresFuel>true</requiresFuel>
+				<requiresPower>true</requiresPower>
+				<spawnCount>16</spawnCount>
+				<spawnIntervalRange>133333</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<spawnMaxAdjacent>7</spawnMaxAdjacent>
+				<spawnForbidden>false</spawnForbidden>
+				<saveKeysPrefix>bloodbag</saveKeysPrefix>
+			</li>
+			<li Class="OLB.CompProperties_Decorate">
+				<mote>
+					<li>
+						<label>DBS1</label>
+						<moteDef>Mote_DBSL</moteDef>
+						<condition>
+							<ifPowered>true</ifPowered>
+							<ifFueled>true</ifFueled>
+						</condition>
+						<origin>BuildingCenter</origin>
+						<transformation>
+							<scale>4~4</scale>
+						</transformation>
+						<graceTicks>80</graceTicks>
+						<coexistsWithOther>true</coexistsWithOther>
+					</li>
+					<li>
+						<label>DBS2</label>
+						<moteDef>Mote_DBSLB</moteDef>
+						<condition>
+							<ifPowered>true</ifPowered>
+							<ifFueled>true</ifFueled>
+						</condition>
+						<origin>BuildingCenter</origin>
+						<transformation>
+							<scale>4~4</scale>
+						</transformation>
+						<graceTicks>80</graceTicks>
+						<coexistsWithOther>true</coexistsWithOther>
+					</li>
+				</mote>
+			</li>
+		</comps>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MarketValue>5000</MarketValue>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Beauty>-100</Beauty>
+			<Mass>60</Mass>
+			<WorkToBuild>20000</WorkToBuild>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(2,2)</size>
+		<fillPercent>1.0</fillPercent>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<passability>Impassable</passability>
+		<rotatable>false</rotatable>
+		<canOverlapZones>false</canOverlapZones>
+		<tradeability>Sellable</tradeability>
+		<tradeTags>
+			<li>ExoticBuilding</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>Moyo_DBSF</defName>
+		<label>nutrition pack</label>
+		<description>A cansister of nutrients extracted from organic materials. It’s been specially treated for use in the deepblue station.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Moyo_DBS</ThingDef>
+			<RecipeDef>Make_DBSF</RecipeDef>
+			<RecipeDef>Make_DBSFbulk</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Drugs/DBSF</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<stackLimit>75</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<MarketValue>15</MarketValue>
+			<Mass>0.15</Mass>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>
+	<!-- 모요 제작대 -->
+	<ThingDef ParentName="BenchBase">
+		<defName>Moyo_FabricationBench</defName>
+		<label>abysstech fabrication bench</label>
+		<description>A workbench for producing abysstech items. Equipped with various advanced tools, it can handle precise production like components to complex production of making abysteel.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<minifiedDef/>
+		<thingCategories Inherit="false"/>
+		<size>(5,2)</size>
+		<costList>
+			<Steel>100</Steel>
+			<Moyo_Abyssteel>50</Moyo_Abyssteel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>250</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(80,80,217,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<recipes>
+			<!--<li>Make_ComponentIndustrial</li>-->
+			<li>Make_ComponentSpacer</li>
+		</recipes>
+		<graphicData>
+			<texPath>Things/Buildings/MoyoWorkbench</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(7,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<fillPercent>0.5</fillPercent>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+		<surfaceType>Item</surfaceType>
+		<designationHotKey>Misc12</designationHotKey>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>MoyoProduction</li>
+		</researchPrerequisites>
+	</ThingDef>
+	<!-- 조각상 베이스 -->
+	<ThingDef ParentName="BuildingBase" Name="Pearl_SculptureBase" Abstract="True">
+		<thingClass>Building_Art</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<useHitPoints>true</useHitPoints>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsArt</li>
+		</thingCategories>
+		<statBases>
+			<Flammability>0.0</Flammability>
+			<SellPriceFactor>1.10</SellPriceFactor>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+		</statBases>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtSculpture</nameMaker>
+				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Artistic</li>
+					<li>Morbid</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_Quality">
+						<curve>
+							<points>
+								<li>(0,0.12)</li>
+								<!-- awful -->
+								<li>(1,0.16)</li>
+								<!-- poor -->
+								<li>(2,0.20)</li>
+								<!-- normal -->
+								<li>(3,0.22)</li>
+								<!-- good -->
+								<li>(4,0.24)</li>
+								<!-- excellent -->
+								<li>(5,0.26)</li>
+								<!-- masterwork -->
+								<li>(6,0.28)</li>
+								<!-- legendary -->
+							</points>
+						</curve>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsWithQuality">
+						<defs>
+							<li>SculptureSmall</li>
+							<li>SculptureLarge</li>
+							<li>SculptureGrand</li>
+							<li>PearlSculptureSmall</li>
+							<li>PearlSculptureLarge</li>
+							<li>PearlSculptureGrand</li>
+						</defs>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<focusPerQuality>
+							<points>
+								<li>(0,0.0)</li>
+								<!-- awful -->
+								<li>(1,0.0)</li>
+								<!-- poor -->
+								<li>(2,0.01)</li>
+								<!-- normal -->
+								<li>(3,0.01)</li>
+								<!-- good -->
+								<li>(4,0.01)</li>
+								<!-- excellent -->
+								<li>(5,0.02)</li>
+								<!-- masterwork -->
+								<li>(6,0.02)</li>
+								<!-- legendary -->
+							</points>
+						</focusPerQuality>
+						<explanationKey>MeditationFocusPerSculpture</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerSculptureAbstract</explanationKeyAbstract>
+					</li>
+					<li Class="FocusStrengthOffset_NearbyGraves">
+						<defs>
+							<li>Grave</li>
+							<li>Sarcophagus</li>
+						</defs>
+						<offsetPerBuilding>0.01</offsetPerBuilding>
+						<radius>9.9</radius>
+						<maxBuildings>4</maxBuildings>
+						<focusPerFullGrave>0.01</focusPerFullGrave>
+						<explanationKey>MeditationFocusPerGrave</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerGraveAbstract</explanationKeyAbstract>
+					</li>
+				</offsets>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+		</placeWorkers>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<tradeTags>
+			<li>Art</li>
+		</tradeTags>
+		<tradeability>Sellable</tradeability>
+		<recipeMaker>
+			<researchPrerequisite>DBS_Research</researchPrerequisite>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Artistic</workSkill>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<effectWorking>Sculpt</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<recipeUsers>
+				<li>TableSculpting</li>
+			</recipeUsers>
+		</recipeMaker>		
+	</ThingDef>
+	<ThingDef ParentName="Pearl_SculptureBase">
+		<defName>PearlSculptureSmall</defName>
+		<label>small abyssal pearl sculpture</label>
+		<description>A torso-sized piece of abyssal pearl sculpted into an artistic form. its design is based on natural crystaline structure of the material.</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Buildings/PearlSculptureSmall</texPath>
+		</graphicData>
+		<fillPercent>0.35</fillPercent>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Mass>3</Mass>
+			<Beauty>220</Beauty>
+			<WorkToMake>18000</WorkToMake>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(80,80,217,0)</glowColor>
+			</li>
+		</comps>
+		<costList>
+			<Moyo_AbyssPearl>6</Moyo_AbyssPearl>
+			<Moyo_Abyssteel>10</Moyo_Abyssteel>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="Pearl_SculptureBase">
+		<defName>PearlSculptureLarge</defName>
+		<label>large abyssal pearl sculpture</label>
+		<description>A person-sized piece of abyssal pearl sculpted into an artistic form. its design is based on natural crystaline structure of the material.</description>
+		<castEdgeShadows>true</castEdgeShadows>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Buildings/PearlSculptureLarge</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>7</Mass>
+			<Beauty>420</Beauty>
+			<WorkToMake>30000</WorkToMake>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(80,80,217,0)</glowColor>
+			</li>
+		</comps>
+		<costList>
+			<Moyo_AbyssPearl>12</Moyo_AbyssPearl>
+			<Moyo_Abyssteel>20</Moyo_Abyssteel>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="Pearl_SculptureBase">
+		<defName>PearlSculptureGrand</defName>
+		<label>grand abyssal pearl sculpture</label>
+		<description>A huge sculpture made with abyssal pearl, sized to dominate a room. its design is based on natural crystaline structure of the material.</description>
+		<castEdgeShadows>true</castEdgeShadows>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Buildings/PearlSculptureGrand</texPath>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>true</rotatable>
+		<size>(2,2)</size>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Beauty>1620</Beauty>
+			<Mass>28</Mass>
+			<WorkToMake>105000</WorkToMake>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(80,80,217,0)</glowColor>
+			</li>
+		</comps>
+		<costList>
+			<Moyo_AbyssPearl>48</Moyo_AbyssPearl>
+			<Moyo_Abyssteel>80</Moyo_Abyssteel>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>MoyoGRModule</defName>
+		<label>abysstech persona adviser module</label>
+		<description>An AI adviser to aid in your colony's research. Increases research speed when placed near hi-tech research bench and unlocks the pinnacle of abysstech. Each research bench can only use one adviser module.</description>
+		<graphicData>
+			<texPath>Things/Buildings/MoyoGRModule</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>2.46875</drawSize>
+		</graphicData>
+		<rotatable>true</rotatable>
+		<uiIconScale>0.85</uiIconScale>
+		<researchPrerequisites>
+			<li>GurdianAdvisorResearch</li>
+		</researchPrerequisites>
+		<size>(2,2)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<designationHotKey>Misc4</designationHotKey>
+		<designationCategory>Misc</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>25000</WorkToBuild>
+			<Mass>60</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<costList>
+			<Moyo_Abyssteel>75</Moyo_Abyssteel>
+			<ComponentSpacer>4</ComponentSpacer>
+			<Gold>70</Gold>
+			<AIPersonaCore>1</AIPersonaCore>
+		</costList>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>500</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<ResearchSpeedFactor>0.2</ResearchSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+	</ThingDef>
+</Defs>

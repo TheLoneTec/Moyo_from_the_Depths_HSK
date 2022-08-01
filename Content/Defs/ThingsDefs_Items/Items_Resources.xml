@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>Moyo_Abyssteel</defName>
+		<label>abyssteel</label>
+		<description>Ultra-dense alloy commonly used in the Lighthouse. It's unbelivable strength and weight makes it suitable for things that needs the most durability.</description>
+		<graphicData>
+			<texPath>Things/Resources/Abyssteel</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<Mass>1.2</Mass>
+			<StuffPower_Armor_Sharp>1.16</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.65</StuffPower_Armor_Heat>
+			<SharpDamageMultiplier>1.1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.3</BluntDamageMultiplier>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
+			<commonality>0.05</commonality>
+			<constructEffect>ConstructMetal</constructEffect>
+			<color>(40,40,65)</color>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<statFactors>
+				<MaxHitPoints>2.8</MaxHitPoints>
+				<Beauty>1.2</Beauty>
+				<Flammability>0</Flammability>
+				<WorkToMake>2.5</WorkToMake>
+				<WorkToBuild>2.5</WorkToBuild>
+				<DoorOpenSpeed>0.5</DoorOpenSpeed>
+				<MeleeWeapon_CooldownMultiplier>1.2</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</ThingDef>
+	
+  <ThingDef ParentName="ResourceBase">
+    <defName>Moyo_Depthweave</defName>
+    <label>depthweave</label>
+    <description>A synthetic fabric commonly used in the lighthouse. It is used in various places due to its elasticity and insulating capabilities.</description>
+    <graphicData>
+      <texPath>Things/Resources/DepthWeave</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>4.2</MarketValue>
+      <Mass>0.025</Mass>
+      <Flammability>0.3</Flammability>
+      <DeteriorationRate>3</DeteriorationRate>
+      <StuffPower_Armor_Sharp>0.95</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.25</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>24</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>24</StuffPower_Insulation_Heat>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>30</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <commonality>0.10</commonality>
+      <color>(40,42,68)</color>
+      <statFactors>
+        <Flammability>0.3</Flammability>
+        <MaxHitPoints>1.3</MaxHitPoints>
+        <Beauty>2</Beauty>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+  </ThingDef>	
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>Moyo_AbyssPearl</defName>
+		<label>abyssal pearl</label>
+		<description>A cerulian crystal of pure deepblue. Its effects have been more potent as it got purer, thus used for crafting items with extreme effects,\nIts Peculiar glint is considered to be a wonder, which makes it craved even by moyos. A literal cost of blood to satisfy the endless greed.</description>
+		<graphicData>
+			<texPath>Things/Resources/AbyssPearl</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+		<stackLimit>20</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<MarketValue>800</MarketValue>
+			<RoyalFavorValue>1.25</RoyalFavorValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<tradeTags inherit="false">
+			<li>ExoticMisc</li>
+		</tradeTags>		
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<color>(53,99,194)</color>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+		</stuffProps>		
+	</ThingDef>	
+</Defs>

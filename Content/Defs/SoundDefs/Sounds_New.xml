@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Cryo -->
+
+	<SoundDef>
+		<defName>moyo_cryoFreeze</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/moyo_cryoFreeze</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>moyo_cryoWind</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/moyo_cryoWind</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>moyo_cryoWind2</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/moyo_cryoWind2</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>moyo_cryoWind3</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/moyo_cryoWind3</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>		
+
+	<!-- Weapon Charge/Interact -->
+
+	<SoundDef>
+		<defName>moyo_smallWeaponCharge</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<sustain>true</sustain>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/moyo_smallWeaponCharge</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>moyo_smallWeaponInteract</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/moyo_smallWeaponInteract</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>moyo_mediumWeaponCharge</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<sustain>true</sustain>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/moyo_mediumWeaponCharge</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>	
+	<SoundDef>
+		<defName>moyo_mediumWeaponInteract</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/moyo_mediumWeaponInteract</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>	
+	
+	<!-- Weapon Fire -->
+	<SoundDef>
+		<defName>moyo_lightFire</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/moyo_defaultFire</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>1.142391</min>
+					<max>1.242391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>moyo_defaultFire</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/moyo_defaultFire</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>moyo_longFire</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/moyo_longFire</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>	
+</Defs>

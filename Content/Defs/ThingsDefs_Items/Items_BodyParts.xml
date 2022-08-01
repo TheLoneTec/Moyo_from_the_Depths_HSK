@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BodyPartProstheticBase">
+		<defName>Moyo_FakeTail</defName>
+		<label>fake moyo tail</label>
+		<description>A fake tail made of cloth. Helps keep balance.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Cloth>85</Cloth>
+		</costList>
+		<statBases>
+			<WorkToMake>4500</WorkToMake>
+			<Mass>3</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>Moyo_BionicTail</defName>
+		<label>bionic moyo tail</label>
+		<description>A binoic tail made with advanced technology. Superior to a natural tail in many ways.</description>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<Synthread>30</Synthread>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<statBases>
+			<WorkToMake>26000</WorkToMake>
+			<Mass>5</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>Moyo_AdvancedHeart</defName>
+		<label>abysstech heart</label>
+		<description>A bionic heart modified with abysstech. This particular phrosthethic part is desinged for moyos.</description>
+		<techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>		
+		<costList>
+			<BionicHeart>1</BionicHeart>
+			<ComponentSpacer>3</ComponentSpacer>
+			<BlueMed>5</BlueMed>
+		</costList>
+		<researchPrerequisites>
+			<li>DBS_Research</li>
+		</researchPrerequisites>			
+		<statBases>
+			<WorkToMake>26000</WorkToMake>
+			<Mass>5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef>
+		<defName>AbysstechHeartAlt</defName>
+		<label>make abysstech heart(moyo heart)</label>
+		<description>Make an abysstech heart using a living moyo heart.</description>
+		<jobString>Making abysstech heart(moyo heart).</jobString>
+		<workAmount>26000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Moyo_FabricationBench</li>
+		</recipeUsers>		
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Moyo_Heart</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlueMed</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>				
+		</ingredients>	
+		<products>
+			<Moyo_AdvancedHeart>1</Moyo_AdvancedHeart>
+		</products>
+		<researchPrerequisite>DBS_Research</researchPrerequisite>
+	</RecipeDef>	
+
+</Defs>

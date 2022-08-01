@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <BlueGoHigh.label>모르피-블루에 취함</BlueGoHigh.label>
+  <BlueGoHigh.labelNoun>모르피-블루에 취함</BlueGoHigh.labelNoun>
+  <BlueGoHigh.description>딥블루와 혼합된 고주스가 혈관을 통해 흘러 전투능력을 강화시킵니다. 고주스와 중복되지 않습니다.</BlueGoHigh.description>
+  <BlueUpHigh.label>사파이어 매스에 취함</BlueUpHigh.label>
+  <BlueUpHigh.labelNoun>사파이어 매스에 취함</BlueUpHigh.labelNoun>
+  <BlueUpHigh.description>딥블루와 혼합된 웨이크업이 혈관을 통해 흘러 작업능력을 강화시킵니다. 웨이크업과 중복되지 않습니다.</BlueUpHigh.description>
+  <BlueYoHigh.label>블루 헤이즈에 취함</BlueYoHigh.label>
+  <BlueYoHigh.labelNoun>블루 헤이즈에 취함</BlueYoHigh.labelNoun>
+  <BlueYoHigh.description>딥블루와 혼합된 야요가 혈관을 통해 흘러 복용자에게 행복감을 느끼게 합니다. 야요 및 플레이크와 중복되지 않습니다.</BlueYoHigh.description>
+  <BlueBurstHigh.label>심혈관계 과부화</BlueBurstHigh.label>
+  <BlueBurstHigh.labelNoun>심혈관계 과부화</BlueBurstHigh.labelNoun>
+  <BlueBurstHigh.description>심혈관계가 과부하된 상태입니다. 굉장한 양의 혈액이 만들어지고 있어 심장에 큰 부하를 줍니다. 이 효과는 대상을 죽음에 이르게 할 것입니다.</BlueBurstHigh.description>
+  <BlueBurstT.label>BlueBurstT</BlueBurstT.label>
+  <BlueBurstT.description>null.</BlueBurstT.description>
+  <BlueBurstA.label>BlueBurstA</BlueBurstA.label>
+  <BlueBurstA.description>null.</BlueBurstA.description>
+  <BlueMedHigh.label>회복력 증진</BlueMedHigh.label>
+  <BlueMedHigh.labelNoun>회복력 증진</BlueMedHigh.labelNoun>
+  <BlueMedHigh.description>회복력이 강화된 상태입니다. 이 효과는 전체적인 출혈량을 줄이고 상처와 감염의 회복을 빠르게 해줄것입니다.</BlueMedHigh.description>
+  <PenoxyBlueHigh.label>페녹시-블루</PenoxyBlueHigh.label>
+  <PenoxyBlueHigh.description>페녹시-블루로 발생한 특정 질병에 대한 면역/치유 효과입니다. 이 효과는 일회성입니다.</PenoxyBlueHigh.description>
+  <ClensazureHigh.label>클리어-애쥬어</ClensazureHigh.label>
+  <ClensazureHigh.description>클리어-애쥬어로 발생한 기생충에 대한 면역/치유 효과입니다. 이 효과는 일회성입니다.</ClensazureHigh.description>
+  <SustainerLapisHigh.label>서스테이너-라피스에 취함</SustainerLapisHigh.label>
+  <SustainerLapisHigh.description>서스테이너-라피스로 인한 각성효과입니다. 짧은 기간동안 식사와 수면의 필요를 느끼지 않습니다.</SustainerLapisHigh.description>
+  <SustainerLapisHigh_After.label>서스테이너-라피스에서 회복중</SustainerLapisHigh_After.label>
+  <SustainerLapisHigh_After.description>서스테이너 라피스의 효과에서 회북중입니다. 이 기간동안 서스테이너를 더 사용할수 없습니다.</SustainerLapisHigh_After.description>
+  <DetoxerCobaltHigh.label>해독능력 증진</DetoxerCobaltHigh.label>
+  <DetoxerCobaltHigh.description>해독능력이 강화되었습니다. 신체에 축적된 독소를 제거하며 추가적인 중독을 방지합니다.</DetoxerCobaltHigh.description>  
+</LanguageData>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BodyPartDef>
+		<defName>Moyo_Tail</defName>
+		<label>tail</label>
+		<hitPoints>30</hitPoints>
+		<frostbiteVulnerability>3</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<beautyRelated>true</beautyRelated>
+		<canSuggestAmputation>true</canSuggestAmputation>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<!-- 모요 심장 -->
+
+	<BodyPartDef>
+		<defName>MoyoHeart</defName>
+		<label>heart</label>
+		<hitPoints>15</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>BloodPumpingSource</li>
+		</tags>
+		<spawnThingOnRemoved>Moyo_Heart</spawnThingOnRemoved>
+		<canSuggestAmputation>false</canSuggestAmputation>
+	</BodyPartDef>	
+
+	<ThingDef ParentName="BodyPartNaturalBase">
+		<defName>Moyo_Heart</defName>
+		<label>moyo heart</label>
+		<description>A biological moyo heart. Pumps blood around the body.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallNaturalHeart_Moyo</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+			<color>(50,50,135)</color>
+		</graphicData>		
+		<statBases>
+			<MarketValue>650</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+</Defs>

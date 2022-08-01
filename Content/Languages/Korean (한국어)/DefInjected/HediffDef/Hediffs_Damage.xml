@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<Moyo_CryoSlowdown.label>극저온 저체온증</Moyo_CryoSlowdown.label>
+	<Moyo_CryoSlowdown.description>극저온 무기에 의한 갑작스런 체온의 저하입니다. 시간이 지나면 원래대로 회복이 될 것이지만 너무 심해지면 사망에 이르게 될 것입니다.</Moyo_CryoSlowdown.description>
+	<Moyo_CryoSlowdown.stages.0.label>몸이 떨림</Moyo_CryoSlowdown.stages.0.label>
+	<Moyo_CryoSlowdown.stages.1.label>가벼움</Moyo_CryoSlowdown.stages.1.label>
+	<Moyo_CryoSlowdown.stages.2.label>심각함</Moyo_CryoSlowdown.stages.2.label>
+	<Moyo_CryoSlowdown.stages.3.label>극심함</Moyo_CryoSlowdown.stages.3.label>	
+	<HexapodConstriction.label>속박</HexapodConstriction.label>
+	<HexapodConstriction.description>헥사포드의 촉수에 구속되어 움직임을 방해받습니다.</HexapodConstriction.description>
+</LanguageData>

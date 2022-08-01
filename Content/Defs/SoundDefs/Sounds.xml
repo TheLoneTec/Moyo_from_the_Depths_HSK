@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ==================== YP ================================ -->
+
+	<SoundDef>
+		<defName>MoyoCryoSpray</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>3</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/CryoSpray</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+
+	<SoundDef>
+		<defName>MoyoCryoShatter</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>3</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/CryoShatter</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Moyo_WeaponInteract</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/Moyo_WeaponInteract</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Moyo_WeaponInteractLight</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/Moyo_WeaponInteract_Small</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>		
+</Defs>

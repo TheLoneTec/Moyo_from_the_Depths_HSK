@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ScenarioDef>
+		<defName>Moyo_RefugeeScenario</defName>
+		<label>Moyo Refugee</label>
+		<description>he civil war has torn the lighthouse apart. Kidnapping, firefights, and crime of all sorts have become a daily occurrence, and no one inside is safe. In the confusion, the three of you have managed to steal a submarine and escape for the surface. All you have are the supplies stored in the submarine. Perhaps the surface can be the safe haven you seek.</description>
+		<scenario>
+			<summary>Moyos who surfaced to find a safe haven. provided resources are relatively scarse.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>Moyo_PlayerFaction</factionDef>
+			</playerFaction>
+			<parts>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>3</pawnCount>
+					<pawnChoiceCount>8</pawnChoiceCount>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>500</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Moyo_Wrench</thingDef>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Moyo_Pistol</thingDef>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Moyo_ChargeSMG</thingDef>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Moyo_EGmask</thingDef>
+				</li>				
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Moyo_EGsuit</thingDef>
+				</li>								
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MoyoMedicine</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>BlueGo</thingDef>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>BlueUp</thingDef>
+					<count>2</count>
+				</li>	
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>BlueYo</thingDef>
+					<count>3</count>
+				</li>					
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>25</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>350</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>250</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk</thingDef>
+					<count>5</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>520</count>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+	
+	<!-- 카르텔 시나리오 -->
+	<!-- <ScenarioDef> -->
+		<!-- <defName>Moyo_CartelScenario</defName> -->
+	<!-- </ScenarioDef> -->
+</Defs>

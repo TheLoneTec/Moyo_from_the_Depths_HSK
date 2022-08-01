@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<Alien_Moyo.label>모요</Alien_Moyo.label>
+	<Alien_Moyo.description>그들이 등대라고 부르는 바다속 깊은 곳에 있는 도시에 자리를 잡은 인간형 종족입니다. 바다생물의 특징을 일부 보유한 이들의 혈액은 의료분야에 유용한 성분을 포함하고 있습니다.\n\n이들은 심해를 개척하는 번화계 분파에 기원을 두고있으며 대를 이어 행해진 신체개조를 통해 지금의 모습을 갖추게 되었습니다. 이들은 변방게 여러곳으로 퍼져 그들의 도시를 건설하고 번영해 왔습니다.</Alien_Moyo.description>
+	<Alien_Moyo.tools.0.label>왼쪽 주먹</Alien_Moyo.tools.0.label>
+	<Alien_Moyo.tools.1.label>오른쪽 주먹</Alien_Moyo.tools.1.label>
+	<Alien_Moyo.tools.2.label>이빨</Alien_Moyo.tools.2.label>
+	<Alien_Moyo.tools.3.label>머리</Alien_Moyo.tools.3.label> 
+</LanguageData>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<!-- moyo defult hediff -->
+	<MoyoBaseHediff.label>모요 기본 헤디프</MoyoBaseHediff.label>
+	<MoyoBaseHediff.description>이 폰은 모요이며, 딥블루에 영향을 받지 않습니다. 그리고 당신은 이걸 읽고 있으면 안됩니다.</MoyoBaseHediff.description>
+	
+	<!-- AbyssSerum -->
+	<DeepBlues.label>딥 블루즈</DeepBlues.label>
+	<DeepBlues.description>딥블루에 의해 강화된 몸은 향상된 능력을 지닙니다. 작은 부작용으로, 사용자는 약간의 우울한 기분을 느끼게 됩니다. 주입된 딥블루로 인해 변형된 세포를 되돌릴 방법은 없기에, 이 효과 또한 제거할 수 없습니다.</DeepBlues.description>
+	
+	<!-- MoyoDeepBlueReaction -->
+	<Moyo_DeepBlueReaction.label>딥블루 거부감</Moyo_DeepBlueReaction.label>
+	<Moyo_DeepBlueReaction.description>모요의 몸에 딥블루가 과도하게 주입되었습니다. 건강에 이상은 없지만 모요에게 메스꺼움을 느끼게 할 것입니다.</Moyo_DeepBlueReaction.description>
+	<Moyo_DeepBlueReaction.stages.0.label>경미함</Moyo_DeepBlueReaction.stages.0.label>
+	<Moyo_DeepBlueReaction.stages.1.label>가벼움</Moyo_DeepBlueReaction.stages.1.label>
+	<Moyo_DeepBlueReaction.stages.2.label>심각함</Moyo_DeepBlueReaction.stages.2.label>
+	<Moyo_DeepBlueReaction.stages.3.label>극심함</Moyo_DeepBlueReaction.stages.3.label>
+	
+	<!-- DeepBlueddiction -->
+	<DeepBlueTolerance.label>딥블루 내성</DeepBlueTolerance.label>
+	<DeepBlueTolerance.description>딥블루로 개조된 세포들은 시간이 지남에 따라 딥블루에 점점 둔감해지게 됩니다. 앞으로 신체의 필요를 충족시키기 위해 더 많은 양의 딥블루가 필요 할 것입니다.</DeepBlueTolerance.description>
+	<DeepBlueAddiction.label>딥블루 의존</DeepBlueAddiction.label>
+	<DeepBlueAddiction.description>딥블루로 변화된 몸은 기능을 유지하기 위해 지속적으로 체내의 딥블루를 소비합니다. 딥블루를 생명활동의 연료로서 소비하는 개조된 세포들은 딥블루 공급이 중단될 경우 딥블루 소모를 최소화하기 위해 유사 동면상태로 접어들 것입니다.</DeepBlueAddiction.description>
+	<DeepBlueAddiction.stages.1.label>동면</DeepBlueAddiction.stages.1.label>
+	<DeepBlueAddiction.comps.0.discoverLetterLabel></DeepBlueAddiction.comps.0.discoverLetterLabel>
+	<DeepBlueAddiction.comps.0.discoverLetterText>{0}이 딥블루에 중독됐습니다.\n\n[PAWN_pronoun]의 필요 탭에서 필요한 딥블루 필요를 확인할 수 있으며, 가능한 경우 스스로 약물을 사용해 필요를 채울 것입니다. [PAWN_pronoun]가 딥블루를 구할 수 없게 된다면 동면 상태에 들어가게 될 것입니다.</DeepBlueAddiction.comps.0.discoverLetterText>
+</LanguageData>

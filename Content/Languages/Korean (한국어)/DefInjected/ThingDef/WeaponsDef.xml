@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<!-- 근접 -->
+	<Moyo_Wrench.label>모요 렌치</Moyo_Wrench.label>
+	<Moyo_Wrench.description>구부러진 철판을 펴고 볼트를 조이는 도구입니다. 그럴 필요가 없다면 머리를 내려치는 일에도 쓸 수 있습니다.</Moyo_Wrench.description>
+	<Moyo_Wrench.tools.0.label>손잡이</Moyo_Wrench.tools.0.label>
+	<Moyo_Wrench.tools.1.label>머리</Moyo_Wrench.tools.1.label>
+	<Moyo_Knife.label>모요 잠수부 나이프</Moyo_Knife.label>
+	<Moyo_Knife.description>칼은 언제 어디서나 쓸모있는 도구였고, 그것은 바다속에서도 마찬가지입니다. 플라스틸로 만들어진 칼날은 가벼움과 예리함을 겸비한 탓에 수많은 모요 잠수부들로부터 사랑받고 있습니다.</Moyo_Knife.description>
+	<Moyo_Knife.tools.0.label>손잡이</Moyo_Knife.tools.0.label>
+	<Moyo_Knife.tools.1.label>칼날</Moyo_Knife.tools.1.label>
+	<Moyo_Knife.tools.2.label>칼끝</Moyo_Knife.tools.2.label>
+	<Moyo_Piledriver.label>모요 파일드라이버</Moyo_Piledriver.label>
+	<Moyo_Piledriver.description>전자기 소총을 응용해 말뚝을 박아넣는 채굴기입니다. 사용하기 불편하고 말뚝을 발사하는데 긴 시간이 걸리지만, 바위를 부수고 꿰뚫는 위력을 가지고 있습니다.\n\n사용 가능한 메카노이드의 숫자가 감소하면서, 채광량을 유지하기 위해 수많은 모요들이 직접 나서야만 했습니다.</Moyo_Piledriver.description>
+	<Moyo_Piledriver.tools.0.label>몸체</Moyo_Piledriver.tools.0.label>
+	<Moyo_Piledriver.tools.1.label>말뚝</Moyo_Piledriver.tools.1.label>
+	<Moyo_Spear.label>모요 전투도끼</Moyo_Spear.label>
+	<Moyo_Spear.description>어비스틸로 단조되어 무거운 실험용 도끼입니다. 극저온 기술을 응용해 절단면의 출혈을 최소화하는 방향으로 연구되었습니다, 라고 개발자들은 말합니다. 심층잠수복의 헬멧도 두 쪽 내버릴 수 있는 이 도끼에 맞았을 때 과다출혈을 걱정할 필요는 없을 것입니다.</Moyo_Spear.description>
+	<Moyo_Spear.tools.0.label>손잡이</Moyo_Spear.tools.0.label>
+	<Moyo_Spear.tools.1.label>창날</Moyo_Spear.tools.1.label>
+	<Moyo_Spear.tools.2.label>창끝</Moyo_Spear.tools.2.label>
+	<Moyo_PowerFist.label>모요 파워피스트</Moyo_PowerFist.label>
+	<Moyo_PowerFist.description>수중의 다양한 작업을 용이하게 만들기 위해 근력을 강화해주는 기계화 팔 장비입니다. 잠수복과 함께 사용하도록 제작되었지만 맨손으로도 충분히 사용할 수 있습니다.</Moyo_PowerFist.description>
+	<Moyo_PowerFist.tools.0.label>주먹</Moyo_PowerFist.tools.0.label>
+	<Moyo_PowerFist.tools.1.label>몸체</Moyo_PowerFist.tools.1.label>
+	<!-- 원거리 -->
+	<Moyo_Pistol.label>모요 네일건</Moyo_Pistol.label>
+	<Moyo_Pistol.description>등대에서 흔히 볼 수 있는 작업용 공구입니다. 다양한 상황에 사용할 수 있도록 상당히 강력한 발사장치를 가져 등대 안팎에서 사용이 가능합니다, 그로 인해 긴급상황에 급조무기로 사용하기에도 좋습니다.</Moyo_Pistol.description>
+	<Moyo_Pistol.tools.0.label>손잡이</Moyo_Pistol.tools.0.label>
+	<Moyo_Pistol.tools.1.label>총열</Moyo_Pistol.tools.1.label>
+	<Moyo_ChargeRifle.label>모요 전자기 소총</Moyo_ChargeRifle.label>
+	<Moyo_ChargeRifle.description>전자기 소총과 유사한 모요들의 돌격소총입니다. 과충전된 볼트를 총열을 따라 가속시켜 발사합니다. 각각의 볼트들은 에너지가 흩어지지 않도록 방지하는 역할에 초점을 맞추어 설계되었습니다.\n\n과거, 등대에서는 개척 당시 가져왔던 전자기 소총도 함께 운용했으나, 볼트 기반의 전자기 소총의 유용성이 입증됨에 따라 전통적인 전자기 소총은 얼마 지나지 않아 대체되었습니다.</Moyo_ChargeRifle.description>
+	<Moyo_ChargeRifle.tools.0.label>개머리판</Moyo_ChargeRifle.tools.0.label>
+	<Moyo_ChargeRifle.tools.1.label>총열</Moyo_ChargeRifle.tools.1.label>
+	<Bullet_MoyoAssaultBolt.label>모요 전자기볼트</Bullet_MoyoAssaultBolt.label>
+	<Moyo_PrecisionRifle.label>모요 정밀 소총</Moyo_PrecisionRifle.label>
+	<Moyo_PrecisionRifle.description>전자기 소총과 유사한 모요들의 장총입니다. 연사력은 부족하지만, 긴 가속총열을 따라 발사되는 총알 하나하나의 사거리와 정확도는 우수합니다.\n\n볼트가 소형화된 이후 만들어진 여러 시제품들은 대부분 등대의 환경에 적응하지 못했고 그것은 이 정밀소총 또한 마찬가지였습니다. 그러나 등대가 아닌 변방계의 지상이라면 이야기는 다를 것입니다.</Moyo_PrecisionRifle.description>
+	<Moyo_PrecisionRifle.tools.0.label>개머리판</Moyo_PrecisionRifle.tools.0.label>
+	<Moyo_PrecisionRifle.tools.1.label>총열</Moyo_PrecisionRifle.tools.1.label>
+	<Bullet_MoyoSniperBolt.label>모요 전자기볼트</Bullet_MoyoSniperBolt.label>
+	<Moyo_ChargeSMG.label>모요 전자기 기관단총</Moyo_ChargeSMG.label>
+	<Moyo_ChargeSMG.description>소형화된 모요 전자기소총입니다. 가볍고 다루기 쉽다는 특징때문에 개발 직후 등대에서 가장 보편적으로 사용되는 모델이 되었습니다.\n\n대부분의 화기는 무기고를 지키는 유사시의 물건에 불과했으나, 내전은 모든것을 송두리째 바꾸어놓았습니다.</Moyo_ChargeSMG.description>
+	<Moyo_ChargeSMG.tools.0.label>개머리판</Moyo_ChargeSMG.tools.0.label>
+	<Moyo_ChargeSMG.tools.1.label>총열</Moyo_ChargeSMG.tools.1.label>
+	<Bullet_MoyoSMGBolt.label>모요 전자기볼트</Bullet_MoyoSMGBolt.label>
+	<Moyo_BoltCaster.label>모요 발리스타</Moyo_BoltCaster.label>
+	<Moyo_BoltCaster.description>등대를 위협하는 심해 괴수를 격퇴하기 위해 만들어진 대형 볼트 발사기입니다. 이 거대한 발사기는 볼트를 충전과 동시에 가속하며 발사하고, 과충전된 볼트는 착탄과 동시에 격렬한 폭발을 일으킵니다.\n\n모요들이 사용하는 볼트는 기존의 전자기 무기가 기대한 만큼의 효과를 거두지 못하자 개발된 것으로, 이 무기의 탄환을 개발하는 과정에서 최초로 고안되었습니다.</Moyo_BoltCaster.description>
+	<Moyo_BoltCaster.tools.0.label>몸체</Moyo_BoltCaster.tools.0.label>
+	<Moyo_BoltCaster.tools.1.label>총열</Moyo_BoltCaster.tools.1.label>
+	<Bullet_MoyoChargeBolt.label>모요 중전자기볼트</Bullet_MoyoChargeBolt.label>
+	<Moyo_AutoCannon.label>모요 기관포</Moyo_AutoCannon.label>
+	<Moyo_AutoCannon.description>대형 볼트를 빠르게 연사하는 중화기입니다. 무기의 범용성을 높이기 위해, 이 무기에 사용되는 볼트는 비무장과 장갑 모두에 적합하도록 조정되었습니다.\n\n등대 내부의 교전양상이 다양해지면서, 이에 대응하기 위해 다양한 무기와 기술들이 개발되었는데, 그 중의 일부는 지상의 무장을 토대로 만들어졌습니다. 이 무기 역시 지상의 무장에 영향을 받았으며 이는 어렵지 않게 확인할 수 있습니다.</Moyo_AutoCannon.description>
+	<Moyo_AutoCannon.tools.0.label>몸체</Moyo_AutoCannon.tools.0.label>
+	<Moyo_AutoCannon.tools.1.label>총열</Moyo_AutoCannon.tools.1.label>
+	<Bullet_MoyoAutoCannon.label>모요 중전자기볼트</Bullet_MoyoAutoCannon.label>
+	<Moyo_CryoBlaster.label>모요 극저온 방사기</Moyo_CryoBlaster.label>
+	<Moyo_CryoBlaster.description>군중제압을 목적으로 극저온 기술을 응용한 병기입니다. 발사된 냉매는 순식간에 얼어붙어 대상에게 극심한 동상을 유발합니다.\n\n극저온 무기는 유혈사태를 최소화하는 것을 우선적으로 고려하여 개발된 무기들로 효율적으로 대상을 제압할 수 있도록 사용자를 돕습니다.</Moyo_CryoBlaster.description>
+	<Moyo_CryoBlaster.tools.0.label>몸체</Moyo_CryoBlaster.tools.0.label>
+	<Moyo_CryoBlaster.tools.1.label>총열</Moyo_CryoBlaster.tools.1.label>
+	<Bullet_MoyoCBBlast.label>모요 극저온 방사</Bullet_MoyoCBBlast.label>
+	<Moyo_CryoRifle.label>모요 극저온 대형소총</Moyo_CryoRifle.label>
+	<Moyo_CryoRifle.description>극저온 폭탄을 대포처럼 발사하는 모요들의 극저온 병기입니다. 이 무기는 주로 크라이오포드에 장착되며, 사용자에서 볼 수 있듯이 인간이 사용하는걸 전제로 하지 않았습니다.</Moyo_CryoRifle.description>
+	<Moyo_CryoBlaster.tools.0.label>몸체</Moyo_CryoBlaster.tools.0.label>
+	<Moyo_CryoBlaster.tools.1.label>총열</Moyo_CryoBlaster.tools.1.label>
+	<Bullet_MoyoCRBlast.label>모요 극저온 방사</Bullet_MoyoCRBlast.label>	
+	<!-- 근위대 -->
+	<Moyo_HeavyChargeRifle.label>모요 근위대 전자기 소총</Moyo_HeavyChargeRifle.label>
+	<Moyo_HeavyChargeRifle.description>모요 전자기 소총을 근위대양식에 맞춰 개조한 모델입니다. 화력을 최우선으로 고려한 이 모델은 중량과 사용성을 제외한 모든 부분에서 기존의 모델에 비해 월등합니다.\n\n이 소총의 진가는 민간 기술에 근위대의 개조가 융합된 것으로, 흰 외장과 몸체에 새겨진 근위대의 심벌은 불의에 대응하는 장로들의 성창입니다.</Moyo_HeavyChargeRifle.description>
+	<Moyo_HeavyChargeRifle.tools.0.label>개머리판</Moyo_HeavyChargeRifle.tools.0.label>
+	<Moyo_HeavyChargeRifle.tools.1.label>총열</Moyo_HeavyChargeRifle.tools.1.label>
+	<Moyo_HeavyAutoCannon.label>모요 근위대 기관포</Moyo_HeavyAutoCannon.label>
+	<Moyo_HeavyAutoCannon.description>기관포를 근위대양식에 맞춰 개조한 모델입니다. 무기의 범용성을 높이기 위해, 이 무기에 사용되는 볼트는 비무장과 장갑 모두에 적합하도록 조정되었습니다.\n\n민간기술에 근위대의 기술이 더해진 두번째 무기로, 흰 외장과 몸체에 새겨진 근위대의 심벌은 불복에 대응하는 장로들의 불꽃입니다.</Moyo_HeavyAutoCannon.description>
+	<Moyo_HeavyAutoCannon.tools.0.label>몸체</Moyo_HeavyAutoCannon.tools.0.label>
+	<Moyo_HeavyAutoCannon.tools.1.label>총열</Moyo_HeavyAutoCannon.tools.1.label>
+	<Moyo_HeavyBoltCaster.label>모요 근위대 발리스타</Moyo_HeavyBoltCaster.label>
+	<Moyo_HeavyBoltCaster.description>발리스타를 근위대양식에 맞춰 개조한 모델입니다. 기존의 모델과 비교하여 이 무기는 충전 볼트를 더 빠르고 정확하게 멀리까지 쏘아보낼 수 있습니다.\n\n초창기부터 등대를 지켜준 이 상징적인 등대의 무기는 이제 근위대의 병기고의 일부로, 흰 외장과 몸체에 새겨진 근위대의 심벌은 등대를 수호하는 장로들의 철퇴입니다.</Moyo_HeavyBoltCaster.description>
+	<Moyo_HeavyBoltCaster.tools.0.label>body</Moyo_HeavyBoltCaster.tools.0.label>
+	<Moyo_HeavyBoltCaster.tools.1.label>barrel</Moyo_HeavyBoltCaster.tools.1.label>	
+	<Moyo_GDSpear.label>모요 근위대 전투도끼</Moyo_GDSpear.label>
+	<Moyo_GDSpear.description>근위대가 사용하는 대형 전투도끼입니다. 전반적인 개량과 함께 더 발전된 극저온 기술이 접목되었습니다.\n\n아직 개발단계인 무기가 어떻게 근위대의 무기로 선정되었는진 알 수 없지만, 그럼에도 불구하고 흰 외장과 몸체에 새겨진 근위대의 심벌은 폭력에 대응하는 장로들의 칼날입니다.</Moyo_GDSpear.description>
+	<Moyo_GDSpear.tools.0.label>손잡이</Moyo_GDSpear.tools.0.label>
+	<Moyo_GDSpear.tools.1.label>창날</Moyo_GDSpear.tools.1.label>
+	<Moyo_GDSpear.tools.2.label>창끝</Moyo_GDSpear.tools.2.label>
+	<Moyo_GDPowerFist.label>모요 근위대 파워피스트</Moyo_GDPowerFist.label>
+	<Moyo_GDPowerFist.description>근위대가 사용하는 전투용 파워피스트입니다. 사실상 기능은 기존의 것과 동일합니다.\n\n파워피스트는 그 범용성으로 다른 경쟁자를 제치고 근위대의 제식 장비로 선정되었으며, 흰 외장과 몸체에 새겨진 근위대의 심벌은 위협에 대응하는 장로들의 철권입니다.</Moyo_GDPowerFist.description>
+	<Moyo_GDPowerFist.tools.0.label>주먹</Moyo_GDPowerFist.tools.0.label>
+	<Moyo_GDPowerFist.tools.1.label>몸체</Moyo_GDPowerFist.tools.1.label>	
+
+</LanguageData>

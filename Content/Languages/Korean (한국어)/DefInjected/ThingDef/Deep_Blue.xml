@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 혈액팩 -->
+
+  <Moyo_BloodBag.label>모요 혈액팩</Moyo_BloodBag.label>
+  <Moyo_BloodBag.description>다양한 방법을 거처 모요로부터 추출해 낸 혈액 주머니입니다. 주머니 안에 담긴 혈액 속에는 딥블루라는 특별한 성분이 포함되어 있다고 전해집니다.</Moyo_BloodBag.description>
+
+
+  <!-- AbyssSerum -->
+
+  <AbyssSerum.label>딥블루 혈청</AbyssSerum.label>
+  <AbyssSerum.description>모요의 혈액에서 추출한 딥블루라는 성분을 모아둔 것입니다. 투여된 딥블루는 사용자의 몸을 세포단위로 강화시켜 더 효율적인 대사활동을 가능하게 합니다. 이 변화는 되돌릴 수 없습니다.\n\n모요들이 자신의 기원을 역추적하며 발견한 성분으로, 의학적으로 큰 가능성을 지니고 있습니다. 이 성분의 정체에 대해선 밝혀진 것이 없습니다.</AbyssSerum.description>
+  <AbyssSerum.ingestible.ingestCommandString>{0} 주입</AbyssSerum.ingestible.ingestCommandString>
+  <AbyssSerum.ingestible.ingestReportString>{0} 주입중.</AbyssSerum.ingestible.ingestReportString>
+
+
+</LanguageData>

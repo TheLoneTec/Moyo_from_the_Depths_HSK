@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!--
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rimefeller</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="Moyo_FabricationBench"]/recipes</xpath>
+			<value>
+				<li>Make_ComponentMedieval</li>
+				<li>Make_ComponentMedievalBronze</li>
+				<li>Make_ComponentAdvanced</li>
+				<li>Make_ComponentUltra</li>
+				<li>MakeWires_Hand</li>
+				<li>MakeWires_Electric</li>
+			</value>
+		</match>
+	</Operation>
+-->
+</Patch>

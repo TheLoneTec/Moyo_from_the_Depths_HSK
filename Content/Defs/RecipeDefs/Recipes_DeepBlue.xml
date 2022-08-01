@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 모요가공 -->
+
+	<RecipeDef>
+		<defName>Extract_DeepBlueCorpse</defName>
+		<label>process moyo corpse</label>
+		<description>Extract deepblue from a moyo corpse. All other parts of the body are wasted.\n\nThis job uses skills related to drug synthesis.</description>
+		<jobString>Processing moyo corpse.</jobString>
+		<workAmount>1500</workAmount>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<effectWorking>MoyoButcherEffect</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+		<workerCounterClass>RecipeWorkerCounter_ButcherAnimals</workerCounterClass>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>		
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Alien_Moyo</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>	
+		<products>
+			<Moyo_BloodBag>1</Moyo_BloodBag>
+		</products>
+		<researchPrerequisite>DeepBlue_Research</researchPrerequisite>
+	</RecipeDef>
+
+	<!-- 양분팩 -->
+
+	<RecipeDef Name="DBSFRecipeBase" Abstract="True">
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>InsectJelly</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<researchPrerequisite>DBS_Research</researchPrerequisite>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>		
+	</RecipeDef>	
+
+	<RecipeDef ParentName="DBSFRecipeBase">
+		<defName>Make_DBSF</defName>
+		<label>synthesize nutrition pack x5</label>
+		<description>Synthesize nutrition packs for the deepblue station.</description>
+		<jobString>synthesizing 5 nutrition pack.</jobString>
+		<workAmount>600</workAmount>		
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+				</filter>
+				<count>3.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<Moyo_DBSF>5</Moyo_DBSF>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DBSFRecipeBase">
+		<defName>Make_DBSFbulk</defName>
+		<label>synthesize nutrition pack x20</label>
+		<description>Synthesize multiple nutrition packs for the deepblue station.</description>
+		<jobString>synthesizing 20 nutrition pack.</jobString>
+		<workAmount>2400</workAmount>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<products>
+			<Moyo_DBSF>20</Moyo_DBSF>
+		</products>
+	</RecipeDef>  
+</Defs>

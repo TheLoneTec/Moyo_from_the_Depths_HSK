@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MoyoPressurePod_Race.label>프레셔포드</MoyoPressurePod_Race.label>
+  <MoyoPressurePod_Race.description>등대에서 사용되는 채굴용 메카노이드입니다. 거대한 한쌍의 파쇄기로 바위를 분쇄합니다. 지상에서 운용이 가능한 등대의 메카노이드 중 하나이며, 유사시에는 파쇄기를 이용해 적을 파괴하는 방식으로 전투에 임할 수 있도록 설계되어 있습니다. 이 파쇄기 앞에 서는 자는 뼈도 추리지 못할 겁니다.</MoyoPressurePod_Race.description>
+  <MoyoPressurePod_Race.tools.0.label>머리</MoyoPressurePod_Race.tools.0.label>
+  <MoyoPressurePod_Race.tools.1.label>왼쪽 파쇄기</MoyoPressurePod_Race.tools.1.label>
+  <MoyoPressurePod_Race.tools.2.label>오른쪽 파쇄기</MoyoPressurePod_Race.tools.2.label>
+  <MoyoHexaPod_Race.tools.0.label>머리</MoyoHexaPod_Race.tools.0.label>
+  <MoyoHexaPod_Race.tools.1.label>촉수</MoyoHexaPod_Race.tools.1.label>
+  <MoyoHexaPod_Race.tools.2.label>촉수</MoyoHexaPod_Race.tools.2.label>
+  <MoyoHexaPod_Race.tools.3.label>촉수</MoyoHexaPod_Race.tools.3.label>
+  <MoyoHexaPod_Race.tools.4.label>촉수</MoyoHexaPod_Race.tools.4.label>
+  <MoyoHexaPod_Race.tools.5.label>촉수</MoyoHexaPod_Race.tools.5.label>
+  <MoyoHexaPod_Race.tools.6.label>촉수</MoyoHexaPod_Race.tools.6.label>
+  <MoyoHexaPod_Race.label>헥사포드</MoyoHexaPod_Race.label>
+  <MoyoHexaPod_Race.description>등대에서 사용되는 다용도 메카노이드입니다. 6개의 유연한 촉수로 다양한 작업을 할 수 있습니다. 지상에서 운용할 수 있는 등대의 메카노이드 중 하나이며, 유사시에는 촉수를 이용해 적을 타격하고 움직임을 제한하는 방식으로 전투할 수 있도록 설계되어 있습니다.</MoyoHexaPod_Race.description>
+  <MoyoCryoPod_Race.tools.0.label>머리</MoyoCryoPod_Race.tools.0.label>
+  <MoyoCryoPod_Race.tools.1.label>촉수</MoyoCryoPod_Race.tools.1.label>
+  <MoyoCryoPod_Race.tools.2.label>촉수</MoyoCryoPod_Race.tools.2.label>
+  <MoyoCryoPod_Race.tools.3.label>촉수</MoyoCryoPod_Race.tools.3.label>
+  <MoyoCryoPod_Race.tools.4.label>촉수</MoyoCryoPod_Race.tools.4.label>
+  <MoyoCryoPod_Race.tools.5.label>촉수</MoyoCryoPod_Race.tools.5.label>
+  <MoyoCryoPod_Race.tools.6.label>촉수</MoyoCryoPod_Race.tools.6.label>
+  <MoyoCryoPod_Race.label>크라이오포드</MoyoCryoPod_Race.label>
+  <MoyoCryoPod_Race.description>등대에서 사용되는 다용도 메카노이드입니다. 6개의 유연한 촉수로 다양한 작업을 할 수 있습니다. 극저온 병기를 장착한 헥사포드로 중거리 화력지원을 위해 개조되었습니다. 특유의 근접전 능력은 병기 장착 과정을 거친 이후에도 여전히 남아 있습니다.</MoyoCryoPod_Race.description>
+</LanguageData>

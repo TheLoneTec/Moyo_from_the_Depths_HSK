@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 로얄 바디슈트 -->
+	<ThingDef ParentName="Moyo_ApparelBase">
+		<defName>Moyo_Royalsuit</defName>
+		<label>moyo royalsuit</label>
+		<description>High quality clothes worn by the upper class of the lighthouse. Despite the sleek exterior, it provides excellent protection.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Royal/MoyoRoyalSuit1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Moyo_Depthweave>60</Moyo_Depthweave>
+			<Hyperweave>35</Hyperweave>
+			<Gold>5</Gold>
+		</costList>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>37000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.60</ArmorRating_Heat>
+			<Insulation_Cold>65</Insulation_Cold>
+			<Insulation_Heat>47.5</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.2</MoveSpeed>
+			<SocialImpact>0.1</SocialImpact>			
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Royal/MoyoRoyalSuit</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Moyo_Royal</li>
+				<li>Psychic</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>MultiAnalyzer</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>			
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>	
+	</ThingDef>
+
+	<!--로열 6티어 코트-->
+	<ThingDef ParentName="Moyo_ApparelBase" Abstract="True" Name="Moyo_RoyalcoatBase">
+		<description>Extravagant clothes worn by the upper class of the lighthouse. Made with advanced materials and is sturdier than it seems.\n\nThe clothes are engraved with the symbol of one of the three elders.</description>
+		<recipeMaker>
+			<researchPrerequisite>MultiAnalyzer</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+		</recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Moyo_Depthweave>60</Moyo_Depthweave>
+			<Hyperweave>30</Hyperweave>
+			<Gold>5</Gold>
+		</costList>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>225</MaxHitPoints>
+			<WorkToMake>32000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.12</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.35</ArmorRating_Heat>
+			<Insulation_Cold>35</Insulation_Cold>
+			<Insulation_Heat>22</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.1</SocialImpact>
+		</equippedStatOffsets>					
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>Moyo_Royal</li>
+				<li>Psychic</li>
+			</tags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+	<ThingDef ParentName="Moyo_RoyalcoatBase">
+		<defName>Moyo_RoyalRobeA</defName>
+		<label>moyo royalrobe A</label>
+		<graphicData>
+			<texPath>Things/Apparel/Royal/MoyoRoyalRobeA1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Royal/MoyoRoyalRobeA</wornGraphicPath>
+		</apparel>
+	</ThingDef>	
+
+	<ThingDef ParentName="Moyo_RoyalcoatBase">
+		<defName>Moyo_RoyalRobeB</defName>
+		<label>moyo royalrobe B</label>
+		<graphicData>
+			<texPath>Things/Apparel/Royal/MoyoRoyalRobeB1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Royal/MoyoRoyalRobeB</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="Moyo_RoyalcoatBase">
+		<defName>Moyo_RoyalRobeC</defName>
+		<label>moyo royalrobe C</label>
+		<graphicData>
+			<texPath>Things/Apparel/Royal/MoyoRoyalRobeC1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Royal/MoyoRoyalRobeC</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="Moyo_RoyalcoatBase">
+		<defName>Moyo_RoyalBlackDress</defName>
+		<label>moyo exotic black dress</label>
+		<description>Extravagant clothes worn by the upper class of the lighthouse. Made with advanced materials and is sturdier than it seems.\n\nA black dress with a peculiar style. Without any resemblence of the elders, for whom this clothing has been made is a mystery. \n\n*Designed for female use.*</description>
+		<graphicData>
+			<texPath>Things/Apparel/Royal/MoyoBlackDress1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Moyo_Depthweave>50</Moyo_Depthweave>
+			<Hyperweave>25</Hyperweave>
+			<Gold>10</Gold>
+		</costList>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>225</MaxHitPoints>
+			<WorkToMake>32000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.12</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.35</ArmorRating_Heat>
+			<Insulation_Cold>25</Insulation_Cold>
+			<Insulation_Heat>12</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.3</SocialImpact>
+		</equippedStatOffsets>		
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Royal/MoyoBlackDress</wornGraphicPath>
+			<layers Inherit="False">
+				<li>OnSkin</li>
+				<li>Middle</li>
+			</layers>			
+			<tags Inherit="False">
+				<li>Moyo_RoyalBlack</li>
+				<li>Psychic</li>
+			</tags>
+			<gender>Female</gender>
+		</apparel>
+	</ThingDef>
+	
+	<!-- 홀로그램 의류 -->
+	<ThingDef ParentName="Moyo_ApparelBase">
+		<defName>Moyo_Holosuit</defName>
+		<label>moyo holosuit</label>
+		<description>High quality clothes worn by the celebrities of the lighthouse. Made with advanced materials and is sturdier than it seems.\n\nAs products of the surface gained more fame over time, entertainers and designers soon followed suit. The first to adopt this style were whom so-called 'Sirens', who were the biggest influencers of their society.\n\n *Designed for female use.*</description>
+		<graphicData>
+			<texPath>Things/Apparel/Royal/MoyoHoloSuit1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Moyo_Depthweave>60</Moyo_Depthweave>
+			<Hyperweave>15</Hyperweave>
+			<Gold>5</Gold>
+		</costList>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>37000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.30</ArmorRating_Heat>
+			<Insulation_Cold>25</Insulation_Cold>
+			<Insulation_Heat>15.5</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.2</SocialImpact>			
+		</equippedStatOffsets>
+		<apparel Inherit="False">
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Royal/MoyoHoloSuit</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Moyo_Celebrity</li>
+				<li>Psychic</li>
+			</tags>
+			<gender>Female</gender>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>MultiAnalyzer</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>			
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>	
+	</ThingDef>
+	
+	<ThingDef ParentName="Moyo_RoyalcoatBase">
+		<defName>Moyo_HoloJacket</defName>
+		<label>moyo holojacket</label>
+		<description>High quality clothes worn by the celebrities of the lighthouse. Made with advanced materials and is sturdier than it seems.\n\nAs products of the surface gained more fame over time, entertainers and designers soon followed suit. The first to adopt this style were whom so-called 'Sirens', who were the biggest influencers of their society.\n\n *Designed for female use.*</description>		
+		<graphicData>
+			<texPath>Things/Apparel/Royal/MoyoHoloJacket1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<equippedStatOffsets>
+			<SocialImpact>0.2</SocialImpact>
+		</equippedStatOffsets>			
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Moyo_Celebrity</li>
+				<li>Psychic</li>
+			</tags>		
+			<wornGraphicPath>Things/Apparel/Royal/MoyoHoloJacket</wornGraphicPath>
+		</apparel>
+	</ThingDef>		
+
+	<!-- 로열 머리장식 -->
+	<ThingDef Abstract="True" Name="MoyoRoyalHeadbase" ParentName="Moyo_HatBase">
+		<recipeMaker>
+			<researchPrerequisite>MultiAnalyzer</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		</recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.02</Mass>
+			<ArmorRating_Sharp>0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+			<Insulation_Cold>0</Insulation_Cold>
+			<Insulation_Heat>0</Insulation_Heat>
+			<EquipDelay>0.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.30</SocialImpact>
+		</equippedStatOffsets>				
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Moyo_Royal</li>
+				<li>Psychic</li>
+			</tags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<rotatable>false</rotatable>
+	</ThingDef>
+
+	<ThingDef ParentName="MoyoRoyalHeadbase">
+		<defName>Moyo_RoyalHologramA</defName>
+		<label>Moyo mini holoprojector A</label>
+		<description>A miniature holographic projector used as an accessory by the upper class in the lighthouse. Provided next to no protection, but aids communications with holographic images.\n\nIt’s projecting the symbol of one of the three elders.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Royal/MoyoHolowearA1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Royal/MoyoHolowearA</wornGraphicPath>
+		</apparel>
+	</ThingDef>	
+
+	<ThingDef ParentName="MoyoRoyalHeadbase">
+		<defName>Moyo_RoyalHologramB</defName>
+		<label>Moyo mini holoprojector B</label>
+		<description>A miniature holographic projector used as an accessory by the upper class in the lighthouse. Provided next to no protection, but aids communications with holographic images.\n\nIt’s projecting the symbol of one of the three elders.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Royal/MoyoHolowearB1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Royal/MoyoHolowearB</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="MoyoRoyalHeadbase">
+		<defName>Moyo_RoyalHologramC</defName>
+		<label>Moyo mini holoprojector C</label>
+		<description>A miniature holographic projector used as an accessory by the upper class in the lighthouse. Provided next to no protection, but aids communications with holographic images.\n\nIt’s projecting the symbol of one of the three elders.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Royal/MoyoHolowearC1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Royal/MoyoHolowearC</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+	<!--근위대슈트-->
+	<ThingDef ParentName="Moyo_PowerArmorBase">
+		<defName>Moyo_GDsuit</defName>
+		<label>Moyo royalguard armor</label>
+		<description>Deep diving gear modified into battle armor for the elder’s guardians.\n\nWhen the civil war broke out, the elders quickly formed the royal guard to protect themselves. The diving suits, already being used in the military, was used to arm them.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Royal/GDsuit1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<!-- <MarketValue>3350</MarketValue> -->
+			<MaxHitPoints>600</MaxHitPoints>
+			<WorkToMake>75000</WorkToMake>
+			<Mass>12</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.7</ArmorRating_Heat>
+			<EquipDelay>15</EquipDelay>
+			<Insulation_Cold>45</Insulation_Cold>
+			<Insulation_Heat>35</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.4</MoveSpeed>
+			<MeleeDodgeChance>-0.2</MeleeDodgeChance>
+			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+		</equippedStatOffsets>
+		<recipeMaker>
+			<researchPrerequisite>GuardianModule</researchPrerequisite>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>			
+		</recipeMaker>
+		<costList>
+			<Moyo_Abyssteel>120</Moyo_Abyssteel>
+			<ComponentSpacer>6</ComponentSpacer>
+			<Gold>5</Gold>
+			<Hyperweave>35</Hyperweave>
+		</costList>		
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Royal/GDsuit</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Moyo_Guardian</li>
+				<li>PrestigeCombatGear</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	<!-- 근위대 헬멧 -->
+	<ThingDef ParentName="Moyo_PowerHelmetBase">
+		<defName>Moyo_GDhelmet</defName>
+		<label>Moyo royalguard helmet</label>
+		<description>The helm of the royal guard. All of its support systems have been modified for combat.\n\nThe royal guard don’t just defend the elders. Deployed all over the lighthouse to find and destroy opposing forces, the white armor and the unique visors of the royal guards soon became a symbol of fear.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Royal/GDhelmet1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<!-- <MarketValue>980</MarketValue> -->
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToMake>35000</WorkToMake>
+			<Mass>7</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.7</ArmorRating_Heat>
+			<EquipDelay>6</EquipDelay>
+			<Insulation_Cold>7</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.1</AimingDelayFactor>
+		</equippedStatOffsets>
+		<recipeMaker>
+			<researchPrerequisite>GuardianModule</researchPrerequisite>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>			
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>3</ComponentSpacer>
+			<Moyo_Abyssteel>45</Moyo_Abyssteel>
+			<Gold>3</Gold>
+		</costList>			
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Royal/GDhelmet</wornGraphicPath>
+			<tags>
+				<li>Moyo_Guardian</li>
+				<li>PrestigeCombatGear</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>	
+
+	<!--근위대슈트-->
+	<ThingDef ParentName="Moyo_PowerArmorBase">
+		<defName>Moyo_GSsuit</defName>
+		<label>Moyo royalguard light armor</label>
+		<description>Diving gear modified into battle armor for the elder’s guardians.\n\nThe newest addition to royal arsenal, focuses on improving mobility and versitility of the armor. This white armor if favoured by solo royalguard operatives.\n\nExperimental field generater module has been installed, but it will need a suitable power source to be activated.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Royal/GSsuit1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<!-- <MarketValue>3350</MarketValue> -->
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToMake>65000</WorkToMake>
+			<Mass>7</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<EquipDelay>10</EquipDelay>
+			<Insulation_Cold>45</Insulation_Cold>
+			<Insulation_Heat>35</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<IncomingDamageFactor>-0.15</IncomingDamageFactor>
+		</equippedStatOffsets>
+		<recipeMaker>
+			<researchPrerequisite>GuardianModule</researchPrerequisite>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>			
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>5</ComponentSpacer>
+			<Moyo_Abyssteel>75</Moyo_Abyssteel>
+			<Gold>5</Gold>
+			<Hyperweave>50</Hyperweave>
+		</costList>			
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Royal/GSsuit</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Moyo_RoyalStriker</li>
+				<li>PrestigeCombatGear</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>	
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	<!-- 근위대 헬멧 -->
+	<ThingDef ParentName="Moyo_PowerHelmetBase">
+		<defName>Moyo_GShelmet</defName>
+		<label>Moyo royalguard light helmet</label>
+		<description>The helm of the royal guard. All of its support systems have been modified for combat.\n\There are works that has to be done quietly. This is when royalguard operatives are dispatched, serving the elders behind the scenes.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Royal/GShelmet1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<!-- <MarketValue>980</MarketValue> -->
+			<WorkToMake>35000</WorkToMake>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>7</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<EquipDelay>2</EquipDelay>
+			<Insulation_Cold>7</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.15</AimingDelayFactor>
+		</equippedStatOffsets>
+		<recipeMaker>
+			<researchPrerequisite>GuardianModule</researchPrerequisite>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>			
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>3</ComponentSpacer>
+			<Moyo_Abyssteel>30</Moyo_Abyssteel>
+			<Gold>3</Gold>
+		</costList>			
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Royal/GShelmet</wornGraphicPath>
+			<tags>
+				<li>Moyo_RoyalStriker</li>
+				<li>PrestigeCombatGear</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>		
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>	
+</Defs>

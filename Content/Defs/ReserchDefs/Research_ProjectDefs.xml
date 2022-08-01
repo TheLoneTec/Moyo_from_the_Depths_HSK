@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectTagDef>
+		<defName>MoyoStart</defName>
+	</ResearchProjectTagDef>
+	
+	<ResearchTabDef>
+		<defName>Moyo_technology</defName>
+		<label>Moyo technology</label>
+	</ResearchTabDef>
+	
+	<ResearchProjectDef>
+		<defName>DeepBlue_Research</defName>
+		<label>deepblue extraction</label>
+		<description>Research how to synthesize new drugs with deepblue.</description>
+		<tab>Moyo_technology</tab>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>DrugProduction</li>
+		</prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+		<tags>
+			<li>MoyoStart</li>
+		</tags>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>DeepBlue_MedResearch</defName>
+		<label>medicinal deepblue</label>
+		<description>Research how to use deepblue for medical purposes.</description>
+		<tab>Moyo_technology</tab>
+		<baseCost>1500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>DeepBlue_Research</li>
+			<li>MedicineProduction</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>DBS_Research</defName>
+		<label>deepblue synthesis</label>
+		<description>Research into a more sustainable means of deepblue production. Deepblue itself cannot be synthesized, but there are other means of obtaining it.</description>
+		<tab>Moyo_technology</tab>
+		<baseCost>1500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>DeepBlue_MedResearch</li>
+			<li>MoyoProduction</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</ResearchProjectDef>	
+	
+	<ResearchProjectDef>
+		<defName>MoyoProduction</defName>
+		<label>abysstech engineering</label>
+		<description>Delve into the technology of the Lighthouse to acquire hints of replicating their gears.</description>
+		<tab>Moyo_technology</tab>
+		<baseCost>3000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Fabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>0.5</researchViewX>
+		<researchViewY>1.5</researchViewY>
+		<discoveredLetterTitle>About: Getting abyssteel</discoveredLetterTitle>
+		<discoveredLetterText>Now you have access to the powerful abysstech of The lighthouse. You need some abyssteel to kickstart the whole process, here are some ways to get it:\n\n-All Moyo settlements are most likely to sell abyssteel.\n-Melt down things made from abyssteel(weapons, armor and abysstech mechs).\n-Some quests are rewarded with abyssteel.</discoveredLetterText>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MoyoChargedBolt</defName>
+		<label>charged bolt</label>
+		<description>Craft moyo charge weaponaries. Opting for a bolt casting system to reduce loss of energy, it only requires some modifications to pulse charged weapon technology, and doesn’t take much to research.</description>
+		<tab>Moyo_technology</tab>
+		<baseCost>250</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>ChargedShot</li>
+			<li>MoyoProduction</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MoyoCryoBlaster</defName>
+		<label>weaponized cryonics</label>
+		<description>Craft cryogenic weaponaries. A result of the lighthouse’s research into minimizing bloodloss in combat.</description>
+		<tab>Moyo_technology</tab>
+		<baseCost>500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>MoyoChargedBolt</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>ShallowSeaProtection</defName>
+		<label>defensive diving suit</label>
+		<description>Craft moyo diving suits. Used as a substitute for armor in the civil war, it went through many modifications to be adapted for surface use, including removal of the tail piece.</description>
+		<tab>Moyo_technology</tab>
+		<baseCost>250</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>ReconArmor</li>
+			<li>MoyoProduction</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>2</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>DeepSeaProtection</defName>
+		<label>deepsea diving suit</label>
+		<description>Craft heavy duty moyo deepdiving suits. a substitute armor used in civil war, it went through many modifications to be adapted for surface use, including removal of the tail piece.</description>
+		<tab>Moyo_technology</tab>
+		<baseCost>250</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>PoweredArmor</li>
+			<li>ShallowSeaProtection</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>3</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>GurdianAdvisorResearch</defName>
+		<label>delve even deeper into abysstech</label>
+		<description>What you can replicate is not everything that abysstech can provide. there are still more to grasp - The pinnacle of abysstech.\n\nYou need other means to cypher it. perhaps...an AI?</description>
+		<tab>Moyo_technology</tab>
+		<baseCost>500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<prerequisites>
+			<li>DeepSeaProtection</li>
+			<li>MoyoCryoBlaster</li>
+			<li>ShipComputerCore</li>
+			<li>DBS_Research</li>
+		</prerequisites>
+		<researchViewX>4.5</researchViewX>
+		<researchViewY>1.5</researchViewY>			
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>GuardianModule</defName>
+		<label>abysstech royal arms</label>
+		<description>Craft the most advanced set of gears of the Lighthouse with the help of your AI adviser. The pinnacle of abysstech enginnering is now in your hand.</description>
+		<tab>Moyo_technology</tab>
+		<baseCost>9999</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+			<li>MoyoGRModule</li>
+		</requiredResearchFacilities>
+		<prerequisites>
+			<li>GurdianAdvisorResearch</li>
+		</prerequisites>
+		<researchViewX>5.5</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>	
+	
+	<ResearchProjectDef>
+		<defName>DeepBlue_Manipulation</defName>
+		<label>deepblue manipulation</label>
+		<description>With extreme understanding of biological and mechanical engineering, now you can manipulate deepblue to craft items with immense capabilities. The pinnacle of abysstech biotech is now in your hand.</description>
+		<tab>Moyo_technology</tab>
+		<baseCost>4000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+			<li>MoyoGRModule</li>
+		</requiredResearchFacilities>		
+		<prerequisites>
+			<li>GurdianAdvisorResearch</li>
+			<li>Cryptosleep</li>
+			<li>Bionics</li>
+		</prerequisites>
+		<researchViewX>5.5</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>	
+</Defs>

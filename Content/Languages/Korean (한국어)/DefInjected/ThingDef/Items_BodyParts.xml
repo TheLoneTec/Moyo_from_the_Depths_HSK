@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Moyo_FakeTail.label>가짜 모요 꼬리</Moyo_FakeTail.label>
+	<Moyo_FakeTail.description>천으로 만들어진 가짜 꼬리입니다. 무게추의 역할을 대신해줄 수 있습니다.</Moyo_FakeTail.description>
+
+	<Moyo_BionicTail.label>생체공학 모요 꼬리</Moyo_BionicTail.label>
+	<Moyo_BionicTail.description>발전된 기술로 만들어진 인공 꼬리입니다. 원래의 꼬리에 비해 여러 면에서 더 우월합니다.</Moyo_BionicTail.description>
+
+	<Moyo_AdvancedHeart.label>어비스테크 심장</Moyo_AdvancedHeart.label>
+	<Moyo_AdvancedHeart.description>어비스테크로 개조된 생체공학 심장으로, 모요들에게 적합하도록 제작되었습니다.</Moyo_AdvancedHeart.description>
+	
+</LanguageData>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName="DoBillsFabricationBench"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>Moyo_FabricationBench</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="BasePawn"]</xpath>
+		<value>
+			<recipes>
+				<li>AdministerMoyo_HealerSerum</li>
+			</recipes>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+		<value>
+			<li>MoyoGRModule</li>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[@Name="SculptureBase"]/comps/li[@Class = "CompProperties_MeditationFocus"]/offsets/li[@Class = "FocusStrengthOffset_BuildingDefsWithQuality"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[@Name="SculptureBase"]/comps/li[@Class = "CompProperties_MeditationFocus"]/offsets/li[@Class = "FocusStrengthOffset_BuildingDefsWithQuality"]/defs</xpath>
+			<value>
+				<li>PearlSculptureSmall</li>
+				<li>PearlSculptureLarge</li>
+				<li>PearlSculptureGrand</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

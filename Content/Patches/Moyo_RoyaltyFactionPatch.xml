@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName = "Empire"]/permanentEnemyToEveryoneExcept</xpath>
+			<value>
+				<li>Moyo_PlayerFaction</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Moyo_GSsuit"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Reloadable">
+						<maxCharges>1</maxCharges>
+						<ammoDef>BroadshieldCore</ammoDef>
+						<ammoCountPerCharge>1</ammoCountPerCharge>
+						<baseReloadTicks>60</baseReloadTicks>						
+						<destroyOnEmpty>false</destroyOnEmpty>
+						<soundReload>Standard_Reload</soundReload>
+						<hotKey>Misc4</hotKey>
+						<chargeNoun>shield</chargeNoun>
+						<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+					</li>
+				</comps>		
+				<verbs>
+					<li>
+						<verbClass>Verb_DeployBroadshield</verbClass>
+						<label>deploy low-shield</label>
+						<violent>false</violent>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>false</targetable>
+						<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+						<onlyManualCast>True</onlyManualCast>
+					</li>
+				</verbs>
+			</value>
+		</match>
+	</Operation>
+</Patch>

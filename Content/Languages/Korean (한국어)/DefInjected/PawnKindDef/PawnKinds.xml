@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<Moyo_ColonistPawn.label>모요 정착민</Moyo_ColonistPawn.label>
+	<Moyo_ColonistPawn.labelPlural>모요 정착민</Moyo_ColonistPawn.labelPlural>
+
+	<Moyo_TopCivilan.label>모요 상층시민</Moyo_TopCivilan.label>
+	<Moyo_TopCivilan.labelPlural>모요 상층시민</Moyo_TopCivilan.labelPlural>
+
+	<Moyo_MiddleCivilan.label>모요 중층시민</Moyo_MiddleCivilan.label>
+	<Moyo_MiddleCivilan.labelPlural>모요 중층시민</Moyo_MiddleCivilan.labelPlural>
+
+	<Moyo_BottomCivilan.label>모요 고위층</Moyo_BottomCivilan.label>
+	<Moyo_BottomCivilan.labelPlural>모요 고위층</Moyo_BottomCivilan.labelPlural>
+
+	<Moyo_Engineer.label>모요 기술자</Moyo_Engineer.label>
+	<Moyo_Engineer.labelPlural>모요 기술자</Moyo_Engineer.labelPlural>
+
+	<Moyo_Resercher.label>모요 자경대</Moyo_Resercher.label>
+	<Moyo_Resercher.labelPlural>모요 자경대</Moyo_Resercher.labelPlural>
+
+	<Moyo_TopSmuggler.label>모요 상층 밀수업자</Moyo_TopSmuggler.label>
+	<Moyo_TopSmuggler.labelPlural>모요 상층 밀수업자</Moyo_TopSmuggler.labelPlural>
+
+	<Moyo_MiddleSmuggler.label>모요 중층 밀수업자</Moyo_MiddleSmuggler.label>
+	<Moyo_MiddleSmuggler.labelPlural>모요 중층 밀수업자</Moyo_MiddleSmuggler.labelPlural>
+
+	<Moyo_SoldierLight.label>모요 보병</Moyo_SoldierLight.label>
+	<Moyo_SoldierLight.labelPlural>모요 보병</Moyo_SoldierLight.labelPlural>
+
+	<Moyo_SoliderStandard.label>모요 중보병</Moyo_SoliderStandard.label>
+	<Moyo_SoliderStandard.labelPlural>모요 중보병</Moyo_SoliderStandard.labelPlural>
+
+	<Moyo_SoldierHeavy.label>모요 중화기병</Moyo_SoldierHeavy.label>
+	<Moyo_SoldierHeavy.labelPlural>모요 중화기병</Moyo_SoldierHeavy.labelPlural>
+
+	<Moyo_SoldierAssult.label>모요 돌격병</Moyo_SoldierAssult.label>
+	<Moyo_SoldierAssult.labelPlural>모요 돌격병</Moyo_SoldierAssult.labelPlural>
+
+	<Moyo_leader.label>모요 지도자</Moyo_leader.label>
+	<Moyo_leader.labelPlural>모요 지도자</Moyo_leader.labelPlural>
+
+	<Moyo_General.label>모요 장군</Moyo_General.label>
+	<Moyo_General.labelPlural>모요 장군</Moyo_General.labelPlural>
+
+	<Moyo_Guardian.label>모요 근위대</Moyo_Guardian.label>
+	<Moyo_Guardian.labelPlural>모요 근위대</Moyo_Guardian.labelPlural>
+
+	<Moyo_GuardianAssault.label>모요 근위대</Moyo_GuardianAssault.label>
+	<Moyo_GuardianAssault.labelPlural>모요 근위대</Moyo_GuardianAssault.labelPlural>
+
+	<MoyoHexapod_Kind.label>헥사포드</MoyoHexapod_Kind.label>
+	<MoyoCryopod_Kind.label>크라이오포드</MoyoCryopod_Kind.label>	
+	<MoyoPressurePod_Kind.label>프레셔포드</MoyoPressurePod_Kind.label>	
+</LanguageData>

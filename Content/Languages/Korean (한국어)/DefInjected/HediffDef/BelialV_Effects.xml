@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<BelialVInjectedAfter.label>BelialVInjectedAfter</BelialVInjectedAfter.label>
+	<BelialVInjectedAfter.description>applying stage. You should not be reading this.</BelialVInjectedAfter.description>
+
+	<!-- <BelialVEffect_1.label>벨리알-힘</BelialVEffect_1.label> -->
+	<!-- <BelialVEffect_1.description>벨리알-V의 강화효과입니다. 이 효과는 대상에게 굉장한 근력을 부여합니다. 딥블루를 댓가로 얻은 '악마의 작은 호의'입니다.</BelialVEffect_1.description> -->
+	<!-- <BelialVEffect_1.comps.0.tools.0.label>주먹</BelialVEffect_1.comps.0.tools.0.label> -->
+	<!-- <BelialVEffect_1U.label>벨리알-괴력</BelialVEffect_1U.label> -->
+	<!-- <BelialVEffect_1U.description>벨리알-V의 강화효과입니다. 이 효과는 대상에게 초월적인 힘을 부여합니다. 딥블루를 댓가로 얻은 '악마의 호의'입니다.</BelialVEffect_1U.description> -->
+	<!-- <BelialVEffect_1U.comps.1.tools.0.label>주먹</BelialVEffect_1U.comps.1.tools.0.label> -->
+	<BelialVEffect_2.label>벨리알-민첩</BelialVEffect_2.label>
+	<BelialVEffect_2.description>벨리알-V의 강화효과입니다. 이 효과는 대상에게 재빠른 움직임을 부여합니다. 딥블루를 댓가로 얻은 '악마의 작은 호의'입니다.</BelialVEffect_2.description>
+	<BelialVEffect_2U.label>벨리알-신속</BelialVEffect_2U.label>
+	<BelialVEffect_2U.description>벨리알-V의 강화효과입니다. 이 효과는 대상에게 극한의 속도를 부여합니다. 딥블루를 댓가로 얻은 '악마의 호의'입니다.</BelialVEffect_2U.description>
+	<BelialVEffect_3.label>벨리알-감각</BelialVEffect_3.label>
+	<BelialVEffect_3.description>벨리알-V의 강화효과입니다. 이 효과는 대상에게 향상된 지각능력을 부여합니다. 딥블루를 댓가로 얻은 '악마의 작은 호의'입니다.</BelialVEffect_3.description>
+	<BelialVEffect_3U.label>벨리알-초감각</BelialVEffect_3U.label>
+	<BelialVEffect_3U.description>벨리알-V의 강화효과입니다. 이 효과는 대상에게 초월적인 감각을 부여합니다. 딥블루를 댓가로 얻은 '악마의 호의'입니다.</BelialVEffect_3U.description>
+	<BelialVEffect_4.label>벨리알-인내</BelialVEffect_4.label>
+	<BelialVEffect_4.description>벨리알-V의 강화효과입니다. 이 효과는 대상에게 향상된 저항력을 부여합니다. 딥블루를 댓가로 얻은 '악마의 호의'입니다.</BelialVEffect_4.description>
+	<BelialVEffect_4U.label>벨리알-강인</BelialVEffect_4U.label>
+	<BelialVEffect_4U.description>벨리알-V의 강화효과입니다. 이 효과는 대상에게 금강불괴의 육체를 부여합니다. 딥블루를 댓가로 얻은 '악마의 큰 호의'입니다.</BelialVEffect_4U.description>
+	<BelialVEffect_5.label>벨리알-평온</BelialVEffect_5.label>
+	<BelialVEffect_5.description>벨리알-V의 강화효과입니다. 이 효과는 대상에게 흔들리지 않는 정신을 부여합니다. 딥블루를 댓가로 얻은 '악마의 작은 호의'입니다.</BelialVEffect_5.description>
+	<BelialVEffect_6.label>벨리알-환희</BelialVEffect_6.label>
+	<BelialVEffect_6.description>벨리알-V의 강화효과입니다. 이 효과는 대상에게 극한의 행복감을 부여합니다. 딥블루를 댓가로 얻은 '악마의 작은 호의'입니다.</BelialVEffect_6.description>
+	<BelialVEffect_7.label>벨리알-집중</BelialVEffect_7.label>
+	<BelialVEffect_7.description>벨리알-V의 강화효과입니다. 이 효과는 대상에게 뚜렸한 목표를 부여합니다. 딥블루를 댓가로 얻은 '악마의 호의'입니다.</BelialVEffect_7.description>
+	<BelialVEffect_7U.label>벨리알-초집중</BelialVEffect_7U.label>
+	<BelialVEffect_7U.description>벨리알-V의 강화효과입니다. 이 효과는 대상에게 바위도 뚫을 집중력을 부여합니다. 딥블루를 댓가로 얻은 '악마의 큰 호의'입니다.</BelialVEffect_7U.description> 
+</LanguageData>

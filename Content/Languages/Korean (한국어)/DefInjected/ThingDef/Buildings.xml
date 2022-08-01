@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Moyo_DBS.label>딥블루 스테이션</Moyo_DBS.label>
+	<Moyo_DBS.description>모요의 장기를 응용하여 더 많은 딥블루를 생산하는 기계입니다. 딥블루 생산엔 전력과 영양분 모두를 필요로 합니다.\n\n이 안쪽을 들여다보는 것은 추천하지 않습니다...</Moyo_DBS.description>
+	<Moyo_DBLS.label>대형 딥블루 스테이션</Moyo_DBLS.label>
+	<Moyo_DBLS.description>대형 딥블루 스테이션입니다. 딥블루 생산엔 전력과 영양분 모두를 필요로 합니다.\n\n이 안쪽을 들여다보는 것은 정말로 추천하지 않습니다...</Moyo_DBLS.description>	
+	<Moyo_DBSF.label>양분 팩</Moyo_DBSF.label>
+	<Moyo_DBSF.description>딥블루 스테이션에 사용되는 정제된 영양분 팩입니다. 스테이션에 원활하게 이용될 수 있도록 여러 조정이 가해졌습니다.</Moyo_DBSF.description>
+
+	<Moyo_FabricationBench.label>어비스테크 조립작업대</Moyo_FabricationBench.label>
+	<Moyo_FabricationBench.description>어비스테크 물품을 생산하기 위한 작업대입니다. 다양한 고급 장비들을 갖춘 이 작업대는 소형 부품 생산과 같은 정밀 작업부터 어비스틸 생산같은 복잡한 가공까지 가능하게 만들어 줍니다.</Moyo_FabricationBench.description>
+	<PearlSculptureSmall.label>소형 어비설 펄 조각상</PearlSculptureSmall.label>
+	<PearlSculptureSmall.description>어비설 펄로 만든 아담한 조각상입니다. 어비설 펄 특유의 결정구조를 살린 디자인입니다.</PearlSculptureSmall.description>
+	<PearlSculptureLarge.label>대형 어비설 펄 조각상</PearlSculptureLarge.label>
+	<PearlSculptureLarge.description>어비설 펄로 만든 사람 크기의 조각상입니다. 어비설 펄 특유의 결정구조를 살린 디자인입니다.</PearlSculptureLarge.description>
+	<PearlSculptureGrand.label>초대형 어비설 펄 조각상</PearlSculptureGrand.label>
+	<PearlSculptureGrand.description>어비설 펄로 만든 방 전체를 압도하는 크기의 조각상입니다. 어비설 펄 특유의 결정구조를 살린 디자인입니다.</PearlSculptureGrand.description> 
+
+	<Moyo_Abyssteel.label>어비스틸</Moyo_Abyssteel.label>
+	<Moyo_Abyssteel.description>등대에서 사용되는 초고밀도 합금입니다. 믿을 수 없을 정도로 무겁고 단단하며, 최대한의 내구성을 필요로 하는 곳에 적합합니다</Moyo_Abyssteel.description>
+	<Moyo_Depthweave.label>뎁스위브</Moyo_Depthweave.label>
+	<Moyo_Depthweave.description>등대에서 사용되는 질긴 섬유입니다. 단열성이 뛰어나고 신축성이 있어 많은 곳에서 이용됩니다.</Moyo_Depthweave.description>
+	<Moyo_AbyssPearl.label>어비설 펄</Moyo_AbyssPearl.label>
+	<Moyo_AbyssPearl.description>순수한 딥블루로 이루어진 푸른 결정입니다. 순수해진 만큼 그 효과는 더욱 강력하며, 더욱 강력한 효과를 내는 물품을 제조하기 위해 필요합니다. 이 결정은 특별한 반짝임을 내는데 이는 수많은 사람들과 모요들로 하여금 소유욕을 느끼기에 충분하도록 만들었고 그 결과 끝없는 욕망을 채우기 위한 피의 산물이 되었습니다.</Moyo_AbyssPearl.description>
+
+	<MoyoGRModule.label>어비스테크 연구보조 자아 모듈</MoyoGRModule.label>
+	<MoyoGRModule.description>정작치의 연구를 보조하는 인공지능 모듈입니다. 고급 연구대 근처에 배치되어 연구속도를 올려주고 어비스테크의 정점에 도달할수 있게 해줍니다. 하나의 작업대에 하나의 자아 모듈만 연결될 수 있습니다.</MoyoGRModule.description>	
+</LanguageData>

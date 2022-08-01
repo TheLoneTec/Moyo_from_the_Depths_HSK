@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<MoyoMedicine.label>푸른약품</MoyoMedicine.label>
+	<MoyoMedicine.description>딥블루를 포함한 의약품입니다. 딥블루의 중독성을 배제하고 약품의 질과 효율을 끌어올린 결과물입니다.</MoyoMedicine.description>
+	<BlueGo.label>모르피-블루</BlueGo.label>
+	<BlueGo.description>딥블루에 약물을 섞어 만든 칵테일입니다. 사용시엔 딥블루 의존을 유발하며 고주스의 효과를 얻을 수 있습니다.\n\n딥블루 칵테일은 재료가 되는 약물에 대한 중독이나 과용의 위험성이 없으며, 관련 욕구를 해소해줍니다.</BlueGo.description>
+	<BlueGo.ingestible.ingestCommandString>{0} 주입</BlueGo.ingestible.ingestCommandString>
+	<BlueGo.ingestible.ingestReportString>{0} 주입중.</BlueGo.ingestible.ingestReportString>
+	<BlueUp.label>사파이어 매스</BlueUp.label>
+	<BlueUp.description>딥블루에 약물을 섞어 만든 칵테일입니다. 사용시엔 딥블루 의존을 유발하며 웨이크업의 효과를 얻을 수 있습니다.\n\n딥블루 칵테일은 재료가 되는 약물에 대한 중독이나 과용의 위험성이 없으며, 관련 욕구를 해소해줍니다.</BlueUp.description>
+	<BlueUp.ingestible.ingestCommandString>{0} 주입</BlueUp.ingestible.ingestCommandString>
+	<BlueUp.ingestible.ingestReportString>{0} 주입중.</BlueUp.ingestible.ingestReportString>
+	<BlueYo.label>블루 헤이즈</BlueYo.label>
+	<BlueYo.description>딥블루에 약물을 섞어 만든 칵테일입니다. 사용시엔 딥블루 의존을 유발하며 야요의 효과를 얻을 수 있습니다.\n\n딥블루 칵테일은 재료가 되는 약물에 대한 중독이나 과용의 위험성이 없으며, 관련 욕구를 해소해줍니다.</BlueYo.description>
+	<BlueYo.ingestible.ingestCommandString>{0} 주입</BlueYo.ingestible.ingestCommandString>
+	<BlueYo.ingestible.ingestReportString>{0} 주입중.</BlueYo.ingestible.ingestReportString>
+	<BlueBurst.label>블루버스트</BlueBurst.label>
+	<BlueBurst.description>모요의 심혈관계를 과부화시키는 약물입니다. 오직 모요에게만 효과가 있으며, 다른 종족은 딥블루 중독에 걸릴 뿐입니다. 이 효과 덕분에 더 많은 양의 피를 얻을 수 있지만 심장에 큰 무리를 가게 하며, 결국엔 심장을 파열시킵니다.\n\n*사용에 주의하십시오*</BlueBurst.description>
+	<BlueBurst.ingestible.ingestCommandString>{0} 주입</BlueBurst.ingestible.ingestCommandString>
+	<BlueBurst.ingestible.ingestReportString>{0} 주입중.</BlueBurst.ingestible.ingestReportString>
+	<BlueMed.label>리제네-블루</BlueMed.label>
+	<BlueMed.description>출혈을 늦추고 회복을 빠르게 하는 의료용 약물로 모든 종족에게 사용할 수 있습니다. 복용자는 딥블루에 대한 의존과 강한 내성을 가지게 됩니다.\n\n블루버스트의 완성품인 이 약물은 누군가의 심장을 터트리지 않고 의도한 회복효과를 달성할 수 있었습니다.</BlueMed.description>
+	<BlueMed.ingestible.ingestCommandString>{0} 주입</BlueMed.ingestible.ingestCommandString>
+	<BlueMed.ingestible.ingestReportString>{0} 주입중.</BlueMed.ingestible.ingestReportString>    
+	<PenoxyBlue.label>페녹시-블루</PenoxyBlue.label>
+	<PenoxyBlue.description>딥블루로 개조된 페노자이실린으로 항생제의 기능을 합니다. 말라리아, 수면병과 흑사병을 단 한번 예방/치료합니다. 복용자는 딥블루에 대한 의존과 강한 내성을 가지게 됩니다.</PenoxyBlue.description>
+	<PenoxyBlue.ingestible.ingestCommandString>{0} 주입</PenoxyBlue.ingestible.ingestCommandString>
+	<PenoxyBlue.ingestible.ingestReportString>{0} 주입중.</PenoxyBlue.ingestible.ingestReportString>
+	<Clensazure.label>클랜즈-애쥬어</Clensazure.label>
+	<Clensazure.description>딥블루로 개조된 페노자이실린으로 구충제의 기능을 합니다. 내장 기생충과 근기생충을 단 한번 예방/치료합니다. 복용자는 딥블루에 대한 의존과 강한 내성을 가지게 됩니다.</Clensazure.description>
+	<Clensazure.ingestible.ingestCommandString>{0} 주입</Clensazure.ingestible.ingestCommandString>
+	<Clensazure.ingestible.ingestReportString>{0} 주입중.</Clensazure.ingestible.ingestReportString>
+	<SustainerLapis.label>서스테이너-라피스</SustainerLapis.label>
+	<SustainerLapis.description>장기간의 전투를 가능하게 해주는 약물입니다. 강력한 각성효과로 짧은 기간 동안 휴식과 식사의 필요를 느끼지 못하게 만들어 주며, 효과가 끝난 후엔 회복기간이 필요합니다. 복용자는 딥블루에 대한 의존과 강한 내성을 가지게 됩니다.</SustainerLapis.description>
+	<SustainerLapis.ingestible.ingestCommandString>{0} 주입</SustainerLapis.ingestible.ingestCommandString>
+	<SustainerLapis.ingestible.ingestReportString>{0} 주입중.</SustainerLapis.ingestible.ingestReportString>
+	<DetoxerCobalt.label>디톡서-코발트</DetoxerCobalt.label>
+	<DetoxerCobalt.description>신체의 축적된 독소를 해독해주며 추가적인 중독을 방지하는 약물입니다. 가속된 해독작용에 의해 복용자는 더욱 빨리 피로해집니다. 복용자는 딥블루에 대한 의존과 강한 내성을 가지게 됩니다.</DetoxerCobalt.description>
+	<DetoxerCobalt.ingestible.ingestCommandString>{0} 주입</DetoxerCobalt.ingestible.ingestCommandString>
+	<DetoxerCobalt.ingestible.ingestReportString>{0} 주입중.</DetoxerCobalt.ingestible.ingestReportString>	
+
+	<Moyo_HealerSerum.label>어비스테크 회복혈청</Moyo_HealerSerum.label>
+	<Moyo_HealerSerum.description>딥블루를 통해 메카나이트를 회복용으로 조정한 모요 기술의 결정체입니다. 기존 회복혈청과 같은 기능을 가지고 있으며 딥블루를 재료로 사용하였지만 관련된 효과는 발생하지 않습니다.\n\n의료용 딥블루의 종착역이자 등대 생명공학과 기계공학의 집약체입니다. 등대가 이뤄낸 가장 큰 성과 중 하나인 이 혈청은 현 어비스테크가 만들어 낼 수 있는 궁극의 약품이라고 해도 과언이 아닙니다. *사용해도 딥블루에 중독되지 않습니다.</Moyo_HealerSerum.description>
+	<Moyo_HealerSerum.comps.0.useLabel>어비스테크 회복혈청 사용</Moyo_HealerSerum.comps.0.useLabel>
+
+	<Moyo_neuroSerum_base.description>딥블루를 통해 메카나이트를 기술 교육용으로 조정한 모요 기술의 결정체입니다. 기존 기술교육혈청에 비해 효과는 조금 약하며 딥블루를 재료로 사용하였지만 관련된 효과는 발생하지 않습니다.\n\n의료용 딥블루의 종착역이자 등대 생명공학과 기계공학의 집약체입니다. 등대가 이뤄낸 가장 큰 성과 중 하나인 이 혈청은 현 어비스테크가 만들어 낼 수 있는 궁극의 약품이라고 해도 과언이 아닙니다. *사용해도 딥블루에 중독되지 않습니다.</Moyo_neuroSerum_base.description>
+	<Moyo_neuroSerum_combat.label>어비스테크 기술교육혈청(전투)</Moyo_neuroSerum_combat.label>
+	<Moyo_neuroSerum_combat.description>딥블루를 통해 메카나이트를 기술 교육용으로 조정한 모요 기술의 결정체입니다. 기존 기술교육혈청에 비해 효과는 조금 약하며 딥블루를 재료로 사용하였지만 관련된 효과는 발생하지 않습니다.\n\n의료용 딥블루의 종착역이자 등대 생명공학과 기계공학의 집약체입니다. 등대가 이뤄낸 가장 큰 성과 중 하나인 이 혈청은 현 어비스테크가 만들어 낼 수 있는 궁극의 약품이라고 해도 과언이 아닙니다. *사용해도 딥블루에 중독되지 않습니다.</Moyo_neuroSerum_combat.description>
+	<Moyo_neuroSerum_combat.comps.0.useLabel>어비스테크 기술교육혈청(전투) 사용</Moyo_neuroSerum_combat.comps.0.useLabel>	
+	<Moyo_neuroSerum_labor.label>어비스테크 기술교육혈청(노동)</Moyo_neuroSerum_labor.label>
+	<Moyo_neuroSerum_labor.description>딥블루를 통해 메카나이트를 기술 교육용으로 조정한 모요 기술의 결정체입니다. 기존 기술교육혈청에 비해 효과는 조금 약하며 딥블루를 재료로 사용하였지만 관련된 효과는 발생하지 않습니다.\n\n의료용 딥블루의 종착역이자 등대 생명공학과 기계공학의 집약체입니다. 등대가 이뤄낸 가장 큰 성과 중 하나인 이 혈청은 현 어비스테크가 만들어 낼 수 있는 궁극의 약품이라고 해도 과언이 아닙니다. *사용해도 딥블루에 중독되지 않습니다.</Moyo_neuroSerum_labor.description>
+	<Moyo_neuroSerum_labor.comps.0.useLabel>어비스테크 기술교육혈청(노동) 사용</Moyo_neuroSerum_labor.comps.0.useLabel>
+	<Moyo_neuroSerum_housekeeping.label>어비스테크 기술교육혈청(가사)</Moyo_neuroSerum_housekeeping.label>
+	<Moyo_neuroSerum_housekeeping.description>딥블루를 통해 메카나이트를 기술 교육용으로 조정한 모요 기술의 결정체입니다. 기존 기술교육혈청에 비해 효과는 조금 약하며 딥블루를 재료로 사용하였지만 관련된 효과는 발생하지 않습니다.\n\n의료용 딥블루의 종착역이자 등대 생명공학과 기계공학의 집약체입니다. 등대가 이뤄낸 가장 큰 성과 중 하나인 이 혈청은 현 어비스테크가 만들어 낼 수 있는 궁극의 약품이라고 해도 과언이 아닙니다. *사용해도 딥블루에 중독되지 않습니다.</Moyo_neuroSerum_housekeeping.description>
+	<Moyo_neuroSerum_housekeeping.comps.0.useLabel>어비스테크 기술교육혈청(가사) 사용</Moyo_neuroSerum_housekeeping.comps.0.useLabel>
+	<Moyo_neuroSerum_craftsmanship.label>어비스테크 기술교육혈청(기술)</Moyo_neuroSerum_craftsmanship.label>
+	<Moyo_neuroSerum_craftsmanship.description>딥블루를 통해 메카나이트를 기술 교육용으로 조정한 모요 기술의 결정체입니다. 기존 기술교육혈청에 비해 효과는 조금 약하며 딥블루를 재료로 사용하였지만 관련된 효과는 발생하지 않습니다.\n\n의료용 딥블루의 종착역이자 등대 생명공학과 기계공학의 집약체입니다. 등대가 이뤄낸 가장 큰 성과 중 하나인 이 혈청은 현 어비스테크가 만들어 낼 수 있는 궁극의 약품이라고 해도 과언이 아닙니다. *사용해도 딥블루에 중독되지 않습니다.</Moyo_neuroSerum_craftsmanship.description>
+	<Moyo_neuroSerum_craftsmanship.comps.0.useLabel>어비스테크 기술교육혈청(기술) 사용</Moyo_neuroSerum_craftsmanship.comps.0.useLabel>	
+
+	<Moyo_BelialV.label>벨리알-V</Moyo_BelialV.label>
+	<Moyo_BelialV.description>루시페륨과 비슷한 메카나이트 혼합물로, 딥블루를 통해 메카나이트 붕괴를 억제합니다. 이 때문에 약물의 효과는 일정하지 않은 편으로, 매우 다양한 강화효과를 기대할 수 있습니다.\n\n이 약의 명칭은 이것을 제조하는데 필요한 딥블루의 양에서 비롯되었으며, 이름에서 알 수 있듯 단 1회 투여분을 만들기 위해 수많은 모요가 희생되었습니다. 이 환상적이면서 동시에 끔찍한 약물은 모요 카르텔의 역작으로 알려져 있습니다. *사용해도 딥블루에 중독되지 않습니다.</Moyo_BelialV.description>
+	<Moyo_BelialV.ingestible.ingestCommandString>{0} 주입</Moyo_BelialV.ingestible.ingestCommandString>
+	<Moyo_BelialV.ingestible.ingestReportString>{0} 주입중.</Moyo_BelialV.ingestible.ingestReportString>
+</LanguageData>

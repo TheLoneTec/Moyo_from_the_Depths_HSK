@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 헥사포드 -->
+	
+	<BodyPartDef>
+		<defName>HexapodHead</defName>
+		<label>head</label>
+		<hitPoints>80</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+	</BodyPartDef>	
+	
+	<BodyPartDef>
+		<defName>HexapodHeadShell</defName>
+		<label>head</label>
+		<hitPoints>80</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+	</BodyPartDef>	
+	
+	<BodyPartDef>
+		<defName>Hexapod_TentacleJoint</defName>
+		<label>tentacle joint</label>
+		<hitPoints>35</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ManipulationLimbSegment</li>
+			<li>MovingLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>Hexapod_Tentacle</defName>
+		<label>tentacle</label>
+		<hitPoints>50</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ManipulationLimbCore</li>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+	
+	
+	<!-- 프레셔포드 -->
+
+	<BodyPartDef>
+		<defName>pressurepod_ArmJoint</defName>
+		<label>arm joint</label>
+		<hitPoints>25</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>pressurepod_club</defName>
+		<label>club</label>
+		<hitPoints>60</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>pressurepod_Leg</defName>
+		<label>leg</label>
+		<hitPoints>15</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>	
+	
+	<BodyPartDef Abstract="True" Name="MoyoPressurePodBodyBase">
+		<labelShort>pressurepod segment</labelShort>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+	</BodyPartDef>	
+
+	<BodyPartDef ParentName="MoyoPressurePodBodyBase">
+		<defName>PressurePod_Seg1</defName>
+		<label>first segment</label>
+		<hitPoints>40</hitPoints>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="MoyoPressurePodBodyBase">
+		<defName>PressurePod_Seg2</defName>
+		<label>second segment</label>
+		<hitPoints>35</hitPoints>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="MoyoPressurePodBodyBase">
+		<defName>PressurePod_Seg3</defName>
+		<label>third segment</label>
+		<hitPoints>30</hitPoints>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="MoyoPressurePodBodyBase">
+		<defName>PressurePod_Seg4</defName>
+		<label>fourth segment</label>
+		<hitPoints>25</hitPoints>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="MoyoPressurePodBodyBase">
+		<defName>PressurePod_Seg5</defName>
+		<label>fifth segment</label>
+		<hitPoints>20</hitPoints>
+	</BodyPartDef>
+
+</Defs>

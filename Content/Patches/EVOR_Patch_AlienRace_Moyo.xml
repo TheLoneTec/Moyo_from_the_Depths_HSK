@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<success>Always</success>
+		<mods>
+			<li>EvolvedOrgansRedux</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Questionable Ethics Enhanced</li>
+					</mods>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/RecipeDef[defName="EVOR_Production_Protein_Humie"]/fixedIngredientFilter/thingDefs</xpath>
+						<value>
+							<li>Meat_Alien_Moyo</li>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/RecipeDef[defName="EVOR_QEE_Production_Protein_Humie"]/fixedIngredientFilter/thingDefs</xpath>
+						<value>
+							<li>Meat_Alien_Moyo</li>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BodyDef[defName="Moyo"]/corePart/parts</xpath>
+					<value>
+
+						<li>
+							<def>LowerShoulder</def>
+							<customLabel>left lower shoulder</customLabel>
+							<coverage>0.00</coverage>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>
+							<def>LowerShoulder</def>
+							<customLabel>right lower shoulder</customLabel>
+							<coverage>0.00</coverage>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>
+							<def>BodyCavity1</def>
+							<customLabel>left chest cavity</customLabel>
+							<coverage>0.010</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>
+							<def>BodyCavity2</def>
+							<customLabel>right chest cavity</customLabel>
+							<coverage>0.010</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>
+							<def>BodyCavityA</def>
+							<customLabel>left abdominal cavity</customLabel>
+							<coverage>0.010</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>
+							<def>BodyCavityA</def>
+							<customLabel>right abdominal cavity</customLabel>
+							<coverage>0.010</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>	
+							<def>Back</def>
+							<customLabel>upper back</customLabel>
+							<coverage>0.020</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>	
+							<def>Back</def>
+							<customLabel>lower back</customLabel>
+							<coverage>0.020</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+
+						<RecipeDef ParentName="SurgeryFlesh">
+							<defName>EVOR_Surgery_Tail_Blade_Moyo</defName>
+							<label>&lt;color=#00FFF7&gt;implant Moyo serrated stinger tail&lt;/color&gt;</label>
+							<description>Implant a Moyo stinger tail.</description>
+							<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+							<jobString>Implanting Moyo stinger tail.</jobString>
+							<workAmount>3000</workAmount>
+							<skillRequirements>
+								<Medicine>10</Medicine>
+							</skillRequirements>
+							<recipeUsers>
+								<li>Alien_Moyo</li>
+							</recipeUsers>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>2</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>EVOR_Item_Tail_Blade</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+								<thingDefs>
+									<li>EVOR_Item_Tail_Blade</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<appliedOnFixedBodyParts>
+								<li>Moyo_Tail</li>
+							</appliedOnFixedBodyParts>
+							<addsHediff>EVOR_Hediff_Tail_Blade</addsHediff>
+						</RecipeDef>
+
+
+						<RecipeDef ParentName="SurgeryFlesh">
+							<defName>EVOR_Surgery_Tail_Hand_Moyo</defName>
+							<label>&lt;color=#00FFF7&gt;implant Moyo manipulator tail&lt;/color&gt;</label>
+							<description>Implant a Moyo manipulator tail.</description>
+							<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+							<jobString>Implanting Moyo manipulator tail.</jobString>
+							<workAmount>3000</workAmount>
+							<skillRequirements>
+								<Medicine>10</Medicine>
+							</skillRequirements>
+							<recipeUsers>
+								<li>Alien_Moyo</li>
+							</recipeUsers>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>2</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>EVOR_Item_Tail_Hand</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+								<thingDefs>
+									<li>EVOR_Item_Tail_Hand</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<appliedOnFixedBodyParts>
+								<li>Moyo_Tail</li>
+							</appliedOnFixedBodyParts>
+							<addsHediff>EVOR_Hediff_Tail_Hand</addsHediff>
+						</RecipeDef>
+			
+						<RecipeDef ParentName="SurgeryFlesh">
+							<defName>Moyo_EVOR_Surgery_Heart</defName>
+							<label>&lt;color=#00FFF7&gt;implant triwoven primary heart&lt;/color&gt;</label>
+							<description>Implant a triwoven primary heart.</description>
+							<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+							<jobString>Implanting triwoven primary heart.</jobString>
+							<workAmount>3000</workAmount>
+							<skillRequirements>
+								<Medicine>10</Medicine>
+							</skillRequirements>
+							<recipeUsers>
+								<li>Alien_Moyo</li>
+							</recipeUsers>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>2</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>EVOR_Item_Heart</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+								<thingDefs>
+									<li>EVOR_Item_Heart</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<appliedOnFixedBodyParts>
+								<li>MoyoHeart</li>
+							</appliedOnFixedBodyParts>
+							<addsHediff>EVOR_Hediff_Heart</addsHediff>
+							<descriptionHyperlinks><ThingDef>EVOR_Item_Heart</ThingDef></descriptionHyperlinks>
+  </RecipeDef>
+
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
+

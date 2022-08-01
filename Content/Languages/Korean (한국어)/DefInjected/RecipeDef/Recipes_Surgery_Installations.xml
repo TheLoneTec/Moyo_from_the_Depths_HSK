@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<InstallFakeTail_Moyo.label>가짜 모요 꼬리 이식</InstallFakeTail_Moyo.label>
+	<InstallFakeTail_Moyo.description>가짜 꼬리를 이식합니다.</InstallFakeTail_Moyo.description>
+	<InstallFakeTail_Moyo.jobString>가짜 꼬리 이식 중.</InstallFakeTail_Moyo.jobString>
+
+	<InstallBionicTail_Moyo.label>생체공학 모요 꼬리 이식</InstallBionicTail_Moyo.label>
+	<InstallBionicTail_Moyo.description>생체공학 꼬리를 이식합니다.</InstallBionicTail_Moyo.description>
+	<InstallBionicTail_Moyo.jobString>생체공학 꼬리 이식 중.</InstallBionicTail_Moyo.jobString>
+
+
+	<!-- 모요 심장이식 -->
+
+	<InstallNaturalHeart_Moyo.label>심장 이식</InstallNaturalHeart_Moyo.label>
+	<InstallNaturalHeart_Moyo.description>심장을 이식합니다.</InstallNaturalHeart_Moyo.description>
+	<InstallNaturalHeart_Moyo.jobString>심장을 이식 중.</InstallNaturalHeart_Moyo.jobString>
+
+	<InstallSimpleProstheticHeart_Moyo.label>인공심장 이식</InstallSimpleProstheticHeart_Moyo.label>
+	<InstallSimpleProstheticHeart_Moyo.description>인공심장을 이식합니다.</InstallSimpleProstheticHeart_Moyo.description>
+	<InstallSimpleProstheticHeart_Moyo.jobString>인공심장 이식 중.</InstallSimpleProstheticHeart_Moyo.jobString>
+
+	<InstallBionicHeart_Moyo.label>생체공학 심장 이식</InstallBionicHeart_Moyo.label>
+	<InstallBionicHeart_Moyo.description>생체공학 심장을 이식합니다.</InstallBionicHeart_Moyo.description>
+	<InstallBionicHeart_Moyo.jobString>생체공학 심장 이식 중.</InstallBionicHeart_Moyo.jobString>
+
+	<InstallAdvancedHeart_Moyo.label>어비스테크 심장 이식</InstallAdvancedHeart_Moyo.label>
+	<InstallAdvancedHeart_Moyo.description>어비스테크 심장을 이식합니다.</InstallAdvancedHeart_Moyo.description>
+	<InstallAdvancedHeart_Moyo.jobString>어비스테크 심장 이식 중.</InstallAdvancedHeart_Moyo.jobString> 
+</LanguageData>

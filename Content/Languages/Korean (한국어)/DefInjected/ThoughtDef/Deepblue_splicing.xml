@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<BelialVEffect_5_Thought.stages.0.label>벨리알-평온</BelialVEffect_5_Thought.stages.0.label>
+	<BelialVEffect_5_Thought.stages.0.description>벨리알-V가 부여한 차분한 정신상태입니다.</BelialVEffect_5_Thought.stages.0.description>
+	<BelialVEffect_6_Thought.stages.0.label>벨리알-환희</BelialVEffect_6_Thought.stages.0.label>
+	<BelialVEffect_6_Thought.stages.0.description>벨리알-V가 부여한 폭발적인 행복의 감정입니다.</BelialVEffect_6_Thought.stages.0.description>
+
+	<BlueYoThought.stages.0.label>블루헤이즈에 취함</BlueYoThought.stages.0.label>
+	<BlueYoThought.stages.0.description>오오, 이거 상쾌한데! 가즈아!</BlueYoThought.stages.0.description>
+</LanguageData>
