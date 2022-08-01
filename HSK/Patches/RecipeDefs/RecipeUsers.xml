@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Core SK</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="Make_ComponentMedieval" or defName="Make_ComponentMedievalBronze" or defName="Make_ComponentAdvanced"
+				or defName="Make_ComponentUltra" or defName="MakeWires_Hand" or defName="MakeWires_Electric"]/recipeUsers</xpath>
+				<value>
+					<li>Moyo_FabricationBench</li>
+				</value>
+			</li>
+		
+		</operations>
+		</match>
+	</Operation>
+
+</Patch>
