@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<PawnKindDef Abstract="True" Name="MoyoPlayerBasePawnKind">
+		<race>Alien_Moyo</race>
+		<combatPower>30</combatPower>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<defaultFactionType>Moyo_PlayerFaction</defaultFactionType>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+	</PawnKindDef>
+
+	<!-- 정착민 -->
+	<PawnKindDef ParentName="MoyoPlayerBasePawnKind">
+		<defName>Moyo_ColonistPawn</defName>
+		<label>moyo colonist</label>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<apparelTags>
+			<li>Moyo_Starting</li>
+		</apparelTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_TopCivil</li>
+					<li>Moyo_MiddleCivil</li>
+					<li>Moyo_BotCivil</li>
+					<li>Moyo_Engineer</li>  
+					<li>Moyo_Resercher</li>
+					<li>Moyo_TopCriminal</li>
+					<li>Moyo_MiddleCriminal</li>
+					<li>Moyo_FullCrime</li>
+					<li>Moyo_SoldierKind</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>600~800</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.05</techHediffsChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+			<li>Advanced</li>			
+		</techHediffsTags>
+		<apparelRequired>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<!-- 모요 폰카인드 베이스 -->
+	<PawnKindDef Name="MoyoBasePawnKind" Abstract="True">
+		<race>Alien_Moyo</race>
+		<defaultFactionType>Moyo_HavenFaction</defaultFactionType>
+		<chemicalAddictionChance>0.02</chemicalAddictionChance>
+		<invNutrition>2</invNutrition>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<maxGenerationAge>75</maxGenerationAge>
+	</PawnKindDef>
+
+	<!-- 모요 상층시민 -->
+	<PawnKindDef ParentName="MoyoBasePawnKind">
+		<defName>Moyo_TopCivilan</defName>
+		<label>moyo toplayer civilian</label>
+		<combatPower>50</combatPower>
+		<isFighter>false</isFighter>
+		<itemQuality>Poor</itemQuality>
+		<apparelTags>
+			<li>Moyo_Neolithic</li>
+			<li>Moyo_Starting</li>
+		</apparelTags>
+		<gearHealthRange>0.2~2.0</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_TopCivil</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<apparelMoney>200~400</apparelMoney>
+		<weaponTags>
+			<li>Gun</li>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+		<weaponMoney>65~250</weaponMoney>		
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>50~600</techHediffsMoney>
+		<techHediffsTags>
+			<li>simple</li>
+		</techHediffsTags>	
+	</PawnKindDef>	
+
+	<!-- 모요중층시민 -->
+	<PawnKindDef ParentName="MoyoBasePawnKind">
+		<defName>Moyo_MiddleCivilan</defName>
+		<label>moyo midlayer civilian</label>
+		<combatPower>70</combatPower>
+		<isFighter>false</isFighter>
+		<itemQuality>Normal</itemQuality>
+		<apparelTags>
+			<li>Moyo_Industrial</li>
+		</apparelTags>
+		<gearHealthRange>0.8~1</gearHealthRange>		
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_MiddleCivil</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<apparelMoney>600~1500</apparelMoney>
+		<weaponTags>
+			<li>Gun</li>
+			<li>Moyo_BasicGun</li>
+			<li>Moyo_Melee</li>
+		</weaponTags>
+		<weaponMoney>250~350</weaponMoney>
+		<techHediffsChance>0.02</techHediffsChance>
+		<techHediffsMoney>600~1500</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<inventoryOptions>
+			<skipChance>0.7</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>35~70</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>		
+	</PawnKindDef>	
+
+	<!-- 모요 하층시민 -->
+	<PawnKindDef ParentName="MoyoBasePawnKind">
+		<defName>Moyo_BottomCivilan</defName>
+		<label>moyo Highroller</label>
+		<combatPower>70</combatPower>
+		<isFighter>false</isFighter>
+		<trader>true</trader>
+		<apparelTags>
+			<li>Moyo_Industrial</li>
+			<li>Moyo_Spacer</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Moyo_BowlerHat</li>
+		</apparelRequired>		
+		<gearHealthRange>1.5~3</gearHealthRange>		
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_BotCivil</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<apparelMoney>1500~3000</apparelMoney>
+		<weaponTags>
+			<li>MoyoBasicGun</li>
+		</weaponTags>
+		<weaponMoney>500~800</weaponMoney>		
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>600~1500</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<inventoryOptions>
+			<skipChance>0.7</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>225~520</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>		
+	</PawnKindDef>	
+
+	<!-- 모요 엔지니어 -->
+	<PawnKindDef ParentName="MoyoBasePawnKind">
+		<defName>Moyo_Engineer</defName>
+		<label>moyo engineer</label>
+		<combatPower>100</combatPower>
+		<isFighter>true</isFighter>
+		<itemQuality>Normal</itemQuality>
+		<canBeSapper>true</canBeSapper>
+		<apparelTags>
+			<li>Moyo_Industrial</li>
+			<li>Moyo_Engineer</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Moyo_EGsuit</li>
+			<li>Moyo_EGmask</li>
+			<li>Moyo_Bodysuit</li>
+		</apparelRequired>		
+		<gearHealthRange>1~2</gearHealthRange>		
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_Engineer</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>400~1500</apparelMoney>
+		<weaponTags>
+			<li>Moyo_Melee</li>
+		</weaponTags>
+		<weaponMoney>500~800</weaponMoney>		
+		<techHediffsChance>0.02</techHediffsChance>
+		<techHediffsMoney>600~1500</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</PawnKindDef>
+
+	<!-- 모요 연구진 -->
+	<PawnKindDef ParentName="MoyoBasePawnKind">
+		<defName>Moyo_Resercher</defName>
+		<label>moyo milita</label>
+		<combatPower>105</combatPower>
+		<isFighter>true</isFighter>
+		<itemQuality>Normal</itemQuality>
+		<canBeSapper>true</canBeSapper>
+		<apparelTags>
+			<li>Moyo_Industrial</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Moyo_Bodysuit</li>
+		</apparelRequired>		
+		<gearHealthRange>1~2</gearHealthRange>		
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_Resercher</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>400~950</apparelMoney>
+		<weaponTags>
+			<li>Moyo_BasicGun</li>
+			<li>Moyo_SpacerLightGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<weaponMoney>500~800</weaponMoney>
+		<biocodeWeaponChance>0.1</biocodeWeaponChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.02</techHediffsChance>
+		<techHediffsMoney>600~1500</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</PawnKindDef>	
+
+	<!-- 상층 밀수업자 -->
+	<PawnKindDef ParentName="MoyoBasePawnKind">
+		<defName>Moyo_TopSmuggler</defName>
+		<label>moyo toplayer smuggler</label>
+		<combatPower>70</combatPower>
+		<isFighter>true</isFighter>
+		<itemQuality>Poor</itemQuality>
+		<apparelTags>
+			<li>Moyo_Neolithic</li>
+		</apparelTags>
+		<gearHealthRange>0.2~2.0</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_TopCriminal</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+		<apparelMoney>200~400</apparelMoney>
+		<weaponTags>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+		<weaponMoney>100~350</weaponMoney>		
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>50~600</techHediffsMoney>
+		<techHediffsTags>
+			<li>simple</li>
+		</techHediffsTags>	
+		<combatEnhancingDrugsChance>1</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1</combatEnhancingDrugsCount>			
+	</PawnKindDef>
+
+	<!--중층 밀수업자 -->
+	<PawnKindDef ParentName="MoyoBasePawnKind">
+		<defName>Moyo_MiddleSmuggler</defName>
+		<label>moyo midlayer smuggler</label>
+		<trader>true</trader>
+		<combatPower>120</combatPower>
+		<isFighter>true</isFighter>
+		<apparelTags>
+			<li>Moyo_Industrial</li>
+			<li>Moyo_Engineer</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Moyo_EGsuit</li>
+			<li>Moyo_EGmask</li>
+			<li>Moyo_Bodysuit</li>
+		</apparelRequired>			
+		<gearHealthRange>1~2</gearHealthRange>		
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_MiddleCriminal</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>1000~2000</apparelMoney>
+		<weaponTags>
+			<li>Gun</li>
+			<li>Moyo_BasicGun</li>
+			<li>Moyo_SpacerLightGun</li>
+		</weaponTags>
+		<weaponMoney>250~800</weaponMoney>
+		<biocodeWeaponChance>0.1</biocodeWeaponChance>
+		<techHediffsChance>0.02</techHediffsChance>
+		<techHediffsMoney>600~1500</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<inventoryOptions>
+			<skipChance>0.7</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>55~120</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>3</combatEnhancingDrugsCount>			
+	</PawnKindDef>	
+
+	<!-- 모요타격대 -->
+	<PawnKindDef ParentName="MoyoBasePawnKind" Name="MoyoSoldierLight" Abstract="true">
+		<label>moyo strike force</label>
+		<combatPower>190</combatPower>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<isFighter>true</isFighter>
+		<baseRecruitDifficulty>0.70</baseRecruitDifficulty>
+		<apparelTags>
+			<li>Moyo_SpacerLight</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Moyo_LDgear</li>
+			<li>Moyo_LDhelmet</li>
+			<li>Moyo_Evasuit</li>
+		</apparelRequired>		
+		<gearHealthRange>2~3</gearHealthRange>		
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_SoldierKind</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>2500~3800</apparelMoney>
+		<weaponTags>
+			<li>Moyo_SpacerLightGun</li>
+		</weaponTags>
+		<weaponMoney>1200~1500</weaponMoney>		
+		<biocodeWeaponChance>0.2</biocodeWeaponChance>
+		<techHediffsChance>0.3</techHediffsChance>
+		<techHediffsMoney>600~2000</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<invNutrition>0</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.8</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>BlueGo</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>	
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MoyoSoldierLight">
+		<defName>Moyo_SoldierLight</defName>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MoyoSoldierLight">
+		<defName>Moyo_SoldierLight_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MoyoSoldierLight">
+		<defName>Moyo_SoldierLightrocket</defName>
+		<weaponTags inherit="false">
+			<li>GunSingleUse</li>
+		</weaponTags>		
+	</PawnKindDef>	
+
+	<PawnKindDef ParentName="MoyoSoldierLight">
+		<defName>Moyo_SoldierLightrocket_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<weaponTags inherit="false">
+			<li>GunSingleUse</li>
+		</weaponTags>		
+	</PawnKindDef>
+
+	<!-- 모요전열보병 -->
+	<PawnKindDef ParentName="MoyoBasePawnKind" Name="MoyoSoliderStandard" Abstract="true">
+		<label>moyo frontliner</label>
+		<combatPower>280</combatPower>
+		<isFighter>true</isFighter>
+		<baseRecruitDifficulty>0.7</baseRecruitDifficulty>
+		<apparelTags>
+			<li>Moyo_SpacerHeavy</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Moyo_DDgear</li>
+			<li>Moyo_DDhelmet</li>
+			<li>Moyo_Evasuit</li>
+		</apparelRequired>		
+		<gearHealthRange>2~3.5</gearHealthRange>		
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_SoldierKind</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>2800~4000</apparelMoney>
+		<weaponTags>
+			<li>Moyo_SpacerGun</li>
+			<li>Moyo_SpacerLightGun</li>
+		</weaponTags>
+		<weaponMoney>1200~2000</weaponMoney>		
+		<biocodeWeaponChance>0.3</biocodeWeaponChance>
+		<techHediffsChance>0.3</techHediffsChance>
+		<techHediffsMoney>600~3800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<invNutrition>0</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.2</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>BlueGo</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>	
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MoyoSoliderStandard">
+		<defName>Moyo_SoliderStandard</defName>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MoyoSoliderStandard">
+		<defName>Moyo_SoliderStandard_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>		
+	</PawnKindDef>	
+
+	<!-- 모요중화기병 -->
+	<PawnKindDef ParentName="MoyoBasePawnKind" Name="MoyoSoldierHeavy" Abstract="true">
+		<label>moyo heavy gunner</label>
+		<combatPower>280</combatPower>
+		<isFighter>true</isFighter>
+		<baseRecruitDifficulty>0.9</baseRecruitDifficulty>
+		<apparelTags>
+			<li>Moyo_SpacerHeavy</li>
+			<li>BeltDefensePop</li>			
+		</apparelTags>
+		<apparelRequired>
+			<li>Moyo_DDgear</li>
+			<li>Moyo_DDhelmet</li>
+			<li>Moyo_Evasuit</li>
+		</apparelRequired>		
+		<gearHealthRange>2~3.5</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_SoldierKind</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>8000~8000</apparelMoney>
+		<weaponTags>
+			<li>Moyo_SpacerHeavyGun</li>
+		</weaponTags>
+		<weaponMoney>1700~3000</weaponMoney>
+		<biocodeWeaponChance>0.3</biocodeWeaponChance>
+		<techHediffsChance>0.3</techHediffsChance>
+		<techHediffsMoney>600~3800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<invNutrition>0</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.2</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>BlueGo</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>	
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MoyoSoldierHeavy">
+		<defName>Moyo_SoldierHeavy</defName>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MoyoSoldierHeavy">
+		<defName>Moyo_SoldierHeavy_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>		
+	</PawnKindDef>	
+
+	<!-- 모요돌격보병 -->
+	<PawnKindDef ParentName="MoyoBasePawnKind" Name="MoyoSoldierAssult" Abstract="true">
+		<label>moyo assult troop</label>
+		<combatPower>300</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>true</canBeSapper>
+		<baseRecruitDifficulty>0.9</baseRecruitDifficulty>
+		<apparelTags>
+			<li>Moyo_SpacerHeavy</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_ShieldBelt</li>
+			<li>Moyo_DDgear</li>
+			<li>Moyo_DDhelmet</li>
+			<li>Moyo_Evasuit</li>
+		</apparelRequired>
+		<gearHealthRange>2~3.5</gearHealthRange>		
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_SoldierKind</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>8000~8000</apparelMoney>
+		<weaponTags>
+			<li>Moyo_SpacerMelee</li>
+		</weaponTags>
+		<weaponMoney>1100~3500</weaponMoney>
+		<biocodeWeaponChance>0.3</biocodeWeaponChance>
+		<techHediffsChance>0.3</techHediffsChance>
+		<techHediffsMoney>600~3800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<invNutrition>0</invNutrition>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>BlueGo</thingDef>
+					<countRange>1~1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>	
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MoyoSoldierAssult">
+		<defName>Moyo_SoldierAssult</defName>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MoyoSoldierAssult">
+		<defName>Moyo_SoldierAssult_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>		
+	</PawnKindDef>		
+
+	<!-- 모요 지도자 -->
+	<PawnKindDef ParentName="MoyoBasePawnKind">
+		<defName>Moyo_leader</defName>
+		<label>moyo refugee Elder</label>
+		<combatPower>100</combatPower>
+		<isFighter>true</isFighter>
+		<factionLeader>true</factionLeader>
+		<itemQuality>Excellent</itemQuality>
+		<baseRecruitDifficulty>0.99</baseRecruitDifficulty>
+		<apparelTags>
+			<li>Moyo_Royal</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Moyo_Royalsuit</li>
+		</apparelRequired>		
+		<gearHealthRange>1.5~3</gearHealthRange>		
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_BotCivil</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>3000~6000</apparelMoney>
+		<weaponTags>
+			<li>Moyo_SpacerLightGun</li>
+		</weaponTags>
+		<weaponMoney>1200~1500</weaponMoney>		
+		<techHediffsChance>0.3</techHediffsChance>
+		<techHediffsMoney>600~2000</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>500~1100</countRange>
+					<choiceChance>100</choiceChance>					
+				</li>
+				<li>
+					<thingDef>MoyoMedicine</thingDef>
+					<countRange>2~4</countRange>
+					<choiceChance>100</choiceChance>
+				</li>		
+			</subOptionsChooseOne>
+		</inventoryOptions>		
+	</PawnKindDef>
+
+	<!-- 모요장군 -->
+	<PawnKindDef ParentName="MoyoBasePawnKind" Name="MoyoGeneral" Abstract="true">
+		<label>moyo refugee general</label>
+		<combatPower>450</combatPower>
+		<itemQuality>Excellent</itemQuality>
+		<isFighter>true</isFighter>
+		<factionLeader>true</factionLeader>		
+		<baseRecruitDifficulty>0.99</baseRecruitDifficulty>
+		<apparelTags>
+			<li>Moyo_Guardian</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Moyo_GDhelmet</li>
+			<li>Moyo_GDsuit</li>
+			<li>Moyo_Evasuit</li>
+		</apparelRequired>			
+		<gearHealthRange>3~4</gearHealthRange>		
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_Guardian</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>12000~16000</apparelMoney>
+		<weaponTags>
+			<li>Moyo_GuardianGun</li>
+		</weaponTags>
+		<weaponMoney>3000~8000</weaponMoney>
+		<biocodeWeaponChance>0.3</biocodeWeaponChance>
+		<techHediffsChance>0.3</techHediffsChance>
+		<techHediffsMoney>2000~3800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>BionicEye</li>
+			<li>BionicEye</li>
+		</techHediffsRequired>			
+		<invNutrition>0</invNutrition>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>BlueGo</thingDef>
+					<countRange>1~1</countRange>
+					<choiceChance>100</choiceChance>					
+				</li>		
+			</subOptionsChooseOne>
+		</inventoryOptions>	
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MoyoGeneral">
+		<defName>Moyo_General</defName>
+	</PawnKindDef>	
+
+	<!-- 모요근위대 -->
+	<PawnKindDef ParentName="MoyoBasePawnKind" Name="MoyoGuardian" Abstract="true">
+		<label>moyo royalguard</label>
+		<combatPower>450</combatPower>
+		<itemQuality>Excellent</itemQuality>
+		<isFighter>true</isFighter>
+		<baseRecruitDifficulty>0.99</baseRecruitDifficulty>
+		<apparelTags>
+			<li>Moyo_Guardian</li>
+			<li>BeltDefensePop</li>			
+		</apparelTags>
+		<apparelRequired>
+			<li>Moyo_GDhelmet</li>
+			<li>Moyo_GDsuit</li>
+			<li>Moyo_Evasuit</li>
+		</apparelRequired>			
+		<gearHealthRange>3~4</gearHealthRange>		
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_Guardian</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>12000~16000</apparelMoney>
+		<weaponTags>
+			<li>Moyo_GuardianGun</li>
+		</weaponTags>
+		<weaponMoney>3000~8000</weaponMoney>
+		<biocodeWeaponChance>0.3</biocodeWeaponChance>
+		<techHediffsChance>0.3</techHediffsChance>
+		<techHediffsMoney>2000~3800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>BionicEye</li>
+			<li>BionicEye</li>
+		</techHediffsRequired>			
+		<invNutrition>0</invNutrition>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>BlueGo</thingDef>
+					<countRange>1~1</countRange>
+					<choiceChance>100</choiceChance>					
+				</li>		
+			</subOptionsChooseOne>
+		</inventoryOptions>	
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MoyoGuardian">
+		<defName>Moyo_Guardian</defName>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MoyoGuardian">
+		<defName>Moyo_Guardian_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>		
+	</PawnKindDef>	
+
+	<!-- 모요근위대 돌격병-->
+	<PawnKindDef ParentName="MoyoBasePawnKind" Name="MoyoGuardianAssault" Abstract="true">
+		<defName>Moyo_GuardianAssault</defName>
+		<label>moyo royalguard</label>
+		<combatPower>450</combatPower>
+		<itemQuality>Excellent</itemQuality>
+		<isFighter>true</isFighter>
+		<baseRecruitDifficulty>0.99</baseRecruitDifficulty>
+		<apparelTags>
+			<li>Moyo_Guardian</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_ShieldBelt</li>
+			<li>Moyo_GDhelmet</li>
+			<li>Moyo_GDsuit</li>
+			<li>Moyo_Evasuit</li>
+		</apparelRequired>		
+		<gearHealthRange>3~4</gearHealthRange>		
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_Guardian</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>12000~16000</apparelMoney>
+		<weaponTags>
+			<li>Moyo_GuardianMelee</li>
+		</weaponTags>
+		<weaponMoney>3000~8000</weaponMoney>
+		<biocodeWeaponChance>0.3</biocodeWeaponChance>
+		<techHediffsChance>0.3</techHediffsChance>
+		<techHediffsMoney>2000~3800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>BionicEye</li>
+			<li>BionicEye</li>
+		</techHediffsRequired>		
+		<invNutrition>0</invNutrition>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>BlueGo</thingDef>
+					<countRange>1~1</countRange>
+					<choiceChance>100</choiceChance>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>		
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MoyoGuardianAssault">
+		<defName>Moyo_GuardianAssault</defName>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MoyoGuardianAssault">
+		<defName>Moyo_GuardianAssault_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>		
+	</PawnKindDef>		
+</Defs>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- moyo defult hediff -->
+	<HediffDef>
+		<defName>MoyoBaseHediff</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Moyo Inate Hediff</label>
+		<description>This pawn is a Moyo, and will not be affected by deepblue. You should not be reading this.</description>
+		<defaultLabelColor>(0.55,0.55,0.80)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>DeepBlues</li>
+					<li>DeepBlueTolerance</li>
+					<li>DeepBlueAddiction</li>
+				</hediffToNullify>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!-- 혈액팩 -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>Moyo_BloodBag</defName>
+		<label>Moyo bloodbag</label>
+		<description>A bag of moyo blood extracted by various means. There is a saying that it contains a substance called deepblue.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AbyssSerum</ThingDef>
+			<RecipeDef>Extract_DeepBlueCorpse</RecipeDef>
+		</descriptionHyperlinks>		
+		<graphicData>
+			<texPath>Things/Drugs/BloodBag</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<stackLimit>150</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<MarketValue>20</MarketValue>
+			<Mass>0.2</Mass>
+			<Flammability>0.7</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!--AbyssSerum-->
+	<ThingDef ParentName="DrugPillBase">
+		<defName>AbyssSerum</defName>
+		<label>Deepblue serum</label>
+		<description>Deepblue extracted from moyo blood. When injected, deepblue modifies the subject’s body, increasing their metabolism. There is no known way to reverse this process.\n\nA substance discovered by the moyo while researching their origins. It has many uses medically, but nothing is known about the substance itself.</description>
+		<descriptionHyperlinks>
+			<HediffDef>DeepBlues</HediffDef>
+		</descriptionHyperlinks>
+		<techLevel>Spacer</techLevel>		
+		<graphicData>
+			<texPath>Things/Drugs/AbyssSerum</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1.5</drawSize>			
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>32</MarketValue>
+			<Mass>0.01</Mass>
+		</statBases>
+		<ingestible>
+			<foodType>Processed, Fluid</foodType>
+			<baseIngestTicks>30</baseIngestTicks>
+			<ingestSound>Ingest_Inject</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Inject {0}</ingestCommandString>
+			<ingestReportString>Injecting {0}.</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<chairSearchRadius>0</chairSearchRadius>				
+			<drugCategory>Medical</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlues</hediffDef>
+					<severity>1.00</severity>
+					<doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlueTolerance</hediffDef>
+					<severity>0.17</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DeepBlue</chemical>
+				<addictiveness>1.00</addictiveness>
+				<needLevelOffset>1.00</needLevelOffset>
+				<listOrder>1012</listOrder>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Moyo_BloodBag>1</Moyo_BloodBag>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_CookMeal</soundWorking>
+			<workAmount>350</workAmount>
+			<productCount>2</productCount>
+			<targetCountAdjustment>2</targetCountAdjustment>
+			<bulkRecipeCount>4</bulkRecipeCount>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<researchPrerequisite>DeepBlue_Research</researchPrerequisite>
+			<skillRequirements>
+				<Intellectual>7</Intellectual>
+			</skillRequirements>
+		</recipeMaker>		
+	</ThingDef>
+
+	<HediffDef>
+		<defName>DeepBlues</defName>
+		<label>Deep blues</label>
+		<description>Deepblue increases pawn's capabilities. as a side-effect, The user will feel a bit blue. Beacuse there are no known ways to reverse the modification caused by deepblue, This effect cannot be reversed.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AbyssSerum</ThingDef>
+		</descriptionHyperlinks>		
+		<defaultLabelColor>(0.55,0.55,0.80)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<restFallFactor>0.9</restFallFactor>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.35</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDeF>
+		<defName>DeepBlueThought</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>DeepBlues</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>Deep blues</label>
+				<description>As a side-effect of deepblue, you feel a bit blue.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDeF>
+
+	<!--MoyoDeepBlueReaction-->
+
+	<HediffDef>
+		<defName>Moyo_DeepBlueReaction</defName>
+		<label>Deepblue Rejection</label>
+		<description>Too much deepblue injected to a Moyo's body. it has no health consequences but the pawn will suffer from nausea.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AbyssSerum</ThingDef>
+		</descriptionHyperlinks>		
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.55,0.55,0.80)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.8</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>MoyoDrunk</stateEffecter>
+				<severityIndices>3~5</severityIndices>
+			</li>			
+		</comps>
+		<stages>
+			<li>
+				<label>initial</label>
+			</li>
+			<li>
+				<minSeverity>0.25</minSeverity>
+				<label>minor</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.95</postFactor>
+					</li>
+				</capMods>				
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<label>major</label>
+				<vomitMtbDays>1.5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.95</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.91</minSeverity>
+				<label>extreme</label>
+				<vomitMtbDays>0.2</vomitMtbDays>
+				<painOffset>0.05</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.5</postFactor>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.10</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDeF>
+		<defName>Moyo_DeepBlueReactionThought</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Moyo_DeepBlueReaction</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>DeepBlue Rejection(initial)</label>
+				<description>Something feels off...</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>DeepBlue Rejection(minor)</label>
+				<description>I feel sick...</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+			<li>
+				<label>DeepBlue Rejection(major)</label>
+				<description>Everything is blue... ugh!</description>
+				<baseMoodEffect>-18</baseMoodEffect>
+			</li>
+			<li>
+				<label>DeepBlue Rejection(extreme)</label>
+				<description>(horrible noises)</description>
+				<baseMoodEffect>-35</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDeF>	
+
+	<!-- DeepBlueddiction -->
+
+	<ChemicalDef>
+		<defName>DeepBlue</defName>
+		<label>Deep Blue</label>
+		<addictionHediff>DeepBlueAddiction</addictionHediff>
+		<toleranceHediff>DeepBlueTolerance</toleranceHediff>
+		<canBinge>false</canBinge>
+	</ChemicalDef>
+
+	<NeedDef ParentName="DrugAddictionNeedBase">
+		<defName>Chemical_Deepblue</defName>
+		<needClass>Need_Chemical</needClass>
+		<label>Deepblue</label>
+		<description>Constant supply of deepblue is needed due to deepblue injection. Beacuse there are no known ways to reverse the modification caused by deepblue, This effect cannot be reversed.</description>
+		<listPriority>60</listPriority>
+		<fallPerDay>0.10</fallPerDay>
+	</NeedDef>
+
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>DeepBlueTolerance</defName>
+		<label>Deepblue tolerance</label>
+		<descriptionHyperlinks>
+			<ThingDef>AbyssSerum</ThingDef>
+		</descriptionHyperlinks>		
+		<description>Cells modified with deepblue gain tolerance to the substance as time goes on. More deepblue will be needed to suit the body's needs.</description>
+		<defaultLabelColor>(0.55,0.55,0.80)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.025</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DrugEffectFactor">
+				<chemical>DeepBlue</chemical>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="AddictionBase">
+		<defName>DeepBlueAddiction</defName>
+		<label>Deepblue dependency</label>
+		<descriptionHyperlinks>
+			<ThingDef>AbyssSerum</ThingDef>
+		</descriptionHyperlinks>			
+		<description>Once modified by deepblue, the body requires deepblue to fuel their metabolism. They will go into hibernation if not enough deepblue is supplied.</description>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<defaultLabelColor>(0.55,0.55,0.80)</defaultLabelColor>
+		<causesNeed>Chemical_Deepblue</causesNeed>
+		<everCurableByItem>false</everCurableByItem>
+		<stages>
+			<li>
+			</li>
+			<li>
+				<label>hibernation</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+				</capMods>
+				<hungerRateFactor>0.3</hungerRateFactor>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

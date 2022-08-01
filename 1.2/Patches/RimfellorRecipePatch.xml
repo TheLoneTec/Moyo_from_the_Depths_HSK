@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rimefeller</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/RecipeDef[defName="Make_ComponentIndustrialPlastic" or defName="Make_ComponentIndustrialPlasticX5" or defName="Make_ComponentSpacerSynthylene"]/recipeUsers</xpath>
+			<value>
+				<li>Moyo_FabricationBench</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

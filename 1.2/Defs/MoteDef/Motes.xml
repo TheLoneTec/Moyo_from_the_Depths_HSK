@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="MoyoMotebase" Abstract="True">
+		<thingClass>MoteThrown</thingClass>
+		<label>Mote</label>
+		<category>Mote</category>
+		<graphicData>
+			<graphicClass>Graphic_Mote</graphicClass>
+			<shaderType>Mote</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<useHitPoints>false</useHitPoints>
+		<isSaveable>false</isSaveable>
+		<rotatable>false</rotatable>
+	</ThingDef>
+
+	<ThingDef ParentName="MoyoMotebase">
+		<defName>Mote_MoyoCryoBlast</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mote_MoyoCB</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.1</solidTime>
+			<fadeInTime>0.06</fadeInTime>
+			<fadeOutTime>2.27</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<ThingDef ParentName="MoyoMotebase">
+		<defName>Mote_MoyoCBSmoke</defName>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoCBsmoke</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.1</solidTime>
+			<fadeInTime>0.06</fadeInTime>
+			<fadeOutTime>2.27</fadeOutTime>
+		</mote>
+	</ThingDef>	
+
+	<!-- 모요도축레시피 -->
+
+	<ThingDef ParentName="FoodBitBase">
+		<defName>Mote_FoodBitMeatMoyo</defName>
+		<graphicData>
+			<texPath>Icon/FoodBitMeatMoyo</texPath>
+			<shaderType>Mote</shaderType>
+		</graphicData>
+	</ThingDef>
+
+	<EffecterDef>
+		<defName>MoyoButcherEffect</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<scale>0.3~0.7</scale>
+				<ticksBetweenMotes>20</ticksBetweenMotes>
+				<positionLerpFactor>0.6</positionLerpFactor>
+				<positionRadius>0.6</positionRadius>
+				<moteDef>Mote_FoodBitMeatMoyo</moteDef>
+			</li>
+		</children>
+	</EffecterDef>	
+
+	<!-- 모요도축레시피 -->
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Filth_CBWater</defName>
+		<label>water puddle</label>
+		<statBases>
+			<Beauty>-10</Beauty>
+			<Cleanliness>-5</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/PoolSoft</texPath>
+			<color>(120, 146, 185, 180)</color>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<filth>
+			<disappearsInDays>0.01~0.02</disappearsInDays>
+			<cleaningWorkToReduceThickness>15</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<allowsFire>false</allowsFire>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_DBS</defName>
+		<graphicData>
+			<texPath>Things/Buildings/Mote_DBS</texPath>
+			<color>(1, 1, 1)</color>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.50</fadeInTime>
+			<solidTime>4</solidTime>
+			<fadeOutTime>.6</fadeOutTime>
+			<growthRate>0.01</growthRate>
+		</mote>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_DBSB</defName>
+		<graphicData>
+			<texPath>Things/Buildings/Mote_DBSB</texPath>
+			<color>(0.8, 0.8, 0.8)</color>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.50</fadeInTime>
+			<solidTime>4</solidTime>
+			<fadeOutTime>.6</fadeOutTime>
+			<growthRate>0.01</growthRate>
+		</mote>
+	</ThingDef>
+	
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_DBSL</defName>
+		<graphicData>
+			<texPath>Things/Buildings/Mote_DBSL</texPath>
+			<color>(1, 1, 1)</color>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.50</fadeInTime>
+			<solidTime>4</solidTime>
+			<fadeOutTime>.6</fadeOutTime>
+			<growthRate>0.01</growthRate>
+		</mote>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_DBSLB</defName>
+		<graphicData>
+			<texPath>Things/Buildings/Mote_DBSLB</texPath>
+			<color>(0.8, 0.8, 0.8)</color>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.50</fadeInTime>
+			<solidTime>4</solidTime>
+			<fadeOutTime>.6</fadeOutTime>
+			<growthRate>0.01</growthRate>
+		</mote>
+	</ThingDef>	
+
+	<!-- 딥블루 거부감 -->
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_MoyoDrunk</defName>
+		<graphicData>
+			<texPath>Icon/MoyoDrunk</texPath>
+		</graphicData>
+		<thingClass>MoteThrownAttached</thingClass>
+		<altitudeLayer>MetaOverlays</altitudeLayer>
+		<mote>
+			<fadeInTime>1</fadeInTime>
+			<solidTime>1</solidTime>
+			<fadeOutTime>2</fadeOutTime>
+			<attachedDrawOffset>(0.2, 0, 0.2)</attachedDrawOffset>
+		</mote>
+	</ThingDef>
+
+	<EffecterDef>
+		<defName>MoyoDrunk</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+				<scale>0.5~0.7</scale>
+				<chancePerTick>0.03</chancePerTick>
+				<positionRadius>0.3</positionRadius>
+				<moteDef>Mote_MoyoDrunk</moteDef>
+				<speed>0.18~0.18</speed>
+				<angle>10~80</angle>
+			</li>
+		</children>
+	</EffecterDef>	
+</Defs>

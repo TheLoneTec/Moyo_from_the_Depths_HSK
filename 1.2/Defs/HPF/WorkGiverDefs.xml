@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- HPF.HPFWorkGiverDef is inheritance of WorkGiverDef with some additional arguments -->
+	<HPF.HPFWorkGiverDef Name="HPFWorkGiverBase" Abstract="True">
+		<giverClass>HPF.WorkGiver_GatherPawnResources</giverClass>
+		<priorityInType>100</priorityInType>
+	</HPF.HPFWorkGiverDef>
+	
+	<HPF.HPFWorkGiverDef ParentName="HPFWorkGiverBase">
+		<defName>ExtractDeepBlue_Work</defName>
+		<label>draw blood</label>
+		<harvestJobDef>ExtractDeepBlue_Job</harvestJobDef>
+		<workType>Doctor</workType>
+		<verb>draw blood</verb>
+		<gerund>drawing blood</gerund>
+		<priorityInType>80</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</HPF.HPFWorkGiverDef>	
+</Defs>

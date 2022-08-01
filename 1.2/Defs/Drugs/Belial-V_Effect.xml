@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 벨리알-근력 -->
+	<!-- <HediffDef> -->
+		<!-- <defName>BelialVEffect_1</defName> -->
+		<!-- <hediffClass>HediffWithComps</hediffClass> -->
+		<!-- <label>Belial-strength</label> -->
+		<!-- <description>Belial-V's empowering effect. This effect grants great strength. A 'demon's little favour', pleased by your tribute of deepblue.</description> -->
+		<!-- <descriptionHyperlinks> -->
+			<!-- <ThingDef>Moyo_BelialV</ThingDef> -->
+		<!-- </descriptionHyperlinks>				 -->
+		<!-- <defaultLabelColor>(120,1,255)</defaultLabelColor> -->
+		<!-- <scenarioCanAdd>true</scenarioCanAdd> -->
+		<!-- <maxSeverity>1.0</maxSeverity> -->
+		<!-- <isBad>false</isBad> -->
+		<!-- <comps> -->
+			<!-- <li Class="HediffCompProperties_VerbGiver"> -->
+				<!-- <tools> -->
+					<!-- <li> -->
+						<!-- <label>fist</label> -->
+						<!-- <capacities> -->
+							<!-- <li>Blunt</li> -->
+						<!-- </capacities> -->
+						<!-- <power>15</power> -->
+						<!-- <cooldownTime>2</cooldownTime> -->
+						<!-- <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit> -->
+						<!-- <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss> -->
+					<!-- </li> -->
+				<!-- </tools> -->
+			<!-- </li>			 -->
+		<!-- </comps>		 -->
+		<!-- <stages> -->
+			<!-- <li> -->
+				<!-- <statOffsets> -->
+					<!-- <CarryingCapacity>25</CarryingCapacity> -->
+					<!-- <MiningSpeed>0.3</MiningSpeed> -->
+				<!-- </statOffsets> -->
+			<!-- </li> -->
+		<!-- </stages> -->
+	<!-- </HediffDef> -->
+	<!-- <HediffDef> -->
+		<!-- <defName>BelialVEffect_1U</defName> -->
+		<!-- <hediffClass>HediffWithComps</hediffClass> -->
+		<!-- <label>Belial-might</label> -->
+		<!-- <description>Belial-V's empowering effect. This effect grants inhuman power. A 'demon's favour', pleased by your tribute of deepblue.</description> -->
+		<!-- <descriptionHyperlinks> -->
+			<!-- <ThingDef>Moyo_BelialV</ThingDef> -->
+		<!-- </descriptionHyperlinks>				 -->
+		<!-- <defaultLabelColor>(120,1,255)</defaultLabelColor> -->
+		<!-- <scenarioCanAdd>true</scenarioCanAdd> -->
+		<!-- <maxSeverity>1.0</maxSeverity> -->
+		<!-- <isBad>false</isBad> -->
+		<!-- <comps> -->
+			<!-- <li Class="MoharHediffs.HediffCompProperties_HediffNullifier"> -->
+				<!-- <hediffToNullify> -->
+					<!-- <li>BelialVEffect_1</li> -->
+				<!-- </hediffToNullify> -->
+			<!-- </li> -->
+			<!-- <li Class="HediffCompProperties_VerbGiver"> -->
+				<!-- <tools> -->
+					<!-- <li> -->
+						<!-- <label>fist</label> -->
+						<!-- <capacities> -->
+							<!-- <li>Blunt</li> -->
+						<!-- </capacities> -->
+						<!-- <power>18</power> -->
+						<!-- <cooldownTime>2</cooldownTime> -->
+						<!-- <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit> -->
+						<!-- <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss> -->
+					<!-- </li> -->
+				<!-- </tools> -->
+			<!-- </li>			 -->
+		<!-- </comps> -->
+		<!-- <stages> -->
+			<!-- <li> -->
+				<!-- <statOffsets> -->
+					<!-- <CarryingCapacity>40</CarryingCapacity> -->
+					<!-- <MiningSpeed>0.5</MiningSpeed> -->
+				<!-- </statOffsets> -->
+			<!-- </li> -->
+		<!-- </stages> -->
+	<!-- </HediffDef> -->
+
+	<!-- 벨리알-속도 -->
+	<HediffDef>
+		<defName>BelialVEffect_2</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Belial-agility</label>
+		<description>Belial-V's empowering effect. This effect grants nimble movement. A 'demon's little favour', pleased by your tribute of deepblue.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Moyo_BelialV</ThingDef>
+		</descriptionHyperlinks>				
+		<defaultLabelColor>(120,1,255)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<MeleeDodgeChance>0.15</MeleeDodgeChance>
+					<PawnTrapSpringChance>-0.8</PawnTrapSpringChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>BelialVEffect_2U</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Belial-haste</label>
+		<description>Belial-V's empowering effect. This effect grants extreme speed. A 'demon's favour', pleased by your tribute of deepblue.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Moyo_BelialV</ThingDef>
+		</descriptionHyperlinks>				
+		<defaultLabelColor>(120,1,255)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>BelialVEffect_2</li>
+				</hediffToNullify>
+			</li>  
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<MeleeDodgeChance>0.25</MeleeDodgeChance>
+					<PawnTrapSpringChance>-1</PawnTrapSpringChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- 벨리알-감각 -->
+	<HediffDef>
+		<defName>BelialVEffect_3</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Belial-sense</label>
+		<description>Belial-V's empowering effect. This effect grants improved senses. A 'demon's little favour', pleased by your tribute of deepblue.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Moyo_BelialV</ThingDef>
+		</descriptionHyperlinks>				
+		<defaultLabelColor>(120,1,255)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Hearing</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>0.05</offset>
+					</li>		
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>BelialVEffect_3U</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Belial-hypersense</label>
+		<description>Belial-V's empowering effect. This effect grants supernatural senses. A 'demon's favour', pleased by your tribute of deepblue.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Moyo_BelialV</ThingDef>
+		</descriptionHyperlinks>				
+		<defaultLabelColor>(120,1,255)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>BelialVEffect_3</li>
+				</hediffToNullify>
+			</li>  
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.18</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.18</offset>
+					</li>
+					<li>
+						<capacity>Hearing</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>0.1</offset>
+					</li>		
+				</capMods>
+				<statOffsets>
+					<PsychicSensitivity>0.2</PsychicSensitivity>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- 벨리알-인내 -->
+	<HediffDef>
+		<defName>BelialVEffect_4</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Belial-endurance</label>
+		<description>Belial-V's empowering effect. This effect grants improved toughness. A 'demon's favour', pleased by your tribute of deepblue.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Moyo_BelialV</ThingDef>
+		</descriptionHyperlinks>				
+		<defaultLabelColor>(120,1,255)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<naturalHealingFactor>1.2</naturalHealingFactor>
+				<totalBleedFactor>0.8</totalBleedFactor>
+				<statOffsets>
+					<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.3</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>BelialVEffect_4U</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Belial-fortitude</label>
+		<description>Belial-V's empowering effect. This effect grants adamantine resiliance. A 'demon's great favour', pleased by your tribute of deepblue.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Moyo_BelialV</ThingDef>
+		</descriptionHyperlinks>				
+		<defaultLabelColor>(120,1,255)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>BelialVEffect_4</li>
+				</hediffToNullify>
+			</li>  
+		</comps>
+		<stages>
+			<li>
+				<naturalHealingFactor>1.5</naturalHealingFactor>
+				<totalBleedFactor>0.5</totalBleedFactor>
+				<statOffsets>
+					<IncomingDamageFactor>-0.3</IncomingDamageFactor>
+					<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.4</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- 벨리알-감정 -->
+	<HediffDef>
+		<defName>BelialVEffect_5</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Belial-serenity</label>
+		<description>Belial-V's empowering effect. This effect grants tranquil mind. A 'demon's little favour', pleased by your tribute of deepblue.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Moyo_BelialV</ThingDef>
+		</descriptionHyperlinks>				
+		<defaultLabelColor>(120,1,255)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>
+					<MentalBreakThreshold>-0.08</MentalBreakThreshold>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<ThoughtDeF>
+		<defName>BelialVEffect_5_Thought</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>BelialVEffect_5</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>Belial-serenity</label>
+				<description>A calm state of mind granted by Belial-V.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDeF>
+
+	<HediffDef>
+		<defName>BelialVEffect_6</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Belial-euphoria</label>
+		<description>Belial-V's empowering effect. This effect grants a euphoric high. A 'demon's little favour', pleased by your tribute of deepblue.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Moyo_BelialV</ThingDef>
+		</descriptionHyperlinks>				
+		<defaultLabelColor>(120,1,255)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.333333</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+			</li>
+		</stages>
+	</HediffDef>
+	<ThoughtDeF>
+		<defName>BelialVEffect_6_Thought</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>BelialVEffect_6</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>Belial-euphoria</label>
+				<description>An extreme burst of happiness granted by Belial-V.</description>
+				<baseMoodEffect>66</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDeF>	
+
+	<!-- 벨리알-집중 -->
+	<HediffDef>
+		<defName>BelialVEffect_7</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Belial-focus</label>
+		<description>Belial-V's empowering effect. This effect grants a clear goal. A 'demon's favour', pleased by your tribute of deepblue.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Moyo_BelialV</ThingDef>
+		</descriptionHyperlinks>				
+		<defaultLabelColor>(120,1,255)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>
+					<AimingDelayFactor>-0.05</AimingDelayFactor>
+					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
+					<MeleeHitChance>1.5</MeleeHitChance>
+					<WorkSpeedGlobal>0.08</WorkSpeedGlobal>
+					<GlobalLearningFactor>0.08</GlobalLearningFactor>
+					<MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.05</MeditationFocusGain>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>BelialVEffect_7U</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Belial-Hyperfocus</label>
+		<description>Belial-V's empowering effect. This effect grants an impermeable focus. A 'demon's great favour', pleased by your tribute of deepblue.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Moyo_BelialV</ThingDef>
+		</descriptionHyperlinks>				
+		<defaultLabelColor>(120,1,255)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>BelialVEffect_7</li>
+				</hediffToNullify>
+			</li>  
+		</comps>		
+		<stages>
+			<li>
+				<statOffsets>
+					<AimingDelayFactor>-0.1</AimingDelayFactor>
+					<ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+					<MeleeHitChance>3</MeleeHitChance>
+					<WorkSpeedGlobal>0.12</WorkSpeedGlobal>
+					<GlobalLearningFactor>0.12</GlobalLearningFactor>
+					<MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.2</MeditationFocusGain>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>		
+</Defs>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef Abstract="True" Name="Moyo_PlayerBase">
+		<settlementTexturePath>Icon/Moyo_PlayerIcon</settlementTexturePath>
+		<colorSpectrum>
+			<li>(65, 65, 150)</li>
+		</colorSpectrum>
+	</FactionDef>
+	<!-- 정착민 -->
+	<FactionDef ParentName="Moyo_PlayerBase">
+		<defName>Moyo_PlayerFaction</defName>
+		<label>Refugees</label>
+		<description>A settlement made by the moyo who have left the lighthouse for various reasons.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>Moyo_ColonistPawn</basicMemberKind>
+		<pawnSingular>colonist</pawnSingular>
+		<pawnsPlural>colonists</pawnsPlural>
+		<techLevel>Industrial</techLevel>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.95</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>		
+		<factionIconPath>Icon/Moyo_PlayerIcon</factionIconPath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<geneticVariance>0.7</geneticVariance>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+			<li>MoyoStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>		
+		<hairTags>
+			<li>Rural</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Moyo_Depthweave</li>
+			</thingDefs>
+		</apparelStuffFilter>		
+	</FactionDef>
+
+	<!-- 모요 팩션베이스 -->
+	<FactionDef ParentName="HumanFactionBase" Name="MoyoFactionBase" Abstract="True">
+		<pawnSingular>Moyo</pawnSingular>
+		<pawnsPlural>Moyos</pawnsPlural>
+		<listOrderPriority>30</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<canMakeRandomly>true</canMakeRandomly>
+		<leaderTitle>Refugee elder</leaderTitle>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<techLevel>Spacer</techLevel>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.95</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>	
+		<geneticVariance>0.7</geneticVariance>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Moyo_Depthweave</li>
+			</thingDefs>		
+			<stuffCategoriesToAllow>
+				<li>Metallic</li>
+				<li>Fabric</li>
+			</stuffCategoriesToAllow>
+			<disallowedThingDefs>
+				<li>Leather_Thrumbo</li>
+				<li>Hyperweave</li>
+			</disallowedThingDefs>
+		</apparelStuffFilter>		
+		<hairTags>
+			<li>Rural</li>
+		</hairTags>
+		<caravanTraderKinds>
+			<li>Caravan_MoyoCivil_BulkGoods</li>
+			<li>Caravan_MoyoCivil_CombatSupplier</li>
+			<li>Caravan_MoyoCivil_Exotic</li>
+			<li>Caravan_MoyoCivil_PirateMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_MoyoCivil_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-50~35</allowedArrivalTemperatureRange>
+		<raidLootMaker>MoyoRaidLootMaker</raidLootMaker>		
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(500, 100)</li>
+				<li>(1000, 150)</li>
+				<li>(2000, 250)</li>
+				<li>(2001, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<!-- 저티어 습격 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<Moyo_TopSmuggler>50</Moyo_TopSmuggler>
+					<Moyo_MiddleCivilan>20</Moyo_MiddleCivilan>
+					<Moyo_Engineer>2</Moyo_Engineer>
+					<Moyo_Resercher>2</Moyo_Resercher>
+				</options> 
+			</li>
+			<!-- 중티어 습격 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<options>
+					<Moyo_MiddleCivilan>20</Moyo_MiddleCivilan>
+					<Moyo_Engineer>15</Moyo_Engineer>
+					<Moyo_Resercher>30</Moyo_Resercher>
+					<Moyo_MiddleSmuggler>15</Moyo_MiddleSmuggler>
+					<Moyo_SoldierLight>2</Moyo_SoldierLight>
+				</options>
+			</li>
+			<!-- 고티어 습격 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>40</commonality>
+				<options>
+					<Moyo_Engineer>20</Moyo_Engineer>
+					<Moyo_Resercher>15</Moyo_Resercher>
+					<Moyo_MiddleSmuggler>15</Moyo_MiddleSmuggler>
+					<Moyo_SoldierLight>15</Moyo_SoldierLight>
+					<Moyo_SoldierLightrocket>2</Moyo_SoldierLightrocket>
+					<Moyo_SoliderStandard>5</Moyo_SoliderStandard>
+					<Moyo_SoldierAssult>5</Moyo_SoldierAssult>
+					<Moyo_SoldierHeavy>2</Moyo_SoldierHeavy>
+					<MoyoPressurePod_Kind>1</MoyoPressurePod_Kind>
+					<MoyoHexapod_Kind>1</MoyoHexapod_Kind>
+					<Moyo_Guardian>1</Moyo_Guardian>
+				</options>
+			</li> 			
+			<li>
+				<!-- 정예 습격 -->
+				<kindDef>Combat</kindDef>
+				<commonality>15</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Moyo_MiddleSmuggler>15</Moyo_MiddleSmuggler>				
+					<Moyo_SoldierLight>30</Moyo_SoldierLight>
+					<Moyo_SoldierLightrocket>2</Moyo_SoldierLightrocket>
+					<Moyo_SoliderStandard>50</Moyo_SoliderStandard>
+					<Moyo_SoldierAssult>15</Moyo_SoldierAssult>
+					<Moyo_SoldierHeavy>15</Moyo_SoldierHeavy>
+					<Moyo_Guardian>1</Moyo_Guardian>
+					<Moyo_GuardianAssault>1</Moyo_GuardianAssault>
+					<MoyoHexapod_Kind>5</MoyoHexapod_Kind>
+					<MoyoCryopod_Kind>3</MoyoCryopod_Kind>					
+				</options>
+			</li>
+			<li>
+				<!-- 주둔지 -->
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Moyo_BottomCivilan>1</Moyo_BottomCivilan>
+					<Moyo_Engineer>25</Moyo_Engineer>
+					<Moyo_Resercher>25</Moyo_Resercher>
+					<Moyo_MiddleSmuggler>5</Moyo_MiddleSmuggler>
+					<Moyo_SoldierLight>1</Moyo_SoldierLight>
+					<Moyo_SoliderStandard>1</Moyo_SoliderStandard>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Moyo_MiddleSmuggler>15</Moyo_MiddleSmuggler>
+					<Moyo_MiddleCivilan>35</Moyo_MiddleCivilan>
+					<Moyo_BottomCivilan>1</Moyo_BottomCivilan>
+					<Moyo_Engineer>15</Moyo_Engineer>
+					<Moyo_Resercher>15</Moyo_Resercher>	
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Moyo_BottomCivilan>1</Moyo_BottomCivilan>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<Moyo_Engineer>15</Moyo_Engineer>
+					<Moyo_Resercher>15</Moyo_Resercher>
+					<Moyo_MiddleCivilan>20</Moyo_MiddleCivilan>
+					<Moyo_MiddleSmuggler>10</Moyo_MiddleSmuggler>
+					<Moyo_SoldierLight>2</Moyo_SoldierLight>
+				</guards> 
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+
+	<FactionDef ParentName="MoyoFactionBase">
+		<defName>Moyo_HavenFaction</defName>
+		<label>moyo refugee haven</label>
+		<description>A settlement of moyo who left the lighthouse for the surface.\n\nThe moyos who have left the lighthouse, whether it be to escape the civil war or simply to trade with the surface, have banded together for survival.</description>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<settlementTexturePath>Icon/Moyo_FactionIcon</settlementTexturePath>
+		<factionIconPath>Icon/Moyo_FactionIcon</factionIconPath>
+		<colorSpectrum>
+			<li>(79, 183, 181)</li>
+		</colorSpectrum>
+		<startingGoodwill>0</startingGoodwill>
+		<naturalColonyGoodwill>-50~50</naturalColonyGoodwill>
+		<pawnGroupMakers>
+			<li>
+				<!-- 더미 -->
+				<kindDef>Combat</kindDef>
+				<commonality>0</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Moyo_leader>1</Moyo_leader>
+				</options>
+			</li>
+		</pawnGroupMakers>		
+	</FactionDef>
+
+	<FactionDef ParentName="MoyoFactionBase">
+		<defName>Moyo_HavenHostile</defName>
+		<label>moyo refugee radicals</label>
+		<description>A settlement of moyo who left the lighthouse for the surface.\n\nThey are the radicals from the refugees, saying power and dominance over the region is the key to peace. This conflict of idea has lead them to split themselves apart from the haven.</description>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<settlementTexturePath>Icon/Moyo_FactionIcon</settlementTexturePath>
+		<factionIconPath>Icon/Moyo_FactionIcon</factionIconPath>
+		<leaderTitle>Refugee general</leaderTitle>
+		<colorSpectrum>
+			<li>(76, 84, 171)</li>
+		</colorSpectrum>
+		<startingGoodwill>-80</startingGoodwill>
+		<naturalColonyGoodwill>-100~-80</naturalColonyGoodwill>
+		<pawnGroupMakers>
+			<li>
+				<!-- 더미 -->
+				<kindDef>Combat</kindDef>
+				<commonality>0</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Moyo_General>1</Moyo_General>
+				</options>
+			</li>
+		</pawnGroupMakers>	
+	</FactionDef>	
+
+	<ThingSetMakerDef>
+		<defName>MoyoRaidLootMaker</defName>
+		<root Class="ThingSetMaker_MarketValue">
+			<fixedParams>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+						<li>MedicineIndustrial</li>
+						<li>MoyoMedicine</li>
+						<li>ComponentIndustrial</li>
+						<li>MealSurvivalPack</li>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+			</fixedParams>
+		</root>
+	</ThingSetMakerDef>
+</Defs>
