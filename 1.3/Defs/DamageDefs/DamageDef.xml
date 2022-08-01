@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<DamageDef>
+		<defName>Moyo_ChargeBolt</defName>
+		<label>chargebolt</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been shot to death.</deathMessage>
+		<harmsHealth>true</harmsHealth>
+		<impactSoundType>Electric</impactSoundType>
+		<defaultDamage>50</defaultDamage>
+		<explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+		<explosionCellFleck>BlastEMP</explosionCellFleck>
+		<explosionColorEdge>(0.8, 0.8, 0.8, 0.8)</explosionColorEdge>
+		<explosionInteriorFleck>ElectricalSpark</explosionInteriorFleck>
+		<soundExplosion>Explosion_EMP</soundExplosion>
+		<makesBlood>true</makesBlood>
+		<hediff>Gunshot</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Sharp</armorCategory>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+	</DamageDef>
+
+	<DamageDef Name="Moyo_CryoDamage">
+		<defName>Moyo_Cryo</defName>
+		<label>frostbite</label>
+		<workerClass>Freezing.DamageWorker_Freezing</workerClass>
+		<externalViolence>false</externalViolence>
+		<deathMessage>{0} has succumbed to frostbite.</deathMessage>
+		<hediff>Frostbite</hediff>
+		<armorCategory>Sharp</armorCategory>
+		<defaultDamage>50</defaultDamage>
+		<explosionAffectOutsidePartsOnly>true</explosionAffectOutsidePartsOnly>		
+		<explosionCellMote>Mote_MoyoCryoBlast</explosionCellMote>
+		<explosionColorCenter>(1, 1, 1)</explosionColorCenter>
+		<explosionColorEdge>(0.8, 0.8, 0.8)</explosionColorEdge>
+		<explosionInteriorMote>Mote_MoyoCBSmoke</explosionInteriorMote>
+		<soundExplosion>moyo_cryoFreeze</soundExplosion>
+		<defaultStoppingPower>0.5</defaultStoppingPower>
+		<defaultArmorPenetration>0.10</defaultArmorPenetration>		
+		<buildingDamageFactor>0.2</buildingDamageFactor>
+		<plantDamageFactor>6</plantDamageFactor>
+		<makesBlood>false</makesBlood>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<additionalHediffs>
+			<li>
+				<hediff>Moyo_CryoSlowdown</hediff>
+				<severityPerDamageDealt>0.005</severityPerDamageDealt>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<minDamageToFragment>2</minDamageToFragment>		
+	</DamageDef>
+
+	<DamageDef ParentName="BluntBase">
+		<defName>HexapodTentacle</defName>
+		<label>blunt</label>
+		<additionalHediffs>
+			<li>
+				<hediff>HexapodConstriction</hediff>
+				<severityPerDamageDealt>0.015</severityPerDamageDealt>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+	<ToolCapacityDef>
+		<defName>HexapodTentacle</defName>
+		<label>blunt</label>
+	</ToolCapacityDef>
+
+	<ManeuverDef>
+		<defName>HexapodTentacle</defName>
+		<requiredCapacity>HexapodTentacle</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>HexapodTentacle</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+</Defs>    

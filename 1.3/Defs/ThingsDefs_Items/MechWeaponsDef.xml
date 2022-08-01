@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Heavy charge blaster -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MoyoCRBlast</defName>
+		<label>moyo cryoblast</label>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoCBBlast3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<explosionRadius>3.5</explosionRadius>
+			<damageDef>Moyo_Cryo</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0</armorPenetrationBase>
+			<!-- <preExplosionSpawnThingDef>Filth_CBWater</preExplosionSpawnThingDef>	 -->
+			<speed>90</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGunWithQuality">
+		<defName>Moyo_CryoRifle</defName> 
+		<label>moyo heavy cryorifle</label>
+		<description>A mid-range cryotech weapon which shoots a cryogenic bomb like a cannon.Usually equipped on cryopods, this weapon is not designed for human use.</description>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoCryoRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<Mass>22</Mass>
+			<AccuracyTouch>0.48</AccuracyTouch>
+			<AccuracyShort>0.56</AccuracyShort>
+			<AccuracyMedium>0.66</AccuracyMedium>
+			<AccuracyLong>0.38</AccuracyLong>
+			<RangedWeapon_Cooldown>4.25</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<techLevel>Spacer</techLevel>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11.7</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MoyoCRBlast</defaultProjectile>
+				<forcedMissRadius>1.5</forcedMissRadius>
+				<warmupTime>5.25</warmupTime>
+				<range>25.9</range>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags Inherit="False">
+			<li>MoyoMechGun</li>
+		</weaponTags>	
+	</ThingDef>
+
+</Defs>

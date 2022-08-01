@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- moyo med -->
+	<ThingDef ParentName="MedicineBase">
+		<defName>MoyoMedicine</defName>
+		<label>Bluemed</label>
+		<description>A medicine containing deepblue. deepblue increases the medicine's effectiveness while having no worries of deepblue dependancy.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AbyssSerum</ThingDef>
+		</descriptionHyperlinks>				
+		<graphicData>
+			<texPath>Things/Drugs/MoyoMed</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MarketValue>42</MarketValue>
+			<Mass>0.50</Mass>
+			<Flammability>0.7</Flammability>
+			<MedicalPotency>1.25</MedicalPotency>
+			<MedicalQualityMax>1.1</MedicalQualityMax>
+			<DeteriorationRate>2</DeteriorationRate>
+			<WorkToMake>1500</WorkToMake>
+		</statBases>
+		<costList>
+			<MedicineIndustrial>1</MedicineIndustrial>
+			<AbyssSerum>2</AbyssSerum>
+			<Neutroamine>2</Neutroamine>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<researchPrerequisite>DeepBlue_MedResearch</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+				<Intellectual>6</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef Name="Moyo_DrugPillBase" ParentName="DrugPillBase" Abstract="True">
+		<tradeTags inherit="false">
+			<li>Moyo_Drugs</li>
+		</tradeTags>
+		<techLevel>Spacer</techLevel>		
+		<ingestible>
+			<foodType>Processed</foodType>
+			<baseIngestTicks>30</baseIngestTicks>
+			<ingestSound>Ingest_Inject</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Inject {0}</ingestCommandString>
+			<ingestReportString>Injecting {0}.</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<chairSearchRadius>0</chairSearchRadius>
+		</ingestible>
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_CookMeal</soundWorking>
+			<workAmount>600</workAmount>
+			<productCount>2</productCount>
+			<targetCountAdjustment>2</targetCountAdjustment>
+			<bulkRecipeCount>4</bulkRecipeCount>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<researchPrerequisite>DeepBlue_Research</researchPrerequisite>
+			<skillRequirements>
+				<Intellectual>8</Intellectual>
+			</skillRequirements>
+		</recipeMaker>		
+	</ThingDef>
+
+	<!-- morphi-blue -->	
+	<ThingDef ParentName="Moyo_DrugPillBase">
+		<defName>BlueGo</defName>
+		<label>morphi-blue</label>
+		<description>A cocktail of deepblue and a drug. Causes deepblue dependancy when used and provides effect of Go-juice. It's faster to use and the effect last a bit longer.\n\nDeepblue cocktail does not have dangers of addiction or overdose of used drug.</description>
+		<descriptionHyperlinks>
+			<HediffDef>BlueGoHigh</HediffDef>		
+			<HediffDef>DeepBlues</HediffDef>
+		</descriptionHyperlinks>				
+		<graphicData>
+			<texPath>Things/Drugs/BlueGo</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>72</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<costList>
+			<AbyssSerum>1</AbyssSerum>
+			<GoJuice>2</GoJuice>
+		</costList>
+		<ingestible>
+			<drugCategory>Hard</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.35</offset>
+				</li>			
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>BlueGoHigh</hediffDef>
+					<severity>0.8</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+					<offset>0.15</offset>
+				</li>			
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Deepblue_Filter</hediffDef>
+					<severity>1.00</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlueTolerance</hediffDef>
+					<severity>0.34</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>	
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DeepBlue</chemical>
+				<addictiveness>0.0001</addictiveness>
+				<needLevelOffset>0.3</needLevelOffset>
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>1012</listOrder>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<!--morphi-blue high -->
+	<HediffDef>
+		<defName>BlueGoHigh</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>high on morphi-blue</label>
+		<labelNoun>a morphi-blue high</labelNoun>
+		<description>Go-juice infused with deepblue runs through the bloodstream inhancing combat abilities. This effect does not stack with Go-juice.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BlueGo</ThingDef>
+		</descriptionHyperlinks>				
+		<defaultLabelColor>(55,255,165)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.40</severityPerDay>
+			</li>
+			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>GoJuiceHigh</li>
+				</hediffToNullify>	
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0.2</painFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.30</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.45</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- sapphire meth -->	
+	<ThingDef ParentName="Moyo_DrugPillBase">
+		<defName>BlueUp</defName>
+		<label>sapphire meth</label>
+		<description>A cocktail of deepblue and a drug. Causes deepblue dependancy when used and provides effect of Wakeup. It's faster to use and the effect last a bit longer.\n\nDeepblue cocktail does not have dangers of addiction or overdose of used drug.</description>
+		<descriptionHyperlinks>
+			<HediffDef>BlueUpHigh</HediffDef>		
+			<HediffDef>DeepBlues</HediffDef>
+		</descriptionHyperlinks>				
+		<graphicData>
+			<texPath>Things/Drugs/BlueUp</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>	
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>35</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<costList>
+			<AbyssSerum>1</AbyssSerum>
+			<WakeUp>2</WakeUp>
+		</costList>
+		<ingestible>		
+			<drugCategory>Hard</drugCategory>
+			<joyKind>Chemical</joyKind>
+			<joy>0.35</joy>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.8</offset>
+					<toleranceChemical>DeepBlue</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>BlueUpHigh</hediffDef>
+					<severity>0.8</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>		
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Deepblue_Filter</hediffDef>
+					<severity>1.00</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlueTolerance</hediffDef>
+					<severity>0.34</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>				
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DeepBlue</chemical>
+				<addictiveness>0.0001</addictiveness>
+				<needLevelOffset>0.3</needLevelOffset>
+				<listOrder>1012</listOrder>
+			</li>		
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<!--sapphire meth high -->
+	<HediffDef>
+		<defName>BlueUpHigh</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>high on sapphire meth</label>
+		<labelNoun>a sapphire meth high</labelNoun>
+		<description>Wakeup infused with deepblue runs through the bloodstream inhancing work efficiency. This effect does not stack with Wakeup.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BlueUp</ThingDef>
+		</descriptionHyperlinks>				
+		<defaultLabelColor>(235,125,210)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.5</severityPerDay>
+			</li>
+			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>WakeUpHigh</li>
+				</hediffToNullify>	
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<restFallFactor>0.75</restFallFactor>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.08</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.08</offset>
+					</li>
+					<li>
+						<capacity>Hearing</capacity>
+						<offset>0.08</offset>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>0.08</offset>
+					</li>					
+				</capMods>
+				<statOffsets>
+					<WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+					<MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.2</MeditationFocusGain>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- BlueYo -->	
+	<ThingDef ParentName="Moyo_DrugPillBase">
+		<defName>BlueYo</defName>
+		<label>blue haze</label>
+		<description>A cocktail of deepblue and a drug. Causes deepblue dependancy when used and provides effect of psychite. It's faster to use and the effect last a bit longer.\n\nDeepblue cocktail does not have dangers of addiction or overdose of used drug.</description>
+		<descriptionHyperlinks>
+			<HediffDef>BlueYoHigh</HediffDef>		
+			<HediffDef>DeepBlues</HediffDef>
+		</descriptionHyperlinks>				
+		<graphicData>
+			<texPath>Things/Drugs/BlueYo</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>	
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>45</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<costList>
+			<AbyssSerum>1</AbyssSerum>
+			<Yayo>2</Yayo>
+		</costList>
+		<ingestible>
+			<joy>0.75</joy>
+			<joyKind>Chemical</joyKind>
+			<drugCategory>Hard</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.35</offset>
+					<toleranceChemical>DeepBlue</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>BlueYoHigh</hediffDef>
+					<severity>0.8</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>	
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Deepblue_Filter</hediffDef>
+					<severity>1.00</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlueTolerance</hediffDef>
+					<severity>0.34</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>				
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DeepBlue</chemical>
+				<addictiveness>0.0001</addictiveness>
+				<needLevelOffset>0.3</needLevelOffset>
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>1012</listOrder>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--BlueYo high -->
+	<HediffDef>
+		<defName>BlueYoHigh</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>high on bluehaze</label>
+		<labelNoun>a bluehaze high</labelNoun>
+		<description>Psychite infused with deepblue runs through the bloodstream refreshing pawn's body and mind. This effect does not stack with Yayo and flake.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BlueYo</ThingDef>
+		</descriptionHyperlinks>				
+		<defaultLabelColor>(255,210,135)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.5</severityPerDay>
+			</li>
+			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>YayoHigh</li>
+					<li>FlakeHigh</li>
+				</hediffToNullify>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0.45</painFactor>
+				<restFallFactor>0.28</restFallFactor>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDeF>
+		<defName>BlueYoThought</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>BlueYoHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>high on bluehaze</label>
+				<description>Ohh, this is refreshing! Let's do this!</description>
+				<baseMoodEffect>28</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDeF>	
+</Defs>
