@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--엑소프레임-->
+	<ThingDef ParentName="Moyo_ApparelBase">
+		<defName>Moyo_Exoframeproto</defName>
+		<label>moyo exoframe prototype</label>
+		<description>A gear made during development of lightweight exoframe. As a proof of concept, it was only planned to be tested in controlled environment, hence the lack of protection.\n\n*Designed for female use.*</description>
+		<graphicData>
+			<texPath>Things/Apparel/Dragonian/MoyoExoFrame1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Moyo_Depthweave>15</Moyo_Depthweave>
+			<Plasteel>40</Plasteel>
+		</costList>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.5</MoveSpeed>
+			<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+		</equippedStatOffsets>		
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Dragonian/MoyoExoFrame</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Moyo_Exo</li>
+			</tags>
+			<gender>Female</gender>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>MultiAnalyzer</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>	
+	</ThingDef>
+
+	<ThingDef ParentName="Moyo_ApparelBase" Abstract="True" Name="Moyo_DragonDress">
+		<description>Exotic clothes of the lighthouse which its design was inspired from the surface. Made with advanced materials and is sturdier than it seems.\n\nReports of seeing white humanoid creature with reptilian features has came from the surface. As their tales were told in the lighthouse, some designers saw it as a great source of inspiration. thus, this clothing was born.\n\n*Designed for female use.*</description>
+		<recipeMaker>
+			<researchPrerequisite>MultiAnalyzer</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+		</recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<WoolDragonian>80</WoolDragonian>
+			<Hyperweave>20</Hyperweave>
+			<Gold>5</Gold>
+		</costList>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>225</MaxHitPoints>
+			<WorkToMake>32000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.35</ArmorRating_Heat>
+			<Insulation_Cold>25</Insulation_Cold>
+			<Insulation_Heat>12</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.1</SocialImpact>
+		</equippedStatOffsets>					
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+				<li>Middle</li>
+			</layers>			
+			<tags>
+				<li>Moyo_RoyalDragonian</li>
+				<li>Psychic</li>
+			</tags>
+			<gender>Female</gender>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+	<ThingDef ParentName="Moyo_DragonDress">
+		<defName>Moyo_DragonDressA</defName>
+		<label>moyo exotic dress A</label>
+		<graphicData>
+			<texPath>Things/Apparel/Dragonian/MoyoDragonDressA1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Dragonian/MoyoDragonDressA</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	<ThingDef ParentName="Moyo_DragonDress">
+		<defName>Moyo_DragonDressB</defName>
+		<label>moyo exotic dress B</label>
+		<graphicData>
+			<texPath>Things/Apparel/Dragonian/MoyoDragonDressB1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Dragonian/MoyoDragonDressB</wornGraphicPath>
+		</apparel>
+	</ThingDef>	
+	<ThingDef ParentName="Moyo_DragonDress">
+		<defName>Moyo_DragonDressC</defName>
+		<label>moyo exotic dress C</label>
+		<graphicData>
+			<texPath>Things/Apparel/Dragonian/MoyoDragonDressC1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Dragonian/MoyoDragonDressC</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	<ThingDef ParentName="Moyo_DragonDress">
+		<defName>Moyo_DragonDressD</defName>
+		<label>moyo exotic dress D</label>
+		<graphicData>
+			<texPath>Things/Apparel/Dragonian/MoyoDragonDressD1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<costList Inherit="False">
+			<ComponentSpacer>1</ComponentSpacer>
+			<WoolDragonian>80</WoolDragonian>
+			<Hyperweave>20</Hyperweave>
+			<Silver>300</Silver>
+		</costList>		
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Dragonian/MoyoDragonDressD</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	<!--면류관-->
+	<ThingDef ParentName="MoyoRoyalHeadbase">
+		<defName>Moyo_DragonCrownD</defName>
+		<label>Moyo Dragon Crown D</label>
+		<description>Exotic crown of the lighthouse which its design was inspired from the surface.\n\nReports of seeing white humanoid creature with reptilian features has came from the surface. As their tales were told in the lighthouse, some designers saw it as a great source of inspiration. thus, this clothing was born.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Dragonian/MoyoDragonCrown1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Dragonian/MoyoDragonCrown</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	<recipeMaker Inherit="False">
+		<researchPrerequisite>MultiAnalyzer</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>TableMachining</li>
+		</recipeUsers>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	</recipeMaker>
+	<techLevel>Spacer</techLevel>
+	<costList Inherit="False">
+		<Silver>100</Silver>
+	</costList>	
+</Defs>

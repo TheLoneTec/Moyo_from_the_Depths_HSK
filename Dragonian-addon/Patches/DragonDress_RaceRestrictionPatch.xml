@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Moyo-From the depth HSK</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Moyo"]/alienRace/raceRestriction/apparelList</xpath>
+			<value>
+				<li>Moyo_Exoframeproto</li>
+				<li>Moyo_DragonDressA</li>
+				<li>Moyo_DragonDressB</li>
+				<li>Moyo_DragonDressC</li>
+				<li>Moyo_DragonDressD</li>
+				<li>Moyo_DragonCrownD</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>
