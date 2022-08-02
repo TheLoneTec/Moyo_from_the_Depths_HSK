@@ -500,7 +500,7 @@
 				</value>
 			</li>
 			
-			<!-- ========== Alpha Animals Non-HSK =========== -->
+			<!-- ========== Alpha Animals Non-HSK =========== 
 			
 			<li Class="PatchOperationFindMod">
 			<mods>
@@ -518,13 +518,11 @@
 						<SwayFactor>1.33</SwayFactor>
 					</statBases>
 					<Properties>
-						<!--<recoilAmount>1</recoilAmount>-->
 						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 						<hasStandardCommand>true</hasStandardCommand>
 						<defaultProjectile>Bullet_Abyssnail</defaultProjectile>
 						<warmupTime>0.5</warmupTime>
 						<range>20</range>
-						<!--<minRange>8</minRange>-->
 						<soundCast>Shot_ChargeRifle</soundCast>
 						<soundCastTail>GunTail_Light</soundCastTail>
 						<muzzleFlashScale>9</muzzleFlashScale>
@@ -546,7 +544,7 @@
 				</operations>
 				</match>
 			</li>
-			
+			-->
 			<!-- ========== Pistol =========== -->
 
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
