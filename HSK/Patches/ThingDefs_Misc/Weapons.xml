@@ -500,7 +500,7 @@
 				</value>
 			</li>
 			
-			<!-- ========== Alpha Animals Non-HSK =========== 
+			<!-- ========== Alpha Animals Non-HSK =========== -->
 			
 			<li Class="PatchOperationFindMod">
 			<mods>
@@ -546,7 +546,7 @@
 				</operations>
 				</match>
 			</li>
-			-->
+			
 			<!-- ========== Pistol =========== -->
 
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
