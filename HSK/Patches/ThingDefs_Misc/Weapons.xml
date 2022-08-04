@@ -631,6 +631,7 @@
 					<range>28</range>
 					<soundCast>Shot_ChargeRifle</soundCast>
 					<soundCastTail>GunTail_Light</soundCastTail>
+					<muzzleFlashScale>9</muzzleFlashScale>
 					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 				</Properties>
 				<AmmoUser>
