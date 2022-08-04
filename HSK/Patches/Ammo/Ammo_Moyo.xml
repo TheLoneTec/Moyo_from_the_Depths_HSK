@@ -461,20 +461,14 @@
 				<value>
 					<CombatExtended.AmmoSetDef>
 						<defName>AmmoSet_6x18mmMoyo</defName>
-						<label>6x18mm Charged Bullet</label>
+						<label>6x18mm Moyo Bullet</label>
 						<ammoTypes>
-						  <Ammo_6x18mmCharged>Bullet_6x18mmMoyo</Ammo_6x18mmCharged>
-						  <Ammo_6x18mmCharged_AP>Bullet_6x18mmMoyo_AP</Ammo_6x18mmCharged_AP>
-						  <Ammo_6x18mmCharged_Ion>Bullet_6x18mmMoyo_Ion</Ammo_6x18mmCharged_Ion>
+						  <Ammo_6x18mmMoyo>Bullet_6x18mmMoyo</Ammo_6x18mmMoyo>
+						  <Ammo_6x18mmMoyo_AP>Bullet_6x18mmMoyo_AP</Ammo_6x18mmMoyo_AP>
+						  <Ammo_6x18mmMoyo_Ion>Bullet_6x18mmMoyo_Ion</Ammo_6x18mmMoyo_Ion>
 						</ammoTypes>
 					</CombatExtended.AmmoSetDef>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs</xpath>
-				<value>
-				
+	
 					<ThingDef ParentName="Base6x18mmChargedBullet">
 						<defName>Bullet_6x18mmMoyo</defName>
 						<label>6x18mm Charged bullet</label>
@@ -751,19 +745,13 @@
 				<value>
 					<CombatExtended.AmmoSetDef>
 						<defName>AmmoSet_6x24mmMoyo</defName>
-						<label>6x24mm Charged Bullet</label>
+						<label>6x24mm Moyo Bullet</label>
 						<ammoTypes>
-						  <Ammo_6x24mmCharged>Bullet_6x24mmMoyo</Ammo_6x24mmCharged>
-						  <Ammo_6x24mmCharged_AP>Bullet_6x24mmMoyo_AP</Ammo_6x24mmCharged_AP>
-						  <Ammo_6x24mmCharged_Ion>Bullet_6x24mmMoyo_Ion</Ammo_6x24mmCharged_Ion>
+						  <Ammo_6x24mmMoyo>Bullet_6x24mmMoyo</Ammo_6x24mmMoyo>
+						  <Ammo_6x24mmMoyo_AP>Bullet_6x24mmMoyo_AP</Ammo_6x24mmMoyo_AP>
+						  <Ammo_6x24mmMoyo_Ion>Bullet_6x24mmMoyo_Ion</Ammo_6x24mmMoyo_Ion>
 						</ammoTypes>
 					</CombatExtended.AmmoSetDef>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs</xpath>
-				<value>
 				
 					<ThingDef ParentName="Base6x24mmChargedBullet">
 						<defName>Bullet_6x24mmMoyo</defName>
@@ -1130,19 +1118,13 @@
 				<value>
 				  <CombatExtended.AmmoSetDef>
 					<defName>AmmoSet_8x35mmMoyo</defName>
-					<label>8x35mm Charged Bullet</label>
+					<label>8x35mm Moyo Bullet</label>
 					<ammoTypes>
-					  <Ammo_8x35mmCharged>Bullet_8x35mmMoyo</Ammo_8x35mmCharged>
-					  <Ammo_8x35mmCharged_AP>Bullet_8x35mmMoyo_AP</Ammo_8x35mmCharged_AP>
-					  <Ammo_8x35mmCharged_Ion>Bullet_8x35mmMoyo_Ion</Ammo_8x35mmCharged_Ion>
+					  <Ammo_8x35mmMoyo>Bullet_8x35mmMoyo</Ammo_8x35mmMoyo>
+					  <Ammo_8x35mmMoyo_AP>Bullet_8x35mmMoyo_AP</Ammo_8x35mmMoyo_AP>
+					  <Ammo_8x35mmMoyo_Ion>Bullet_8x35mmMoyo_Ion</Ammo_8x35mmMoyo_Ion>
 					</ammoTypes>
 				  </CombatExtended.AmmoSetDef>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs</xpath>
-				<value>
 				
 				<ThingDef ParentName="Base8x35mmChargedBullet">
 					<defName>Bullet_8x35mmMoyo</defName>
@@ -1420,19 +1402,13 @@
 				<value>
 				  <CombatExtended.AmmoSetDef>
 					<defName>AmmoSet_8x50mmMoyo</defName>
-					<label>8x50mm Charged Bullet</label>
+					<label>8x50mm Moyo Bullet</label>
 					<ammoTypes>
-					  <Ammo_8x50mmCharged>Bullet_8x50mmMoyo</Ammo_8x50mmCharged>
-					  <Ammo_8x50mmCharged_AP>Bullet_8x50mmMoyo_AP</Ammo_8x50mmCharged_AP>
-					  <Ammo_8x50mmCharged_Ion>Bullet_8x50mmMoyo_Ion</Ammo_8x50mmCharged_Ion>
+					  <Ammo_8x50mmMoyo>Bullet_8x50mmMoyo</Ammo_8x50mmMoyo>
+					  <Ammo_8x50mmMoyo_AP>Bullet_8x50mmMoyo_AP</Ammo_8x50mmMoyo_AP>
+					  <Ammo_8x50mmMoyo_Ion>Bullet_8x50mmMoyo_Ion</Ammo_8x50mmMoyo_Ion>
 					</ammoTypes>
 				  </CombatExtended.AmmoSetDef>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs</xpath>
-				<value>
 				
 				<ThingDef ParentName="Base8x50mmChargedBullet">
 					<defName>Bullet_8x50mmMoyo</defName>
