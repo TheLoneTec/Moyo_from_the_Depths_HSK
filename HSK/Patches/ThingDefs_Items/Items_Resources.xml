@@ -260,6 +260,15 @@
 			</li>
 			
 			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Moyo_Depthweave"]/thingCategories</xpath>
+				<value>
+					<thingCategories>
+						<li>BTextiles</li>
+					</thingCategories>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/RecipeDef[defName="Make_Moyo_Depthweave"]/ingredients</xpath>
 				<value>
 					<ingredients>
