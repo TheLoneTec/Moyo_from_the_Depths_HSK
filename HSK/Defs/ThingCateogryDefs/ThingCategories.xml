@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>MoyoDrugs</defName>
+		<label>Moyo Drugs</label>
+		<parent>Foods</parent>
+		<iconPath>Things/Drugs/DeepBlue_a</iconPath>
+	</ThingCategoryDef>
+	
+</Defs>
