@@ -32,6 +32,17 @@
 				</value>
 			</li>
 			
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Moyo_Abyssteel"]</xpath>
+				<value>
+					<thingCategories Inherit="False">
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</thingCategories>
+				</value>
+			</li>
+		
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="Moyo_Abyssteel"]/stuffProps/categories</xpath>
 				<value>
