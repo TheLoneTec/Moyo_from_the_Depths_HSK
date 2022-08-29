@@ -8,12 +8,6 @@
 		<value>SK_BasePawn</value>
 	</Operation>
 	
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Moyo"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SK_BasePawn</value>
-	</Operation>
-	
 	<Operation Class="PatchOperationAttributeAdd">
 		<xpath>Defs/PawnKindDef[@Name="MoyoPlayerBasePawnKind"]</xpath>
 		<attribute>ParentName</attribute>

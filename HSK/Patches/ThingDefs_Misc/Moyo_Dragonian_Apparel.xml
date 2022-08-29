@@ -4,7 +4,7 @@
 	<operations>
 	  <li Class="PatchOperationFindMod">
 			
-		<mods><li>Moyo-From the depth HSK</li></mods>
+		<mods><li>Moyo-From the depth</li></mods>
 		<match Class="PatchOperationFindMod">
 		<mods>
 		<li>Dragonian GaramRace</li>

@@ -3,7 +3,7 @@
 
   <Operation Class="PatchOperationFindMod">
     <mods>
-      <li>Moyo-From the depth HSK</li>
+      <li>Moyo-From the depth</li>
     </mods>
 
     <match Class="PatchOperationSequence">
