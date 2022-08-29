@@ -247,7 +247,34 @@
 			</li>
 
 			<!-- ==========  Depthweave  =========== -->
-			
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Moyo_Depthweave"]/statBases</xpath>
+				<value>
+				  <Bulk>0.02</Bulk>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Moyo_Depthweave"]/stuffProps/statFactors</xpath>
+				<value>
+					<MoveSpeed>0.90</MoveSpeed>
+					<MarketValue>1.0</MarketValue>
+					<WorkToMake>1.2</WorkToMake>
+					<WorkToBuild>1.2</WorkToBuild>
+					<BedRestEffectiveness>1.15</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>1.25</ImmunityGainSpeedFactor>
+					<Mass>0.7</Mass>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Moyo_Depthweave"]/stuffProps/statFactors/Beauty</xpath>
+				<value>
+				  <Beauty>1.8</Beauty>
+				</value>
+			</li>
+	
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Moyo_Depthweave"]/statBases/StuffPower_Armor_Sharp</xpath>
 				<value>
