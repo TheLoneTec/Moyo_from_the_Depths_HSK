@@ -95,6 +95,41 @@
 				</value>
 			</li>
 			
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/PawnKindDef[@Name="MoyoSoldierLight"]/weaponMoney</xpath>
+			  <value>
+				<weaponMoney>4000~6900</weaponMoney>
+			  </value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/PawnKindDef[@Name="MoyoSoliderStandard"]/weaponMoney</xpath>
+			  <value>
+				<weaponMoney>4000~6500</weaponMoney>
+			  </value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/PawnKindDef[@Name="MoyoSoldierHeavy"]/weaponMoney</xpath>
+			  <value>
+				<weaponMoney>8600~11100</weaponMoney>
+			  </value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/PawnKindDef[defName="Moyo_leader"]/weaponMoney</xpath>
+			  <value>
+				<weaponMoney>4000~5500</weaponMoney>
+			  </value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/PawnKindDef[@Name="MoyoGuardian"]/weaponMoney</xpath>
+			  <value>
+				<weaponMoney>9500~13000</weaponMoney>
+			  </value>
+			</li>
+	
 		</operations>
 		</match>	
 	  </li>
