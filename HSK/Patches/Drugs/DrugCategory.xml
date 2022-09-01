@@ -12,7 +12,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[@Name="Moyo_DrugPillBase"]</xpath>
 				<value>
-					<thingCategories>
+					<thingCategories Inherit="False">
 						<li>MoyoDrugs</li>
 					</thingCategories>
 				</value>
