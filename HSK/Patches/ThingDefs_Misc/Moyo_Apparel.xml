@@ -28,7 +28,25 @@
 					<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
 				</value>
 			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Moyo_SnB"]</xpath>
+				<value>
+					<recipeMaker>
+						<researchPrerequisite>ComplexClothing</researchPrerequisite>
+					</recipeMaker>
+				</value>
+			</li>
+	
+			<!-- Moyo Tail -->
 			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Moyo_FakeTail"]/recipeMaker</xpath>
+				<value>
+					<researchPrerequisite>Prosthesis_making_B1</researchPrerequisite>
+				</value>
+			</li>
+	
 			<!--Parka-->
 			
 			<li Class="PatchOperationAdd">
