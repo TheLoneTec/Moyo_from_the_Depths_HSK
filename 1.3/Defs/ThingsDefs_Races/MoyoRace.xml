@@ -87,8 +87,8 @@
 										<Thin>(0,0)</Thin>
 									</bodyTypes>
 								</south>
-								<north>
-									<layerOffset>-0.28</layerOffset>
+								<north><!-- 0.28 -->
+									<layerOffset>-0.08</layerOffset>
 									<bodyTypes>
 										<Female>(0,0.551)</Female>
 										<Thin>(0,0.551)</Thin>

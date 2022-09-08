@@ -94,12 +94,73 @@
 					<li>Moyo_Neolithic</li>
 				</value>
 			</li>
-			
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="Moyo_BottomCivilan"]/apparelTags</xpath>
+				<value>
+					<li>SectarianLight</li>
+					<li>PredatorsLight</li>
+					<li>BrotherhoodMedium</li>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="Moyo_MiddleCivilan"]/apparelTags</xpath>
+				<value>
+					<li>Outlander</li>
+					<li>PredatorsLight</li>
+					<li>BrotherhoodLight</li>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="Moyo_TopCivilan"]/apparelTags</xpath>
+				<value>
+					<li>PredatorsLight</li>
+					<li>Outlander</li>
+					<li>Tribal</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="Moyo_TopSmuggler"]/apparelTags</xpath>
+				<value>
+					<li>PredatorsLight</li>
+					<li>BanditsLight</li>
+					<li>RenegadesLight</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="Moyo_MiddleSmuggler"]/apparelTags</xpath>
+				<value>
+					<li>BanditsLight</li>
+					<li>RenegadesLight</li>
+					<li>PredatorsMedium</li>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="Moyo_Engineer"]/apparelTags</xpath>
+				<value>
+					<li>PredatorsLight</li>
+					<li>BrotherhoodLight</li>
+				</value>
+			</li>
+		
 			<li Class="PatchOperationReplace">
 			  <xpath>Defs/PawnKindDef[@Name="MoyoSoldierLight"]/weaponMoney</xpath>
 			  <value>
 				<weaponMoney>4000~6900</weaponMoney>
 			  </value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[@Name="MoyoSoldierLight"]/apparelTags</xpath>
+				<value>
+					<li>BrotherhoodScout</li>
+					<li>BrotherhoodLight</li>
+				</value>
 			</li>
 	
 			<li Class="PatchOperationReplace">
@@ -109,11 +170,27 @@
 			  </value>
 			</li>
 
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[@Name="MoyoSoldierLight"]/apparelTags</xpath>
+				<value>
+					<li>BrotherhoodScout</li>
+					<li>BrotherhoodLight</li>
+				</value>
+			</li>
+
 			<li Class="PatchOperationReplace">
 			  <xpath>Defs/PawnKindDef[@Name="MoyoSoldierHeavy"]/weaponMoney</xpath>
 			  <value>
 				<weaponMoney>8600~11100</weaponMoney>
 			  </value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[@Name="MoyoSoldierHeavy"]/apparelTags</xpath>
+				<value>
+					<li>SectarianLight</li>
+					<li>BrotherhoodMedium</li>
+				</value>
 			</li>
 	
 			<li Class="PatchOperationReplace">
@@ -128,6 +205,14 @@
 			  <value>
 				<weaponMoney>9500~13000</weaponMoney>
 			  </value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[@Name="MoyoGuardian"]/apparelTags</xpath>
+				<value>
+					<li>OrionLight</li>
+					<li>BrotherhoodMedium</li>
+				</value>
 			</li>
 	
 		</operations>

@@ -10,6 +10,8 @@
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>10~17</initialResistanceRange>
+		<baseRecruitDifficulty>0.25</baseRecruitDifficulty>
+		<invFoodDef>MealSurvivalPack</invFoodDef>	
 	</PawnKindDef>
 	<!-- 정착민 -->
 	<PawnKindDef ParentName="MoyoPlayerBasePawnKind">
