@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/Content/Defs/ThingsDefs_Items/WeaponsDef.xml-->
+              <!-- moyo wrench -->
+<Moyo_Wrench.label>гаечный ключ Мойо</Moyo_Wrench.label>
+                    <!-- A tool for bending metal and tightening bolts. Or bashing in heads, if you need to. -->
+<Moyo_Wrench.description>Инструмент для сгибания металла и затягивания болтов. Или пробивания голов, если это необходимо.</Moyo_Wrench.description>
+                      <!-- handle -->
+<Moyo_Wrench.tools.0.label>рукоятка</Moyo_Wrench.tools.0.label>
+                      <!-- head -->
+<Moyo_Wrench.tools.1.label>головка</Moyo_Wrench.tools.1.label>
+             <!-- moyo diving knife -->
+<Moyo_Knife.label>нож для дайвинга Мойо</Moyo_Knife.label>
+                   <!-- A knife is always handy to have, and under the sea is no exception. The sharp and light blade made from plasteel is a favorite among moyo divers. -->
+<Moyo_Knife.description>Нож всегда удобно иметь под рукой, и под водой - не исключение. Острое и легкое лезвие из глубоководной стали является фаворитом среди дайверов-мойо.</Moyo_Knife.description>
+                     <!-- handle -->
+<Moyo_Knife.tools.0.label>рукоятка</Moyo_Knife.tools.0.label>
+                     <!-- blade -->
+<Moyo_Knife.tools.1.label>лезвие</Moyo_Knife.tools.1.label>
+                     <!-- point -->
+<Moyo_Knife.tools.2.label>Наконечник</Moyo_Knife.tools.2.label>
+                  <!-- Moyo piledriver -->
+<Moyo_Piledriver.label>Сваебойная установка Moyo</Moyo_Piledriver.label>
+                        <!-- A mining tool designed to drive metal stakes into stone. The machine is cumbersome and firing a stake takes a long time, but it can easily break rocks and pierce steel.
+
+As the number of operable mechanoids decreased, the need for moyo miners increased. -->
+<Moyo_Piledriver.description>Горный инструмент, предназначенный для забивания металлических кольев в камень. Машина громоздка, и вбивание кола занимает много времени, но она легко разбивает камни и пробивает сталь.\n\n\nПо мере того, как число работоспособных механоидов уменьшалось, потребность в шахтерах-мойо возрастала.</Moyo_Piledriver.description>
+                          <!-- body -->
+<Moyo_Piledriver.tools.0.label>корпус</Moyo_Piledriver.tools.0.label>
+                          <!-- Stake -->
+<Moyo_Piledriver.tools.1.label>Кол</Moyo_Piledriver.tools.1.label>
+             <!-- moyo battleaxe -->
+<Moyo_Spear.label>боевой топор Мойо</Moyo_Spear.label>
+                   <!-- Heavy battleaxe prototype forged with abysteel. Has a cryogenic blade intended to minimize bleeding from cuts. well, so said the development team. Its a weapon that can split open a diving suit helmet, bloodloss will be the least concern. -->
+<Moyo_Spear.description>Прототип тяжелого боевого топора, выкованного из глубоководной стали. Имеет криогенное лезвие, предназначенное для минимизации кровотечения при порезах. так утверждает команда разработчиков. Это оружие может расколоть шлем водолазного костюма, кровотечение будет наименьшей проблемой.</Moyo_Spear.description>
+                     <!-- handle -->
+<Moyo_Spear.tools.0.label>рукоять</Moyo_Spear.tools.0.label>
+                     <!-- blade -->
+<Moyo_Spear.tools.1.label>лезвие</Moyo_Spear.tools.1.label>
+                 <!-- moyo powerfist -->
+<Moyo_PowerFist.label>кулак силы Мойо</Moyo_PowerFist.label>
+                       <!-- A mechanical glove that enhances the user’s strength to aid in underwater work. It’s designed to be used in conjunction with the diving suit, but can be used without. -->
+<Moyo_PowerFist.description>Механическая перчатка, которая увеличивает силу пользователя для помощи в подводной работе. Она предназначена для использования в сочетании с водолазным костюмом, но может использоваться и без него.</Moyo_PowerFist.description>
+                         <!-- Fist -->
+<Moyo_PowerFist.tools.0.label>Кулак</Moyo_PowerFist.tools.0.label>
+                         <!-- Body -->
+<Moyo_PowerFist.tools.1.label>Корпус</Moyo_PowerFist.tools.1.label>
+               <!-- moyo royal battleaxe -->
+<Moyo_GDSpear.label>королевский боевой топор Мойо</Moyo_GDSpear.label>
+                     <!-- Heavy battleaxe used by the royal guard. It has been refined for ease of use and equipped with advanced cryogenic blade
+
+A modified version of the prototype battleaxe, the white body and the royal guard’s symbol etched upon it are the blades of the elders. -->
+<Moyo_GDSpear.description>Тяжелый боевой топор, используемый королевской гвардией. Он был усовершенствован для удобства использования и оснащен усовершенствованным криогенным лезвием\n\n\nМодифицированная версия прототипа боевого топора, белый корпус и выгравированный на нем символ королевской гвардии - это клинки старейшин.</Moyo_GDSpear.description>
+                       <!-- handle -->
+<Moyo_GDSpear.tools.0.label>рукоять</Moyo_GDSpear.tools.0.label>
+                       <!-- blade -->
+<Moyo_GDSpear.tools.1.label>лезвие</Moyo_GDSpear.tools.1.label>
+                   <!-- moyo royal powerfist -->
+<Moyo_GDPowerFist.label>королевский кулак силы Мойо</Moyo_GDPowerFist.label>
+                         <!-- Combat powerfist used by the royal guard. In truth, there is little difference in function compared to an ordinary powerfist.
+
+The powerfist was chosen as one of the royal guard’s equipment for its versatility. The white shell and the royal guard’s symbol etched upon it are the iron fists of the elders. -->
+<Moyo_GDPowerFist.description>Боевой кулак, используемый королевской гвардией. По правде говоря, по функциям он мало чем отличается от обычного кулака.\n\nКулак был выбран в качестве одного из снаряжений королевской гвардии за его универсальность. Белая раковина и выгравированный на ней символ королевской гвардии - это железные кулаки старейшин.</Moyo_GDPowerFist.description>
+                           <!-- Fist -->
+<Moyo_GDPowerFist.tools.0.label>кулак</Moyo_GDPowerFist.tools.0.label>
+                           <!-- Body -->
+<Moyo_GDPowerFist.tools.1.label>корпус</Moyo_GDPowerFist.tools.1.label>
+              <!-- moyo nail gun -->
+<Moyo_Pistol.label>гвоздомёт moyo</Moyo_Pistol.label>
+                    <!-- A common contruction tool of the Lighthouse. It has strong firing mechanism to make it reliable in most places. which also makes it fantastic as a improvised weapon. -->
+<Moyo_Pistol.description>Обычный строительный инструмент Маяка. Имеет мощный механизм стрельбы, что делает его надежным в большинстве мест. что также делает его фантастическим импровизированным оружием.</Moyo_Pistol.description>
+                      <!-- grip -->
+<Moyo_Pistol.tools.0.label>рукоятка</Moyo_Pistol.tools.0.label>
+                      <!-- barrel -->
+<Moyo_Pistol.tools.1.label>ствол</Moyo_Pistol.tools.1.label>
+                   <!-- Moyo rivet -->
+<Bullet_MoyoRivet.label>Заклепка Мойо</Bullet_MoyoRivet.label>
+                   <!-- moyo charge rifle -->
+<Moyo_ChargeRifle.label>зарядная винтовка Мойо</Moyo_ChargeRifle.label>
+                         <!-- Moyo assult rifle that shows much similarities with a traditional charge rifle. The charged bolt and accelerated through the barrel and fired. Each bolt is designed to minimize energy loss over distance.
+
+The lighthouse uses traditional charge rifles as well, but once the new rifles proved its efficiency, the moyo charge rifles became the standard. -->
+<Moyo_ChargeRifle.description>Штурмовая винтовка Moyo, которая очень похожа на традиционную зарядную винтовку. Заряженный болт разгонялся по стволу и производил выстрел. Каждый болт спроектирован таким образом, чтобы свести к минимуму потери энергии на расстоянии.\n\nВ маяке также используются традиционные зарядные винтовки, но как только новые винтовки доказали свою эффективность, стандартными стали зарядные винтовки мойо.</Moyo_ChargeRifle.description>
+                           <!-- stock -->
+<Moyo_ChargeRifle.tools.0.label>ложе</Moyo_ChargeRifle.tools.0.label>
+                           <!-- barrel -->
+<Moyo_ChargeRifle.tools.1.label>ствол</Moyo_ChargeRifle.tools.1.label>
+                         <!-- Moyo chargebolt -->
+<Bullet_MoyoAssaultBolt.label>зарядный болт Мойо</Bullet_MoyoAssaultBolt.label>
+                      <!-- moyo precision rifle -->
+<Moyo_PrecisionRifle.label>высокоточная винтовка moyo</Moyo_PrecisionRifle.label>
+                            <!-- Moyo sniper rifle that shows much similarities with a traditional charge rifle. The firerate is low, but each shot boasts an impressive range and accuracy.
+
+An experimental model made with the development of bolt caster technology, they where seldom used in the confines of the lighthouse, but will prove to be an effective weapon in the open surface of the rim. -->
+<Moyo_PrecisionRifle.description>Снайперская винтовка Moyo имеет много общего с традиционной винтовкой. Скорострельность невысока, но каждый выстрел может похвастаться впечатляющей дальностью и точностью.\n\nЭкспериментальная модель, созданная с развитием технологии затворной задержки, редко используется в стенах маяка, но может оказаться эффективным оружием на открытой поверхности обода.</Moyo_PrecisionRifle.description>
+                              <!-- stock -->
+<Moyo_PrecisionRifle.tools.0.label>ложе</Moyo_PrecisionRifle.tools.0.label>
+                              <!-- barrel -->
+<Moyo_PrecisionRifle.tools.1.label>ствол</Moyo_PrecisionRifle.tools.1.label>
+                        <!-- moyo energy shot -->
+<Bullet_MoyoSniperBolt.label>энергетический снаряд Мойо</Bullet_MoyoSniperBolt.label>
+                 <!-- moyo charge SMG -->
+<Moyo_ChargeSMG.label>зарядный SMG Мойо</Moyo_ChargeSMG.label>
+                       <!-- Small moyo submachine gun. Light and easy to use, these were the most commonly used weapons in the lighthouse.
+
+Before, most firearms where locked in the armories, but in the civil war, firearms both new and old quickly spread to all levels of the lighthouse. -->
+<Moyo_ChargeSMG.description>Небольшой пистолет-пулемет Мойо. Легкое и простое в использовании, это было наиболее часто используемое оружие на маяке.\n\nБольше всего огнестрельного оружия хранилось в арсеналах, но во время гражданской войны огнестрельное оружие, как новое, так и старое, быстро распространилось на всех уровнях маяка.</Moyo_ChargeSMG.description>
+                         <!-- stock -->
+<Moyo_ChargeSMG.tools.0.label>ложе</Moyo_ChargeSMG.tools.0.label>
+                         <!-- barrel -->
+<Moyo_ChargeSMG.tools.1.label>ствол</Moyo_ChargeSMG.tools.1.label>
+                     <!-- moyo chargebolt -->
+<Bullet_MoyoSMGBolt.label>зарядный болт Мойо</Bullet_MoyoSMGBolt.label>
+                  <!-- moyo balista -->
+<Moyo_BoltCaster.label>балиста Мойо</Moyo_BoltCaster.label>
+                        <!-- Large boltcaster made to fight off the leviathans that threaten the lighthouse. The weapon accelerates overcharged energy bolts through the barrel and fires them. On impact, the bolts release the stored energy in a violent explosion.
+
+Boltcaster weapons were developed when traditional charge weapons proved less effective underwater. This boltcaster is the first charge bolt weapon, and every subsequent moyo firearm can be traced back to it.. -->
+<Moyo_BoltCaster.description>Lболткастер, созданный для борьбы с левиафанами, угрожающими маяку. Оружие разгоняет перезаряженные энергетические болты по стволу и выстреливает их. При ударе болты высвобождают накопленную энергию в виде сильного взрыва.\n\nБолткастерное оружие было разработано, когда традиционное зарядное оружие оказалось менее эффективным под водой. Этот болткастер - первое зарядное болтовое оружие, и все последующие виды огнестрельного оружия моои могут быть отнесены к нему.</Moyo_BoltCaster.description>
+                          <!-- body -->
+<Moyo_BoltCaster.tools.0.label>корпус</Moyo_BoltCaster.tools.0.label>
+                          <!-- barrel -->
+<Moyo_BoltCaster.tools.1.label>ствол</Moyo_BoltCaster.tools.1.label>
+                        <!-- moyo heavy chargebolt -->
+<Bullet_MoyoChargeBolt.label>тяжёлый зарядный болт Мойо</Bullet_MoyoChargeBolt.label>
+                  <!-- moyo autocannon -->
+<Moyo_AutoCannon.label>автопушка Мойо</Moyo_AutoCannon.label>
+                        <!-- Large boltcaster with a high rate of fire. The bolts fired from this weapon is effective on both armored and unarmored targets.n
+As the battles in the lighthouse grew more complex, more weapons where developed to deal with the changing situation. This weapon in particular seems to have been inspired by a surface weapon. -->
+<Moyo_AutoCannon.description>Большой болткастер с высокой скорострельностью. Болты, выпущенные из этого оружия, эффективны как по бронированным, так и по небронированным целям.n\nПо мере того, как сражения на маяке становились все сложнее, разрабатывалось все больше оружия, чтобы справиться с меняющейся ситуацией. Это оружие, в частности, похоже, было вдохновлено надводным оружием.</Moyo_AutoCannon.description>
+                          <!-- body -->
+<Moyo_AutoCannon.tools.0.label>корпус</Moyo_AutoCannon.tools.0.label>
+                          <!-- barrel -->
+<Moyo_AutoCannon.tools.1.label>ствол</Moyo_AutoCannon.tools.1.label>
+                        <!-- moyo heavy chargebolt -->
+<Bullet_MoyoAutoCannon.label>тяжёлый зарядный болт Мойо</Bullet_MoyoAutoCannon.label>
+                        <!-- moyo royal charge rifle -->
+<Moyo_HeavyChargeRifle.label>королевская зарядная винтовка Мойо</Moyo_HeavyChargeRifle.label>
+                              <!-- Heavy rifle used by the royal guard. A model focusing almost entirely on firepower, this model is supiror to the original charge rifle in nearly every way save weight and ease of use.
+
+The first weapon chosen as the armament of the royal guard, the white body etched with the symbol of the royal guard are the spears of the elders. -->
+<Moyo_HeavyChargeRifle.description>Тяжелая винтовка, используемая королевской гвардией. Модель, почти полностью сосредоточенная на огневой мощи, превосходит оригинальную зарядную винтовку почти во всех отношениях, кроме веса и удобства использования.\n\nПервое оружие, выбранное в качестве вооружения королевской гвардии, белый корпус, вытравленный с символом королевской гвардии - это копья старейшин.</Moyo_HeavyChargeRifle.description>
+                                <!-- stock -->
+<Moyo_HeavyChargeRifle.tools.0.label>ложе</Moyo_HeavyChargeRifle.tools.0.label>
+                                <!-- barrel -->
+<Moyo_HeavyChargeRifle.tools.1.label>ствол</Moyo_HeavyChargeRifle.tools.1.label>
+                       <!-- moyo royal autocannon -->
+<Moyo_HeavyAutoCannon.label>королевская автопушка Мойо</Moyo_HeavyAutoCannon.label>
+                             <!-- Heavy autocannon used by the royal guard. The bolts fired from this weapon is effective on both armored and unarmored targets.
+
+One of the armaments of the royal guard, the white body etched with the symbol of the royal guard are the hammers of the elders. -->
+<Moyo_HeavyAutoCannon.description>Тяжелая автопушка, используемая королевской гвардией. Болты, выпущенные из этого оружия, эффективны как по бронированным, так и по небронированным целям.\n\nОдно из вооружений королевской гвардии, белое тело, вытравленное символом королевской гвардии - это молот старейшин.</Moyo_HeavyAutoCannon.description>
+                               <!-- body -->
+<Moyo_HeavyAutoCannon.tools.0.label>корпус</Moyo_HeavyAutoCannon.tools.0.label>
+                               <!-- barrel -->
+<Moyo_HeavyAutoCannon.tools.1.label>ствол</Moyo_HeavyAutoCannon.tools.1.label>
+                       <!-- moyo royal balista -->
+<Moyo_HeavyBoltCaster.label>королевская балиста</Moyo_HeavyBoltCaster.label>
+                             <!-- Heavy boltcaster used by the royal guard. Compared to the original, it can fire chargebolts faster, more accurately over longer distance.
+
+The symbolic weapon approved to be a part of royal arsenal, the white body etched with the symbol of the royal guard are the mace of the elders. -->
+<Moyo_HeavyBoltCaster.description>Тяжелый болткастер, используемый королевской гвардией. По сравнению с оригиналом, он может стрелять зарядами быстрее, точнее и на большее расстояние.\n\nСимволическое оружие, утвержденное как часть королевского арсенала, белый корпус с символом королевской гвардии - это булава старейшин.</Moyo_HeavyBoltCaster.description>
+                               <!-- body -->
+<Moyo_HeavyBoltCaster.tools.0.label>корпус</Moyo_HeavyBoltCaster.tools.0.label>
+                               <!-- barrel -->
+<Moyo_HeavyBoltCaster.tools.1.label>ствол</Moyo_HeavyBoltCaster.tools.1.label>
+                   <!-- moyo cryoblaster -->
+<Moyo_CryoBlaster.label>криобластер Мойо</Moyo_CryoBlaster.label>
+                         <!-- Weapon developed for riot control. Fires cryogenic material that quickly freezes on its victims and causes severe frostbite.
+
+Cyrogenic weapons where developed with intent to reduce bleeding during suppression and capture targets with relatively less injuries. -->
+<Moyo_CryoBlaster.description>Оружие, разработанное для подавления беспорядков. Стреляет криогенным материалом, который быстро замерзает на жертвах и вызывает сильное обморожение.\n\nЦирогенное оружие было разработано с целью уменьшить кровотечение во время подавления и захватить цели с относительно меньшими повреждениями.</Moyo_CryoBlaster.description>
+                           <!-- body -->
+<Moyo_CryoBlaster.tools.0.label>корпус</Moyo_CryoBlaster.tools.0.label>
+                           <!-- barrel -->
+<Moyo_CryoBlaster.tools.1.label>ствол</Moyo_CryoBlaster.tools.1.label>
+                     <!-- moyo cryoblast -->
+<Bullet_MoyoCBBlast.label>криобласт мойо</Bullet_MoyoCBBlast.label>
+
+</LanguageData>

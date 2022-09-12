@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/Content/Defs/ThingsDefs_Items/Apparel_Various.xml-->
+              <!-- moyo bodywrappings -->
+<Moyo_Tribal.label>Набедренная повязи Мойо</Moyo_Tribal.label>
+                    <!-- Hastily made clothes with long bandages. Takes a while to fully wrap around you and quite crude, but many a moyo owe their lives to this simple piece of cloth. -->
+<Moyo_Tribal.description>Наспех сделанная одежда с длинными бинтами. На то, чтобы полностью обернуться вокруг вас, требуется время, и она довольно грубая, но многие мойо обязаны своей жизнью этому простому куску ткани.</Moyo_Tribal.description>
+             <!-- moyo parka -->
+<Moyo_Parka.label>парка Мойо</Moyo_Parka.label>
+                   <!-- A parka for moyos to keep warm. -->
+<Moyo_Parka.description>Парка для Мойо, чтобы сохранить тепло.</Moyo_Parka.description>
+                 <!-- Moyo slave restrainer -->
+<Moyo_BodyStrap.label>Ограничитель для рабов Moyo</Moyo_BodyStrap.label>
+                       <!-- A suit of straps, collar and shackle to restrain slaves. It reminds the wearer of their slave status and psychologically suppresses them, reducing the chance of a slave rebellion. -->
+<Moyo_BodyStrap.description>Костюм из ремней, ошейника и кандалов для удержания рабов. Он напоминает владельцу о его рабском статусе и психологически подавляет его, снижая вероятность восстания рабов.</Moyo_BodyStrap.description>
+           <!-- moyo shirt and boots -->
+<Moyo_SnB.label>рубашка и ботинки moyo</Moyo_SnB.label>
+                 <!-- a suit of clothes with shirt and boots. its better than bodywrappings in every way. -->
+<Moyo_SnB.description>костюм, состоящий из рубашки и сапог. он во всех отношениях лучше, чем нательное одеяние.</Moyo_SnB.description>
+              <!-- moyo jacket -->
+<Moyo_Jacket.label>куртка Мойо</Moyo_Jacket.label>
+                    <!-- A sturdy jacket to protect the body from harm. -->
+<Moyo_Jacket.description>Прочная куртка для защиты тела от повреждений.</Moyo_Jacket.description>
+              <!-- moyo duster -->
+<Moyo_Duster.label>пыльник Мойо</Moyo_Duster.label>
+                    <!-- A long coat that offers protection from the sun and wind. -->
+<Moyo_Duster.description>Длинная шерсть, обеспечивающая защиту от солнца и ветра.</Moyo_Duster.description>
+             <!-- moyo tuque -->
+<Moyo_Tuque.label>Шапка Мойо</Moyo_Tuque.label>
+                   <!-- A thick fluffy hat. Helps maintain body temperature. -->
+<Moyo_Tuque.description>Толстая пушистая шапка. Помогает поддерживать температуру тела.</Moyo_Tuque.description>
+                 <!-- moyo cowboyhat -->
+<Moyo_CowboyHat.label>ковбойская шляпа Мойо</Moyo_CowboyHat.label>
+                       <!-- A traditional western hat that blocks sun and rain, and makes you look more charismatic to boot. However, not quite designed to accommodate a moyo’s feelers. -->
+<Moyo_CowboyHat.description>Традиционная западная шляпа, которая защищает от солнца и дождя, а также придает вам более харизматичный вид. Однако она не совсем подходит для щупальцев мойо.</Moyo_CowboyHat.description>
+                 <!-- moyo bowlerhat -->
+<Moyo_BowlerHat.label>шляпа-котелок Мойо</Moyo_BowlerHat.label>
+                       <!-- A good-looking hat which projects a slightly urban, money-loving style. Improves social impact. Not designed with head feelers in mind. -->
+<Moyo_BowlerHat.description>Хорошо выглядящая шляпа, которая проецирует слегка городской, денежный стиль. Улучшает социальное воздействие. Не разработана с учетом ощущения головы.</Moyo_BowlerHat.description>
+                <!-- moyo bodysuit -->
+<Moyo_Bodysuit.label>Комбинезон Мойо</Moyo_Bodysuit.label>
+                      <!-- Protective suit for temperature-sensitive moyos. Looks stylish as well. -->
+<Moyo_Bodysuit.description>Защитный костюм для чувствительных к температуре мойо. Выглядит стильно.</Moyo_Bodysuit.description>
+              <!-- moyo engineering gear -->
+<Moyo_EGsuit.label>инженерное обмундирование Мойо</Moyo_EGsuit.label>
+                    <!-- A suit worn by moyo engineers. Grants protection from the heat of the middle layer, as well as any accidents. -->
+<Moyo_EGsuit.description>Костюм, который носят инженеры мойо. Обеспечивает защиту от тепла среднего слоя, а также от любых несчастных случаев.</Moyo_EGsuit.description>
+              <!-- moyo welding mask -->
+<Moyo_EGmask.label>сварочная маска Мойо</Moyo_EGmask.label>
+                    <!-- A mask that blocks extreme heat and light. Also provides physical protection for the face. -->
+<Moyo_EGmask.description>Маска, блокирующая экстремальное тепло и свет. Также обеспечивает физическую защиту лица.</Moyo_EGmask.description>
+               <!-- moyo composite bodySuit -->
+<Moyo_Evasuit.label>комбинированный комбинезон Мойо</Moyo_Evasuit.label>
+                     <!-- Reinforced with various materials, the suit is quite tough and provides boasts a high temperature resistance. -->
+<Moyo_Evasuit.description>Усиленный различными материалами, костюм достаточно прочен и может похвастаться высокой термостойкостью.</Moyo_Evasuit.description>
+              <!-- moyo deepdiving gear -->
+<Moyo_DDgear.label>снаряжение для глубоководного погружения Мойо</Moyo_DDgear.label>
+                    <!-- Diving suit designed for deep sea use. Made with thick abysteel plates to resist the water pressure and filled with various support modules, making it quite heavy.
+
+The lighthouse relied on mechanoids for most deep sea work, but as the number of operable mechanoids decreased, they had to rely more and more on manpower. -->
+<Moyo_DDgear.description>Водолазный костюм, предназначенный для глубоководного использования. Сделан из толстой глубоководной стали, чтобы противостоять давлению воды, и заполнен различными вспомогательными модулями, что делает его довольно тяжелым.\n\nДля выполнения большинства глубоководных работ маяк полагался на механоидов, но по мере того, как количество работоспособных механоидов уменьшалось, им приходилось все больше полагаться на рабочую силу.</Moyo_DDgear.description>
+                <!-- moyo deepdiving helmet -->
+<Moyo_DDhelmet.label>шлем для глубоководного погружения Мойо</Moyo_DDhelmet.label>
+                      <!-- Deep sea helmet used with the deep diving suit. Just as large, heavy, and protective as the suit. Both are required to go underwater, but no such problems exist on the surface.
+
+As the civil war raged on, it was only a matter of time before they were repurposed for military needs. -->
+<Moyo_DDhelmet.description>Глубоководный шлем, используемый вместе с костюмом для глубоководного погружения. Такой же большой, тяжелый и защитный, как и костюм. И то, и другое необходимо для погружения под воду, но на поверхности таких проблем не возникает.\n\nПо мере того, как бушевала гражданская война, их перепрофилирование для военных нужд было лишь вопросом времени.</Moyo_DDhelmet.description>
+              <!-- moyo diving gear -->
+<Moyo_LDgear.label>снаряжение для дайвинга Мойо</Moyo_LDgear.label>
+                    <!-- Diving suit for underwater work. Grants protection from the outside environment while still allowing freedom of movement.
+
+Originally, this was the only diving suit used by the moyo, but as the need for deep sea diving grew, the diving suits where modified into the thicker-and more protective-deep diving suits. -->
+<Moyo_LDgear.description>Водолазный костюм для работы под водой. Обеспечивает защиту от внешней среды, но при этом позволяет свободно двигаться.\n\nОригинально это был единственный водолазный костюм, который использовали мойо, но по мере роста потребности в глубоководных погружениях, водолазные костюмы были модифицированы в более толстые и более защитные костюмы для глубоководных погружений.</Moyo_LDgear.description>
+                <!-- moyo diving helmet -->
+<Moyo_LDhelmet.label>водолазный шлем Мойо</Moyo_LDhelmet.label>
+                      <!-- Helmet paired with the diving suit. Comes with a HUD and a wide visor to allow for a wide view.
+
+Mainly used in the upper and middle levels, it wasn’t much trouble for smugglers to acquire some for their own use. An armed riot caused by a group of moyo in diving suits was what sparked the civil war. -->
+<Moyo_LDhelmet.description>Шлем в паре с водолазным костюмом. Поставляется с HUD и широким козырьком для широкого обзора.\n\nВ основном используется на верхнем и среднем уровнях, контрабандистам не составило большого труда приобрести несколько штук для собственного использования. Вооруженное восстание, вызванное группой Мойо в водолазных костюмах, стало причиной гражданской войны.</Moyo_LDhelmet.description>
+                <!-- moyo Sensory control helmet(Soothing) -->
+<Moyo_PShelmet.label>Шлем Мойо с сенсорным управлением (успокаивающий)</Moyo_PShelmet.label>
+                      <!-- A helmet with a visual and auditory interface. It can alter sensory inputs depending on its configuration. This helmet is set to soothing mode.
+
+From entertainment to therapeutic use, This helmet can be used in various area if respective software is provided. Its a shame such softwares are not easily found in rimworld. -->
+<Moyo_PShelmet.description>Шлем с визуальным и слуховым интерфейсом. Он может изменять сенсорные входы в зависимости от конфигурации. Этот шлем настроен на успокаивающий режим.\n\n\nОт развлечения до терапевтического использования, этот шлем можно использовать в различных областях, если предоставить соответствующее программное обеспечение. Жаль, что такое программное обеспечение не так легко найти в мире Rimworld.</Moyo_PShelmet.description>
+                <!-- moyo Sensory control helmet(Supressing) -->
+<Moyo_SShelmet.label>Шлем Мойо сенсорного контроля (подавление)</Moyo_SShelmet.label>
+                      <!-- A helmet with a visual and auditory interface. It can alter sensory inputs depending on its configuration. This helmet is set to supressing mode.
+
+Oppression is one of its 'various area of use', Used by some questionable police forces or agents of the elders. -->
+<Moyo_SShelmet.description>Шлем с визуальным и слуховым интерфейсом. Он может изменять сенсорные входы в зависимости от конфигурации. Этот шлем установлен в режим подавления.\n\nПодавление - одна из его "различных областей применения", используется некоторыми сомнительными полицейскими силами или агентами старейшин.</Moyo_SShelmet.description>
+
+</LanguageData>

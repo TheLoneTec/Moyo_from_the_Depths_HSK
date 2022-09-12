@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/HSK/Defs/Ammo/Advanced/6x18mmCharged.xml-->
+                         <!-- make 6x18mm Charged cartridge x500 -->
+<MakeAmmo_6x18mmCharged.label>make 6x18mm Charged cartridge x500</MakeAmmo_6x18mmCharged.label>
+                               <!-- Craft 500 6x18mm Charged cartridges. -->
+<MakeAmmo_6x18mmCharged.description>Craft 500 6x18mm Charged cartridges.</MakeAmmo_6x18mmCharged.description>
+                             <!-- Making 6x18mm Charged cartridges. -->
+<MakeAmmo_6x18mmCharged.jobString>Making 6x18mm Charged cartridges.</MakeAmmo_6x18mmCharged.jobString>
+                            <!-- make 6x18mm Charged (Conc.) cartridge x500 -->
+<MakeAmmo_6x18mmCharged_AP.label>make 6x18mm Charged (Conc.) cartridge x500</MakeAmmo_6x18mmCharged_AP.label>
+                                  <!-- Craft 500 6x18mm Charged (Conc.) cartridges. -->
+<MakeAmmo_6x18mmCharged_AP.description>Craft 500 6x18mm Charged (Conc.) cartridges.</MakeAmmo_6x18mmCharged_AP.description>
+                                <!-- Making 6x18mm Charged (Conc.) cartridges. -->
+<MakeAmmo_6x18mmCharged_AP.jobString>Making 6x18mm Charged (Conc.) cartridges.</MakeAmmo_6x18mmCharged_AP.jobString>
+                             <!-- make 6x18mm Charged (Ion) cartridge x500 -->
+<MakeAmmo_6x18mmCharged_Ion.label>make 6x18mm Charged (Ion) cartridge x500</MakeAmmo_6x18mmCharged_Ion.label>
+                                   <!-- Craft 500 6x18mm Charged (Ion) cartridges. -->
+<MakeAmmo_6x18mmCharged_Ion.description>Craft 500 6x18mm Charged (Ion) cartridges.</MakeAmmo_6x18mmCharged_Ion.description>
+                                 <!-- Making 6x18mm Charged (Ion) cartridges. -->
+<MakeAmmo_6x18mmCharged_Ion.jobString>Making 6x18mm Charged (Ion) cartridges.</MakeAmmo_6x18mmCharged_Ion.jobString>
+
+</LanguageData>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/Content/Defs/ThingsDefs_Items/Apparel_Royal.xml-->
+                 <!-- moyo royalsuit -->
+<Moyo_Royalsuit.label>королевский костюм</Moyo_Royalsuit.label>
+                       <!-- High quality clothes worn by the upper class of the lighthouse. Despite the sleek exterior, it provides excellent protection. -->
+<Moyo_Royalsuit.description>Высококачественная одежда, которую носят представители высшего класса маяка. Несмотря на гладкий внешний вид, она обеспечивает отличную защиту.</Moyo_Royalsuit.description>
+                  <!-- moyo royalrobe A -->
+<Moyo_RoyalRobeA.label>королевская мантия Мойо A</Moyo_RoyalRobeA.label>
+                        <!-- Extravagant clothes worn by the upper class of the lighthouse. Made with advanced materials and is sturdier than it seems.
+
+The clothes are engraved with the symbol of one of the three elders. -->
+<Moyo_RoyalRobeA.description>Экстравагантная одежда, которую носит высшее сословие маяка. Сделана из современных материалов и прочнее, чем кажется.\n\nНа одежде выгравирован символ одного из трех старейшин.</Moyo_RoyalRobeA.description>
+                  <!-- moyo royalrobe B -->
+<Moyo_RoyalRobeB.label>королевская мантия B</Moyo_RoyalRobeB.label>
+                        <!-- Extravagant clothes worn by the upper class of the lighthouse. Made with advanced materials and is sturdier than it seems.
+
+The clothes are engraved with the symbol of one of the three elders. -->
+<Moyo_RoyalRobeB.description>Экстравагантная одежда, которую носит высшее сословие маяка. Сделана из современных материалов и прочнее, чем кажется.\n\nНа одежде выгравирован символ одного из трех старейшин.</Moyo_RoyalRobeB.description>
+                  <!-- moyo royalrobe C -->
+<Moyo_RoyalRobeC.label>королевская мантия C</Moyo_RoyalRobeC.label>
+                        <!-- Extravagant clothes worn by the upper class of the lighthouse. Made with advanced materials and is sturdier than it seems.
+
+The clothes are engraved with the symbol of one of the three elders. -->
+<Moyo_RoyalRobeC.description>Экстравагантная одежда, которую носит высшее сословие маяка. Сделана из современных материалов и прочнее, чем кажется.\n\nНа одежде выгравирован символ одного из трех старейшин.</Moyo_RoyalRobeC.description>
+                       <!-- moyo exotic black dress -->
+<Moyo_RoyalBlackDress.label>экзотическое черное платье Мойо</Moyo_RoyalBlackDress.label>
+                             <!-- Extravagant clothes worn by the upper class of the lighthouse. Made with advanced materials and is sturdier than it seems.
+
+A black dress with a peculiar style. Without any resemblence of the elders, for whom this clothing has been made is a mystery. 
+
+*Designed for female use.* -->
+<Moyo_RoyalBlackDress.description>Экстравагантная одежда, которую носит высший класс маяка. Сделана из современных материалов и прочнее, чем кажется.\n\n\nЧерное платье необычного фасона. Не имеет никакого сходства со старейшинами, для кого была сделана эта одежда - загадка. \n\n\n*Предназначено для женского использования.\n\n\n*Создано для женщин.</Moyo_RoyalBlackDress.description>
+                <!-- moyo holosuit -->
+<Moyo_Holosuit.label>холо-костюм мойо</Moyo_Holosuit.label>
+                      <!-- High quality clothes worn by the celebrities of the lighthouse. Made with advanced materials and is sturdier than it seems.
+
+As products of the surface gained more fame over time, entertainers and designers soon followed suit. The first to adopt this style were whom so-called 'Sirens', who were the biggest influencers of their society.
+
+ *Designed for female use.* -->
+<Moyo_Holosuit.description>Высококачественная одежда, которую носят знаменитости маяка. Сделана из передовых материалов и прочнее, чем кажется.\n\nПо мере того, как изделия из поверхности приобретали все большую известность со временем, артисты и дизайнеры вскоре последовали их примеру. Первыми этот стиль переняли так называемые "Сирены", которые были самыми влиятельными в своем обществе.\n\n\n*Разработано для женского использования*</Moyo_Holosuit.description>
+                  <!-- moyo holojacket -->
+<Moyo_HoloJacket.label>холо-жакет мойо</Moyo_HoloJacket.label>
+                        <!-- High quality clothes worn by the celebrities of the lighthouse. Made with advanced materials and is sturdier than it seems.
+
+As products of the surface gained more fame over time, entertainers and designers soon followed suit. The first to adopt this style were whom so-called 'Sirens', who were the biggest influencers of their society.
+
+ *Designed for female use.* -->
+<Moyo_HoloJacket.description>Высококачественная одежда, которую носят знаменитости маяка. Сделана из передовых материалов и прочнее, чем кажется.\n\nПо мере того, как изделия из поверхности приобретали все большую известность со временем, артисты и дизайнеры вскоре последовали их примеру. Первыми этот стиль переняли так называемые "Сирены", которые были самыми влиятельными в своем обществе.\n\n\n*Разработано для женского использования*</Moyo_HoloJacket.description>
+                      <!-- Moyo mini holoprojector A -->
+<Moyo_RoyalHologramA.label>Мини холо-проектор Мойо A</Moyo_RoyalHologramA.label>
+                            <!-- A miniature holographic projector used as an accessory by the upper class in the lighthouse. Provided next to no protection, but aids communications with holographic images.
+
+It’s projecting the symbol of one of the three elders. -->
+<Moyo_RoyalHologramA.description>Миниатюрный голографический проектор, используемый в качестве аксессуара высшим классом на маяке. Не обеспечивает практически никакой защиты, но помогает общаться с помощью голографических изображений.\n\nЭто проецирует символ одного из трех старейшин.</Moyo_RoyalHologramA.description>
+                      <!-- Moyo mini holoprojector B -->
+<Moyo_RoyalHologramB.label>Мини холо-проектор Мойо B</Moyo_RoyalHologramB.label>
+                            <!-- A miniature holographic projector used as an accessory by the upper class in the lighthouse. Provided next to no protection, but aids communications with holographic images.
+
+It’s projecting the symbol of one of the three elders. -->
+<Moyo_RoyalHologramB.description>Миниатюрный голографический проектор, используемый в качестве аксессуара высшим классом на маяке. Не обеспечивает практически никакой защиты, но помогает общаться с помощью голографических изображений.\n\nЭто проецирует символ одного из трех старейшин.</Moyo_RoyalHologramB.description>
+                      <!-- Moyo mini holoprojector C -->
+<Moyo_RoyalHologramC.label>Мини холо-проектор Мойо C</Moyo_RoyalHologramC.label>
+                            <!-- A miniature holographic projector used as an accessory by the upper class in the lighthouse. Provided next to no protection, but aids communications with holographic images.
+
+It’s projecting the symbol of one of the three elders. -->
+<Moyo_RoyalHologramC.description>Миниатюрный голографический проектор, используемый в качестве аксессуара высшим классом на маяке. Не обеспечивает практически никакой защиты, но помогает общаться с помощью голографических изображений.\n\nЭто проецирует символ одного из трех старейшин.</Moyo_RoyalHologramC.description>
+              <!-- Moyo royalguard armor -->
+<Moyo_GDsuit.label>Доспехи королевской гвардии Мойо</Moyo_GDsuit.label>
+                    <!-- Deep diving gear modified into battle armor for the elder’s guardians.
+
+When the civil war broke out, the elders quickly formed the royal guard to protect themselves. The diving suits, already being used in the military, was used to arm them. -->
+<Moyo_GDsuit.description>Когда началась гражданская война, старейшины быстро сформировали королевскую гвардию для своей защиты. Водолазные костюмы, которые уже использовались в армии, были использованы для их вооружения.</Moyo_GDsuit.description>
+                <!-- Moyo royalguard helmet -->
+<Moyo_GDhelmet.label>Шлем королевской гвардии Moyo</Moyo_GDhelmet.label>
+                      <!-- The helm of the royal guard. All of its support systems have been modified for combat.
+
+The royal guard don’t just defend the elders. Deployed all over the lighthouse to find and destroy opposing forces, the white armor and the unique visors of the royal guards soon became a symbol of fear. -->
+<Moyo_GDhelmet.description>Шлем королевской гвардии. Все его вспомогательные системы были модифицированы для боя.\n\nКоролевская стража защищает не только старейшин. Размещенные по всему маяку для поиска и уничтожения противостоящих сил, белые доспехи и уникальные козырьки королевских гвардейцев вскоре стали символом страха.</Moyo_GDhelmet.description>
+              <!-- Moyo royalguard light armor -->
+<Moyo_GSsuit.label>Легкие доспехи королевской гвардии Мойо</Moyo_GSsuit.label>
+                    <!-- Diving gear modified into battle armor for the elder’s guardians.
+
+The newest addition to royal arsenal, focuses on improving mobility and versitility of the armor. This white armor if favoured by solo royalguard operatives.
+
+Experimental field generater module has been installed, but it will need a suitable power source to be activated. -->
+<Moyo_GSsuit.description>Новейшее дополнение к королевскому арсеналу, сфокусированное на улучшении мобильности и универсальности доспехов. Этот белый доспех предпочитают одиночные оперативники королевской гвардии.\n\n\nЭкспериментальный модуль генератора поля был установлен, но для его активации потребуется подходящий источник энергии.</Moyo_GSsuit.description>
+                <!-- Moyo royalguard light helmet -->
+<Moyo_GShelmet.label>Легкий шлем королевской гвардии Мойо</Moyo_GShelmet.label>
+                      <!-- The helm of the royal guard. All of its support systems have been modified for combat.
+\There are works that has to be done quietly. This is when royalguard operatives are dispatched, serving the elders behind the scenes. -->
+<Moyo_GShelmet.description>Шлем королевской гвардии. Все его вспомогательные системы были модифицированы для боя.\n\Некоторые работы должны выполняться тихо. Именно тогда и отправляются оперативники королевской гвардии, которые служат старейшинам за кулисами.</Moyo_GShelmet.description>
+
+</LanguageData>

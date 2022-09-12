@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/Content/Defs/ReserchDefs/Research_ProjectDefs.xml-->
+                    <!-- deepblue extraction -->
+<DeepBlue_Research.label>добыча глубокой синевы</DeepBlue_Research.label>
+                          <!-- Research how to synthesize new drugs with deepblue. -->
+<DeepBlue_Research.description>Исследуйте способы синтеза новых лекарств с помощью deepblue.</DeepBlue_Research.description>
+                       <!-- medicinal deepblue -->
+<DeepBlue_MedResearch.label>медицинская глубокая синева</DeepBlue_MedResearch.label>
+                             <!-- Research how to use deepblue for medical purposes. -->
+<DeepBlue_MedResearch.description>Исследуйте, как использовать deepblue в медицинских целях.</DeepBlue_MedResearch.description>
+               <!-- deepblue synthesis -->
+<DBS_Research.label>синтез глубокой синевы</DBS_Research.label>
+                     <!-- Research into a more sustainable means of deepblue production. Deepblue itself cannot be synthesized, but there are other means of obtaining it. -->
+<DBS_Research.description>Исследование более устойчивого способа производства deepblue. Глубокий синий цвет сам по себе не может быть синтезирован, но есть другие способы его получения.</DBS_Research.description>
+                 <!-- abysstech engineering -->
+<MoyoProduction.label>абистех инжиниринг</MoyoProduction.label>
+                       <!-- Delve into the technology of the Lighthouse to acquire hints of replicating their gears. -->
+<MoyoProduction.description>Изучите технологию Маяка, чтобы получить подсказки для копирования их шестеренок.</MoyoProduction.description>
+                                 <!-- About: Getting abyssteel -->
+<MoyoProduction.discoveredLetterTitle>Информация: Получение абисстали</MoyoProduction.discoveredLetterTitle>
+                                <!-- Now you have access to the powerful abysstech of The lighthouse. You need some abyssteel to kickstart the whole process, here are some ways to get it:
+
+-All Moyo settlements are most likely to sell abyssteel.
+-Melt down things made from abyssteel(weapons, armor and abysstech mechs).
+-Some quests are rewarded with abyssteel. -->
+<MoyoProduction.discoveredLetterText>Теперь у вас есть доступ к мощному абисстеку Маяка. Вам нужно немного глубоководной стали, чтобы запустить весь процесс, вот несколько способов получить ее:\n\n-Все поселения Мойо, скорее всего, продают глубоководную сталь.\n-Плавьте вещи, сделанные из глубоководной стали (оружие, броню и мехи абисстеха).\n-Некоторые квесты вознаграждаются глубоководной сталью.</MoyoProduction.discoveredLetterText>
+                  <!-- charged bolt -->
+<MoyoChargedBolt.label>заряженный болт</MoyoChargedBolt.label>
+                        <!-- Craft moyo charge weaponaries. Opting for a bolt casting system to reduce loss of energy, it only requires some modifications to pulse charged weapon technology, and doesn’t take much to research. -->
+<MoyoChargedBolt.description>Создавайте оружие, заряжаемое мооио. Выбирая систему литья болтов для уменьшения потерь энергии, он требует лишь некоторых модификаций технологии импульсно-зарядного оружия и не требует много времени на исследование.</MoyoChargedBolt.description>
+                  <!-- weaponized cryonics -->
+<MoyoCryoBlaster.label>оружейная крионика</MoyoCryoBlaster.label>
+                        <!-- Craft cryogenic weaponaries. A result of the lighthouse’s research into minimizing bloodloss in combat. -->
+<MoyoCryoBlaster.description>Создание криогенного оружия. Результат исследований маяка по минимизации кровопотери в бою.</MoyoCryoBlaster.description>
+                       <!-- defensive diving suit -->
+<ShallowSeaProtection.label>защитный водолазный костюм</ShallowSeaProtection.label>
+                             <!-- Craft moyo diving suits. Used as a substitute for armor in the civil war, it went through many modifications to be adapted for surface use, including removal of the tail piece. -->
+<ShallowSeaProtection.description>создание водолазных костюмов Мойо. Используемый в качестве замены брони во время гражданской войны, он прошел через множество модификаций, чтобы быть приспособленным для использования на поверхности, включая удаление хвостовой части.</ShallowSeaProtection.description>
+                    <!-- deepsea diving suit -->
+<DeepSeaProtection.label>глубоководный костюм для подводного плавания</DeepSeaProtection.label>
+                          <!-- Craft heavy duty moyo deepdiving suits. a substitute armor used in civil war, it went through many modifications to be adapted for surface use, including removal of the tail piece. -->
+<DeepSeaProtection.description>Изготовление сверхмощных глубоководных костюмов moyo. Заменитель брони, использовавшийся в гражданской войне, прошел через множество модификаций, чтобы быть приспособленным для использования на поверхности, включая удаление хвостовой части.</DeepSeaProtection.description>
+                         <!-- delve even deeper into abysstech -->
+<GurdianAdvisorResearch.label>еще глубже погрузиться в абисстех</GurdianAdvisorResearch.label>
+                               <!-- What you can replicate is not everything that abysstech can provide. there are still more to grasp - The pinnacle of abysstech.
+
+You need other means to cypher it. perhaps...an AI? -->
+<GurdianAdvisorResearch.description>То, что вы можете воспроизвести, это не все, что может предоставить abysstech. есть еще многое, что можно постичь - вершина abysstech.\n\n\nВам нужны другие средства, чтобы зашифровать это. возможно... ИИ?</GurdianAdvisorResearch.description>
+                 <!-- abysstech royal arms -->
+<GuardianModule.label>королевское оружие абисстека</GuardianModule.label>
+                       <!-- Craft the most advanced set of gears of the Lighthouse with the help of your AI adviser. The pinnacle of abysstech enginnering is now in your hand. -->
+<GuardianModule.description>Создайте самый совершенный набор шестеренок Маяка с помощью вашего советника ИИ. Вершина абисстех-инжиниринга теперь в ваших руках.</GuardianModule.description>
+                        <!-- deepblue manipulation -->
+<DeepBlue_Manipulation.label>манипуляция глубокой синевой</DeepBlue_Manipulation.label>
+                              <!-- With extreme understanding of biological and mechanical engineering, now you can manipulate deepblue to craft items with immense capabilities. The pinnacle of abysstech biotech is now in your hand. -->
+<DeepBlue_Manipulation.description>With extreme understanding of biological and mechanical engineering, now you can manipulate deepblue to craft items with immense capabilities. The pinnacle of abysstech biotech is now in your hand.</DeepBlue_Manipulation.description>
+
+</LanguageData>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/HSK/Defs/Ammo/Advanced/8x50mmCharged.xml-->
+                         <!-- make 8x50mm Charged cartridge x500 -->
+<MakeAmmo_8x50mmCharged.label>make 8x50mm Charged cartridge x500</MakeAmmo_8x50mmCharged.label>
+                               <!-- Craft 500 8x50mm Charged cartridges. -->
+<MakeAmmo_8x50mmCharged.description>Craft 500 8x50mm Charged cartridges.</MakeAmmo_8x50mmCharged.description>
+                             <!-- Making 8x50mm Charged cartridges. -->
+<MakeAmmo_8x50mmCharged.jobString>Making 8x50mm Charged cartridges.</MakeAmmo_8x50mmCharged.jobString>
+                            <!-- make 8x50mm Charged (Conc.) cartridge x500 -->
+<MakeAmmo_8x50mmCharged_AP.label>make 8x50mm Charged (Conc.) cartridge x500</MakeAmmo_8x50mmCharged_AP.label>
+                                  <!-- Craft 500 8x50mm Charged (Conc.) cartridges. -->
+<MakeAmmo_8x50mmCharged_AP.description>Craft 500 8x50mm Charged (Conc.) cartridges.</MakeAmmo_8x50mmCharged_AP.description>
+                                <!-- Making 8x50mm Charged (Conc.) cartridges. -->
+<MakeAmmo_8x50mmCharged_AP.jobString>Making 8x50mm Charged (Conc.) cartridges.</MakeAmmo_8x50mmCharged_AP.jobString>
+                             <!-- make 8x50mm Charged (Ion) cartridge x500 -->
+<MakeAmmo_8x50mmCharged_Ion.label>make 8x50mm Charged (Ion) cartridge x500</MakeAmmo_8x50mmCharged_Ion.label>
+                                   <!-- Craft 500 8x50mm Charged (Ion) cartridges. -->
+<MakeAmmo_8x50mmCharged_Ion.description>Craft 500 8x50mm Charged (Ion) cartridges.</MakeAmmo_8x50mmCharged_Ion.description>
+                                 <!-- Making 8x50mm Charged (Ion) cartridges. -->
+<MakeAmmo_8x50mmCharged_Ion.jobString>Making 8x50mm Charged (Ion) cartridges.</MakeAmmo_8x50mmCharged_Ion.jobString>
+
+</LanguageData>

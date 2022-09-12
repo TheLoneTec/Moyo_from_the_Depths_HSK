@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/1.3/Defs/Drugs/Deep_Blue.xml-->
+                           <!-- Deep blues -->
+<DeepBlueThought.stages.0.label>Глубокая синева</DeepBlueThought.stages.0.label>
+                                 <!-- As a side-effect of deepblue, you feel a bit blue. -->
+<DeepBlueThought.stages.0.description>Как побочный эффект глубокой синевы, вы чувствуете себя немного синим.</DeepBlueThought.stages.0.description>
+                                        <!-- DeepBlue Rejection(initial) -->
+<Moyo_DeepBlueReactionThought.stages.0.label>Глубокая синева Отклонение (начальное)</Moyo_DeepBlueReactionThought.stages.0.label>
+                                              <!-- Something feels off... -->
+<Moyo_DeepBlueReactionThought.stages.0.description>Что-то не так...</Moyo_DeepBlueReactionThought.stages.0.description>
+                                        <!-- DeepBlue Rejection(minor) -->
+<Moyo_DeepBlueReactionThought.stages.1.label>Глубокая синева Отклонение (незначительное)</Moyo_DeepBlueReactionThought.stages.1.label>
+                                              <!-- I feel sick... -->
+<Moyo_DeepBlueReactionThought.stages.1.description>Мне плохо...</Moyo_DeepBlueReactionThought.stages.1.description>
+                                        <!-- DeepBlue Rejection(major) -->
+<Moyo_DeepBlueReactionThought.stages.2.label>Глубокая синева Отклонение (серьёзное)</Moyo_DeepBlueReactionThought.stages.2.label>
+                                              <!-- Everything is blue... ugh! -->
+<Moyo_DeepBlueReactionThought.stages.2.description>Все синее... ух!</Moyo_DeepBlueReactionThought.stages.2.description>
+                                        <!-- DeepBlue Rejection(extreme) -->
+<Moyo_DeepBlueReactionThought.stages.3.label>Глубокая синева Отклонение (экстремальное)</Moyo_DeepBlueReactionThought.stages.3.label>
+                                              <!-- (horrible noises) -->
+<Moyo_DeepBlueReactionThought.stages.3.description>(ужасные звуки)</Moyo_DeepBlueReactionThought.stages.3.description>
+
+</LanguageData>

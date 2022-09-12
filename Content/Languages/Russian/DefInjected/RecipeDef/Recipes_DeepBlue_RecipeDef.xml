@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/Content/Defs/RecipeDefs/Recipes_DeepBlue.xml-->
+                         <!-- process moyo corpse -->
+<Extract_DeepBlueCorpse.label>перерабатывать труп Мойо</Extract_DeepBlueCorpse.label>
+                               <!-- Extract deepblue from a moyo corpse. All other parts of the body are wasted.
+
+This job uses skills related to drug synthesis. -->
+<Extract_DeepBlueCorpse.description>Извлеките deepblue из трупа moyo. Все остальные части тела тратятся впустую.\n\nЭта работа использует навыки, связанные с синтезом наркотиков.</Extract_DeepBlueCorpse.description>
+                             <!-- Processing moyo corpse. -->
+<Extract_DeepBlueCorpse.jobString>Обработка трупа Мойо.</Extract_DeepBlueCorpse.jobString>
+            <!-- synthesize nutrition pack x5 -->
+<Make_DBSF.label>синтетический питательный пакет x5</Make_DBSF.label>
+                  <!-- Synthesize nutrition packs for the deepblue station. -->
+<Make_DBSF.description>Синтезировать питательные пакеты для станции глубокого синего цвета.</Make_DBSF.description>
+                <!-- synthesizing 5 nutrition pack. -->
+<Make_DBSF.jobString>синтез 5 набор для питания.</Make_DBSF.jobString>
+                <!-- synthesize nutrition pack x20 -->
+<Make_DBSFbulk.label>синтетическое питание x20</Make_DBSFbulk.label>
+                      <!-- Synthesize multiple nutrition packs for the deepblue station. -->
+<Make_DBSFbulk.description>Синтезировать несколько комплектов питания для станции глубокого синего цвета.</Make_DBSFbulk.description>
+                    <!-- synthesizing 20 nutrition pack. -->
+<Make_DBSFbulk.jobString>синтез 20 питательных пакетов.</Make_DBSFbulk.jobString>
+
+</LanguageData>

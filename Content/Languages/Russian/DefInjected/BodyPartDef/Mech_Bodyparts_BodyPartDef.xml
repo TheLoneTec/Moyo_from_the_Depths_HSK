@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/Content/Defs/BodyAndPartDefs/Mech_Bodyparts.xml-->
+              <!-- head -->
+<HexapodHead.label>голова</HexapodHead.label>
+                   <!-- head -->
+<HexapodHeadShell.label>голова</HexapodHeadShell.label>
+                        <!-- tentacle joint -->
+<Hexapod_TentacleJoint.label>tentacle joint</Hexapod_TentacleJoint.label>
+                   <!-- tentacle -->
+<Hexapod_Tentacle.label>tentacle</Hexapod_Tentacle.label>
+                       <!-- arm joint -->
+<pressurepod_ArmJoint.label>arm joint</pressurepod_ArmJoint.label>
+                   <!-- club -->
+<pressurepod_club.label>club</pressurepod_club.label>
+                  <!-- leg -->
+<pressurepod_Leg.label>leg</pressurepod_Leg.label>
+                   <!-- first segment -->
+<PressurePod_Seg1.label>first segment</PressurePod_Seg1.label>
+                        <!-- pressurepod segment -->
+<PressurePod_Seg1.labelShort>pressurepod segment</PressurePod_Seg1.labelShort>
+                   <!-- second segment -->
+<PressurePod_Seg2.label>second segment</PressurePod_Seg2.label>
+                        <!-- pressurepod segment -->
+<PressurePod_Seg2.labelShort>pressurepod segment</PressurePod_Seg2.labelShort>
+                   <!-- third segment -->
+<PressurePod_Seg3.label>third segment</PressurePod_Seg3.label>
+                        <!-- pressurepod segment -->
+<PressurePod_Seg3.labelShort>pressurepod segment</PressurePod_Seg3.labelShort>
+                   <!-- fourth segment -->
+<PressurePod_Seg4.label>fourth segment</PressurePod_Seg4.label>
+                        <!-- pressurepod segment -->
+<PressurePod_Seg4.labelShort>pressurepod segment</PressurePod_Seg4.labelShort>
+                   <!-- fifth segment -->
+<PressurePod_Seg5.label>fifth segment</PressurePod_Seg5.label>
+                        <!-- pressurepod segment -->
+<PressurePod_Seg5.labelShort>pressurepod segment</PressurePod_Seg5.labelShort>
+
+</LanguageData>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/Content/Defs/RecipeDefs/Recipes_Surgery_Installations.xml-->
+                       <!-- install fake tail -->
+<InstallFakeTail_Moyo.label>установить искусственный хвост</InstallFakeTail_Moyo.label>
+                             <!-- Install a fake tail. -->
+<InstallFakeTail_Moyo.description>Установите искусственный хвост.</InstallFakeTail_Moyo.description>
+                           <!-- Installing fake tail. -->
+<InstallFakeTail_Moyo.jobString>Установка искусственного хвоста.</InstallFakeTail_Moyo.jobString>
+                         <!-- install bionic tail -->
+<InstallBionicTail_Moyo.label>установить бионический хвост</InstallBionicTail_Moyo.label>
+                               <!-- Install a bionic tail. -->
+<InstallBionicTail_Moyo.description>Установите бионический хвост.</InstallBionicTail_Moyo.description>
+                             <!-- Installing bionic tail. -->
+<InstallBionicTail_Moyo.jobString>Установка бионического хвоста.</InstallBionicTail_Moyo.jobString>
+                           <!-- install heart -->
+<InstallNaturalHeart_Moyo.label>установить сердце</InstallNaturalHeart_Moyo.label>
+                                 <!-- Install a biological heart. -->
+<InstallNaturalHeart_Moyo.description>Установите биологическое сердце.</InstallNaturalHeart_Moyo.description>
+                               <!-- Installing heart. -->
+<InstallNaturalHeart_Moyo.jobString>Установка сердца.</InstallNaturalHeart_Moyo.jobString>
+                                    <!-- install prosthetic heart -->
+<InstallSimpleProstheticHeart_Moyo.label>установить протез сердца</InstallSimpleProstheticHeart_Moyo.label>
+                                          <!-- Install a prosthetic heart. -->
+<InstallSimpleProstheticHeart_Moyo.description>Установить протез сердца.</InstallSimpleProstheticHeart_Moyo.description>
+                                        <!-- Installing prosthetic heart. -->
+<InstallSimpleProstheticHeart_Moyo.jobString>Установка протеза сердца.</InstallSimpleProstheticHeart_Moyo.jobString>
+                          <!-- install bionic heart -->
+<InstallBionicHeart_Moyo.label>установить бионическое сердце</InstallBionicHeart_Moyo.label>
+                                <!-- Install a bionic heart. -->
+<InstallBionicHeart_Moyo.description>Установите бионическое сердце.</InstallBionicHeart_Moyo.description>
+                              <!-- Installing bionic heart. -->
+<InstallBionicHeart_Moyo.jobString>Установка бионического сердца.</InstallBionicHeart_Moyo.jobString>
+                            <!-- install abysstech heart -->
+<InstallAdvancedHeart_Moyo.label>установить сердце abysstech</InstallAdvancedHeart_Moyo.label>
+                                  <!-- Install a abysstech heart. -->
+<InstallAdvancedHeart_Moyo.description>Установите сердце abysstech.</InstallAdvancedHeart_Moyo.description>
+                                <!-- Installing abysstech heart. -->
+<InstallAdvancedHeart_Moyo.jobString>Установите сердце abysstech.</InstallAdvancedHeart_Moyo.jobString>
+
+</LanguageData>

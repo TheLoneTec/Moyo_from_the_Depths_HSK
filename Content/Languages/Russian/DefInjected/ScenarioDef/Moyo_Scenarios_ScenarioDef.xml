@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/Content/Defs/Scenarios/Moyo_Scenarios.xml-->
+                       <!-- Moyo Refugee -->
+<Moyo_RefugeeScenario.label>Беженецы Мойо</Moyo_RefugeeScenario.label>
+                             <!-- he civil war has torn the lighthouse apart. Kidnapping, firefights, and crime of all sorts have become a daily occurrence, and no one inside is safe. In the confusion, the three of you have managed to steal a submarine and escape for the surface. All you have are the supplies stored in the submarine. Perhaps the surface can be the safe haven you seek. -->
+<Moyo_RefugeeScenario.description>гражданская война разорвала маяк на части. Похищения, перестрелки и всевозможные преступления стали повседневным явлением, и никто внутри не находится в безопасности. В неразберихе вам троим удалось украсть подводную лодку и выбраться на поверхность. Все, что у вас есть, - это припасы, хранящиеся на подводной лодке. Возможно, поверхность станет тем убежищем, которое вы ищете.</Moyo_RefugeeScenario.description>
+                                  <!-- Moyos who surfaced to find a safe haven. provided resources are relatively scarse. -->
+<Moyo_RefugeeScenario.scenario.summary>Мойо, которые всплыли в поисках безопасного убежища. Ресурсы относительно скудны.</Moyo_RefugeeScenario.scenario.summary>
+                                <!-- Moyo Refugee -->
+<Moyo_RefugeeScenario.scenario.label>Беженецы Мойо</Moyo_RefugeeScenario.scenario.label>
+                                      <!-- he civil war has torn the lighthouse apart. Kidnapping, firefights, and crime of all sorts have become a daily occurrence, and no one inside is safe. In the confusion, the three of you have managed to steal a submarine and escape for the surface. All you have are the supplies stored in the submarine. Perhaps the surface can be the safe haven you seek. -->
+<Moyo_RefugeeScenario.scenario.description>гражданская война разорвала маяк на части. Похищения, перестрелки и всевозможные преступления стали повседневным явлением, и никто внутри не находится в безопасности. В неразберихе вам троим удалось украсть подводную лодку и выбраться на поверхность. Все, что у вас есть, - это припасы, хранящиеся на подводной лодке. Возможно, поверхность станет тем убежищем, которое вы ищете.</Moyo_RefugeeScenario.scenario.description>
+
+</LanguageData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/Content/Defs/BodyAndPartDefs/Bodyparts.xml-->
+            <!-- tail -->
+<Moyo_Tail.label>хвост</Moyo_Tail.label>
+            <!-- heart -->
+<MoyoHeart.label>сердце</MoyoHeart.label>
+
+</LanguageData>

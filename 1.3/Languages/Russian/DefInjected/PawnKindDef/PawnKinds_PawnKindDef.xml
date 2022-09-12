@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/1.3/Defs/PawnKindsDef_Moyo/PawnKinds.xml-->
+                    <!-- moyo colonist -->
+<Moyo_ColonistPawn.label>колонист Мойо</Moyo_ColonistPawn.label>
+                          <!-- Plural moyo colonist -->
+<Moyo_ColonistPawn.labelPlural>Колонисты Мойо</Moyo_ColonistPawn.labelPlural>
+                        <!-- Male moyo colonist -->
+<Moyo_ColonistPawn.labelMale>Мужчина-колонист Мойо</Moyo_ColonistPawn.labelMale>
+                              <!-- Male Plural moyo colonist -->
+<Moyo_ColonistPawn.labelMalePlural>Мужчины-колонисты Мойо</Moyo_ColonistPawn.labelMalePlural>
+                          <!-- Female moyo colonist -->
+<Moyo_ColonistPawn.labelFemale>Женщина-колонист Мойо</Moyo_ColonistPawn.labelFemale>
+                                <!-- Female Plural moyo colonist -->
+<Moyo_ColonistPawn.labelFemalePlural>Женщины-колонисты Мойо</Moyo_ColonistPawn.labelFemalePlural>
+                  <!-- moyo toplayer civilian -->
+<Moyo_TopCivilan.label>moyo toplayer civilian</Moyo_TopCivilan.label>
+                        <!-- Plural moyo toplayer civilian -->
+<Moyo_TopCivilan.labelPlural>Plural moyo toplayer civilian</Moyo_TopCivilan.labelPlural>
+                      <!-- Male moyo toplayer civilian -->
+<Moyo_TopCivilan.labelMale>Male moyo toplayer civilian</Moyo_TopCivilan.labelMale>
+                            <!-- Male Plural moyo toplayer civilian -->
+<Moyo_TopCivilan.labelMalePlural>Male Plural moyo toplayer civilian</Moyo_TopCivilan.labelMalePlural>
+                        <!-- Female moyo toplayer civilian -->
+<Moyo_TopCivilan.labelFemale>Female moyo toplayer civilian</Moyo_TopCivilan.labelFemale>
+                              <!-- Female Plural moyo toplayer civilian -->
+<Moyo_TopCivilan.labelFemalePlural>Female Plural moyo toplayer civilian</Moyo_TopCivilan.labelFemalePlural>
+                     <!-- moyo midlayer civilian -->
+<Moyo_MiddleCivilan.label>moyo midlayer civilian</Moyo_MiddleCivilan.label>
+                           <!-- Plural moyo midlayer civilian -->
+<Moyo_MiddleCivilan.labelPlural>Plural moyo midlayer civilian</Moyo_MiddleCivilan.labelPlural>
+                         <!-- Male moyo midlayer civilian -->
+<Moyo_MiddleCivilan.labelMale>Male moyo midlayer civilian</Moyo_MiddleCivilan.labelMale>
+                               <!-- Male Plural moyo midlayer civilian -->
+<Moyo_MiddleCivilan.labelMalePlural>Male Plural moyo midlayer civilian</Moyo_MiddleCivilan.labelMalePlural>
+                           <!-- Female moyo midlayer civilian -->
+<Moyo_MiddleCivilan.labelFemale>Female moyo midlayer civilian</Moyo_MiddleCivilan.labelFemale>
+                                 <!-- Female Plural moyo midlayer civilian -->
+<Moyo_MiddleCivilan.labelFemalePlural>Female Plural moyo midlayer civilian</Moyo_MiddleCivilan.labelFemalePlural>
+                     <!-- moyo Highroller -->
+<Moyo_BottomCivilan.label>moyo Highroller</Moyo_BottomCivilan.label>
+                           <!-- Plural moyo Highroller -->
+<Moyo_BottomCivilan.labelPlural>Plural moyo Highroller</Moyo_BottomCivilan.labelPlural>
+                         <!-- Male moyo Highroller -->
+<Moyo_BottomCivilan.labelMale>Male moyo Highroller</Moyo_BottomCivilan.labelMale>
+                               <!-- Male Plural moyo Highroller -->
+<Moyo_BottomCivilan.labelMalePlural>Male Plural moyo Highroller</Moyo_BottomCivilan.labelMalePlural>
+                           <!-- Female moyo Highroller -->
+<Moyo_BottomCivilan.labelFemale>Female moyo Highroller</Moyo_BottomCivilan.labelFemale>
+                                 <!-- Female Plural moyo Highroller -->
+<Moyo_BottomCivilan.labelFemalePlural>Female Plural moyo Highroller</Moyo_BottomCivilan.labelFemalePlural>
+                <!-- moyo engineer -->
+<Moyo_Engineer.label>moyo engineer</Moyo_Engineer.label>
+                      <!-- Plural moyo engineer -->
+<Moyo_Engineer.labelPlural>Plural moyo engineer</Moyo_Engineer.labelPlural>
+                    <!-- Male moyo engineer -->
+<Moyo_Engineer.labelMale>Male moyo engineer</Moyo_Engineer.labelMale>
+                          <!-- Male Plural moyo engineer -->
+<Moyo_Engineer.labelMalePlural>Male Plural moyo engineer</Moyo_Engineer.labelMalePlural>
+                      <!-- Female moyo engineer -->
+<Moyo_Engineer.labelFemale>Female moyo engineer</Moyo_Engineer.labelFemale>
+                            <!-- Female Plural moyo engineer -->
+<Moyo_Engineer.labelFemalePlural>Female Plural moyo engineer</Moyo_Engineer.labelFemalePlural>
+                 <!-- moyo milita -->
+<Moyo_Resercher.label>moyo milita</Moyo_Resercher.label>
+                       <!-- Plural moyo milita -->
+<Moyo_Resercher.labelPlural>Plural moyo milita</Moyo_Resercher.labelPlural>
+                     <!-- Male moyo milita -->
+<Moyo_Resercher.labelMale>Male moyo milita</Moyo_Resercher.labelMale>
+                           <!-- Male Plural moyo milita -->
+<Moyo_Resercher.labelMalePlural>Male Plural moyo milita</Moyo_Resercher.labelMalePlural>
+                       <!-- Female moyo milita -->
+<Moyo_Resercher.labelFemale>Female moyo milita</Moyo_Resercher.labelFemale>
+                             <!-- Female Plural moyo milita -->
+<Moyo_Resercher.labelFemalePlural>Female Plural moyo milita</Moyo_Resercher.labelFemalePlural>
+                   <!-- moyo toplayer smuggler -->
+<Moyo_TopSmuggler.label>moyo toplayer smuggler</Moyo_TopSmuggler.label>
+                         <!-- Plural moyo toplayer smuggler -->
+<Moyo_TopSmuggler.labelPlural>Plural moyo toplayer smuggler</Moyo_TopSmuggler.labelPlural>
+                       <!-- Male moyo toplayer smuggler -->
+<Moyo_TopSmuggler.labelMale>Male moyo toplayer smuggler</Moyo_TopSmuggler.labelMale>
+                             <!-- Male Plural moyo toplayer smuggler -->
+<Moyo_TopSmuggler.labelMalePlural>Male Plural moyo toplayer smuggler</Moyo_TopSmuggler.labelMalePlural>
+                         <!-- Female moyo toplayer smuggler -->
+<Moyo_TopSmuggler.labelFemale>Female moyo toplayer smuggler</Moyo_TopSmuggler.labelFemale>
+                               <!-- Female Plural moyo toplayer smuggler -->
+<Moyo_TopSmuggler.labelFemalePlural>Female Plural moyo toplayer smuggler</Moyo_TopSmuggler.labelFemalePlural>
+                      <!-- moyo midlayer smuggler -->
+<Moyo_MiddleSmuggler.label>moyo midlayer smuggler</Moyo_MiddleSmuggler.label>
+                            <!-- Plural moyo midlayer smuggler -->
+<Moyo_MiddleSmuggler.labelPlural>Plural moyo midlayer smuggler</Moyo_MiddleSmuggler.labelPlural>
+                          <!-- Male moyo midlayer smuggler -->
+<Moyo_MiddleSmuggler.labelMale>Male moyo midlayer smuggler</Moyo_MiddleSmuggler.labelMale>
+                                <!-- Male Plural moyo midlayer smuggler -->
+<Moyo_MiddleSmuggler.labelMalePlural>Male Plural moyo midlayer smuggler</Moyo_MiddleSmuggler.labelMalePlural>
+                            <!-- Female moyo midlayer smuggler -->
+<Moyo_MiddleSmuggler.labelFemale>Female moyo midlayer smuggler</Moyo_MiddleSmuggler.labelFemale>
+                                  <!-- Female Plural moyo midlayer smuggler -->
+<Moyo_MiddleSmuggler.labelFemalePlural>Female Plural moyo midlayer smuggler</Moyo_MiddleSmuggler.labelFemalePlural>
+                    <!-- moyo strike force -->
+<Moyo_SoldierLight.label>moyo strike force</Moyo_SoldierLight.label>
+                          <!-- Plural moyo strike force -->
+<Moyo_SoldierLight.labelPlural>Plural moyo strike force</Moyo_SoldierLight.labelPlural>
+                        <!-- Male moyo strike force -->
+<Moyo_SoldierLight.labelMale>Male moyo strike force</Moyo_SoldierLight.labelMale>
+                              <!-- Male Plural moyo strike force -->
+<Moyo_SoldierLight.labelMalePlural>Male Plural moyo strike force</Moyo_SoldierLight.labelMalePlural>
+                          <!-- Female moyo strike force -->
+<Moyo_SoldierLight.labelFemale>Female moyo strike force</Moyo_SoldierLight.labelFemale>
+                                <!-- Female Plural moyo strike force -->
+<Moyo_SoldierLight.labelFemalePlural>Female Plural moyo strike force</Moyo_SoldierLight.labelFemalePlural>
+                              <!-- moyo strike force -->
+<Moyo_SoldierLight_Acidifier.label>moyo strike force</Moyo_SoldierLight_Acidifier.label>
+                                    <!-- Plural moyo strike force -->
+<Moyo_SoldierLight_Acidifier.labelPlural>Plural moyo strike force</Moyo_SoldierLight_Acidifier.labelPlural>
+                                  <!-- Male moyo strike force -->
+<Moyo_SoldierLight_Acidifier.labelMale>Male moyo strike force</Moyo_SoldierLight_Acidifier.labelMale>
+                                        <!-- Male Plural moyo strike force -->
+<Moyo_SoldierLight_Acidifier.labelMalePlural>Male Plural moyo strike force</Moyo_SoldierLight_Acidifier.labelMalePlural>
+                                    <!-- Female moyo strike force -->
+<Moyo_SoldierLight_Acidifier.labelFemale>Female moyo strike force</Moyo_SoldierLight_Acidifier.labelFemale>
+                                          <!-- Female Plural moyo strike force -->
+<Moyo_SoldierLight_Acidifier.labelFemalePlural>Female Plural moyo strike force</Moyo_SoldierLight_Acidifier.labelFemalePlural>
+                          <!-- moyo strike force -->
+<Moyo_SoldierLightrocket.label>moyo strike force</Moyo_SoldierLightrocket.label>
+                                <!-- Plural moyo strike force -->
+<Moyo_SoldierLightrocket.labelPlural>Plural moyo strike force</Moyo_SoldierLightrocket.labelPlural>
+                              <!-- Male moyo strike force -->
+<Moyo_SoldierLightrocket.labelMale>Male moyo strike force</Moyo_SoldierLightrocket.labelMale>
+                                    <!-- Male Plural moyo strike force -->
+<Moyo_SoldierLightrocket.labelMalePlural>Male Plural moyo strike force</Moyo_SoldierLightrocket.labelMalePlural>
+                                <!-- Female moyo strike force -->
+<Moyo_SoldierLightrocket.labelFemale>Female moyo strike force</Moyo_SoldierLightrocket.labelFemale>
+                                      <!-- Female Plural moyo strike force -->
+<Moyo_SoldierLightrocket.labelFemalePlural>Female Plural moyo strike force</Moyo_SoldierLightrocket.labelFemalePlural>
+                                    <!-- moyo strike force -->
+<Moyo_SoldierLightrocket_Acidifier.label>moyo strike force</Moyo_SoldierLightrocket_Acidifier.label>
+                                          <!-- Plural moyo strike force -->
+<Moyo_SoldierLightrocket_Acidifier.labelPlural>Plural moyo strike force</Moyo_SoldierLightrocket_Acidifier.labelPlural>
+                                        <!-- Male moyo strike force -->
+<Moyo_SoldierLightrocket_Acidifier.labelMale>Male moyo strike force</Moyo_SoldierLightrocket_Acidifier.labelMale>
+                                              <!-- Male Plural moyo strike force -->
+<Moyo_SoldierLightrocket_Acidifier.labelMalePlural>Male Plural moyo strike force</Moyo_SoldierLightrocket_Acidifier.labelMalePlural>
+                                          <!-- Female moyo strike force -->
+<Moyo_SoldierLightrocket_Acidifier.labelFemale>Female moyo strike force</Moyo_SoldierLightrocket_Acidifier.labelFemale>
+                                                <!-- Female Plural moyo strike force -->
+<Moyo_SoldierLightrocket_Acidifier.labelFemalePlural>Female Plural moyo strike force</Moyo_SoldierLightrocket_Acidifier.labelFemalePlural>
+                       <!-- moyo frontliner -->
+<Moyo_SoliderStandard.label>moyo frontliner</Moyo_SoliderStandard.label>
+                             <!-- Plural moyo frontliner -->
+<Moyo_SoliderStandard.labelPlural>Plural moyo frontliner</Moyo_SoliderStandard.labelPlural>
+                           <!-- Male moyo frontliner -->
+<Moyo_SoliderStandard.labelMale>Male moyo frontliner</Moyo_SoliderStandard.labelMale>
+                                 <!-- Male Plural moyo frontliner -->
+<Moyo_SoliderStandard.labelMalePlural>Male Plural moyo frontliner</Moyo_SoliderStandard.labelMalePlural>
+                             <!-- Female moyo frontliner -->
+<Moyo_SoliderStandard.labelFemale>Female moyo frontliner</Moyo_SoliderStandard.labelFemale>
+                                   <!-- Female Plural moyo frontliner -->
+<Moyo_SoliderStandard.labelFemalePlural>Female Plural moyo frontliner</Moyo_SoliderStandard.labelFemalePlural>
+                                 <!-- moyo frontliner -->
+<Moyo_SoliderStandard_Acidifier.label>moyo frontliner</Moyo_SoliderStandard_Acidifier.label>
+                                       <!-- Plural moyo frontliner -->
+<Moyo_SoliderStandard_Acidifier.labelPlural>Plural moyo frontliner</Moyo_SoliderStandard_Acidifier.labelPlural>
+                                     <!-- Male moyo frontliner -->
+<Moyo_SoliderStandard_Acidifier.labelMale>Male moyo frontliner</Moyo_SoliderStandard_Acidifier.labelMale>
+                                           <!-- Male Plural moyo frontliner -->
+<Moyo_SoliderStandard_Acidifier.labelMalePlural>Male Plural moyo frontliner</Moyo_SoliderStandard_Acidifier.labelMalePlural>
+                                       <!-- Female moyo frontliner -->
+<Moyo_SoliderStandard_Acidifier.labelFemale>Female moyo frontliner</Moyo_SoliderStandard_Acidifier.labelFemale>
+                                             <!-- Female Plural moyo frontliner -->
+<Moyo_SoliderStandard_Acidifier.labelFemalePlural>Female Plural moyo frontliner</Moyo_SoliderStandard_Acidifier.labelFemalePlural>
+                    <!-- moyo heavy gunner -->
+<Moyo_SoldierHeavy.label>moyo heavy gunner</Moyo_SoldierHeavy.label>
+                          <!-- Plural moyo heavy gunner -->
+<Moyo_SoldierHeavy.labelPlural>Plural moyo heavy gunner</Moyo_SoldierHeavy.labelPlural>
+                        <!-- Male moyo heavy gunner -->
+<Moyo_SoldierHeavy.labelMale>Male moyo heavy gunner</Moyo_SoldierHeavy.labelMale>
+                              <!-- Male Plural moyo heavy gunner -->
+<Moyo_SoldierHeavy.labelMalePlural>Male Plural moyo heavy gunner</Moyo_SoldierHeavy.labelMalePlural>
+                          <!-- Female moyo heavy gunner -->
+<Moyo_SoldierHeavy.labelFemale>Female moyo heavy gunner</Moyo_SoldierHeavy.labelFemale>
+                                <!-- Female Plural moyo heavy gunner -->
+<Moyo_SoldierHeavy.labelFemalePlural>Female Plural moyo heavy gunner</Moyo_SoldierHeavy.labelFemalePlural>
+                              <!-- moyo heavy gunner -->
+<Moyo_SoldierHeavy_Acidifier.label>moyo heavy gunner</Moyo_SoldierHeavy_Acidifier.label>
+                                    <!-- Plural moyo heavy gunner -->
+<Moyo_SoldierHeavy_Acidifier.labelPlural>Plural moyo heavy gunner</Moyo_SoldierHeavy_Acidifier.labelPlural>
+                                  <!-- Male moyo heavy gunner -->
+<Moyo_SoldierHeavy_Acidifier.labelMale>Male moyo heavy gunner</Moyo_SoldierHeavy_Acidifier.labelMale>
+                                        <!-- Male Plural moyo heavy gunner -->
+<Moyo_SoldierHeavy_Acidifier.labelMalePlural>Male Plural moyo heavy gunner</Moyo_SoldierHeavy_Acidifier.labelMalePlural>
+                                    <!-- Female moyo heavy gunner -->
+<Moyo_SoldierHeavy_Acidifier.labelFemale>Female moyo heavy gunner</Moyo_SoldierHeavy_Acidifier.labelFemale>
+                                          <!-- Female Plural moyo heavy gunner -->
+<Moyo_SoldierHeavy_Acidifier.labelFemalePlural>Female Plural moyo heavy gunner</Moyo_SoldierHeavy_Acidifier.labelFemalePlural>
+                     <!-- moyo assult troop -->
+<Moyo_SoldierAssult.label>moyo assult troop</Moyo_SoldierAssult.label>
+                           <!-- Plural moyo assult troop -->
+<Moyo_SoldierAssult.labelPlural>Plural moyo assult troop</Moyo_SoldierAssult.labelPlural>
+                         <!-- Male moyo assult troop -->
+<Moyo_SoldierAssult.labelMale>Male moyo assult troop</Moyo_SoldierAssult.labelMale>
+                               <!-- Male Plural moyo assult troop -->
+<Moyo_SoldierAssult.labelMalePlural>Male Plural moyo assult troop</Moyo_SoldierAssult.labelMalePlural>
+                           <!-- Female moyo assult troop -->
+<Moyo_SoldierAssult.labelFemale>Female moyo assult troop</Moyo_SoldierAssult.labelFemale>
+                                 <!-- Female Plural moyo assult troop -->
+<Moyo_SoldierAssult.labelFemalePlural>Female Plural moyo assult troop</Moyo_SoldierAssult.labelFemalePlural>
+                               <!-- moyo assult troop -->
+<Moyo_SoldierAssult_Acidifier.label>moyo assult troop</Moyo_SoldierAssult_Acidifier.label>
+                                     <!-- Plural moyo assult troop -->
+<Moyo_SoldierAssult_Acidifier.labelPlural>Plural moyo assult troop</Moyo_SoldierAssult_Acidifier.labelPlural>
+                                   <!-- Male moyo assult troop -->
+<Moyo_SoldierAssult_Acidifier.labelMale>Male moyo assult troop</Moyo_SoldierAssult_Acidifier.labelMale>
+                                         <!-- Male Plural moyo assult troop -->
+<Moyo_SoldierAssult_Acidifier.labelMalePlural>Male Plural moyo assult troop</Moyo_SoldierAssult_Acidifier.labelMalePlural>
+                                     <!-- Female moyo assult troop -->
+<Moyo_SoldierAssult_Acidifier.labelFemale>Female moyo assult troop</Moyo_SoldierAssult_Acidifier.labelFemale>
+                                           <!-- Female Plural moyo assult troop -->
+<Moyo_SoldierAssult_Acidifier.labelFemalePlural>Female Plural moyo assult troop</Moyo_SoldierAssult_Acidifier.labelFemalePlural>
+              <!-- moyo refugee Elder -->
+<Moyo_leader.label>moyo refugee Elder</Moyo_leader.label>
+                    <!-- Plural moyo refugee Elder -->
+<Moyo_leader.labelPlural>Plural moyo refugee Elder</Moyo_leader.labelPlural>
+                  <!-- Male moyo refugee Elder -->
+<Moyo_leader.labelMale>Male moyo refugee Elder</Moyo_leader.labelMale>
+                        <!-- Male Plural moyo refugee Elder -->
+<Moyo_leader.labelMalePlural>Male Plural moyo refugee Elder</Moyo_leader.labelMalePlural>
+                    <!-- Female moyo refugee Elder -->
+<Moyo_leader.labelFemale>Female moyo refugee Elder</Moyo_leader.labelFemale>
+                          <!-- Female Plural moyo refugee Elder -->
+<Moyo_leader.labelFemalePlural>Female Plural moyo refugee Elder</Moyo_leader.labelFemalePlural>
+                <!-- moyo royalguard -->
+<Moyo_Guardian.label>moyo royalguard</Moyo_Guardian.label>
+                      <!-- Plural moyo royalguard -->
+<Moyo_Guardian.labelPlural>Plural moyo royalguard</Moyo_Guardian.labelPlural>
+                    <!-- Male moyo royalguard -->
+<Moyo_Guardian.labelMale>Male moyo royalguard</Moyo_Guardian.labelMale>
+                          <!-- Male Plural moyo royalguard -->
+<Moyo_Guardian.labelMalePlural>Male Plural moyo royalguard</Moyo_Guardian.labelMalePlural>
+                      <!-- Female moyo royalguard -->
+<Moyo_Guardian.labelFemale>Female moyo royalguard</Moyo_Guardian.labelFemale>
+                            <!-- Female Plural moyo royalguard -->
+<Moyo_Guardian.labelFemalePlural>Female Plural moyo royalguard</Moyo_Guardian.labelFemalePlural>
+                          <!-- moyo royalguard -->
+<Moyo_Guardian_Acidifier.label>moyo royalguard</Moyo_Guardian_Acidifier.label>
+                                <!-- Plural moyo royalguard -->
+<Moyo_Guardian_Acidifier.labelPlural>Plural moyo royalguard</Moyo_Guardian_Acidifier.labelPlural>
+                              <!-- Male moyo royalguard -->
+<Moyo_Guardian_Acidifier.labelMale>Male moyo royalguard</Moyo_Guardian_Acidifier.labelMale>
+                                    <!-- Male Plural moyo royalguard -->
+<Moyo_Guardian_Acidifier.labelMalePlural>Male Plural moyo royalguard</Moyo_Guardian_Acidifier.labelMalePlural>
+                                <!-- Female moyo royalguard -->
+<Moyo_Guardian_Acidifier.labelFemale>Female moyo royalguard</Moyo_Guardian_Acidifier.labelFemale>
+                                      <!-- Female Plural moyo royalguard -->
+<Moyo_Guardian_Acidifier.labelFemalePlural>Female Plural moyo royalguard</Moyo_Guardian_Acidifier.labelFemalePlural>
+                       <!-- moyo royalguard -->
+<Moyo_GuardianAssault.label>moyo royalguard</Moyo_GuardianAssault.label>
+                             <!-- Plural moyo royalguard -->
+<Moyo_GuardianAssault.labelPlural>Plural moyo royalguard</Moyo_GuardianAssault.labelPlural>
+                           <!-- Male moyo royalguard -->
+<Moyo_GuardianAssault.labelMale>Male moyo royalguard</Moyo_GuardianAssault.labelMale>
+                                 <!-- Male Plural moyo royalguard -->
+<Moyo_GuardianAssault.labelMalePlural>Male Plural moyo royalguard</Moyo_GuardianAssault.labelMalePlural>
+                             <!-- Female moyo royalguard -->
+<Moyo_GuardianAssault.labelFemale>Female moyo royalguard</Moyo_GuardianAssault.labelFemale>
+                                   <!-- Female Plural moyo royalguard -->
+<Moyo_GuardianAssault.labelFemalePlural>Female Plural moyo royalguard</Moyo_GuardianAssault.labelFemalePlural>
+                                 <!-- moyo royalguard -->
+<Moyo_GuardianAssault_Acidifier.label>moyo royalguard</Moyo_GuardianAssault_Acidifier.label>
+                                       <!-- Plural moyo royalguard -->
+<Moyo_GuardianAssault_Acidifier.labelPlural>Plural moyo royalguard</Moyo_GuardianAssault_Acidifier.labelPlural>
+                                     <!-- Male moyo royalguard -->
+<Moyo_GuardianAssault_Acidifier.labelMale>Male moyo royalguard</Moyo_GuardianAssault_Acidifier.labelMale>
+                                           <!-- Male Plural moyo royalguard -->
+<Moyo_GuardianAssault_Acidifier.labelMalePlural>Male Plural moyo royalguard</Moyo_GuardianAssault_Acidifier.labelMalePlural>
+                                       <!-- Female moyo royalguard -->
+<Moyo_GuardianAssault_Acidifier.labelFemale>Female moyo royalguard</Moyo_GuardianAssault_Acidifier.labelFemale>
+                                             <!-- Female Plural moyo royalguard -->
+<Moyo_GuardianAssault_Acidifier.labelFemalePlural>Female Plural moyo royalguard</Moyo_GuardianAssault_Acidifier.labelFemalePlural>
+
+</LanguageData>

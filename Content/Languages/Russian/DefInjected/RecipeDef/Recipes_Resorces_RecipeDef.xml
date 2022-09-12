@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/Content/Defs/RecipeDefs/Recipes_Resorces.xml-->
+                      <!-- make abyssteel -->
+<Make_Moyo_Abyssteel.label>сделать глубоководную сталь</Make_Moyo_Abyssteel.label>
+                            <!-- Make abyssteel, a commonly used alloy in the lighthouse. It is necessary for producing their items. -->
+<Make_Moyo_Abyssteel.description>Изготовьте глубоководную сталь - сплав, часто используемый на маяке. Он необходим для производства их предметов.</Make_Moyo_Abyssteel.description>
+                          <!-- Making abyssteel. -->
+<Make_Moyo_Abyssteel.jobString>Изготовление глубоководной стали.</Make_Moyo_Abyssteel.jobString>
+                  <!-- make abyssal pearl -->
+<Make_AbyssPearl.label>создать глубоководную жемчужину</Make_AbyssPearl.label>
+                        <!-- Make abyssal pearl. A peculiar pearl of pure deepblue to be used in exotic products. -->
+<Make_AbyssPearl.description>Сделайте глубоководный жемчуг. Необычный жемчуг чистого глубокого синего цвета, который можно использовать в экзотических изделиях.</Make_AbyssPearl.description>
+                      <!-- Making abyssal pearl. -->
+<Make_AbyssPearl.jobString>Изготовление глубоководной жемчужины.</Make_AbyssPearl.jobString>
+                       <!-- make depthweave -->
+<Make_Moyo_Depthweave.label>сделать глубинную ткань</Make_Moyo_Depthweave.label>
+                             <!-- Make depthweave. A versitile fabric commonly used in the Lighthouse. -->
+<Make_Moyo_Depthweave.description>Сделайте глубоководную ткань. Универсальная ткань, обычно используемая в Маяке.</Make_Moyo_Depthweave.description>
+                           <!-- Making depthweave. -->
+<Make_Moyo_Depthweave.jobString>Создание глубоководной ткани.</Make_Moyo_Depthweave.jobString>
+
+</LanguageData>

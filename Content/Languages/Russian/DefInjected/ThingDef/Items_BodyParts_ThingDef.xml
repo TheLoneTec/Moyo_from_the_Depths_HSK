@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/Content/Defs/ThingsDefs_Items/Items_BodyParts.xml-->
+                <!-- fake moyo tail -->
+<Moyo_FakeTail.label>искусственный хвост Мойо</Moyo_FakeTail.label>
+                      <!-- A fake tail made of cloth. Helps keep balance. -->
+<Moyo_FakeTail.description>Искусственный хвост из ткани. Помогает удерживать равновесие.</Moyo_FakeTail.description>
+                  <!-- bionic moyo tail -->
+<Moyo_BionicTail.label>бионический хвост Мойо</Moyo_BionicTail.label>
+                        <!-- A binoic tail made with advanced technology. Superior to a natural tail in many ways. -->
+<Moyo_BionicTail.description>Биноидный хвост, изготовленный по передовой технологии. По многим параметрам превосходит натуральный хвост.</Moyo_BionicTail.description>
+                     <!-- abysstech heart -->
+<Moyo_AdvancedHeart.label>сердце абистека</Moyo_AdvancedHeart.label>
+                           <!-- A bionic heart modified with abysstech. This particular phrosthethic part is desinged for moyos. -->
+<Moyo_AdvancedHeart.description>Бионическое сердце, модифицированное с помощью abysstech. Эта конкретная часть фростеха разработана для Мойо.</Moyo_AdvancedHeart.description>
+
+</LanguageData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/Content/Defs/ThingsDefs_Items/Items_BodyParts.xml-->
+                    <!-- make abysstech heart(moyo heart) -->
+<AbysstechHeartAlt.label>сделать сердце абисстека (сердце Мойо)</AbysstechHeartAlt.label>
+                          <!-- Make an abysstech heart using a living moyo heart. -->
+<AbysstechHeartAlt.description>Сделайте сердце абистека, используя живое сердце мойо.</AbysstechHeartAlt.description>
+                        <!-- Making abysstech heart(moyo heart). -->
+<AbysstechHeartAlt.jobString>Создание сердца абистека (сердце Мойо).</AbysstechHeartAlt.jobString>
+
+</LanguageData>

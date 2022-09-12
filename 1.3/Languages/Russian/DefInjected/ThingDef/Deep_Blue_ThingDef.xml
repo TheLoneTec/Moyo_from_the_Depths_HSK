@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/1.3/Defs/Drugs/Deep_Blue.xml-->
+                <!-- Moyo bloodbag -->
+<Moyo_BloodBag.label>Пакет с кровью Мойо</Moyo_BloodBag.label>
+                      <!-- A bag of moyo blood extracted by various means. There is a saying that it contains a substance called deepblue. -->
+<Moyo_BloodBag.description>Пакет с кровью мойо, добытой различными способами. Говорят, что в ней содержится вещество под названием глубокая синева.</Moyo_BloodBag.description>
+             <!-- Deepblue serum -->
+<AbyssSerum.label>Сыворотка глубокой синевы</AbyssSerum.label>
+                   <!-- Deepblue extracted from moyo blood. When injected, deepblue modifies the subject’s body, increasing their metabolism. There is no known way to reverse this process.
+
+A substance discovered by the moyo while researching their origins. It has many uses medically, but nothing is known about the substance itself. -->
+<AbyssSerum.description>Глубокая синева, добываемая из крови мойо. При инъекции глубокая синева изменяет тело субъекта, повышая его метаболизм. Неизвестно, как обратить этот процесс вспять.\n\nВещество, обнаруженное мойо во время исследования их происхождения. Оно имеет множество медицинских применений, но о самом веществе ничего не известно.</AbyssSerum.description>
+                           <!-- Processed, Fluid -->
+<AbyssSerum.ingestible.foodType>Processed, Fluid</AbyssSerum.ingestible.foodType>
+                                      <!-- Inject {0} -->
+<AbyssSerum.ingestible.ingestCommandString>Ввести {0}</AbyssSerum.ingestible.ingestCommandString>
+                                     <!-- Injecting {0}. -->
+<AbyssSerum.ingestible.ingestReportString>вводит {0}.</AbyssSerum.ingestible.ingestReportString>
+
+</LanguageData>

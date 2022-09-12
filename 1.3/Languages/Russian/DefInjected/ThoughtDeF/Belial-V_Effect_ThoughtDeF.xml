@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/1.3/Defs/Drugs/Belial-V_Effect.xml-->
+                                   <!-- Belial-serenity -->
+<BelialVEffect_5_Thought.stages.0.label>Белиал-спокойствие</BelialVEffect_5_Thought.stages.0.label>
+                                         <!-- A calm state of mind granted by Belial-V. -->
+<BelialVEffect_5_Thought.stages.0.description>Спокойное состояние ума, дарованное Белиалом-V.</BelialVEffect_5_Thought.stages.0.description>
+                                   <!-- Belial-euphoria -->
+<BelialVEffect_6_Thought.stages.0.label>Белиал-эйфория</BelialVEffect_6_Thought.stages.0.label>
+                                         <!-- An extreme burst of happiness granted by Belial-V. -->
+<BelialVEffect_6_Thought.stages.0.description>Экстремальный прилив счастья, дарованный Белиалом-V.</BelialVEffect_6_Thought.stages.0.description>
+
+</LanguageData>

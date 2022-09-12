@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/Content/Defs/ThingsDefs_Misc/Buildings.xml-->
+           <!-- deepblue station -->
+<Moyo_DBS.label>станция глубокой синевы</Moyo_DBS.label>
+                 <!-- A machine that utilizes Moyo's organ to produce more deepblue. Both electricity and nutrition is needed for production.
+
+I don't recommend looking through the glass... -->
+<Moyo_DBS.description>Машина, использующая орган Мойо для производства большего количества глубокой синевы. Для производства требуется электричество и питание.\n\nНе рекомендую смотреть через стекло...</Moyo_DBS.description>
+                                          <!-- DBS1 -->
+<Moyo_DBS.comps.OLB.Comp_Decorate.mote.0.label>DBS1</Moyo_DBS.comps.OLB.Comp_Decorate.mote.0.label>
+                                          <!-- DBS2 -->
+<Moyo_DBS.comps.OLB.Comp_Decorate.mote.1.label>DBS2</Moyo_DBS.comps.OLB.Comp_Decorate.mote.1.label>
+            <!-- large deepblue station -->
+<Moyo_DBLS.label>большая станция глубокой синевы</Moyo_DBLS.label>
+                  <!-- A larger deepblue station. Both electricity and nutrition is needed for production.
+
+I serouisly don't recommend looking through the glass... -->
+<Moyo_DBLS.description>Более крупная станция глубокой синевы. Для производства необходимо как электричество, так и питание.\n\nЯ крайне не рекомендую смотреть через стекло...</Moyo_DBLS.description>
+                                           <!-- DBS1 -->
+<Moyo_DBLS.comps.OLB.Comp_Decorate.mote.0.label>DBS1</Moyo_DBLS.comps.OLB.Comp_Decorate.mote.0.label>
+                                           <!-- DBS2 -->
+<Moyo_DBLS.comps.OLB.Comp_Decorate.mote.1.label>DBS2</Moyo_DBLS.comps.OLB.Comp_Decorate.mote.1.label>
+            <!-- nutrition pack -->
+<Moyo_DBSF.label>набор продуктов питания</Moyo_DBSF.label>
+                  <!-- A cansister of nutrients extracted from organic materials. It’s been specially treated for use in the deepblue station. -->
+<Moyo_DBSF.description>Канистра с питательными веществами, извлеченными из органических материалов. Она прошла специальную обработку для использования на глубоководной станции.</Moyo_DBSF.description>
+                        <!-- abysstech fabrication bench -->
+<Moyo_FabricationBench.label>производственный стенд abysstech</Moyo_FabricationBench.label>
+                              <!-- A workbench for producing abysstech items. Equipped with various advanced tools, it can handle precise production like components to complex production of making abysteel. -->
+<Moyo_FabricationBench.description>Верстак для производства изделий из глубоководной стали. Оснащенный различными современными инструментами, он может справиться как с точным производством компонентов, так и со сложным производством по изготовлению глубоководной стали.</Moyo_FabricationBench.description>
+                      <!-- small abyssal pearl sculpture -->
+<PearlSculptureSmall.label>маленькая скульптура из глубоководной жемчужины</PearlSculptureSmall.label>
+                            <!-- A torso-sized piece of abyssal pearl sculpted into an artistic form. its design is based on natural crystaline structure of the material. -->
+<PearlSculptureSmall.description>Кусок глубоководного жемчуга размером с торс, изваянный в художественной форме. его дизайн основан на естественной кристаллической структуре материала.</PearlSculptureSmall.description>
+                      <!-- large abyssal pearl sculpture -->
+<PearlSculptureLarge.label>большая скульптура из глубоководной жемчужины</PearlSculptureLarge.label>
+                            <!-- A person-sized piece of abyssal pearl sculpted into an artistic form. its design is based on natural crystaline structure of the material. -->
+<PearlSculptureLarge.description>Кусок глубоководного жемчуга размером с человека, вылепленный в художественной форме. его дизайн основан на естественной кристаллической структуре материала.</PearlSculptureLarge.description>
+                      <!-- grand abyssal pearl sculpture -->
+<PearlSculptureGrand.label>грандиозная глубоководная скульптура из жемчуга</PearlSculptureGrand.label>
+                            <!-- A huge sculpture made with abyssal pearl, sized to dominate a room. its design is based on natural crystaline structure of the material. -->
+<PearlSculptureGrand.description>Огромная скульптура из глубоководного жемчуга, способная доминировать в помещении. ее дизайн основан на природной кристаллической структуре материала.</PearlSculptureGrand.description>
+               <!-- abysstech persona adviser module -->
+<MoyoGRModule.label>модуль советника персоны abysstech</MoyoGRModule.label>
+                     <!-- An AI adviser to aid in your colony's research. Increases research speed when placed near hi-tech research bench and unlocks the pinnacle of abysstech. Each research bench can only use one adviser module. -->
+<MoyoGRModule.description>ИИ-советник для помощи в исследованиях вашей колонии. Увеличивает скорость исследований, когда размещается рядом с высокотехнологичным исследовательским стендом, и открывает вершину абисстеха. Каждый исследовательский стенд может использовать только один модуль советника.</MoyoGRModule.description>
+
+</LanguageData>

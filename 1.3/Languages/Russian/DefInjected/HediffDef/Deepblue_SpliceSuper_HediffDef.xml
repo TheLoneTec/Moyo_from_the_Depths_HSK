@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/1.3/Defs/Drugs/Deepblue_SpliceSuper.xml-->
+                       <!-- BelialVInjectedAfter -->
+<BelialVInjectedAfter.label>BelialVInjectedAfter</BelialVInjectedAfter.label>
+                             <!-- applying stage. You should not be reading this. -->
+<BelialVInjectedAfter.description>этап подачи заявки. Вам не следует читать это.</BelialVInjectedAfter.description>
+
+</LanguageData>

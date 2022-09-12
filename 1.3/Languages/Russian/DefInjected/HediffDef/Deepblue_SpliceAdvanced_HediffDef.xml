@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/1.3/Defs/Drugs/Deepblue_SpliceAdvanced.xml-->
+                         <!-- BlueBurstHighPrecursor -->
+<BlueBurstHighPrecursor.label>BlueBurstHighPrecursor</BlueBurstHighPrecursor.label>
+                               <!-- applying stage. You should not be reading this. -->
+<BlueBurstHighPrecursor.description>этап подачи заявки. Вам не следует читать это.</BlueBurstHighPrecursor.description>
+                <!-- cardiovascular overdrive -->
+<BlueBurstHigh.label>перегрузка сердечно-сосудистой системы</BlueBurstHigh.label>
+                    <!-- a cardiovascular overdrive -->
+<BlueBurstHigh.labelNoun>перегрузка сердечно-сосудистой системы</BlueBurstHigh.labelNoun>
+                      <!-- A cardiovascular overdrive in progress. a great amount of blood is being made, putting the heart in great stress. This effect is fatal. -->
+<BlueBurstHigh.description>Происходит перегрузка сердечно-сосудистой системы. В кровь поступает большое количество крови, что приводит к большой нагрузке на сердце. Этот эффект является фатальным.</BlueBurstHigh.description>
+             <!-- BlueBurstT -->
+<BlueBurstT.label>BlueBurstT</BlueBurstT.label>
+                   <!-- null. -->
+<BlueBurstT.description>null.</BlueBurstT.description>
+             <!-- BlueBurstA -->
+<BlueBurstA.label>BlueBurstA</BlueBurstA.label>
+                   <!-- null. -->
+<BlueBurstA.description>null.</BlueBurstA.description>
+              <!-- boosted regeneration -->
+<BlueMedHigh.label>повышенная регенерация</BlueMedHigh.label>
+                  <!-- boosted regeneration -->
+<BlueMedHigh.labelNoun>повышенная регенерация</BlueMedHigh.labelNoun>
+                    <!-- Regeneration boosting in progress. This will reduce overall bleeding and help the recovery of wounds and infection. -->
+<BlueMedHigh.description>Усиление регенерации в процессе. Это уменьшит общее кровотечение и поможет восстановлению ран и предотвращению инфекций.</BlueMedHigh.description>
+                 <!-- пеноксицилин-синий -->
+<PenoxyBlueHigh.label>Синий пеноксицилин</PenoxyBlueHigh.label>
+                       <!-- Penoxyblue-induced cure/immunity to certain illnesses. This is a One-time effect. -->
+<PenoxyBlueHigh.description>Вызванное синим пиноксицилином излечение/иммунитет к определенным болезням. Это одноразовый эффект.</PenoxyBlueHigh.description>
+                 <!-- clear-azure -->
+<ClensazureHigh.label>чистая лазурь</ClensazureHigh.label>
+                       <!-- Clearazure-induced cure/immunity to parasites. This is a One-time effect. -->
+<ClensazureHigh.description>Вызванное чистой лазурью излечение/иммунитет к паразитам. Это одноразовый эффект.</ClensazureHigh.description>
+                     <!-- sustainer-lapis high -->
+<SustainerLapisHigh.label>поддерживающий лапис</SustainerLapisHigh.label>
+                           <!-- Awakening effect induced by sustainer-lapis. Prevents need of food and rest for a period of time. -->
+<SustainerLapisHigh.description>Пробуждающий эффект, вызываемый поддерживающим лаписом. Предотвращает потребность в еде и отдыхе на некоторое время.</SustainerLapisHigh.description>
+                           <!-- sustainer-lapis recovery -->
+<SustainerLapisHigh_After.label>восстановление лаписа</SustainerLapisHigh_After.label>
+                                 <!-- Recovering from sustainer-lapis. You cannot apply another dose during this period. -->
+<SustainerLapisHigh_After.description>Восстановление после поддерживающего лаписа. В этот период нельзя применять другую дозу.</SustainerLapisHigh_After.description>
+                    <!-- boosted detoxification -->
+<DetoxerCobaltHigh.label>усиленная детоксикация</DetoxerCobaltHigh.label>
+                          <!-- Boosted Detoxifying ability. it will clear any buildup and prevent further intoxication. -->
+<DetoxerCobaltHigh.description>Усиленная детоксикационная способность. Она очистит любые загрязнения и предотвратит дальнейшую интоксикацию.</DetoxerCobaltHigh.description>
+
+</LanguageData>

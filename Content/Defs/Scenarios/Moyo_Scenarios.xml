@@ -33,22 +33,27 @@
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>Moyo_Wrench</thingDef>
+					<stuff>Plasteel</stuff>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>Moyo_Pistol</thingDef>
+					<stuff>Plasteel</stuff>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>Moyo_ChargeSMG</thingDef>
+					<stuff>Plasteel</stuff>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>Moyo_EGmask</thingDef>
+					<stuff>Plasteel</stuff>
 				</li>				
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>Moyo_EGsuit</thingDef>
+					<stuff>Plasteel</stuff>
 				</li>								
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
@@ -77,7 +82,7 @@
 				</li>
 				<li Class="ScenPart_ScatterThingsNearPlayerStart">
 					<def>ScatterThingsNearPlayerStart</def>
-					<thingDef>Steel</thingDef>
+					<thingDef>Plasteel</thingDef>
 					<count>350</count>
 				</li>
 				<li Class="ScenPart_ScatterThingsNearPlayerStart">

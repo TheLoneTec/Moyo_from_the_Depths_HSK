@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/1.3/Defs/ThingsDefs_Races/MoyoRace.xml-->
+             <!-- Moyo -->
+<Alien_Moyo.label>Мойо</Alien_Moyo.label>
+                   <!-- A humanoid race living in cities under the sea. Having traits similar to sea creatures, their blood contains substances that can be used for various medical uses.
+
+Descendants of glitterworld explorers who settled in the deep sea, generations of body modifications has led to their current form. Spreading far and wide into the rim, they built many cities and prospered. Until now. -->
+<Alien_Moyo.description>Гуманоидная раса, живущая в городах под водой. Их кровь содержит вещества, которые могут быть использованы в различных медицинских целях.\n\nПотомки исследователей блестящего мира, поселившихся в морских глубинах, в течение многих поколений модифицировали свое тело, что привело к их нынешней форме. Распространившись далеко и широко по поверхности, они построили множество городов и процветали. До сегодняшнего дня.</Alien_Moyo.description>
+                                                                          <!-- left antennae -->
+<Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.1.bodyPart>левая антенна</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.1.bodyPart>
+                                                                          <!-- right antennae -->
+<Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.2.bodyPart>правая антенна</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.2.bodyPart>
+                                                                         <!-- skin -->
+<Alien_Moyo.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>кожа</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>
+                                                                         <!-- hair -->
+<Alien_Moyo.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>волосы</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>
+                     <!-- left fist -->
+<Alien_Moyo.tools.0.label>левый кулак</Alien_Moyo.tools.0.label>
+                     <!-- right fist -->
+<Alien_Moyo.tools.1.label>правый кулак</Alien_Moyo.tools.1.label>
+                     <!-- teeth -->
+<Alien_Moyo.tools.2.label>зубы</Alien_Moyo.tools.2.label>
+                     <!-- head -->
+<Alien_Moyo.tools.3.label>глава</Alien_Moyo.tools.3.label>
+                                                           <!-- Moyo BloodBag -->
+<Alien_Moyo.comps.HPF_Moyo.Comp_ResourceHarvestable.inspectText>Пакет крови Мойо</Alien_Moyo.comps.HPF_Moyo.Comp_ResourceHarvestable.inspectText>
+
+</LanguageData>

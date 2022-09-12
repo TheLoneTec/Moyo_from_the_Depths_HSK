@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/Content/Defs/ThingsDefs_Items/Apparel_Various.xml-->
+                     <!-- reconfigure Sensory control helmet(to Supressing) -->
+<ChangeMod_PSHelmet.label>перенастроить шлем сенсорного контроля (на подавление)</ChangeMod_PSHelmet.label>
+                           <!-- Reconfigure sensory control helmet into suppresing mode. -->
+<ChangeMod_PSHelmet.description>Перенастройте шлем сенсорного контроля в режим подавления.</ChangeMod_PSHelmet.description>
+                         <!-- Reconfiguring Sensory control helmet(to Supressing). -->
+<ChangeMod_PSHelmet.jobString>Перенастройка шлема сенсорного контроля (на подавление).</ChangeMod_PSHelmet.jobString>
+                     <!-- reconfigure Sensory control helmet(to Soothing) -->
+<ChangeMod_SSHelmet.label>перенастроить шлем сенсорного контроля (на успокаивающий)</ChangeMod_SSHelmet.label>
+                           <!-- Reconfigure sensory control helmet into Soothing mode. -->
+<ChangeMod_SSHelmet.description>Перенастройте шлем сенсорного управления в режим успокоения.</ChangeMod_SSHelmet.description>
+                         <!-- Reconfiguring Sensory control helmet(to Soothing). -->
+<ChangeMod_SSHelmet.jobString>Перенастройка шлема сенсорного контроля (на успокаивающий).</ChangeMod_SSHelmet.jobString>
+
+</LanguageData>

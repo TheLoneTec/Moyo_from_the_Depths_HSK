@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/Content/Defs/ThingsDefs_Items/Items_Resources.xml-->
+                 <!-- abyssteel -->
+<Moyo_Abyssteel.label>Глубоководная сталь</Moyo_Abyssteel.label>
+                       <!-- Ultra-dense alloy commonly used in the Lighthouse. It's unbelivable strength and weight makes it suitable for things that needs the most durability. -->
+<Moyo_Abyssteel.description>Сверхплотный сплав, обычно используемый в Маяке. Невероятная прочность и вес делают его подходящим для вещей, требующих наибольшей прочности.</Moyo_Abyssteel.description>
+                  <!-- depthweave -->
+<Moyo_Depthweave.label>Глубоководная ткань</Moyo_Depthweave.label>
+                        <!-- A synthetic fabric commonly used in the lighthouse. It is used in various places due to its elasticity and insulating capabilities. -->
+<Moyo_Depthweave.description>Синтетическая ткань, широко используемая в маяке. Она используется в различных местах благодаря своей эластичности и изоляционным способностям.</Moyo_Depthweave.description>
+                  <!-- abyssal pearl -->
+<Moyo_AbyssPearl.label>Глубоководная жемчужина</Moyo_AbyssPearl.label>
+                        <!-- A cerulian crystal of pure deepblue. Its effects have been more potent as it got purer, thus used for crafting items with extreme effects,
+Its Peculiar glint is considered to be a wonder, which makes it craved even by moyos. A literal cost of blood to satisfy the endless greed. -->
+<Moyo_AbyssPearl.description>Керулиевый кристалл глубокой синевы. Его эффекты становятся все более сильными по мере того, как он становится чище, поэтому используется для изготовления предметов с экстремальными эффектами.\nОсобенный блеск считается чудом, что делает его желанным даже для мойо. Буквальная цена крови для удовлетворения бесконечной жадности.</Moyo_AbyssPearl.description>
+
+</LanguageData>

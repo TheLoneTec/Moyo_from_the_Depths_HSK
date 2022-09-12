@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/Content/Defs/BodyAndPartDefs/Mech_Body.xml-->
+               <!-- Hexapod -->
+<Moyo_Hexapod.label>Hexapod</Moyo_Hexapod.label>
+                                              <!-- left sight sensors -->
+<Moyo_Hexapod.corePart.parts.0.parts.1.customLabel>left sight sensors</Moyo_Hexapod.corePart.parts.0.parts.1.customLabel>
+                                              <!-- right sight sensors -->
+<Moyo_Hexapod.corePart.parts.0.parts.2.customLabel>right sight sensors</Moyo_Hexapod.corePart.parts.0.parts.2.customLabel>
+                                              <!-- left hearing sensor -->
+<Moyo_Hexapod.corePart.parts.0.parts.3.customLabel>left hearing sensor</Moyo_Hexapod.corePart.parts.0.parts.3.customLabel>
+                                              <!-- right hearing sensor -->
+<Moyo_Hexapod.corePart.parts.0.parts.4.customLabel>right hearing sensor</Moyo_Hexapod.corePart.parts.0.parts.4.customLabel>
+                                      <!-- first tentacle joint -->
+<Moyo_Hexapod.corePart.parts.1.customLabel>first tentacle joint</Moyo_Hexapod.corePart.parts.1.customLabel>
+                                              <!-- first tentacle -->
+<Moyo_Hexapod.corePart.parts.1.parts.0.customLabel>first tentacle</Moyo_Hexapod.corePart.parts.1.parts.0.customLabel>
+                                      <!-- second tentacle joint -->
+<Moyo_Hexapod.corePart.parts.2.customLabel>second tentacle joint</Moyo_Hexapod.corePart.parts.2.customLabel>
+                                              <!-- second tentacle -->
+<Moyo_Hexapod.corePart.parts.2.parts.0.customLabel>second tentacle</Moyo_Hexapod.corePart.parts.2.parts.0.customLabel>
+                                      <!-- third tentacle joint -->
+<Moyo_Hexapod.corePart.parts.3.customLabel>third tentacle joint</Moyo_Hexapod.corePart.parts.3.customLabel>
+                                              <!-- third tentacle -->
+<Moyo_Hexapod.corePart.parts.3.parts.0.customLabel>third tentacle</Moyo_Hexapod.corePart.parts.3.parts.0.customLabel>
+                                      <!-- fourth tentacle joint -->
+<Moyo_Hexapod.corePart.parts.4.customLabel>fourth tentacle joint</Moyo_Hexapod.corePart.parts.4.customLabel>
+                                              <!-- fourth tentacle -->
+<Moyo_Hexapod.corePart.parts.4.parts.0.customLabel>fourth tentacle</Moyo_Hexapod.corePart.parts.4.parts.0.customLabel>
+                                      <!-- fifth tentacle joint -->
+<Moyo_Hexapod.corePart.parts.5.customLabel>fifth tentacle joint</Moyo_Hexapod.corePart.parts.5.customLabel>
+                                              <!-- fifth tentacle -->
+<Moyo_Hexapod.corePart.parts.5.parts.0.customLabel>fifth tentacle</Moyo_Hexapod.corePart.parts.5.parts.0.customLabel>
+                                      <!-- sixth tentacle joint -->
+<Moyo_Hexapod.corePart.parts.6.customLabel>sixth tentacle joint</Moyo_Hexapod.corePart.parts.6.customLabel>
+                                              <!-- sixth tentacle -->
+<Moyo_Hexapod.corePart.parts.6.parts.0.customLabel>sixth tentacle</Moyo_Hexapod.corePart.parts.6.parts.0.customLabel>
+                   <!-- pressurepod -->
+<Moyo_Pressurepod.label>pressurepod</Moyo_Pressurepod.label>
+                                                  <!-- left sight sensors -->
+<Moyo_Pressurepod.corePart.parts.0.parts.1.customLabel>left sight sensors</Moyo_Pressurepod.corePart.parts.0.parts.1.customLabel>
+                                                  <!-- right sight sensors -->
+<Moyo_Pressurepod.corePart.parts.0.parts.2.customLabel>right sight sensors</Moyo_Pressurepod.corePart.parts.0.parts.2.customLabel>
+                                                  <!-- left hearing sensor -->
+<Moyo_Pressurepod.corePart.parts.0.parts.3.customLabel>left hearing sensor</Moyo_Pressurepod.corePart.parts.0.parts.3.customLabel>
+                                                  <!-- right hearing sensor -->
+<Moyo_Pressurepod.corePart.parts.0.parts.4.customLabel>right hearing sensor</Moyo_Pressurepod.corePart.parts.0.parts.4.customLabel>
+                                          <!-- right arm joint -->
+<Moyo_Pressurepod.corePart.parts.1.customLabel>right arm joint</Moyo_Pressurepod.corePart.parts.1.customLabel>
+                                                  <!-- right club -->
+<Moyo_Pressurepod.corePart.parts.1.parts.0.customLabel>right club</Moyo_Pressurepod.corePart.parts.1.parts.0.customLabel>
+                                          <!-- left arm joint -->
+<Moyo_Pressurepod.corePart.parts.2.customLabel>left arm joint</Moyo_Pressurepod.corePart.parts.2.customLabel>
+                                                  <!-- left club -->
+<Moyo_Pressurepod.corePart.parts.2.parts.0.customLabel>left club</Moyo_Pressurepod.corePart.parts.2.parts.0.customLabel>
+                                          <!-- first left leg -->
+<Moyo_Pressurepod.corePart.parts.3.customLabel>first left leg</Moyo_Pressurepod.corePart.parts.3.customLabel>
+                                          <!-- first right leg -->
+<Moyo_Pressurepod.corePart.parts.4.customLabel>first right leg</Moyo_Pressurepod.corePart.parts.4.customLabel>
+                                                  <!-- second left leg -->
+<Moyo_Pressurepod.corePart.parts.5.parts.1.customLabel>second left leg</Moyo_Pressurepod.corePart.parts.5.parts.1.customLabel>
+                                                  <!-- second right leg -->
+<Moyo_Pressurepod.corePart.parts.5.parts.2.customLabel>second right leg</Moyo_Pressurepod.corePart.parts.5.parts.2.customLabel>
+                                                          <!-- third left leg -->
+<Moyo_Pressurepod.corePart.parts.5.parts.3.parts.1.customLabel>third left leg</Moyo_Pressurepod.corePart.parts.5.parts.3.parts.1.customLabel>
+                                                          <!-- third right leg -->
+<Moyo_Pressurepod.corePart.parts.5.parts.3.parts.2.customLabel>third right leg</Moyo_Pressurepod.corePart.parts.5.parts.3.parts.2.customLabel>
+                                                                  <!-- fourth left leg -->
+<Moyo_Pressurepod.corePart.parts.5.parts.3.parts.3.parts.1.customLabel>fourth left leg</Moyo_Pressurepod.corePart.parts.5.parts.3.parts.3.parts.1.customLabel>
+                                                                  <!-- fourth right leg -->
+<Moyo_Pressurepod.corePart.parts.5.parts.3.parts.3.parts.2.customLabel>fourth right leg</Moyo_Pressurepod.corePart.parts.5.parts.3.parts.3.parts.2.customLabel>
+
+</LanguageData>

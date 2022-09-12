@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/Content/Defs/ThingsDefs_Items/WeaponsDef.xml-->
+                     <!-- moyo ranged weapons -->
+<Moyo_WeaponsRanged.label>оружие дальнего боя Мойо</Moyo_WeaponsRanged.label>
+                    <!-- moyo melee weapons -->
+<Moyo_WeaponsMelee.label>оружие ближнего боя Мойо</Moyo_WeaponsMelee.label>
+
+</LanguageData>

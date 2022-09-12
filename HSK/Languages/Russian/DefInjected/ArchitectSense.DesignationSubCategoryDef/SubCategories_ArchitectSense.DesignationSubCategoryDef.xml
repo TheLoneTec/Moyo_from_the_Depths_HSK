@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/HSK/Defs/DesignationSubCategoryDefs/SubCategories.xml-->
+                  <!-- Moyo -->
+<Moyo_Production.label>Мойо</Moyo_Production.label>
+                        <!-- All the production buildings for the moyo race. -->
+<Moyo_Production.description>Все производственные здания для расы Мойо.</Moyo_Production.description>
+
+</LanguageData>

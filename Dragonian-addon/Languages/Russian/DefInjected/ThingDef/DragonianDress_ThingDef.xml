@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/Dragonian-addon/Defs/DragonianDress.xml-->
+                     <!-- moyo exoframe prototype -->
+<Moyo_Exoframeproto.label>прототип экзокаркаса moyo</Moyo_Exoframeproto.label>
+                           <!-- A gear made during development of lightweight exoframe. As a proof of concept, it was only planned to be tested in controlled environment, hence the lack of protection.
+
+*Designed for female use.* -->
+<Moyo_Exoframeproto.description>Снаряжение, изготовленное во время разработки легкого экзокаркаса. Как доказательство концепции, его планировалось испытывать только в контролируемой среде, отсюда и отсутствие защиты.\n\n*Разработано для женского использования.*</Moyo_Exoframeproto.description>
+                    <!-- moyo exotic dress A -->
+<Moyo_DragonDressA.label>экзотическое платье Мойо A</Moyo_DragonDressA.label>
+                          <!-- Exotic clothes of the lighthouse which its design was inspired from the surface. Made with advanced materials and is sturdier than it seems.
+
+Reports of seeing white humanoid creature with reptilian features has came from the surface. As their tales were told in the lighthouse, some designers saw it as a great source of inspiration. thus, this clothing was born.
+
+*Designed for female use.* -->
+<Moyo_DragonDressA.description>Экзотическая одежда маяка, дизайн которой был вдохновлен с поверхности. Сделана из передовых материалов и прочнее, чем кажется.\n\n\nСообщения о том, что на поверхности видели белое человекоподобное существо с чертами рептилии, пришли с поверхности. Так как их истории были рассказаны в маяке, некоторые дизайнеры увидели в этом большой источник вдохновения. Таким образом, родилась эта одежда.\n\n\n*Разработана для женского использования.*</Moyo_DragonDressA.description>
+                    <!-- moyo exotic dress B -->
+<Moyo_DragonDressB.label>экзотическое платье Мойо B</Moyo_DragonDressB.label>
+                          <!-- Exotic clothes of the lighthouse which its design was inspired from the surface. Made with advanced materials and is sturdier than it seems.
+
+Reports of seeing white humanoid creature with reptilian features has came from the surface. As their tales were told in the lighthouse, some designers saw it as a great source of inspiration. thus, this clothing was born.
+
+*Designed for female use.* -->
+<Moyo_DragonDressB.description>Экзотическая одежда маяка, дизайн которой был вдохновлен с поверхности. Сделана из передовых материалов и прочнее, чем кажется.\n\n\nСообщения о том, что на поверхности видели белое человекоподобное существо с чертами рептилии, пришли с поверхности. Так как их истории были рассказаны в маяке, некоторые дизайнеры увидели в этом большой источник вдохновения. Таким образом, родилась эта одежда.\n\n\n*Разработана для женского использования.*</Moyo_DragonDressB.description>
+                    <!-- moyo exotic dress C -->
+<Moyo_DragonDressC.label>экзотическое платье Мойо C</Moyo_DragonDressC.label>
+                          <!-- Exotic clothes of the lighthouse which its design was inspired from the surface. Made with advanced materials and is sturdier than it seems.
+
+Reports of seeing white humanoid creature with reptilian features has came from the surface. As their tales were told in the lighthouse, some designers saw it as a great source of inspiration. thus, this clothing was born.
+
+*Designed for female use.* -->
+<Moyo_DragonDressC.description>Экзотическая одежда маяка, дизайн которой был вдохновлен с поверхности. Сделана из передовых материалов и прочнее, чем кажется.\n\n\nСообщения о том, что на поверхности видели белое человекоподобное существо с чертами рептилии, пришли с поверхности. Так как их истории были рассказаны в маяке, некоторые дизайнеры увидели в этом большой источник вдохновения. Таким образом, родилась эта одежда.\n\n\n*Разработана для женского использования.*</Moyo_DragonDressC.description>
+                    <!-- moyo exotic dress D -->
+<Moyo_DragonDressD.label>экзотическое платье Мойо D</Moyo_DragonDressD.label>
+                          <!-- Exotic clothes of the lighthouse which its design was inspired from the surface. Made with advanced materials and is sturdier than it seems.
+
+Reports of seeing white humanoid creature with reptilian features has came from the surface. As their tales were told in the lighthouse, some designers saw it as a great source of inspiration. thus, this clothing was born.
+
+*Designed for female use.* -->
+<Moyo_DragonDressD.description>Экзотическая одежда маяка, дизайн которой был вдохновлен с поверхности. Сделана из передовых материалов и прочнее, чем кажется.\n\n\nСообщения о том, что на поверхности видели белое человекоподобное существо с чертами рептилии, пришли с поверхности. Так как их истории были рассказаны в маяке, некоторые дизайнеры увидели в этом большой источник вдохновения. Таким образом, родилась эта одежда.\n\n\n*Разработана для женского использования.*</Moyo_DragonDressD.description>
+                    <!-- Moyo Dragon Crown D -->
+<Moyo_DragonCrownD.label>Корона дракона Мойо D</Moyo_DragonCrownD.label>
+                          <!-- Exotic crown of the lighthouse which its design was inspired from the surface.
+
+Reports of seeing white humanoid creature with reptilian features has came from the surface. As their tales were told in the lighthouse, some designers saw it as a great source of inspiration. thus, this clothing was born. -->
+<Moyo_DragonCrownD.description>Экзотическая корона маяка, дизайн которой был вдохновлен с поверхности земли.\n\nСообщения о том, что с поверхности земли видели белое человекоподобное существо с чертами рептилии, дошли до нас. Так как их истории рассказывались на маяке, некоторые дизайнеры увидели в этом большой источник вдохновения. Таким образом, родилась эта одежда.</Moyo_DragonCrownD.description>
+
+</LanguageData>

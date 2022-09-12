@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/Content/Defs/BodyAndPartDefs/Body.xml-->
+       <!-- Moyo -->
+<Moyo.label>Мойо</Moyo.label>
+                              <!-- tail -->
+<Moyo.corePart.parts.4.customLabel>хвост</Moyo.corePart.parts.4.customLabel>
+                              <!-- left lung -->
+<Moyo.corePart.parts.7.customLabel>левое лёгкое</Moyo.corePart.parts.7.customLabel>
+                              <!-- right lung -->
+<Moyo.corePart.parts.8.customLabel>правое лёгкое</Moyo.corePart.parts.8.customLabel>
+                              <!-- left kidney -->
+<Moyo.corePart.parts.9.customLabel>левая почка</Moyo.corePart.parts.9.customLabel>
+                               <!-- right kidney -->
+<Moyo.corePart.parts.10.customLabel>правая почка</Moyo.corePart.parts.10.customLabel>
+                                               <!-- left eye -->
+<Moyo.corePart.parts.12.parts.0.parts.1.customLabel>левый глаз</Moyo.corePart.parts.12.parts.0.parts.1.customLabel>
+                                               <!-- right eye -->
+<Moyo.corePart.parts.12.parts.0.parts.2.customLabel>правый глаз</Moyo.corePart.parts.12.parts.0.parts.2.customLabel>
+                                               <!-- left antennae -->
+<Moyo.corePart.parts.12.parts.0.parts.3.customLabel>левая антенна</Moyo.corePart.parts.12.parts.0.parts.3.customLabel>
+                                               <!-- right antennae -->
+<Moyo.corePart.parts.12.parts.0.parts.4.customLabel>правая антенна</Moyo.corePart.parts.12.parts.0.parts.4.customLabel>
+                               <!-- left shoulder -->
+<Moyo.corePart.parts.13.customLabel>левое плечо</Moyo.corePart.parts.13.customLabel>
+                                       <!-- left clavicle -->
+<Moyo.corePart.parts.13.parts.0.customLabel>левая ключица</Moyo.corePart.parts.13.parts.0.customLabel>
+                                       <!-- left arm -->
+<Moyo.corePart.parts.13.parts.1.customLabel>левая рука</Moyo.corePart.parts.13.parts.1.customLabel>
+                                               <!-- left humerus -->
+<Moyo.corePart.parts.13.parts.1.parts.0.customLabel>левая плечевая кость</Moyo.corePart.parts.13.parts.1.parts.0.customLabel>
+                                               <!-- left radius -->
+<Moyo.corePart.parts.13.parts.1.parts.1.customLabel>левый радиус</Moyo.corePart.parts.13.parts.1.parts.1.customLabel>
+                                               <!-- left hand -->
+<Moyo.corePart.parts.13.parts.1.parts.2.customLabel>кисть левой руки</Moyo.corePart.parts.13.parts.1.parts.2.customLabel>
+                                                       <!-- left pinky -->
+<Moyo.corePart.parts.13.parts.1.parts.2.parts.0.customLabel>левый мизинец</Moyo.corePart.parts.13.parts.1.parts.2.parts.0.customLabel>
+                                                       <!-- left ring finger -->
+<Moyo.corePart.parts.13.parts.1.parts.2.parts.1.customLabel>безымянный палец левой руки</Moyo.corePart.parts.13.parts.1.parts.2.parts.1.customLabel>
+                                                       <!-- left middle finger -->
+<Moyo.corePart.parts.13.parts.1.parts.2.parts.2.customLabel>средний палец левой руки</Moyo.corePart.parts.13.parts.1.parts.2.parts.2.customLabel>
+                                                       <!-- left index finger -->
+<Moyo.corePart.parts.13.parts.1.parts.2.parts.3.customLabel>указательный палец левой руки</Moyo.corePart.parts.13.parts.1.parts.2.parts.3.customLabel>
+                                                       <!-- left thumb -->
+<Moyo.corePart.parts.13.parts.1.parts.2.parts.4.customLabel>большой палец левой руки</Moyo.corePart.parts.13.parts.1.parts.2.parts.4.customLabel>
+                               <!-- right shoulder -->
+<Moyo.corePart.parts.14.customLabel>правое плечо</Moyo.corePart.parts.14.customLabel>
+                                       <!-- right clavicle -->
+<Moyo.corePart.parts.14.parts.0.customLabel>правая ключица</Moyo.corePart.parts.14.parts.0.customLabel>
+                                       <!-- right arm -->
+<Moyo.corePart.parts.14.parts.1.customLabel>правая рука</Moyo.corePart.parts.14.parts.1.customLabel>
+                                               <!-- right humerus -->
+<Moyo.corePart.parts.14.parts.1.parts.0.customLabel>правая плечевая кость</Moyo.corePart.parts.14.parts.1.parts.0.customLabel>
+                                               <!-- right radius -->
+<Moyo.corePart.parts.14.parts.1.parts.1.customLabel>правый радиус</Moyo.corePart.parts.14.parts.1.parts.1.customLabel>
+                                               <!-- right hand -->
+<Moyo.corePart.parts.14.parts.1.parts.2.customLabel>кисть правой руки</Moyo.corePart.parts.14.parts.1.parts.2.customLabel>
+                                                       <!-- right pinky -->
+<Moyo.corePart.parts.14.parts.1.parts.2.parts.0.customLabel>мизинец правой руки</Moyo.corePart.parts.14.parts.1.parts.2.parts.0.customLabel>
+                                                       <!-- right ring finger -->
+<Moyo.corePart.parts.14.parts.1.parts.2.parts.1.customLabel>безымянный палец правой руки</Moyo.corePart.parts.14.parts.1.parts.2.parts.1.customLabel>
+                                                       <!-- right middle finger -->
+<Moyo.corePart.parts.14.parts.1.parts.2.parts.2.customLabel>средний палец правой руки</Moyo.corePart.parts.14.parts.1.parts.2.parts.2.customLabel>
+                                                       <!-- right index finger -->
+<Moyo.corePart.parts.14.parts.1.parts.2.parts.3.customLabel>указательный палец правой руки</Moyo.corePart.parts.14.parts.1.parts.2.parts.3.customLabel>
+                                                       <!-- right thumb -->
+<Moyo.corePart.parts.14.parts.1.parts.2.parts.4.customLabel>большой палец правой руки</Moyo.corePart.parts.14.parts.1.parts.2.parts.4.customLabel>
+                               <!-- left leg -->
+<Moyo.corePart.parts.16.customLabel>левая нога</Moyo.corePart.parts.16.customLabel>
+                                       <!-- left femur -->
+<Moyo.corePart.parts.16.parts.0.customLabel>левое бедро</Moyo.corePart.parts.16.parts.0.customLabel>
+                                       <!-- left tibia -->
+<Moyo.corePart.parts.16.parts.1.customLabel>левая голень</Moyo.corePart.parts.16.parts.1.customLabel>
+                                       <!-- left foot -->
+<Moyo.corePart.parts.16.parts.2.customLabel>левая ступня</Moyo.corePart.parts.16.parts.2.customLabel>
+                                               <!-- left little toe -->
+<Moyo.corePart.parts.16.parts.2.parts.0.customLabel>маленький палец левой ноги</Moyo.corePart.parts.16.parts.2.parts.0.customLabel>
+                                               <!-- left fourth toe -->
+<Moyo.corePart.parts.16.parts.2.parts.1.customLabel>левый четвёртый палец ноги</Moyo.corePart.parts.16.parts.2.parts.1.customLabel>
+                                               <!-- left middle toe -->
+<Moyo.corePart.parts.16.parts.2.parts.2.customLabel>средний палец левой ноги</Moyo.corePart.parts.16.parts.2.parts.2.customLabel>
+                                               <!-- left second toe -->
+<Moyo.corePart.parts.16.parts.2.parts.3.customLabel>второй палец левой ноги</Moyo.corePart.parts.16.parts.2.parts.3.customLabel>
+                                               <!-- left big toe -->
+<Moyo.corePart.parts.16.parts.2.parts.4.customLabel>большой палец левой ноги</Moyo.corePart.parts.16.parts.2.parts.4.customLabel>
+                               <!-- right leg -->
+<Moyo.corePart.parts.17.customLabel>правая нога</Moyo.corePart.parts.17.customLabel>
+                                       <!-- right femur -->
+<Moyo.corePart.parts.17.parts.0.customLabel>правое бедро</Moyo.corePart.parts.17.parts.0.customLabel>
+                                       <!-- right tibia -->
+<Moyo.corePart.parts.17.parts.1.customLabel>правая голень</Moyo.corePart.parts.17.parts.1.customLabel>
+                                       <!-- right foot -->
+<Moyo.corePart.parts.17.parts.2.customLabel>правая ступня</Moyo.corePart.parts.17.parts.2.customLabel>
+                                               <!-- right little toe -->
+<Moyo.corePart.parts.17.parts.2.parts.0.customLabel>маленький палец правой ноги</Moyo.corePart.parts.17.parts.2.parts.0.customLabel>
+                                               <!-- right fourth toe -->
+<Moyo.corePart.parts.17.parts.2.parts.1.customLabel>правый четвёртый палец ноги</Moyo.corePart.parts.17.parts.2.parts.1.customLabel>
+                                               <!-- right middle toe -->
+<Moyo.corePart.parts.17.parts.2.parts.2.customLabel>средний палец правой ноги</Moyo.corePart.parts.17.parts.2.parts.2.customLabel>
+                                               <!-- right second toe -->
+<Moyo.corePart.parts.17.parts.2.parts.3.customLabel>right second toe</Moyo.corePart.parts.17.parts.2.parts.3.customLabel>
+                                               <!-- right big toe -->
+<Moyo.corePart.parts.17.parts.2.parts.4.customLabel>большой палец правой ноги</Moyo.corePart.parts.17.parts.2.parts.4.customLabel>
+
+</LanguageData>

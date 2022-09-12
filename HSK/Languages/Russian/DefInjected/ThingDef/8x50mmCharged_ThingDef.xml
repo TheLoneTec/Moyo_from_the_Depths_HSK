@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/HSK/Defs/Ammo/Advanced/8x50mmCharged.xml-->
+                     <!-- 8x50mm Charged cartridge -->
+<Ammo_8x50mmCharged.label>8x50mm Charged cartridge</Ammo_8x50mmCharged.label>
+                           <!-- High power charged shot ammo used by advanced battle rifles, machineguns and sniper rifles. -->
+<Ammo_8x50mmCharged.description>High power charged shot ammo used by advanced battle rifles, machineguns and sniper rifles.</Ammo_8x50mmCharged.description>
+                        <!-- 8x50mm Charged cartridge (Conc.) -->
+<Ammo_8x50mmCharged_AP.label>8x50mm Charged cartridge (Conc.)</Ammo_8x50mmCharged_AP.label>
+                              <!-- High power charged shot ammo used by advanced battle rifles, machineguns and sniper rifles. -->
+<Ammo_8x50mmCharged_AP.description>High power charged shot ammo used by advanced battle rifles, machineguns and sniper rifles.</Ammo_8x50mmCharged_AP.description>
+                         <!-- 8x50mm Charged cartridge (Ion) -->
+<Ammo_8x50mmCharged_Ion.label>8x50mm Charged cartridge (Ion)</Ammo_8x50mmCharged_Ion.label>
+                               <!-- High power charged shot ammo used by advanced battle rifles, machineguns and sniper rifles. -->
+<Ammo_8x50mmCharged_Ion.description>High power charged shot ammo used by advanced battle rifles, machineguns and sniper rifles.</Ammo_8x50mmCharged_Ion.description>
+                       <!-- 8x50mm Charged bullet -->
+<Bullet_8x50mmCharged.label>8x50mm Charged bullet</Bullet_8x50mmCharged.label>
+                          <!-- 8x50mm Charged bullet (Conc.) -->
+<Bullet_8x50mmCharged_AP.label>8x50mm Charged bullet (Conc.)</Bullet_8x50mmCharged_AP.label>
+                           <!-- 8x50mm Charged bullet (Ion) -->
+<Bullet_8x50mmCharged_Ion.label>8x50mm Charged bullet (Ion)</Bullet_8x50mmCharged_Ion.label>
+
+</LanguageData>
