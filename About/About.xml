@@ -56,7 +56,13 @@ This made a massive impact on thier society. Having many opportunities in medica
 			<packageId>goudaquiche.MoharFramework</packageId>
 			<displayName>MoHAR framework</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2057001924</steamWorkshopUrl>
-		</li>		
+		</li>
+		<li>
+			<packageId>Imranfish.XMLExtensions</packageId>
+			<displayName>XML Extensions</displayName>
+			<downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
+		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>erdelf.HumanoidAlienRaces</li>
