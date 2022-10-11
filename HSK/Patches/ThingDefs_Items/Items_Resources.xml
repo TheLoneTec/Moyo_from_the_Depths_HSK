@@ -418,7 +418,14 @@
 					</fixedIngredientFilter>
 				</value>
 			</li>		
-			
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="Make_Moyo_Depthweave"]/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+				</value>
+			</li>	
+		
 			</operations>
 			</match>
 			</li>

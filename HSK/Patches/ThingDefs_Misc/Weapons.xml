@@ -72,7 +72,14 @@
 					<costStuffCount>50</costStuffCount>
 				</value>
 			</li>
-			
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Moyo_Wrench"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Metals_C1</researchPrerequisite>
+				</value>
+			</li>
+	
 			<!-- ==========  Moyo Knife  =========== -->
 			
 			<li Class="PatchOperationReplace">
@@ -155,6 +162,13 @@
 					<costStuffCount>25</costStuffCount>
 				</value>
 			</li>		
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Moyo_Knife"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Metals_C1</researchPrerequisite>
+				</value>
+			</li>
 			
 			<!-- ==========  Moyo Glaive  =========== -->
 			

@@ -42,6 +42,13 @@
 				</value>
 			</li>
 			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Moyo_Royalsuit"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Apparel_D1</researchPrerequisite>
+				</value>
+			</li>
+			
 			<!--Royal Robe-->
 			
 			<li Class="PatchOperationAdd">
@@ -67,6 +74,13 @@
 				</value>
 			</li>
 			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="Moyo_RoyalcoatBase"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Apparel_D1</researchPrerequisite>
+				</value>
+			</li>
+
 			
 			<!--Exotic Dress-->
 			

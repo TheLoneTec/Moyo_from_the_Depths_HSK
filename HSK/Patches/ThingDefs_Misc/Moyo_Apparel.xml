@@ -20,6 +20,15 @@
 				</value>
 			</li>
 			
+			<!-- Bases -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="Moyo_ArmorMachineableBase"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Apparel_C5</researchPrerequisite>
+				</value>
+			</li>
+			
 			<!--Shirt And boots-->
 			
 			<li Class="PatchOperationReplace">
@@ -149,7 +158,14 @@
 					<li>Feet</li>
 				</value>
 			</li>
-			
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Moyo_Bodysuit"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Apparel_C5</researchPrerequisite>
+				</value>
+			</li>
+		
 			<!--Engineering Suit-->
 			
 			<li Class="PatchOperationAdd">
@@ -295,6 +311,13 @@
 						<Compaste>8</Compaste>
 						<SyntheticFibers>4</SyntheticFibers>
 					</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Moyo_Evasuit"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Apparel_D1</researchPrerequisite>
 				</value>
 			</li>
 			
@@ -789,6 +812,13 @@
 			</li>
 			
 			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Moyo_Holosuit"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Apparel_D1</researchPrerequisite>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[@Name="MoyoRoyalHeadbase"]/costList</xpath>
 				<value>
 					<costList>
@@ -797,6 +827,13 @@
 						<Plastic>5</Plastic>
 						<Electronics>1</Electronics>
 					</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="MoyoRoyalHeadbase"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Apparel_D1</researchPrerequisite>
 				</value>
 			</li>
 			
