@@ -8,7 +8,7 @@
     <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
   </ThingCategoryDef>
 
-  <!-- ==================== AmmoSet ========================== -->
+  <!-- ==================== AmmoSet ========================== 
 
   <CombatExtended.AmmoSetDef>
     <defName>AmmoSet_8x50mmCharged</defName>
@@ -17,10 +17,10 @@
       <Ammo_8x50mmCharged>Bullet_8x50mmCharged</Ammo_8x50mmCharged>
       <Ammo_8x50mmCharged_AP>Bullet_8x50mmCharged_AP</Ammo_8x50mmCharged_AP>
       <Ammo_8x50mmCharged_Ion>Bullet_8x50mmCharged_Ion</Ammo_8x50mmCharged_Ion>
-    </ammoTypes>
-    <!--<similarTo>AmmoSet_ChargedRifle</similarTo>-->
+    </ammoTypes>-->
+    <!--<similarTo>AmmoSet_ChargedRifle</similarTo>--><!--
   </CombatExtended.AmmoSetDef>
-
+-->
   <!-- ==================== Ammo ========================== -->
 
   <ThingDef Class="CombatExtended.AmmoDef" Name="8x50mmChargedBase" ParentName="SpacerSmallAmmoBase" Abstract="True">
@@ -38,7 +38,7 @@
     </thingCategories>
     <stackLimit>5000</stackLimit>	
   </ThingDef>
-
+<!--
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="8x50mmChargedBase">
     <defName>Ammo_8x50mmCharged</defName>
     <label>8x50mm Charged cartridge</label>
@@ -78,7 +78,7 @@
     <ammoClass>Ionized</ammoClass>
     <generateAllowChance>0</generateAllowChance>
   </ThingDef>
-
+-->
   <!-- ================== Projectiles ================== -->
 
   <ThingDef Name="Base8x50mmChargedBullet" ParentName="SK_BaseBullet" Abstract="true">
@@ -92,7 +92,7 @@
     </projectile>
   </ThingDef>
 
-  <!-- normal charged bullets -->
+  <!-- normal charged bullets 
   <ThingDef ParentName="Base8x50mmChargedBullet">
     <defName>Bullet_8x50mmCharged</defName>
     <label>8x50mm Charged bullet</label>
@@ -108,8 +108,8 @@
       <armorPenetrationBlunt>120</armorPenetrationBlunt>
     </projectile>
   </ThingDef>
-
-  <!-- concentrated bullets -->
+-->
+  <!-- concentrated bullets 
   <ThingDef ParentName="Base8x50mmChargedBullet">
     <defName>Bullet_8x50mmCharged_AP</defName>
     <label>8x50mm Charged bullet (Conc.)</label>
@@ -125,8 +125,8 @@
       <armorPenetrationBlunt>120</armorPenetrationBlunt>
     </projectile>
   </ThingDef>
-
-  <!-- ion bullets -->
+-->
+  <!-- ion bullets 
   <ThingDef ParentName="Base8x50mmChargedBullet">
     <defName>Bullet_8x50mmCharged_Ion</defName>
     <label>8x50mm Charged bullet (Ion)</label>
@@ -143,47 +143,49 @@
       <empShieldBreakChance>1</empShieldBreakChance>
     </projectile>
   </ThingDef>
-
-  <!-- ==================== Recipes ========================== -->
+-->
+  <!-- ==================== Recipes ========================== 
 
   <RecipeDef ParentName="ChargeAmmoRecipeBase">
     <defName>MakeAmmo_8x50mmCharged</defName>
     <label>make 8x50mm Charged cartridge x500</label>
     <description>Craft 500 8x50mm Charged cartridges.</description>
     <jobString>Making 8x50mm Charged cartridges.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Plasteel</li>
-          </thingDefs>
-        </filter>
-        <count>24</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>16</count>
-      </li>	  
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>24</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Plasteel</li>
-        <li>Steel</li>		
-        <li>ComponentIndustrial</li>
-      </thingDefs>
-    </fixedIngredientFilter>
+	<ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>SLDBar</li>
+				</categories>
+			</filter>
+			<count>30</count>
+		</li>
+		<li>
+			<filter>
+				<categories>
+					<li>USLDBar</li>
+				</categories>
+			</filter>
+			<count>20</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>MagneticMaterial</li>
+				</thingDefs>
+			</filter>
+			<count>4</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<categories>
+			<li>SLDBar</li>
+			<li>USLDBar</li>
+		</categories>
+		<thingDefs>
+			<li>MagneticMaterial</li>
+		</thingDefs>
+	</fixedIngredientFilter>
     <products>
       <Ammo_8x50mmCharged>500</Ammo_8x50mmCharged>
     </products>
@@ -195,39 +197,42 @@
     <label>make 8x50mm Charged (Conc.) cartridge x500</label>
     <description>Craft 500 8x50mm Charged (Conc.) cartridges.</description>
     <jobString>Making 8x50mm Charged (Conc.) cartridges.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Plasteel</li>
-          </thingDefs>
-        </filter>
-        <count>24</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>16</count>
-      </li>	  
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>24</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Plasteel</li>
-        <li>Steel</li>		
-        <li>ComponentIndustrial</li>
-      </thingDefs>
-    </fixedIngredientFilter>
+	<ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>SLDBar</li>
+				</categories>
+			</filter>
+			<count>28</count>
+		</li>
+		<li>
+			<filter>
+				<categories>
+					<li>USLDBar</li>
+				</categories>
+			</filter>
+			<count>28</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>MagneticMaterial</li>
+				</thingDefs>
+			</filter>
+			<count>4</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<categories>
+			<li>SLDBar</li>
+			<li>USLDBar</li>
+		</categories>
+		<thingDefs>
+			<li>SyntheticAmmonia</li>
+			<li>MagneticMaterial</li>
+		</thingDefs>
+	</fixedIngredientFilter>
     <products>
       <Ammo_8x50mmCharged_AP>500</Ammo_8x50mmCharged_AP>
     </products>
@@ -239,43 +244,54 @@
     <label>make 8x50mm Charged (Ion) cartridge x500</label>
     <description>Craft 500 8x50mm Charged (Ion) cartridges.</description>
     <jobString>Making 8x50mm Charged (Ion) cartridges.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Plasteel</li>
-          </thingDefs>
-        </filter>
-        <count>24</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>16</count>
-      </li>	  
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>24</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Plasteel</li>
-        <li>Steel</li>		
-        <li>ComponentIndustrial</li>
-      </thingDefs>
-    </fixedIngredientFilter>
+	<ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>SLDBar</li>
+				</categories>
+			</filter>
+			<count>30</count>
+		</li>
+		<li>
+			<filter>
+				<categories>
+					<li>USLDBar</li>
+				</categories>
+			</filter>
+			<count>16</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>SyntheticAmmonia</li>
+				</thingDefs>
+			</filter>
+			<count>12</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>MagneticMaterial</li>
+				</thingDefs>
+			</filter>
+			<count>4</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<categories>
+			<li>SLDBar</li>
+			<li>USLDBar</li>
+		</categories>
+		<thingDefs>
+			<li>SyntheticAmmonia</li>
+			<li>MagneticMaterial</li>
+		</thingDefs>
+	</fixedIngredientFilter>
     <products>
       <Ammo_8x50mmCharged_Ion>500</Ammo_8x50mmCharged_Ion>
     </products>
     <workAmount>25600</workAmount>	
   </RecipeDef>
-
+-->
 </Defs>

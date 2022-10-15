@@ -489,7 +489,7 @@
 						</projectile>
 					</ThingDef>
 					
-					<ThingDef Class="CombatExtended.AmmoDef" ParentName="6x24mmChargedBase">
+					<ThingDef Class="CombatExtended.AmmoDef" ParentName="6x18mmChargedBase">
 						<defName>Ammo_6x18mmMoyo</defName>
 						<label>6x18mmMoyo cartridge</label>
 						<graphicData>
@@ -574,7 +574,7 @@
 						</projectile>		
 					</ThingDef>
 					
-					<ThingDef Class="CombatExtended.AmmoDef" ParentName="6x24mmChargedBase">
+					<ThingDef Class="CombatExtended.AmmoDef" ParentName="6x18mmChargedBase">
 						<defName>Ammo_6x18mmMoyo_AP</defName>
 						<label>6x18mmMoyo AP cartridge</label>
 						<graphicData>
@@ -661,7 +661,7 @@
 						</projectile>
 					</ThingDef>
 					
-					<ThingDef Class="CombatExtended.AmmoDef" ParentName="6x24mmChargedBase">
+					<ThingDef Class="CombatExtended.AmmoDef" ParentName="6x18mmChargedBase">
 						<defName>Ammo_6x18mmMoyo_Ion</defName>
 						<label>6x18mmMoyo Ion cartridge</label>
 						<graphicData>
@@ -1146,7 +1146,7 @@
 					</projectile>
 				</ThingDef>
 
-				<ThingDef Class="CombatExtended.AmmoDef" ParentName="6x24mmChargedBase">
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="8x35mmChargedBase">
 					<defName>Ammo_8x35mmMoyo</defName>
 					<label>8x35mmMoyo cartridge</label>
 					<graphicData>
@@ -1231,7 +1231,7 @@
 					</projectile>
 				</ThingDef>
 
-				<ThingDef Class="CombatExtended.AmmoDef" ParentName="6x24mmChargedBase">
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="8x35mmChargedBase">
 					<defName>Ammo_8x35mmMoyo_AP</defName>
 					<label>8x35mmMoyo AP cartridge</label>
 					<graphicData>
@@ -1318,7 +1318,7 @@
 					</projectile>
 				</ThingDef>
 				  
-				<ThingDef Class="CombatExtended.AmmoDef" ParentName="6x24mmChargedBase">
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="8x35mmChargedBase">
 					<defName>Ammo_8x35mmMoyo_Ion</defName>
 					<label>8x35mmMoyo Ion cartridge</label>
 					<graphicData>
@@ -1430,7 +1430,7 @@
 					</projectile>
 				</ThingDef>
 
-				<ThingDef Class="CombatExtended.AmmoDef" ParentName="6x24mmChargedBase">
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="8x50mmChargedBase">
 					<defName>Ammo_8x50mmMoyo</defName>
 					<label>8x50mmMoyo cartridge</label>
 					<graphicData>
@@ -1517,7 +1517,7 @@
 					</projectile>
 				</ThingDef>
 
-				<ThingDef Class="CombatExtended.AmmoDef" ParentName="6x24mmChargedBase">
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="8x50mmChargedBase">
 					<defName>Ammo_8x50mmMoyo_AP</defName>
 					<label>8x50mmMoyo AP cartridge</label>
 					<graphicData>
@@ -1604,7 +1604,7 @@
 					</projectile>
 				</ThingDef>
 				  
-				<ThingDef Class="CombatExtended.AmmoDef" ParentName="6x24mmChargedBase">
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="8x50mmChargedBase">
 					<defName>Ammo_8x50mmMoyo_Ion</defName>
 					<label>8x50mmMoyo Ion cartridge</label>
 					<graphicData>
