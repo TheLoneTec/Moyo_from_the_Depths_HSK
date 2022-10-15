@@ -23,14 +23,6 @@
 							<li>(15000, 0.7)</li>
 						</points>
 					</raidCommonalityFromPointsCurve>
-					<maxPawnCostPerTotalPointsCurve>
-						<points>
-							<li>(0, 220)</li>
-							<li>(7000, 240)</li>
-							<li>(10000, 370)</li>
-							<li>(100000, 10000)</li>
-						</points>
-					</maxPawnCostPerTotalPointsCurve>
 					<apparelStuffFilter>
 						<categories>
 							<li>Leathers</li>
@@ -55,6 +47,20 @@
 							<li>Moyo_Abyssteel</li>
 						</thingDefs>
 					</apparelStuffFilter>
+			   </value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/FactionDef[@Name="MoyoFactionBase"]/maxPawnCostPerTotalPointsCurve</xpath>
+			   <value>
+					<maxPawnCostPerTotalPointsCurve>
+						<points>
+							<li>(0, 220)</li>
+							<li>(7000, 240)</li>
+							<li>(10000, 370)</li>
+							<li>(100000, 10000)</li>
+						</points>
+					</maxPawnCostPerTotalPointsCurve>
 			   </value>
 			</li>
 
