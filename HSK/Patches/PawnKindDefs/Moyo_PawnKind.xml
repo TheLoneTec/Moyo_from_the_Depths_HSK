@@ -104,6 +104,21 @@
 				</value>
 			</li>
 	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="Moyo_BottomCivilan"]/weaponMoney</xpath>
+				<value>
+					<weaponMoney>1250~3500</weaponMoney>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="Moyo_BottomCivilan"]/weaponTags</xpath>
+				<value>
+					<li>CE_Sidearm</li>
+					<li>CE_AI_Pistol</li>
+				</value>
+			</li>
+	
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef[defName="Moyo_MiddleCivilan"]/apparelTags</xpath>
 				<value>
@@ -156,6 +171,14 @@
 			</li>
 	
 			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[@Name="MoyoSoldierLight"]/weaponTags</xpath>
+				<value>
+					<li>Futuristic</li>
+					<li>CE_AI_AssaultWeapon</li>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef[@Name="MoyoSoldierLight"]/apparelTags</xpath>
 				<value>
 					<li>BrotherhoodScout</li>
@@ -166,8 +189,17 @@
 			<li Class="PatchOperationReplace">
 			  <xpath>Defs/PawnKindDef[@Name="MoyoSoliderStandard"]/weaponMoney</xpath>
 			  <value>
-				<weaponMoney>4000~6500</weaponMoney>
+				<weaponMoney>4000~8500</weaponMoney>
 			  </value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[@Name="MoyoSoliderStandard"]/weaponTags</xpath>
+				<value>
+					<li>Futuristic</li>
+					<li>TierTwoRifle</li>
+					<li>CE_AI_Grenade</li>
+				</value>
 			</li>
 
 			<li Class="PatchOperationAdd">
@@ -186,6 +218,14 @@
 			</li>
 	
 			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[@Name="MoyoSoldierHeavy"]/weaponTags</xpath>
+				<value>
+					<li>TierTwoNormal</li>
+					<li>GunHeavy</li>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef[@Name="MoyoSoldierHeavy"]/apparelTags</xpath>
 				<value>
 					<li>SectarianLight</li>
@@ -196,10 +236,21 @@
 			<li Class="PatchOperationReplace">
 			  <xpath>Defs/PawnKindDef[defName="Moyo_leader"]/weaponMoney</xpath>
 			  <value>
-				<weaponMoney>4000~5500</weaponMoney>
+				<weaponMoney>5000~8500</weaponMoney>
 			  </value>
 			</li>
-	
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="Moyo_leader"]/weaponTags</xpath>
+				<value>
+					<li>CE_Sidearm</li>
+					<li>CE_AI_Pistol</li>
+					<li>CE_OneHandedWeapon</li>
+					<li>HitechMelee</li>
+					<li>HitechMelee2H</li>
+				</value>
+			</li>
+			
 			<li Class="PatchOperationReplace">
 			  <xpath>Defs/PawnKindDef[@Name="MoyoGuardian"]/weaponMoney</xpath>
 			  <value>
