@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/1.3/Defs/ThingsDefs_Races/MoyoMechs.xml-->
+                       <!-- pressurepod -->
+<MoyoPressurePod_Race.label>pressurepod</MoyoPressurePod_Race.label>
+                             <!-- A mining mechanoid used in the Lighthouse. A pair of giant 'club' is utilized to crush rocks to mine ores. One of few mechanoid that can be used on land, it strikes the foe with its club when in combat. You will not want to be on that recieving end. -->
+<MoyoPressurePod_Race.description>A mining mechanoid used in the Lighthouse. A pair of giant 'club' is utilized to crush rocks to mine ores. One of few mechanoid that can be used on land, it strikes the foe with its club when in combat. You will not want to be on that recieving end.</MoyoPressurePod_Race.description>
+                               <!-- head -->
+<MoyoPressurePod_Race.tools.0.label>head</MoyoPressurePod_Race.tools.0.label>
+                               <!-- left club -->
+<MoyoPressurePod_Race.tools.1.label>left club</MoyoPressurePod_Race.tools.1.label>
+                               <!-- right club -->
+<MoyoPressurePod_Race.tools.2.label>right club</MoyoPressurePod_Race.tools.2.label>
+                   <!-- hexapod -->
+<MoyoHexaPod_Race.label>hexapod</MoyoHexaPod_Race.label>
+                         <!-- A multipurpose mechanoid used in the Lighthouse. 6 flexible tentacles allows it to do multiple activities. One of few mechanoid that can be used on land, it utilizes its tentacles to strike and constrict an opponent's movement in combat. -->
+<MoyoHexaPod_Race.description>A multipurpose mechanoid used in the Lighthouse. 6 flexible tentacles allows it to do multiple activities. One of few mechanoid that can be used on land, it utilizes its tentacles to strike and constrict an opponent's movement in combat.</MoyoHexaPod_Race.description>
+                           <!-- head -->
+<MoyoHexaPod_Race.tools.0.label>head</MoyoHexaPod_Race.tools.0.label>
+                           <!-- tentacle -->
+<MoyoHexaPod_Race.tools.1.label>tentacle</MoyoHexaPod_Race.tools.1.label>
+                           <!-- tentacle -->
+<MoyoHexaPod_Race.tools.2.label>tentacle</MoyoHexaPod_Race.tools.2.label>
+                           <!-- tentacle -->
+<MoyoHexaPod_Race.tools.3.label>tentacle</MoyoHexaPod_Race.tools.3.label>
+                           <!-- tentacle -->
+<MoyoHexaPod_Race.tools.4.label>tentacle</MoyoHexaPod_Race.tools.4.label>
+                           <!-- tentacle -->
+<MoyoHexaPod_Race.tools.5.label>tentacle</MoyoHexaPod_Race.tools.5.label>
+                           <!-- tentacle -->
+<MoyoHexaPod_Race.tools.6.label>tentacle</MoyoHexaPod_Race.tools.6.label>
+                   <!-- cryopod -->
+<MoyoCryoPod_Race.label>cryopod</MoyoCryoPod_Race.label>
+                         <!-- A multipurpose mechanoid used in the Lighthouse. 6 flexible tentacles allows it to do multiple activities. A modified hexapod with cryonic weapon for mid-range fire support. It retains it's close combat capabilities even after modification. -->
+<MoyoCryoPod_Race.description>A multipurpose mechanoid used in the Lighthouse. 6 flexible tentacles allows it to do multiple activities. A modified hexapod with cryonic weapon for mid-range fire support. It retains it's close combat capabilities even after modification.</MoyoCryoPod_Race.description>
+                           <!-- head -->
+<MoyoCryoPod_Race.tools.0.label>head</MoyoCryoPod_Race.tools.0.label>
+                           <!-- tentacle -->
+<MoyoCryoPod_Race.tools.1.label>tentacle</MoyoCryoPod_Race.tools.1.label>
+                           <!-- tentacle -->
+<MoyoCryoPod_Race.tools.2.label>tentacle</MoyoCryoPod_Race.tools.2.label>
+                           <!-- tentacle -->
+<MoyoCryoPod_Race.tools.3.label>tentacle</MoyoCryoPod_Race.tools.3.label>
+                           <!-- tentacle -->
+<MoyoCryoPod_Race.tools.4.label>tentacle</MoyoCryoPod_Race.tools.4.label>
+                           <!-- tentacle -->
+<MoyoCryoPod_Race.tools.5.label>tentacle</MoyoCryoPod_Race.tools.5.label>
+                           <!-- tentacle -->
+<MoyoCryoPod_Race.tools.6.label>tentacle</MoyoCryoPod_Race.tools.6.label>
+
+</LanguageData>

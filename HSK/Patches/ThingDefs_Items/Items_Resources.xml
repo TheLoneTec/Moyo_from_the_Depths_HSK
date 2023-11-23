@@ -98,8 +98,8 @@
 						<toolStatFactors>
 							<TreeFellingSpeed>1.3</TreeFellingSpeed>
 							<PlantHarvestingSpeed>1.3</PlantHarvestingSpeed>
-							<PlantSowingSpeed>1.4</PlantSowingSpeed>
-							<DiggingSpeed>1.5</DiggingSpeed>
+							<PlantWorkSpeed>1.4</PlantWorkSpeed>
+							<MiningSpeed>1.5</MiningSpeed>
 							<MiningYieldDigging>1.4</MiningYieldDigging>
 							<ConstructionSpeed>1.4</ConstructionSpeed>
 							<SmithingSpeed>1.4</SmithingSpeed>

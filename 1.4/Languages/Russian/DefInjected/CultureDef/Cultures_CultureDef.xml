@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/1.3/Defs/FactionDefs/Cultures.xml-->
+                      <!-- nautilios -->
+<Moyo_RefugeeCulture.label>наутилус</Moyo_RefugeeCulture.label>
+                            <!-- Cultures of the refugees who seek haven on the surface. -->
+<Moyo_RefugeeCulture.description>Культуры беженцев, которые ищут убежища на поверхности.</Moyo_RefugeeCulture.description>
+                                 <!-- LeaderTitleMaker_Astropolitan -->
+<Moyo_RefugeeCulture.leaderTitleMaker>LeaderTitleMaker_Astropolitan</Moyo_RefugeeCulture.leaderTitleMaker>
+
+</LanguageData>

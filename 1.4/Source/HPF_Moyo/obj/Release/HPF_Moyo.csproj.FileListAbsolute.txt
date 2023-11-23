@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\2182305386\1.4\Source\HPF_Moyo\obj\Release\HPF_Moyo.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\2182305386\1.4\Source\HPF_Moyo\obj\Release\HPF_Moyo.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\2182305386\1.4\Assemblies\HPF_Moyo.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\2182305386\1.4\Source\HPF_Moyo\obj\Release\HPF_Moyo.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Moyo_2Anty\1.4\Assemblies\HPF_Moyo.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Moyo_2Anty\1.4\Source\HPF_Moyo\obj\Release\HPF_Moyo.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Moyo_2Anty\1.4\Source\HPF_Moyo\obj\Release\HPF_Moyo.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Moyo_2Anty\1.4\Source\HPF_Moyo\obj\Release\HPF_Moyo.dll

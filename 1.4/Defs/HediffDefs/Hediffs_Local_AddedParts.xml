@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Moyo_FakeTail</defName>
+		<label>fake tail</label>
+		<labelNoun>a fake tail</labelNoun>
+		<description>A fake tail made made from fabric. Helps keep balance.</description>
+		<spawnThingOnRemoved>Moyo_FakeTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.35</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+	
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Moyo_BionicTail</defName>
+		<label>bionic tail</label>
+		<labelNoun>a bionic tail</labelNoun>
+		<description>A binoic tail made with advanced technology. Superior to a natural tail in many ways.</description>
+		<spawnThingOnRemoved>Moyo_BionicTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+	
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Moyo_AdvancedHeart</defName>
+		<label>abysstech heart</label>
+		<labelNoun>a abysstech heart</labelNoun>
+		<description>An installed abysstech heart.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Moyo_AdvancedHeart</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>Moyo_AdvancedHeart</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.35</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<!-- <comps> -->
+			<!-- <li Class="MoharHediffs.HediffCompProperties_Spawner"> -->
+				<!-- <thingToSpawn>Moyo_BloodBag</thingToSpawn> -->
+				<!-- <spawnCount>1</spawnCount> -->
+				<!-- <minDaysB4Next>2.2221</minDaysB4Next> -->
+				<!-- <maxDaysB4Next>2.2222</maxDaysB4Next> -->
+				<!-- <randomGrace>0</randomGrace> -->
+				<!-- <spawnMaxAdjacent>40</spawnMaxAdjacent> -->
+				<!-- <spawnForbidden>false</spawnForbidden> -->
+				<!-- <spawnVerb>production</spawnVerb> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+		<stages>
+			<li>
+				<statOffsets>
+					<ComfyTemperatureMax>4</ComfyTemperatureMax>
+					<DeepblueStat>3</DeepblueStat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

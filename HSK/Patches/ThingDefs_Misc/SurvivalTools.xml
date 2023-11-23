@@ -57,7 +57,7 @@
 				<value>
 					<li Class="SurvivalToolsLite.SurvivalToolProperties">
 						<baseWorkStatFactors>
-							<DiggingSpeed>0.4</DiggingSpeed>
+							<MiningSpeed>0.4</MiningSpeed>
 							<MiningYieldDigging>1</MiningYieldDigging>
 						</baseWorkStatFactors>
 						<defaultSurvivalToolAssignmentTags>

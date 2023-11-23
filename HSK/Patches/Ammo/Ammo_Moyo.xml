@@ -493,7 +493,7 @@
 						<defName>Ammo_6x18mmMoyo</defName>
 						<label>6x18mmMoyo cartridge</label>
 						<graphicData>
-							<texPath>Things/Ammo/Charged/Regular</texPath>
+							<texPath>Things/Ammo/Charged/SmallRegular</texPath>
 							<graphicClass>Graphic_StackCount</graphicClass>
 						</graphicData>
 						<statBases>
@@ -578,7 +578,7 @@
 						<defName>Ammo_6x18mmMoyo_AP</defName>
 						<label>6x18mmMoyo AP cartridge</label>
 						<graphicData>
-							<texPath>Things/Ammo/Charged/Concentrated</texPath>
+							<texPath>Things/Ammo/Charged/SmallConc</texPath>
 							<graphicClass>Graphic_StackCount</graphicClass>
 						</graphicData>
 						<statBases>
@@ -665,7 +665,7 @@
 						<defName>Ammo_6x18mmMoyo_Ion</defName>
 						<label>6x18mmMoyo Ion cartridge</label>
 						<graphicData>
-							<texPath>Things/Ammo/Charged/Ion</texPath>
+							<texPath>Things/Ammo/Charged/SmallIon</texPath>
 							<graphicClass>Graphic_StackCount</graphicClass>
 						</graphicData>
 						<statBases>
@@ -777,7 +777,7 @@
 						<defName>Ammo_6x24mmMoyo</defName>
 						<label>6x24mmMoyo cartridge</label>
 						<graphicData>
-							<texPath>Things/Ammo/Charged/Regular</texPath>
+							<texPath>Things/Ammo/Charged/SmallRegular</texPath>
 							<graphicClass>Graphic_StackCount</graphicClass>
 						</graphicData>
 						<statBases>
@@ -862,7 +862,7 @@
 						<defName>Ammo_6x24mmMoyo_AP</defName>
 						<label>6x24mmMoyo AP cartridge</label>
 						<graphicData>
-							<texPath>Things/Ammo/Charged/Concentrated</texPath>
+							<texPath>Things/Ammo/Charged/SmallConc</texPath>
 							<graphicClass>Graphic_StackCount</graphicClass>
 						</graphicData>
 						<statBases>
@@ -949,7 +949,7 @@
 						<defName>Ammo_6x24mmMoyo_Ion</defName>
 						<label>6x24mmMoyo Ion cartridge</label>
 						<graphicData>
-							<texPath>Things/Ammo/Charged/Ion</texPath>
+							<texPath>Things/Ammo/Charged/SmallIon</texPath>
 							<graphicClass>Graphic_StackCount</graphicClass>
 						</graphicData>
 						<statBases>
@@ -1150,7 +1150,7 @@
 					<defName>Ammo_8x35mmMoyo</defName>
 					<label>8x35mmMoyo cartridge</label>
 					<graphicData>
-						<texPath>Things/Ammo/Charged/Regular</texPath>
+						<texPath>Things/Ammo/Charged/SmallRegular</texPath>
 						<graphicClass>Graphic_StackCount</graphicClass>
 					</graphicData>
 					<statBases>
@@ -1235,7 +1235,7 @@
 					<defName>Ammo_8x35mmMoyo_AP</defName>
 					<label>8x35mmMoyo AP cartridge</label>
 					<graphicData>
-						<texPath>Things/Ammo/Charged/Concentrated</texPath>
+						<texPath>Things/Ammo/Charged/SmallConc</texPath>
 						<graphicClass>Graphic_StackCount</graphicClass>
 					</graphicData>
 					<statBases>
@@ -1322,7 +1322,7 @@
 					<defName>Ammo_8x35mmMoyo_Ion</defName>
 					<label>8x35mmMoyo Ion cartridge</label>
 					<graphicData>
-						<texPath>Things/Ammo/Charged/Ion</texPath>
+						<texPath>Things/Ammo/Charged/SmallIon</texPath>
 						<graphicClass>Graphic_StackCount</graphicClass>
 					</graphicData>
 					<statBases>
@@ -1434,7 +1434,7 @@
 					<defName>Ammo_8x50mmMoyo</defName>
 					<label>8x50mmMoyo cartridge</label>
 					<graphicData>
-						<texPath>Things/Ammo/Charged/Regular</texPath>
+						<texPath>Things/Ammo/Charged/SmallRegular</texPath>
 						<graphicClass>Graphic_StackCount</graphicClass>
 					</graphicData>
 					<statBases>
@@ -1521,7 +1521,7 @@
 					<defName>Ammo_8x50mmMoyo_AP</defName>
 					<label>8x50mmMoyo AP cartridge</label>
 					<graphicData>
-						<texPath>Things/Ammo/Charged/Concentrated</texPath>
+						<texPath>Things/Ammo/Charged/SmallConc</texPath>
 						<graphicClass>Graphic_StackCount</graphicClass>
 					</graphicData>
 					<statBases>
@@ -1608,7 +1608,7 @@
 					<defName>Ammo_8x50mmMoyo_Ion</defName>
 					<label>8x50mmMoyo Ion cartridge</label>
 					<graphicData>
-						<texPath>Things/Ammo/Charged/Ion</texPath>
+						<texPath>Things/Ammo/Charged/SmallIon</texPath>
 						<graphicClass>Graphic_StackCount</graphicClass>
 					</graphicData>
 					<statBases>

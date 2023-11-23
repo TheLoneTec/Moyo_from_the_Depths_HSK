@@ -9,6 +9,24 @@
 		<match Class="PatchOperationSequence">
 		<operations>
 			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ScenarioDef[defName="Moyo_RefugeeScenario"]/scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]</xpath>
+				<value>
+					<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+					  <def>ConfigurePawnsKindDefs</def>
+					  <pawnChoiceCount>8</pawnChoiceCount>
+					  <leftBehindPawnKind>Moyo_ColonistPawn</leftBehindPawnKind>
+					  <kindCounts>
+						<li>
+						  <kindDef>Moyo_ColonistPawn</kindDef>
+						  <count>3</count>
+						  <requiredAtStart>true</requiredAtStart>
+						</li>
+					  </kindCounts>
+					</li>
+				</value>
+			</li>
+			
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ScenarioDef[defName="Moyo_RefugeeScenario"]/scenario/parts</xpath>
 				<value>
@@ -36,13 +54,13 @@
 						<match Class="PatchOperationReplace">
 							<xpath>/Defs/FactionDef[@Name="Moyo_PlayerBase"]/apparelStuffFilter/thingDefs/li["Steel"]</xpath>
 							<value>
-								<li>Steel</li>
+								<li>Plasteel</li>
 							</value>
 						</match>
 						<nomatch Class="PatchOperationAdd">
 							<xpath>/Defs/FactionDef[@Name="Moyo_PlayerBase"]/apparelStuffFilter/thingDefs</xpath>
 							<value>
-								<li>Steel</li>
+								<li>Plasteel</li>
 							</value>
 						</nomatch>
 					</match>
@@ -50,7 +68,7 @@
 						<xpath>/Defs/FactionDef[@Name="Moyo_PlayerBase"]/apparelStuffFilter</xpath>
 						<value>
 							<thingDefs>
-								<li>Steel</li>
+								<li>Plasteel</li>
 							</thingDefs>
 						</value>
 					</nomatch>
@@ -60,7 +78,7 @@
 					<value>
 						<apparelStuffFilter>
 							<thingDefs>
-								<li>Steel</li>
+								<li>Plasteel</li>
 							</thingDefs>
 						</apparelStuffFilter>
 					</value>

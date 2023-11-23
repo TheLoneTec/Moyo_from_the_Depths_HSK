@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- moyo healer -->
+	<ThingDef ParentName="MechSerumBase">
+		<defName>Moyo_HealerSerum</defName>
+		<label>abysstech healer mech serum</label>
+		<description>A pinnacle of abysstech, a solution of mechanites tuned with deepblue to heal health conditions. Its effects are the same as contemporary healer mech serum, and its free of deepblue-related effect despite a huge amount was used in production.\n\nSeemed to be the current limit of medicinal deepblue, this is a masterwork of biological and mechanical engineering combined that has been achived by the lighthouse.</description>
+		<graphicData>
+			<texPath>Things/Drugs/AbyssalSerumA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+			<WorkToMake>100000</WorkToMake>
+		</statBases>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<tradeability>Sellable</tradeability>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Use {0_label}</useLabel>
+				<useDuration>600</useDuration>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>CompUseEffect_FixWorstHealthCondition</compClass>
+			</li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>MechSerumUsed</soundOnUsed>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf"/>
+		</comps>
+		<costList>
+			<Luciferium>10</Luciferium>
+			<Moyo_AbyssPearl>5</Moyo_AbyssPearl>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<recipeUsers>
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>DeepBlue_Manipulation</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+				<Intellectual>13</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	<ThingCategoryDef>
+		<defName>abysstech_neurotrainer</defName>
+		<label>Abysstech neurotrainer</label>
+		<parent>Items</parent>
+	</ThingCategoryDef>
+	<ThingDef ParentName="MechSerumBase" Name="MoyoTrainerbase" Abstract="True">
+		<defName>Moyo_neuroSerum_base</defName>
+		<description>A pinnacle of abysstech, a solution of mechanites tuned with deepblue to accelerate experience gaining. Though its effect is minor compared to the contemporary one, but its free of deepblue-related effect despite a huge amount was used in production.\n\nSeemed to be the current limit of medicinal deepblue, this is a masterwork of biological and mechanical engineering combined that has been achived by the lighthouse.</description>
+		<graphicData>
+			<texPath>Things/Drugs/AbyssalSerumB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+			<WorkToMake>70000</WorkToMake>
+		</statBases>
+		<thingCategories>
+			<li>abysstech_neurotrainer</li>
+		</thingCategories>
+		<tradeability>Sellable</tradeability>
+		<comps Inherit="False">
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Use {0_label}</useLabel>
+				<useDuration>600</useDuration>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>MechSerumUsed</soundOnUsed>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf"/>
+		</comps>
+		<costList>
+			<Luciferium>5</Luciferium>
+			<Moyo_AbyssPearl>2</Moyo_AbyssPearl>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<recipeUsers>
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>DeepBlue_Manipulation</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+				<Intellectual>13</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="MoyoTrainerbase">
+		<defName>Moyo_neuroSerum_combat</defName>
+		<label>abysstech neurotrainer serum(Combat)</label>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Use abysstech neurotrainer serum to learn skill</useLabel>
+				<useDuration>600</useDuration>
+			</li>
+			<li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+				<skillDefName>Shooting</skillDefName>
+				<xpAmount>12500</xpAmount>
+			</li>
+			<li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+				<skillDefName>Melee</skillDefName>
+				<xpAmount>12500</xpAmount>
+			</li>
+			<li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+				<skillDefName>Animals</skillDefName>
+				<xpAmount>12500</xpAmount>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="MoyoTrainerbase">
+		<defName>Moyo_neuroSerum_labor</defName>
+		<label>abysstech neurotrainer serum(Labor)</label>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Use abysstech neurotrainer serum to learn skill</useLabel>
+				<useDuration>600</useDuration>
+			</li>
+			<li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+				<skillDefName>Construction</skillDefName>
+				<xpAmount>12500</xpAmount>
+			</li>
+			<li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+				<skillDefName>Mining</skillDefName>
+				<xpAmount>12500</xpAmount>
+			</li>
+			<li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+				<skillDefName>Plants</skillDefName>
+				<xpAmount>12500</xpAmount>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="MoyoTrainerbase">
+		<defName>Moyo_neuroSerum_housekeeping</defName>
+		<label>abysstech neurotrainer serum(Housekeeping)</label>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Use abysstech neurotrainer serum to learn skill</useLabel>
+				<useDuration>600</useDuration>
+			</li>
+			<li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+				<skillDefName>Social</skillDefName>
+				<xpAmount>12500</xpAmount>
+			</li>
+			<li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+				<skillDefName>Medicine</skillDefName>
+				<xpAmount>12500</xpAmount>
+			</li>
+			<li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+				<skillDefName>Cooking</skillDefName>
+				<xpAmount>12500</xpAmount>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="MoyoTrainerbase">
+		<defName>Moyo_neuroSerum_craftsmanship</defName>
+		<label>abysstech neurotrainer serum(Craftsmanship)</label>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Use abysstech neurotrainer serum to learn skill</useLabel>
+				<useDuration>600</useDuration>
+			</li>
+			<li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+				<skillDefName>Crafting</skillDefName>
+				<xpAmount>12500</xpAmount>
+			</li>
+			<li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+				<skillDefName>Artistic</skillDefName>
+				<xpAmount>12500</xpAmount>
+			</li>
+			<li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+				<skillDefName>Intellectual</skillDefName>
+				<xpAmount>12500</xpAmount>
+			</li>
+		</comps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>AdministerMoyo_HealerSerum</defName>
+		<label>administer abysstech healer mech serum</label>
+		<description>Administer an abysstech healer mech serum.</description>
+		<workerClass>Recipe_AdministerUsableItem</workerClass>
+		<jobString>Administering abysstech healer mech serum.</jobString>
+		<targetsBodyPart>false</targetsBodyPart>
+		<anesthetize>false</anesthetize>
+		<workAmount>600</workAmount>
+		<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+		<surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Moyo_HealerSerum</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Moyo_HealerSerum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	<!-- 벨리알 V -->
+	<ThingDef Name="Belial-V_Base" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<useHitPoints>true</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<selectable>true</selectable>
+		<statBases>
+			<MarketValue>550</MarketValue>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Beauty>-4</Beauty>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>150</stackLimit>
+		<thingCategories>
+			<li>Drugs</li>
+		</thingCategories>
+		<alwaysHaulable>true</alwaysHaulable>
+		<tradeability>Sellable</tradeability>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<pathCost>14</pathCost>
+		<burnableByRecipe>true</burnableByRecipe>
+		<resourceReadoutPriority>Last</resourceReadoutPriority>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<foodType>Processed</foodType>
+			<baseIngestTicks>100</baseIngestTicks>
+			<chairSearchRadius>0</chairSearchRadius>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestSound>Ingest_Inject</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+		</ingestible>
+	</ThingDef>
+	<ThingDef ParentName="Belial-V_Base">
+		<defName>Moyo_BelialV</defName>
+		<label>Belial-V</label>
+		<description>A mechanite solution similar to lufciferum. Large amount of deepblue included in it prevents mechanites from losing cohesion. This have made its effects uneven, thus expected to have various outcomes.\n\nIf there lives a red devil on the surface, here lies a violet demon in the abyss. This name comes from the absurd amount of deepblue required to make a single dose of it. Sacrificing many Moyo's life in the process. This frightful, both fascinating drug is known to be a masterpiece of the Moyo cartel.</description>
+		<graphicData>
+			<texPath>Things/Drugs/BelialV</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<Mass>0.08</Mass>
+			<RoyalFavorValue>0.5</RoyalFavorValue>
+		</statBases>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<techLevel>Industrial</techLevel>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>BelialVInjectedAfter</hediffDef>
+					<severity>1.0</severity>
+				</li>
+			</outcomeDoers>
+			<ingestCommandString>Inject {0}</ingestCommandString>
+			<ingestReportString>Injecting {0}.</ingestReportString>
+		</ingestible>
+		<costList>
+			<Luciferium>1</Luciferium>
+			<Moyo_AbyssPearl>2</Moyo_AbyssPearl>
+			<Moyo_Abyssteel>5</Moyo_Abyssteel>
+		</costList>
+		<recipeMaker>
+			<workAmount>5000</workAmount>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<recipeUsers>
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>DeepBlue_Manipulation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+				<Intellectual>13</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	<HediffDef>
+		<defName>BelialVInjectedAfter</defName>
+		<label>BelialVInjectedAfter</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>applying stage. You should not be reading this.</description>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffRandom">
+				<hediffPool>
+					<!-- <li>BelialVEffect_1</li> -->
+					<!-- <li>BelialVEffect_1U</li> -->
+					<li>BelialVEffect_2</li>
+					<li>BelialVEffect_2U</li>
+					<li>BelialVEffect_3</li>
+					<li>BelialVEffect_3U</li>
+					<li>BelialVEffect_4</li>
+					<li>BelialVEffect_4U</li>
+					<li>BelialVEffect_5</li>
+					<li>BelialVEffect_6</li>
+					<li>BelialVEffect_7</li>
+					<li>BelialVEffect_7U</li>
+				</hediffPool>
+				<weights>
+					<!-- <li>20</li> -->
+					<!-- <li>4</li> -->
+					<li>16</li>
+					<li>2</li>
+					<li>16</li>
+					<li>2</li>
+					<li>8</li>
+					<li>1</li>
+					<li>20</li>
+					<li>20</li>
+					<li>8</li>
+					<li>2</li>
+				</weights>
+			</li>
+		</comps>
+		<stages>
+			<li>			
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

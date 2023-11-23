@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/1.3/Defs/Drugs/Deepblue_SpliceAdvanced.xml-->
+            <!-- blueburst -->
+<BlueBurst.label>синий всплеск</BlueBurst.label>
+                  <!-- A drug that puts a moyos cardiovascular system in overdrive. it's effect only works on moyo, and other races will simply be dependant to deepblue. More blood can be harvested thanks to this effect but this puts the heart in a great stress, making it burst eventually.
+
+*USE WITH CAUTION* -->
+<BlueBurst.description>Препарат, который перегружает сердечно-сосудистую систему мойо. Его действие распространяется только на мойо, другие расы будут просто зависимы от deepblue. Благодаря этому эффекту можно собирать больше крови, но это приводит к большой нагрузке на сердце, что в конечном итоге приводит к его разрыву.\n\n*ИСПОЛЬЗОВАТЬ С ОСТОРОЖНОСТЬЮ*..</BlueBurst.description>
+          <!-- regene-blue -->
+<BlueMed.label>Синий восстановитель</BlueMed.label>
+                <!-- A medicinal drug which slows bleeding and aids the healing of wounds. Works on every race. This comes With the cost of deepblue dependancy and a massive boost to its tolerance.
+
+A completed form of blueburst, achiving the intended effect of healing without busting someone's heart. -->
+<BlueMed.description>Лекарственный препарат, замедляющий кровотечение и способствующий заживлению ран. Действует на все расы. За это приходится платить зависимостью от глубокой синевы и огромным повышением толерантности.\n\nЗавершенная форма синего всплеска, достигающая желаемого эффекта исцеления без разрыва сердца.</BlueMed.description>
+             <!-- penoxy-blue -->
+<PenoxyBlue.label>синий пеноксицилин</PenoxyBlue.label>
+                   <!-- Penoxycyline modified with deepblue to act as an antibiotic. Cures/blocks malaria, sleeping sicknes and plague for a single time. This comes With the cost of deepblue dependancy and a massive boost to its tolerance. -->
+<PenoxyBlue.description>Пеноксицилин, модифицированный глубокой синевой для действия в качестве антибиотика. Лечит/блокирует малярию, сонную болезнь и чуму на один раз. За это приходится платить зависимостью от глубокой синевы и значительным повышением толерантности к ней.</PenoxyBlue.description>
+             <!-- clear-azure -->
+<Clensazure.label>чистая лазурь</Clensazure.label>
+                   <!-- Penoxycyline modified with deepblue to act as an antiparasitic. Cures/blocks gut worms and muscle parasites for a single time. This comes With the cost of deepblue dependancy and a massive boost to its tolerance. -->
+<Clensazure.description>Пеноксицилин, модифицированный глубокой синевой для действия в качестве антипаразитарного средства. Лечит/блокирует кишечных червей и мышечных паразитов на один раз. За это приходится платить зависимостью от глубокой синевы и значительным повышением толерантности к ней.</Clensazure.description>
+                 <!-- sustainer-lapis -->
+<SustainerLapis.label>поддерживающий лапис</SustainerLapis.label>
+                       <!-- A drug that allowes the user to fight for extended period of time. A strong awakening effect prevents the need for both food and rest. The user will need time to recover after the effect ends. This comes With the cost of deepblue dependancy and a massive boost to its tolerance. -->
+<SustainerLapis.description>Препарат, позволяющий пользователю бороться в течение длительного периода времени. Сильный пробуждающий эффект предотвращает потребность в еде и отдыхе. Пользователю требуется время на восстановление после окончания действия. За это приходится платить зависимостью от глубокой синевы и сильным повышением толерантности.</SustainerLapis.description>
+                <!-- detoxer-cobalt -->
+<DetoxerCobalt.label>кобальт детоксикатор</DetoxerCobalt.label>
+                      <!-- A drug that clears initial toxic buildup and prevents further intoxication. The user will feel tired faster because of boosted detoxification. This comes With the cost of deepblue dependancy and a massive boost to its tolerance. -->
+<DetoxerCobalt.description>Препарат, который очищает организм от первоначального накопления токсинов и предотвращает дальнейшую интоксикацию. Пользователь быстрее почувствует усталость из-за усиленной детоксикации. За это приходится платить зависимостью от глубокой синевы и сильным повышением толерантности.</DetoxerCobalt.description>
+
+</LanguageData>

@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="Moyo_DrugPillAdvanced" ParentName="Moyo_DrugPillBase" Abstract="True">
+		<tradeTags inherit="false">
+			<li>Moyo_DrugsAdvanced</li>
+		</tradeTags>
+		<recipeMaker>
+			<workAmount>900</workAmount>
+			<productCount>1</productCount>
+			<targetCountAdjustment>1</targetCountAdjustment>
+			<researchPrerequisite>DeepBlue_MedResearch</researchPrerequisite>
+		</recipeMaker>
+		<ingestible>
+			<drugCategory>Medical</drugCategory>
+		</ingestible>
+	</ThingDef>
+	<!-- blueburst chem-->
+	<ChemicalDef>
+		<defName>BlueBurstC</defName>
+		<label>blue burst</label>
+		<addictionHediff>BlueBurstA</addictionHediff>
+		<toleranceHediff>BlueBurstT</toleranceHediff>
+		<canBinge>false</canBinge>
+		<generateAddictionGenes>false</generateAddictionGenes>
+	</ChemicalDef>
+	<!-- blueburst -->
+	<ThingDef ParentName="Moyo_DrugPillAdvanced">
+		<defName>BlueBurst</defName>
+		<label>blueburst</label>
+		<description>A drug that puts a moyos cardiovascular system in overdrive. it's effect only works on moyo, and other races will simply be dependant to deepblue. More blood can be harvested thanks to this effect but this puts the heart in a great stress, making it burst eventually.\n\n*USE WITH CAUTION*</description>
+		<descriptionHyperlinks>
+			<HediffDef>BlueBurstHigh</HediffDef>
+			<HediffDef>DeepBlues</HediffDef>
+			<ThingDef>Moyo_BloodBag</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Drugs/BlueBurst</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>72</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<costList>
+			<AbyssSerum>1</AbyssSerum>
+			<GoJuice>2</GoJuice>
+			<Chemfuel>10</Chemfuel>
+		</costList>
+		<tradeability>Sellable</tradeability>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Deepblue_Filter</hediffDef>
+					<severity>1.00</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlueTolerance</hediffDef>
+					<severity>0.34</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>BlueBurstC</chemical>
+				<addictiveness>0.0001</addictiveness>
+				<needLevelOffset>0</needLevelOffset>
+				<listOrder>1</listOrder>
+			</li>
+			<li Class="CompProperties_Drug">
+				<chemical>DeepBlue</chemical>
+				<addictiveness>0.0001</addictiveness>
+				<needLevelOffset>0.3</needLevelOffset>
+				<listOrder>1012</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- blueburst hediff -->
+	<HediffDef>
+		<defName>BlueBurstHighPrecursor</defName>
+		<label>BlueBurstHighPrecursor</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>applying stage. You should not be reading this.</description>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffRandom">
+				<hediffPool>
+					<li>BlueBurstHigh</li>
+				</hediffPool>
+				<bodyPartDef>
+					<li>MoyoHeart</li>
+				</bodyPartDef>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>BlueBurstHigh</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>cardiovascular overdrive</label>
+		<labelNoun>a cardiovascular overdrive</labelNoun>
+		<description>A cardiovascular overdrive in progress. a great amount of blood is being made, putting the heart in great stress. This effect is fatal.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BlueBurst</ThingDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(255,0,0)</defaultLabelColor>
+		<initialSeverity>0.01</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>true</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>1</severityPerDay>
+			</li>
+			<li Class="MoharHediffs.HediffCompProperties_Spawner">
+				<thingToSpawn>Moyo_BloodBag</thingToSpawn>
+				<spawnCount>1</spawnCount>
+				<minDaysB4Next>0.098</minDaysB4Next>
+				<maxDaysB4Next>0.099</maxDaysB4Next>
+				<randomGrace>0</randomGrace>
+				<spawnMaxAdjacent>40</spawnMaxAdjacent>
+				<spawnForbidden>false</spawnForbidden>
+				<spawnVerb>production</spawnVerb>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painOffset>0.70</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>4</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<painOffset>0.70</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>4</offset>
+					</li>
+				</capMods>
+				<destroyPart>true</destroyPart>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- BlueBurstT -->
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>BlueBurstT</defName>
+		<label>BlueBurstT</label>
+		<description>null.</description>
+	</HediffDef>
+	<!-- BlueBurstA -->
+	<HediffDef ParentName="AddictionBase">
+		<defName>BlueBurstA</defName>
+		<label>BlueBurstA</label>
+		<description>null.</description>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<everCurableByItem>false</everCurableByItem>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- BlueMed -->
+	<ThingDef ParentName="Moyo_DrugPillAdvanced">
+		<defName>BlueMed</defName>
+		<label>regene-blue</label>
+		<description>A medicinal drug which slows bleeding and aids the healing of wounds. Works on every race. This comes With the cost of deepblue dependancy and a massive boost to its tolerance.\n\nA completed form of blueburst, achiving the intended effect of healing without busting someone's heart.</description>
+		<descriptionHyperlinks>
+			<HediffDef>BlueMedHigh</HediffDef>
+			<HediffDef>DeepBlues</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Drugs/BlueMed</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>100</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<costList>
+			<AbyssSerum>1</AbyssSerum>
+			<MedicineHerbal>4</MedicineHerbal>
+			<Neutroamine>10</Neutroamine>
+		</costList>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Deepblue_Filter</hediffDef>
+					<severity>1.00</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlueTolerance</hediffDef>
+					<severity>0.5</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>BlueMedHigh</hediffDef>
+					<severity>1.00</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DeepBlue</chemical>
+				<addictiveness>0.0001</addictiveness>
+				<needLevelOffset>0.3</needLevelOffset>
+				<listOrder>1012</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- BlueMedHigh -->
+	<HediffDef>
+		<defName>BlueMedHigh</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>boosted regeneration</label>
+		<labelNoun>boosted regeneration</labelNoun>
+		<description>Regeneration boosting in progress. This will reduce overall bleeding and help the recovery of wounds and infection.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BlueMed</ThingDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(56,144,210)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<totalBleedFactor>0.7</totalBleedFactor>
+				<naturalHealingFactor>1.2</naturalHealingFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.6</setMax>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.5</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.5</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- penoxy-blue -->
+	<ThingDef ParentName="Moyo_DrugPillAdvanced">
+		<defName>PenoxyBlue</defName>
+		<label>penoxy-blue</label>
+		<description>Penoxycyline modified with deepblue to act as an antibiotic. Cures/blocks malaria, sleeping sicknes and plague for a single time. This comes With the cost of deepblue dependancy and a massive boost to its tolerance.</description>
+		<descriptionHyperlinks>
+			<HediffDef>PenoxyBlueHigh</HediffDef>
+			<HediffDef>DeepBlues</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Drugs/PenoxyBlue</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>70</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<costList>
+			<AbyssSerum>1</AbyssSerum>
+			<Penoxycyline>4</Penoxycyline>
+			<Neutroamine>5</Neutroamine>
+		</costList>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>PenoxyBlueHigh</hediffDef>
+					<severity>1.0</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Deepblue_Filter</hediffDef>
+					<severity>1.00</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlueTolerance</hediffDef>
+					<severity>0.5</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DeepBlue</chemical>
+				<addictiveness>0.0001</addictiveness>
+				<needLevelOffset>0.3</needLevelOffset>
+				<listOrder>1012</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- penoxy-blue hediff-->
+	<HediffDef>
+		<defName>PenoxyBlueHigh</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>penoxy-blue</label>
+		<description>Penoxyblue-induced cure/immunity to certain illnesses. This is a One-time effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>PenoxyBlue</ThingDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(25,175,160)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.33</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<limitedUsageNumber>1</limitedUsageNumber>
+				<hediffToNullify>
+					<li>Malaria</li>
+					<li>SleepingSickness</li>
+					<li>Plague</li>
+					<li>Flu</li>
+				</hediffToNullify>
+			</li>
+		</comps>
+		<stages>
+			<li>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- clens-azure -->
+	<ThingDef ParentName="Moyo_DrugPillAdvanced">
+		<defName>Clensazure</defName>
+		<label>clear-azure</label>
+		<description>Penoxycyline modified with deepblue to act as an antiparasitic. Cures/blocks gut worms and muscle parasites for a single time. This comes With the cost of deepblue dependancy and a massive boost to its tolerance.</description>
+		<descriptionHyperlinks>
+			<HediffDef>ClensazureHigh</HediffDef>
+			<HediffDef>DeepBlues</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Drugs/Clensazure</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>70</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<costList>
+			<AbyssSerum>1</AbyssSerum>
+			<Penoxycyline>4</Penoxycyline>
+			<Neutroamine>5</Neutroamine>
+		</costList>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>ClensazureHigh</hediffDef>
+					<severity>1.0</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Deepblue_Filter</hediffDef>
+					<severity>1.00</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlueTolerance</hediffDef>
+					<severity>0.5</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DeepBlue</chemical>
+				<addictiveness>0.0001</addictiveness>
+				<needLevelOffset>0.3</needLevelOffset>
+				<listOrder>1012</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- clens-azure hediff -->
+	<HediffDef>
+		<defName>ClensazureHigh</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>clear-azure</label>
+		<description>Clearazure-induced cure/immunity to parasites. This is a One-time effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Clensazure</ThingDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(196,159,54)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.33</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<limitedUsageNumber>1</limitedUsageNumber>
+				<hediffToNullify>
+					<li>GutWorms</li>
+					<li>MuscleParasites</li>
+				</hediffToNullify>
+			</li>
+		</comps>
+		<stages>
+			<li>		
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- 서스테이너 라피스	-->
+	<ThingDef ParentName="Moyo_DrugPillAdvanced">
+		<defName>SustainerLapis</defName>
+		<label>sustainer-lapis</label>
+		<description>A drug that allowes the user to fight for extended period of time. A strong awakening effect prevents the need for both food and rest. The user will need time to recover after the effect ends. This comes With the cost of deepblue dependancy and a massive boost to its tolerance.</description>
+		<descriptionHyperlinks>
+			<HediffDef>SustainerLapisHigh</HediffDef>
+			<HediffDef>DeepBlues</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Drugs/SustainerLAP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>70</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<costList>
+			<BlueUp>2</BlueUp>
+			<MealSurvivalPack>1</MealSurvivalPack>
+			<Neutroamine>5</Neutroamine>
+		</costList>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>1</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Food</need>
+					<offset>1</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>SustainerLapisHigh</hediffDef>
+					<severity>1.0</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Deepblue_Filter</hediffDef>
+					<severity>1.00</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlueTolerance</hediffDef>
+					<severity>0.5</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DeepBlue</chemical>
+				<addictiveness>0.0001</addictiveness>
+				<needLevelOffset>0.3</needLevelOffset>
+				<listOrder>1012</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- 서스테이너 라피스 헤디프 -->
+	<HediffDef>
+		<defName>SustainerLapisHigh</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>sustainer-lapis high</label>
+		<description>Awakening effect induced by sustainer-lapis. Prevents need of food and rest for a period of time.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SustainerLapis</ThingDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(174,88,172)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<restFallFactor>0</restFallFactor>
+				<hungerRateFactor>0</hungerRateFactor>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.70</WorkSpeedGlobal>
+				</statOffsets>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>SustainerLapisHigh_After</hediff>
+						<mtbDays>0.2</mtbDays>
+						<partsToAffect>
+							<li>Body</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>0.95</minSeverity>
+				<restFallFactor>0.01</restFallFactor>
+				<hungerRateFactor>0.01</hungerRateFactor>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.70</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>SustainerLapisHigh_After</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>sustainer-lapis recovery</label>
+		<description>Recovering from sustainer-lapis. You cannot apply another dose during this period.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SustainerLapis</ThingDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(134,95,133)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>SustainerLapisHigh</li>
+				</hediffToNullify>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<restFallFactor>3</restFallFactor>
+				<hungerRateFactor>3</hungerRateFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<!--디톡서 코발트-->
+	<ThingDef ParentName="Moyo_DrugPillAdvanced">
+		<defName>DetoxerCobalt</defName>
+		<label>detoxer-cobalt</label>
+		<description>A drug that clears initial toxic buildup and prevents further intoxication. The user will feel tired faster because of boosted detoxification. This comes With the cost of deepblue dependancy and a massive boost to its tolerance.</description>
+		<descriptionHyperlinks>
+			<HediffDef>DetoxerCobaltHigh</HediffDef>
+			<HediffDef>DeepBlues</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Drugs/DetoxerCo</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>70</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<costList>
+			<AbyssSerum>1</AbyssSerum>
+			<Penoxycyline>4</Penoxycyline>
+			<Neutroamine>5</Neutroamine>
+		</costList>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DetoxerCobaltHigh</hediffDef>
+					<severity>1.0</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Deepblue_Filter</hediffDef>
+					<severity>1.00</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlueTolerance</hediffDef>
+					<severity>0.5</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DeepBlue</chemical>
+				<addictiveness>0.0001</addictiveness>
+				<needLevelOffset>0.3</needLevelOffset>
+				<listOrder>1012</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- 디톡서 헤디프 -->
+	<HediffDef>
+		<defName>DetoxerCobaltHigh</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>boosted detoxification</label>
+		<description>Boosted Detoxifying ability. it will clear any buildup and prevent further intoxication.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DetoxerCobalt</ThingDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(40,106,42)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.333333</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+			<li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+				<hediffToNullify>
+					<li>ToxicBuildup</li>
+					<li>FoodPoisoning</li>
+				</hediffToNullify>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<restFallFactor>1.15</restFallFactor>
+				<statOffsets>
+					<ToxicResistance>-2</ToxicResistance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

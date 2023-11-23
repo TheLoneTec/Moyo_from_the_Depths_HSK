@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>MoyoHead</defName>
+		<graphicPath>Moyo/Heads/MoyoHead</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>MoyoHead1</defName>
+		<graphicPath>Moyo/Heads/MoyoHead1</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>MoyoHead2</defName>
+		<graphicPath>Moyo/Heads/MoyoHead2</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>MoyoHead3</defName>
+		<graphicPath>Moyo/Heads/MoyoHead3</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>MoyoHead4</defName>
+		<graphicPath>Moyo/Heads/MoyoHead4</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>MoyoHead5</defName>
+		<graphicPath>Moyo/Heads/MoyoHead5</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>MoyoHead6</defName>
+		<graphicPath>Moyo/Heads/MoyoHead6</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>MoyoHead7</defName>
+		<graphicPath>Moyo/Heads/MoyoHead7</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+</Defs>

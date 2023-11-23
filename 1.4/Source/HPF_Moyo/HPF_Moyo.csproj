@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FBCBDECC-0039-4C19-9C2E-5C85CAD1A407}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HPF_Moyo</RootNamespace>
+    <AssemblyName>HPF_Moyo</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="CompEquipConstraint.cs" />
+    <Compile Include="CompProperties_EquipConstraint.cs" />
+    <Compile Include="CompProperties_ResourceHarvestable.cs" />
+    <Compile Include="CompResourceHarvestable.cs" />
+    <Compile Include="Constraints\Constraint.cs" />
+    <Compile Include="Constraints\ConstraintAndOp.cs" />
+    <Compile Include="Constraints\ConstraintNotOp.cs" />
+    <Compile Include="Constraints\ConstraintOrOp.cs" />
+    <Compile Include="Constraints\ConstraintPawnAge.cs" />
+    <Compile Include="Constraints\ConstraintPawnAgeEqual.cs" />
+    <Compile Include="Constraints\ConstraintPawnAgeLess.cs" />
+    <Compile Include="Constraints\ConstraintPawnAgeOver.cs" />
+    <Compile Include="Constraints\ConstraintPawnGender.cs" />
+    <Compile Include="Constraints\ConstraintPawnGenderOnly.cs" />
+    <Compile Include="Constraints\ConstraintPawnGenderRestrict.cs" />
+    <Compile Include="Constraints\ConstraintPawnHediff.cs" />
+    <Compile Include="Constraints\ConstraintPawnHediffRequire.cs" />
+    <Compile Include="Constraints\ConstraintPawnHediffRestrict.cs" />
+    <Compile Include="Constraints\ConstraintPawnRace.cs" />
+    <Compile Include="Constraints\ConstraintPawnRaceRequire.cs" />
+    <Compile Include="Constraints\ConstraintPawnRaceRestrict.cs" />
+    <Compile Include="Constraints\ConstraintPawnStat.cs" />
+    <Compile Include="Constraints\ConstraintPawnStatGreater.cs" />
+    <Compile Include="Constraints\ConstraintPawnStatLess.cs" />
+    <Compile Include="HPFJobDef.cs" />
+    <Compile Include="HPFWorkGiverDef.cs" />
+    <Compile Include="JobDriver_GatherPawnResources.cs" />
+    <Compile Include="JobDriver_GatherPawnSelfResources.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkGiver_GatherPawnResources.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

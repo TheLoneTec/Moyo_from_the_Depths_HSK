@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="BaseMechanoidKind" Name="BaseMoyoMech" Abstract="True">
+		<defaultFactionType>Moyo_HavenFaction</defaultFactionType>
+	</PawnKindDef>
+
+	<BodyPartGroupDef>
+		<defName>RightClub</defName>
+		<label>right club</label>
+		<labelShort>club</labelShort>
+	</BodyPartGroupDef>
+
+	<BodyPartGroupDef>
+		<defName>LeftClub</defName>
+		<label>left club</label>
+		<labelShort>club</labelShort>
+	</BodyPartGroupDef>
+
+	<BodyPartGroupDef>
+		<defName>Tentacle1</defName>
+		<label>tentacle</label>
+		<labelShort>tentacle</labelShort>
+	</BodyPartGroupDef>
+	<BodyPartGroupDef>
+		<defName>Tentacle2</defName>
+		<label>tentacle</label>
+		<labelShort>tentacle</labelShort>
+	</BodyPartGroupDef>
+	<BodyPartGroupDef>
+		<defName>Tentacle3</defName>
+		<label>tentacle</label>
+		<labelShort>tentacle</labelShort>
+	</BodyPartGroupDef>		
+	<BodyPartGroupDef>
+		<defName>Tentacle4</defName>
+		<label>tentacle</label>
+		<labelShort>tentacle</labelShort>
+	</BodyPartGroupDef>	
+	<BodyPartGroupDef>
+		<defName>Tentacle5</defName>
+		<label>tentacle</label>
+		<labelShort>tentacle</labelShort>
+	</BodyPartGroupDef>	
+	<BodyPartGroupDef>
+		<defName>Tentacle6</defName>
+		<label>tentacle</label>
+		<labelShort>tentacle</labelShort>
+	</BodyPartGroupDef>
+
+	<!-- 프레셔포드 -->
+	<ThingDef ParentName="BaseMechanoid">
+		<defName>MoyoPressurePod_Race</defName>
+		<label>pressurepod</label>
+		<description>A mining mechanoid used in the Lighthouse. A pair of giant 'club' is utilized to crush rocks to mine ores. One of few mechanoid that can be used on land, it strikes the foe with its club when in combat. You will not want to be on that recieving end.</description>
+		<statBases>
+			<MoveSpeed>2.1</MoveSpeed>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+			<PsychicSensitivity>0.75</PsychicSensitivity>
+		</statBases>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>2.6</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>left club</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>32</power>
+				<cooldownTime>3.2</cooldownTime>
+				<linkedBodyPartsGroup>LeftClub</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right club</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>32</power>
+				<cooldownTime>3.2</cooldownTime>
+				<linkedBodyPartsGroup>RightClub</linkedBodyPartsGroup>
+			</li>						
+		</tools>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<body>Moyo_Pressurepod</body>
+			<baseBodySize>1.8</baseBodySize>
+			<baseHealthScale>3.5</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+			<Steel>25</Steel>
+			<Moyo_Abyssteel>20</Moyo_Abyssteel>
+		</butcherProducts>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaseMoyoMech">
+		<defName>MoyoPressurePod_Kind</defName>
+		<label>pressurepod</label>
+		<race>MoyoPressurePod_Race</race>
+		<combatPower>320</combatPower>
+		<canBeSapper>true</canBeSapper>		
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>MoyoMech/MoyoSmasher</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!-- 헥사포드 베이스 -->
+	<ThingDef ParentName="BaseMechanoid" Abstract="True" Name="Moyo_HexapodBase">
+		<statBases>
+			<MoveSpeed>3.8</MoveSpeed>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<PsychicSensitivity>0.75</PsychicSensitivity>
+		</statBases>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>tentacle</label>
+				<capacities>
+					<li>HexapodTentacle</li>
+					<!-- <li>Blunt</li> -->
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>Tentacle1</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>tentacle</label>
+				<capacities>
+					<li>HexapodTentacle</li>
+					<!-- <li>Blunt</li> -->
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>Tentacle2</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>tentacle</label>
+				<capacities>
+					<li>HexapodTentacle</li>
+					<!-- <li>Blunt</li> -->
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>Tentacle3</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>tentacle</label>
+				<capacities>
+					<li>HexapodTentacle</li>
+					<!-- <li>Blunt</li> -->
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>Tentacle4</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>tentacle</label>
+				<capacities>
+					<li>HexapodTentacle</li>
+					<!-- <li>Blunt</li> -->
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>Tentacle5</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>tentacle</label>
+				<capacities>
+					<li>HexapodTentacle</li>
+					<!-- <li>Blunt</li> -->
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>Tentacle6</linkedBodyPartsGroup>
+			</li>			
+		</tools>		
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<body>Moyo_Hexapod</body>
+			<baseBodySize>1.6</baseBodySize>
+			<baseHealthScale>2.5</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+			<Steel>20</Steel>
+			<Moyo_Abyssteel>15</Moyo_Abyssteel>
+		</butcherProducts>
+	</ThingDef>
+
+	<ThingDef ParentName='Moyo_HexapodBase'>
+		<defName>MoyoHexaPod_Race</defName>
+		<label>hexapod</label>
+		<description>A multipurpose mechanoid used in the Lighthouse. 6 flexible tentacles allows it to do multiple activities. One of few mechanoid that can be used on land, it utilizes its tentacles to strike and constrict an opponent's movement in combat.</description>
+	</ThingDef>
+
+	<ThingDef ParentName='Moyo_HexapodBase'>
+		<defName>MoyoCryoPod_Race</defName>
+		<label>cryopod</label>
+		<description>A multipurpose mechanoid used in the Lighthouse. 6 flexible tentacles allows it to do multiple activities. A modified hexapod with cryonic weapon for mid-range fire support. It retains it's close combat capabilities even after modification.</description>
+	</ThingDef>	
+
+	<PawnKindDef ParentName="BaseMoyoMech">
+		<defName>MoyoHexapod_Kind</defName>
+		<label>hexapod</label>
+		<race>MoyoHexaPod_Race</race>
+		<combatPower>400</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>MoyoMech/MoyoStranglepod</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef> 
+	<PawnKindDef ParentName="BaseMoyoMech">
+		<defName>MoyoCryopod_Kind</defName>
+		<label>cryopod</label>
+		<race>MoyoCryoPod_Race</race>
+		<combatPower>400</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>MoyoMech/MoyoCryopod</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>9999~9999</weaponMoney>
+		<weaponTags>
+			<li>MoyoMechGun</li>
+		</weaponTags>
+	</PawnKindDef> 
+</Defs>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/1.3/Defs/Drugs/Deep_Blue.xml-->
+                 <!-- Moyo Inate Hediff -->
+<MoyoBaseHediff.label>Мойо имуннитет к синеве</MoyoBaseHediff.label>
+                       <!-- This pawn is a Moyo, and will not be affected by deepblue. You should not be reading this. -->
+<MoyoBaseHediff.description>Эта пешка является Moyo и не будет затронута глубокой синевой. Вам не следует читать это.</MoyoBaseHediff.description>
+            <!-- Deep blues -->
+<DeepBlues.label>Глубокая синева</DeepBlues.label>
+                  <!-- Deepblue increases pawn's capabilities. as a side-effect, The user will feel a bit blue. Beacuse there are no known ways to reverse the modification caused by deepblue, This effect cannot be reversed. -->
+<DeepBlues.description>Глубокая синева увеличивает возможности пешки. В качестве побочного эффекта пользователь будет чувствовать себя немного синим. Поскольку не существует известных способов отменить модификацию, вызванную deepblue, этот эффект не может быть отменен.</DeepBlues.description>
+                    <!-- Deepblue tolerance -->
+<DeepBlueTolerance.label>Толерантность к глубокой синеве</DeepBlueTolerance.label>
+                          <!-- Cells modified with deepblue gain tolerance to the substance as time goes on. More deepblue will be needed to suit the body's needs. -->
+<DeepBlueTolerance.description>Клетки, модифицированные глубокой синевой, со временем приобретают толерантность к этому веществу. Для удовлетворения потребностей организма потребуется больше глубкой синевы.</DeepBlueTolerance.description>
+                    <!-- Deepblue dependency -->
+<DeepBlueAddiction.label>Зависимость от глубокой синевы</DeepBlueAddiction.label>
+                          <!-- Once modified by deepblue, the body requires deepblue to fuel their metabolism. They will go into hibernation if not enough deepblue is supplied. -->
+<DeepBlueAddiction.description>После модификации глубокой синевой тело требует глубокую синеву для подпитки метаболизма. При недостатке глубокой синевы они впадают в спячку.</DeepBlueAddiction.description>
+                                                                <!-- Deepblue dependent -->
+<DeepBlueAddiction.comps.HediffComp_Discoverable.discoverLetterLabel>Зависимый от глубокой синевы</DeepBlueAddiction.comps.HediffComp_Discoverable.discoverLetterLabel>
+                                                               <!-- {0} has developed a dependency to deepblue.
+
+[PAWN_pronoun] now has a need for deepblue, visible on [PAWN_pronoun] Needs tab. [PAWN_pronoun] will automatically consume the drug to fulfil [PAWN_pronoun] need. If [PAWN_pronoun] cannot get any deepblue, [PAWN_pronoun] will go into hibernation. -->
+<DeepBlueAddiction.comps.HediffComp_Discoverable.discoverLetterText>У {0} развилась зависимость от глубокой синевы.\n\n у [PAWN_pronoun] теперь есть потребность в глубокой синеве, которая видна на вкладке [PAWN_pronoun] Потребности. [PAWN_pronoun] будет автоматически потреблять наркотик, чтобы удовлетворить потребность [PAWN_pronoun]. Если [PAWN_pronoun] не сможет получить глубокую синеву, [PAWN_pronoun] впадет в спячку.</DeepBlueAddiction.comps.HediffComp_Discoverable.discoverLetterText>
+                             <!-- hibernation -->
+<DeepBlueAddiction.stages.1.label>спячка</DeepBlueAddiction.stages.1.label>
+                  <!-- Deepblue_Filter -->
+<Deepblue_Filter.label>Deepblue_Filter</Deepblue_Filter.label>
+                        <!-- This pawn is a Moyo, and will not be affected by deepblue. You should not be reading this. -->
+<Deepblue_Filter.description>Эта пешка является Moyo и не будет затронута глубокой синевой. Вам не следует читать это.</Deepblue_Filter.description>
+                        <!-- Deepblue Rejection -->
+<Moyo_DeepBlueReaction.label>Отвержение глубокой синевы</Moyo_DeepBlueReaction.label>
+                              <!-- Too much deepblue injected to a Moyo's body. it has no health consequences but the pawn will suffer from nausea. -->
+<Moyo_DeepBlueReaction.description>Слишком много глубокой синевы вводится в тело Мойо. Это не имеет последствий для здоровья, но пешка будет страдать от тошноты.</Moyo_DeepBlueReaction.description>
+                                 <!-- initial -->
+<Moyo_DeepBlueReaction.stages.0.label>начальный</Moyo_DeepBlueReaction.stages.0.label>
+                                 <!-- minor -->
+<Moyo_DeepBlueReaction.stages.1.label>незначительный</Moyo_DeepBlueReaction.stages.1.label>
+                                 <!-- major -->
+<Moyo_DeepBlueReaction.stages.2.label>серьёзный</Moyo_DeepBlueReaction.stages.2.label>
+                                 <!-- extreme -->
+<Moyo_DeepBlueReaction.stages.3.label>экстремальный</Moyo_DeepBlueReaction.stages.3.label>
+
+</LanguageData>

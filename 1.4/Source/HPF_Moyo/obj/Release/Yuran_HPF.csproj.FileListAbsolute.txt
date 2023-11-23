@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Yuran_RJW_Addon\Assemblies\Yuran_HPF.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Yuran_RJW_Addon\Source\Yuran_RWMod-HarvestablePawnFramework-master\Source\obj\Release\Yuran_HPF.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Yuran_RJW_Addon\Source\Yuran_RWMod-HarvestablePawnFramework-master\Source\obj\Release\Yuran_HPF.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Yuran_RJW_Addon\Source\Yuran_RWMod-HarvestablePawnFramework-master\Source\obj\Release\Yuran_HPF.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Assemblies\Yuran_HPF.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Yuran_RJW_Addon\Source\Yuran_HPF\obj\Release\Yuran_HPF.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Yuran_RJW_Addon\Source\Yuran_HPF\obj\Release\Yuran_HPF.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Yuran_RJW_Addon\Source\Yuran_HPF\obj\Release\Yuran_HPF.dll

@@ -375,7 +375,7 @@
 				<value>
 					<CarryWeight>85</CarryWeight>
 					<CarryBulk>10</CarryBulk>
-					<ToxicSensitivity>-0.50</ToxicSensitivity>
+					<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
 				</value>
 			</li>
 			
@@ -464,7 +464,7 @@
 				<xpath>Defs/ThingDef[defName="Moyo_DDhelmet"]/equippedStatOffsets/MoveSpeed</xpath>
 				<value>
 					<SmokeSensitivity>-1</SmokeSensitivity>
-					<ToxicSensitivity>-0.50</ToxicSensitivity>
+					<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
 				</value>
 			</li>
 			
@@ -556,7 +556,7 @@
 					<equippedStatOffsets>
 						<CarryWeight>75</CarryWeight>
 						<CarryBulk>10</CarryBulk>
-						<ToxicSensitivity>-0.50</ToxicSensitivity>
+						<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
 					</equippedStatOffsets>
 				</value>
 			</li>
@@ -632,7 +632,7 @@
 				<value>
 					<equippedStatOffsets>
 						<SmokeSensitivity>-1</SmokeSensitivity>
-						<ToxicSensitivity>-0.50</ToxicSensitivity>
+						<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
 					</equippedStatOffsets>
 				</value>
 			</li>

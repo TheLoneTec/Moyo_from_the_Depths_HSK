@@ -10,8 +10,6 @@
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>10~17</initialResistanceRange>
-		<baseRecruitDifficulty>0.25</baseRecruitDifficulty>
-		<invFoodDef>MealSurvivalPack</invFoodDef>	
 	</PawnKindDef>
 	<!-- 정착민 -->
 	<PawnKindDef ParentName="MoyoPlayerBasePawnKind">
@@ -85,7 +83,7 @@
 			<li>Gun</li>
 			<li>MedievalMeleeBasic</li>
 		</weaponTags>
-		<weaponMoney>65~2500</weaponMoney>
+		<weaponMoney>65~250</weaponMoney>
 		<techHediffsChance>0.06</techHediffsChance>
 		<techHediffsMoney>50~600</techHediffsMoney>
 		<techHediffsTags>
@@ -117,7 +115,7 @@
 			<li>Moyo_BasicGun</li>
 			<li>Moyo_Melee</li>
 		</weaponTags>
-		<weaponMoney>250~3500</weaponMoney>
+		<weaponMoney>250~350</weaponMoney>
 		<techHediffsChance>0.02</techHediffsChance>
 		<techHediffsMoney>600~1500</techHediffsMoney>
 		<techHediffsTags>
@@ -160,7 +158,7 @@
 		<weaponTags>
 			<li>MoyoBasicGun</li>
 		</weaponTags>
-		<weaponMoney>850~3500</weaponMoney>
+		<weaponMoney>500~800</weaponMoney>
 		<techHediffsChance>0.06</techHediffsChance>
 		<techHediffsMoney>600~1500</techHediffsMoney>
 		<techHediffsTags>
@@ -207,7 +205,7 @@
 		<weaponTags>
 			<li>Moyo_Melee</li>
 		</weaponTags>
-		<weaponMoney>800~3500</weaponMoney>
+		<weaponMoney>500~800</weaponMoney>
 		<techHediffsChance>0.02</techHediffsChance>
 		<techHediffsMoney>600~1500</techHediffsMoney>
 		<techHediffsTags>
@@ -243,7 +241,7 @@
 			<li>Moyo_SpacerLightGun</li>
 			<li>Gun</li>
 		</weaponTags>
-		<weaponMoney>500~3500</weaponMoney>
+		<weaponMoney>500~800</weaponMoney>
 		<biocodeWeaponChance>0.1</biocodeWeaponChance>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<techHediffsChance>0.02</techHediffsChance>
@@ -275,7 +273,7 @@
 		<weaponTags>
 			<li>MedievalMeleeBasic</li>
 		</weaponTags>
-		<weaponMoney>100~3500</weaponMoney>
+		<weaponMoney>100~350</weaponMoney>
 		<techHediffsChance>0.06</techHediffsChance>
 		<techHediffsMoney>50~600</techHediffsMoney>
 		<techHediffsTags>
@@ -316,7 +314,7 @@
 			<li>Moyo_BasicGun</li>
 			<li>Moyo_SpacerLightGun</li>
 		</weaponTags>
-		<weaponMoney>250~3500</weaponMoney>
+		<weaponMoney>250~800</weaponMoney>
 		<biocodeWeaponChance>0.1</biocodeWeaponChance>
 		<techHediffsChance>0.02</techHediffsChance>
 		<techHediffsMoney>600~1500</techHediffsMoney>
@@ -360,11 +358,11 @@
 			</li>
 		</backstoryFiltersOverride>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-		<apparelMoney>2000~3800</apparelMoney>
+		<apparelMoney>2500~3800</apparelMoney>
 		<weaponTags>
 			<li>Moyo_SpacerLightGun</li>
 		</weaponTags>
-		<weaponMoney>3500~6500</weaponMoney>
+		<weaponMoney>1200~1500</weaponMoney>
 		<biocodeWeaponChance>0.2</biocodeWeaponChance>
 		<techHediffsChance>0.3</techHediffsChance>
 		<techHediffsMoney>600~2000</techHediffsMoney>
@@ -430,12 +428,12 @@
 			</li>
 		</backstoryFiltersOverride>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-		<apparelMoney>3000~4000</apparelMoney>
+		<apparelMoney>2800~4000</apparelMoney>
 		<weaponTags>
 			<li>Moyo_SpacerGun</li>
 			<li>Moyo_SpacerLightGun</li>
 		</weaponTags>
-		<weaponMoney>3500~6000</weaponMoney>
+		<weaponMoney>1200~2000</weaponMoney>
 		<biocodeWeaponChance>0.3</biocodeWeaponChance>
 		<techHediffsChance>0.3</techHediffsChance>
 		<techHediffsMoney>600~3800</techHediffsMoney>
@@ -491,7 +489,7 @@
 		<weaponTags>
 			<li>Moyo_SpacerHeavyGun</li>
 		</weaponTags>
-		<weaponMoney>7500~10000</weaponMoney>
+		<weaponMoney>1700~3000</weaponMoney>
 		<biocodeWeaponChance>0.3</biocodeWeaponChance>
 		<techHediffsChance>0.3</techHediffsChance>
 		<techHediffsMoney>600~3800</techHediffsMoney>
@@ -548,7 +546,7 @@
 		<weaponTags>
 			<li>Moyo_SpacerMelee</li>
 		</weaponTags>
-		<weaponMoney>1100~6500</weaponMoney>
+		<weaponMoney>1100~3500</weaponMoney>
 		<biocodeWeaponChance>0.3</biocodeWeaponChance>
 		<techHediffsChance>0.3</techHediffsChance>
 		<techHediffsMoney>600~3800</techHediffsMoney>
@@ -603,7 +601,7 @@
 		<weaponTags>
 			<li>Moyo_SpacerLightGun</li>
 		</weaponTags>
-		<weaponMoney>3500~5000</weaponMoney>
+		<weaponMoney>1200~1500</weaponMoney>
 		<techHediffsChance>0.3</techHediffsChance>
 		<techHediffsMoney>600~2000</techHediffsMoney>
 		<techHediffsTags>
@@ -654,7 +652,7 @@
 		<weaponTags>
 			<li>Moyo_GuardianGun</li>
 		</weaponTags>
-		<weaponMoney>8500~12000</weaponMoney>
+		<weaponMoney>3000~8000</weaponMoney>
 		<biocodeWeaponChance>0.3</biocodeWeaponChance>
 		<techHediffsChance>0.3</techHediffsChance>
 		<techHediffsMoney>2000~3800</techHediffsMoney>

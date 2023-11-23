@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- HPF.HPFWorkGiverDef is inheritance of WorkGiverDef with some additional arguments -->
+	<HPF_Moyo.HPFWorkGiverDef Name="HPF_MoyoWorkGiverBase" Abstract="True">
+		<giverClass>HPF_Moyo.WorkGiver_GatherPawnResources</giverClass>
+		<priorityInType>100</priorityInType>
+	</HPF_Moyo.HPFWorkGiverDef>
+	
+	<HPF_Moyo.HPFWorkGiverDef ParentName="HPF_MoyoWorkGiverBase">
+		<defName>ExtractDeepBlue_Work</defName>
+		<label>draw blood</label>
+		<harvestJobDef>ExtractDeepBlue_Job</harvestJobDef>
+		<workType>Doctor</workType>
+		<verb>draw blood</verb>
+		<gerund>drawing blood</gerund>
+		<priorityInType>80</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</HPF_Moyo.HPFWorkGiverDef>	
+</Defs>

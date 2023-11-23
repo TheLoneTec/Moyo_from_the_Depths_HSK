@@ -1,0 +1,1617 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.BackstoryDef Abstract="True" Name="BaseMoyoBackStory">
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<disallowedTraits>
+			<li>
+				<defName>Pyromaniac</defName>
+				<chance>100</chance>
+			</li>
+		</disallowedTraits>
+		<forcedHediffs>
+			<li>MoyoBaseHediff</li>
+		</forcedHediffs> 		
+	</AlienRace.BackstoryDef>
+	<!--템플릿-->
+	<!--<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_Backstory</defName>
+		<title>name</title>
+		<titleShort>name</titleShort>
+		<baseDescription>backstory</baseDescription>
+		<slot>hood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>2</amount>
+			</li>			
+			<li>
+				<defName>Artistic</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>			
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>						
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li></li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>-->
+
+	<!-- 유년기 -->
+
+	<!-- 농장아이 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_FarmChild</defName>
+		<title>moyo farm child</title>
+		<titleShort>farm child</titleShort>
+		<baseDescription>[PAWN_nameDef] grew up in a seaweed farm in the upper levels. Amidst the rumors and the worried adults [PAWN_pronoun] spent her time tending and harvesting the seaweed.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Mining</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>1</amount>
+			</li>					
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_TopCivil</li>
+			<li>Moyo_TopCriminal</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 고아 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_Orphan</defName>
+		<title>moyo Orphan</title>
+		<titleShort>Orphan</titleShort>
+		<baseDescription>[PAWN_nameDef] was separated from her parents and grew up in the orphanage. There were many orphans like [PAWN_pronoun]in the orphanage, and some had even seen their parents die before their eyes. [PAWN_pronoun] spent [PAWN_possessive] days waiting for her parents to return.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Medicine</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>		
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_TopCivil</li>
+			<li>Moyo_MiddleCivil</li>
+			<li>Moyo_Engineer</li> 
+			<li>Moyo_Resercher</li>
+			<li>Moyo_TopCriminal</li>
+			<li>Moyo_MiddleCriminal</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 정비공지망생 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_MechanicWannabe</defName>
+		<title>moyo mechanic wannabe</title>
+		<titleShort>mechanic wannabe</titleShort>
+		<baseDescription>[PAWN_nameDef] had a fascination for various machines and gadgets. Luckily for [PAWN_pronoun] the sea was filled with scrap and parts for her to play with.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Construction</defName>
+				<amount>1</amount>
+			</li>	
+			<li>
+				<defName>Crafting</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>1</amount>
+			</li>						
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_TopCivil</li>
+			<li>Moyo_MiddleCivil</li>
+			<li>Moyo_Engineer</li>
+			<li>Moyo_Resercher</li>
+			<li>Moyo_TopCriminal</li>
+			<li>Moyo_MiddleCriminal</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 몽상가 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_Dreamer</defName>
+		<title>moyo dreamer</title>
+		<titleShort>dreamer</titleShort>
+		<baseDescription>[PAWN_nameDef] used to fantasize about the city shimmering in the depths below. The adults warned [PAWN_pronoun] away from the lower levels, telling [PAWN_objective] it was dangerous and that’d [PAWN_pronoun]’d never make it back, but could not change [PAWN_possessive] mind</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Artistic</defName>
+				<amount>3</amount>
+			</li>				
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<li>
+				<defName>Nerves</defName>
+				<degree>1</degree>
+			</li>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo_TopCivil</li>
+			<li>Moyo_Engineer</li>
+			<li>Moyo_Resercher</li>
+			<li>Moyo_TopCriminal</li>
+			<li>Moyo_MiddleCriminal</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 일진 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_Bully</defName>
+		<title>moyo bully</title>
+		<titleShort>bully</titleShort>
+		<baseDescription>[PAWN_nameDef] learned the sweet taste of dominance from an early age. [PAWN_pronoun] enjoyed bullying other kids and stealing their things. The orphanage children where often [PAWN_possessive] victims.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Construction</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-3</amount>
+			</li>			
+			<li>
+				<defName>Intellectual</defName>
+				<amount>-3</amount>
+			</li>						
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<li>
+				<defName>Brawler</defName>
+			</li>
+		</forcedTraits>		
+		<spawnCategories>
+			<li>Moyo_TopCivil</li>
+			<li>Moyo_MiddleCivil</li>
+			<li>Moyo_Engineer</li>
+			<li>Moyo_Resercher</li>
+			<li>Moyo_TopCriminal</li>
+			<li>Moyo_MiddleCriminal</li>
+			<li>Moyo_FullCrime</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 좀도둑 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_PettyTheif</defName>
+		<title>moyo petty theif</title>
+		<titleShort>petty theif</titleShort>
+		<baseDescription>[PAWN_nameDef] suffered from the civil war. [PAWN_possessive] family was left ravaged, and [PAWN_nameDef] scraped by as a petty thief.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>-3</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-6</amount>
+			</li>	
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_TopCivil</li>
+			<li>Moyo_MiddleCivil</li>
+			<li>Moyo_TopCriminal</li>
+			<li>Moyo_MiddleCriminal</li>
+			<li>Moyo_FullCrime</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 사냥보조 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_HuntingAssistant</defName>
+		<title>moyo hunting assistant</title>
+		<titleShort>hunting assistant</titleShort>
+		<baseDescription>[PAWN_nameDef] followed hunters and did odd jobs for them. [PAWN_pronoun] was able to learn about the surrounding fauna and sometimes even do a little hunting [PAWN_objective]self.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>1</amount>
+			</li>			
+			<li>
+				<defName>Intellectual</defName>
+				<amount>-5</amount>
+			</li>						
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_TopCivil</li>
+			<li>Moyo_SoldierKind</li>
+			<li>Moyo_TopCriminal</li>
+			<li>Moyo_MiddleCriminal</li>			
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 산호조각가 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_CoralSculpter</defName>
+		<title>moyo coral sculpter</title>
+		<titleShort>coral sculpter</titleShort>
+		<baseDescription>[PAWN_nameDef] learned to fashion jewelry out of coral. [PAWN_possessive] works were not the most refined, but showed promise.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Artistic</defName>
+				<amount>5</amount>
+			</li>			
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_TopCivil</li>
+			<li>Moyo_MiddleCivil</li>
+			<li>Moyo_Engineer</li>
+			<li>Moyo_TopCriminal</li>
+			<li>Moyo_MiddleCriminal</li>			
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 총명한아이 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_BrightChild</defName>
+		<title>moyo bright child</title>
+		<titleShort>bright child</titleShort>
+		<baseDescription>[PAWN_nameDef] was a clever child. [PAWN_possessive] preference for study over socializing occasionally led to some falling out with other children, but in the end, it’s the ones like [PAWN_possessive] who can move to higher levels.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Cooking</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>2</amount>
+			</li>			
+			<li>
+				<defName>Artistic</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-6</amount>
+			</li>			
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>						
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<li>
+				<defName>TooSmart</defName>
+			</li>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo_TopCivil</li>
+			<li>Moyo_MiddleCivil</li>
+			<li>Moyo_BotCivil</li>
+			<li>Moyo_Engineer</li>
+			<li>Moyo_Resercher</li>
+			<li>Moyo_TopCriminal</li>
+			<li>Moyo_MiddleCriminal</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 고래 친구 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_WhaleFriend</defName>
+		<title>moyo whale friend</title>
+		<titleShort>whale friend</titleShort>
+		<baseDescription>[PAWN_nameDef] loved to swim with the whales. [PAWN_pronoun] always spent [PAWN_possessive] free time swimming with the whales and taking care of them.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Animals</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-1</amount>
+			</li>	
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_TopCivil</li>
+			<li>Moyo_MiddleCivil</li>
+			<li>Moyo_Resercher</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 어린 셰프 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_ChildChef</defName>
+		<title>moyo child chef</title>
+		<titleShort>child chef</titleShort>
+		<baseDescription>[PAWN_nameDef] loved to cook. Mixing various spices and ingredients into tasty dishes was [PAWN_possesive] favorite pastime, but as supplies dwindled, it became harder and harder to enjoy.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Construction</defName>
+				<amount>-1</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>-1</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>-3</amount>
+			</li>					
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_TopCivil</li>
+			<li>Moyo_MiddleCivil</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 어린 중독자 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_YoungJunkie</defName>
+		<title>moyo young junkie</title>
+		<titleShort>young junkie</titleShort>
+		<baseDescription>[PAWN_nameDef] somehow managed to get [PAWN_possessive] hands on some psychite. The euphoric high of the drugs was too much for [Pawn_possessive] young mind, and soon [PAWN_nameDef] was doing anything [PAWN_pronoun] could for [PAWN_possessive] next fix. Soon [PAWN_possessive] normal fix could no longer satisfy [PAWN_possessive], and [PAWN_nameDef] sought out new drugs.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>-2</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>-2</amount>
+			</li>
+			<li>
+				<defName>Artistic</defName>
+				<amount>-2</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>-2</amount>
+			</li>						
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<li>
+				<defName>DrugDesire</defName>
+				<degree>1</degree>
+				<chance>50</chance>
+			</li>
+			<li>
+				<defName>DrugDesire</defName>
+				<degree>2</degree>
+				<chance>50</chance>
+			</li>			
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo_TopCriminal</li>
+			<li>Moyo_MiddleCriminal</li>
+			<li>Moyo_FullCrime</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 병약한 아이 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_SicklyChild</defName>
+		<title>moyo sickly child</title>
+		<titleShort>sickly child</titleShort>
+		<baseDescription>[PAWN_nameDef] was born sickly, and spent most of [PAWN_possessive] time in bed. [PAWN_possessive] constant sickness left [PAWN_objective] ill tempered, and long with her lack of interaction with other moyos, resulted in her poor communication skills. The only retreat [PAWN_possessive] has was the pursuit of knowledge.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>-1</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>-1</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Artistic</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-5</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<li>
+				<defName>Immunity</defName>
+				<degree>-1</degree>
+				<chance>50</chance>
+			</li>			
+		</forcedTraits>		
+		<spawnCategories>
+			<li>Moyo_TopCivil</li>
+			<li>Moyo_MiddleCivil</li>
+			<li>Moyo_Resercher</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>	
+	<!-- 밀수업 협조자 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_SmugglerRunner</defName>
+		<title>moyo smuggler runner</title>
+		<titleShort>smuggler runner</titleShort>
+		<baseDescription>[PAWN_nameDef] did odd jobs for smugglers. Having joined to earn money [PAWN_pronoun] mostly dealt with moving goods and information around. [PAWN_pronoun] quickly learned to leverage [PAWN_possessive] young looks for [PAWN_possessive] job.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>-2</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>-2</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>-2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>5</amount>
+			</li>		
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_TopCriminal</li>
+			<li>Moyo_MiddleCriminal</li>
+			<li>Moyo_FullCrime</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 어린 광부 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_YoungMiner</defName>
+		<title>moyo young miner</title>
+		<titleShort>young miner</titleShort>
+		<baseDescription>[PAWN_nameDef] became a miner to earn money for [PAWN_possessive] family. [PAWN_nameDef]’s dreams and aspirations meant nothing as a miner. The only thing that mattered was bringing in more ores for the lighthouse.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Artistic</defName>
+				<amount>-2</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>-2</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_MiddleCivil</li>
+			<li>Moyo_Engineer</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 소년병 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_ChildSoldier</defName>
+		<title>moyo child soldier</title>
+		<titleShort>child soldier</titleShort>
+		<baseDescription>While other children where given toys [PAWN_nameDef] was handed a gun. Kidnapped and sent to fight in the civil war, [PAWN_pronoun] learned it was kill or be killed out in the battlefield, and fought only to survive.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+			<li>Social</li>
+			<li>Artistic</li>
+		</workDisables>
+		<forcedTraits>
+			<li>
+				<defName>Psychopath</defName>
+			</li>
+		</forcedTraits>
+		<disallowedTraits>
+			<li>
+				<defName>Wimp</defName>
+				<chance>100</chance>
+			</li>
+		</disallowedTraits>			
+		<spawnCategories>
+			<li>Moyo_SoldierKind</li>
+			<li>Moyo_TopCriminal</li>
+			<li>Moyo_MiddleCriminal</li>
+			<li>Moyo_FullCrime</li>
+			<li>Moyo_Guardian</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 고위층 자녀 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_HighbonChild</defName>
+		<title>moyo highborn child</title>
+		<titleShort>highborn child</titleShort>
+		<baseDescription>[PAWN_nameDef] was a highborn moyo from the lower levels. Housework was done by the servants, and all [PAWN_pronoun] had to do was enjoy [PAWN_possessive] live. Neither the civil war, nor the moyo that died in it where any of [PAWN_possessive] concern. Probably.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Artistic</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_BotCivil</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 어린 연예인 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_YoungCelebrity</defName>
+		<title>moyo young celebrity</title>
+		<titleShort>celebrity</titleShort>
+		<baseDescription>[PAWN_nameDef] was famed for [PAWN_possessive] singing, dancing, acting, any many more besides. Countless moyo living in the city idolized [PAWN_nameDef]. There were many rumors about how [PAWN_nameDef] became so famous at such a young age, but only [PAWN_nameDef] would know the truth.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Animals</defName>
+				<amount>-6</amount>
+			</li>	
+			<li>
+				<defName>Artistic</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>6</amount>
+			</li>				
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+			<li>Cooking</li>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_BotCivil</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 충격받은 간호사 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_ShockedNurse</defName>
+		<title>moyo shocked nurse</title>
+		<titleShort>nurse</titleShort>
+		<baseDescription>[PAWN_nameDef] was conscripted as a nurse to deal with manpower shortages in the hospital. While [PAWN_pronoun] normally tended to light wounds, [PAWN_pronoun] had to deal with serious wounds as well. The work was taxing on [PAWN_nameDef], both physically and mentally.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>					
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<li>
+				<defName>Nerves</defName>
+				<degree>-1</degree>
+			</li>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo_MiddleCivil</li>
+			<li>Moyo_Resercher</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 공학도 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_EngineeringStudent</defName>
+		<title>moyo engineering student</title>
+		<titleShort>engineering student</titleShort>
+		<baseDescription>The expansion and construction of the lighthouse is no trivial matter, and city engineers are often trained from a young age. [PAWN_nameDef] studied many blueprints as [PAWN_pronoun] prepared to become a engineer.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>-3</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>5</amount>
+			</li>		
+			<li>
+				<defName>Crafting</defName>
+				<amount>1</amount>
+			</li>		
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>						
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_MiddleCivil</li>
+			<li>Moyo_Engineer</li>
+			<li>Moyo_MiddleCriminal</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 배양된 군인 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_VatgrownSoldier</defName>
+		<title>moyo vatgrown soldier</title>
+		<titleShort>vatgrown soldier</titleShort>
+		<baseDescription>[PAWN_nameDef] was not a result of love nor lust. [PAWN_pronoun] was grown in a vat, assigned a number, and sent to a facility in the lower levels for military training. More used to her number than the name given on her graduation, [PAWN_pronoun] is the product of the lighthouse’s bloody reality.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>6</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Cooking</li>
+			<li>Animals</li>
+			<li>PlantWork</li>
+			<li>Crafting</li>
+			<li>Artistic</li>
+			<li>Cleaning</li>
+			<li>Intellectual</li>
+		</workDisables>
+		<forcedTraits>
+			<li>
+				<defName>Bloodlust</defName>
+				<chance>20</chance>
+			</li>
+			<li>
+				<defName>Psychopath</defName>
+				<chance>80</chance>
+			</li>
+		</forcedTraits>
+		<disallowedTraits>
+			<li>
+				<defName>Wimp</defName>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>Immunity</defName>
+				<degree>-1</degree>
+				<chance>100</chance>
+			</li>
+		</disallowedTraits>			
+		<spawnCategories>
+			<li>Moyo_SoldierKind</li>
+			<li>Moyo_Guardian</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!--성년기-->
+
+	<!-- 농부 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_Farmer</defName>
+		<title>moyo farmer</title>
+		<titleShort>farmer</titleShort>
+		<baseDescription>[PAWN_nameDef] was a farmer on the upper levels growing food and fiber in the lush kelp farms. Although idealistic at first glance, the thick kelp gave plenty of cover to potential trespassers, was a constant source of headaches for [PAWN_nameDef].</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>-2</amount>
+			</li>						
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_TopCivil</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 공방일꾼 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_FactoryWorker</defName>
+		<title>moyo factory worker</title>
+		<titleShort>factory worker</titleShort>
+		<baseDescription>The middle levels of the lighthouse are a source of constant light and heat in the cold ocean depths. [PAWN_nameDef] worked in the factories on the middle level, producing all sorts of gear and products. [PAWN_possessive] most recent job was producing firearms.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Construction</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>3</amount>
+			</li>					
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_MiddleCivil</li>
+			<li>Moyo_Engineer</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 메카노이드 정비공 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_MechanoidMaintainer</defName>
+		<title>moyo mechanoid maintainer</title>
+		<titleShort>mechanoid maintainer</titleShort>
+		<baseDescription>Mechanoids are the foundations of moyo cities. [PAWN_nameDef] job was the to maintain the aging mechanoids as best [PAWN_pronoun] could. The centuries old but still functioning mechanoids made [PAWN_nameDef] realize how frail the flesh was.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Crafting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>-4</amount>
+			</li>			
+			<li>
+				<defName>Intellectual</defName>
+				<amount>4</amount>
+			</li>						
+		</skillGains>
+		<workDisables>
+			<li>Animals</li>
+		</workDisables>
+		<forcedTraits>
+			<li>
+				<defName>Transhumanist</defName>
+			</li>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo_Engineer</li>
+			<li>Moyo_Resercher</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 공학자 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_Engineer</defName>
+		<title>moyo engineer</title>
+		<titleShort>engineer</titleShort>
+		<baseDescription>[PAWN_nameDef] was one of the engineers in charge of R&amp;D. [PAWN_pronoun] a part of the firearms development, helping in the testing and creation of many prototypes. No one questioned what effects such a creation would have.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Construction</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>-3</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-3</amount>
+			</li>			
+			<li>
+				<defName>Intellectual</defName>
+				<amount>1</amount>
+			</li>						
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<li>
+				<defName>Neurotic</defName>
+				<degree>1</degree>
+				<chance>50</chance>
+			</li>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo_Engineer</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 사냥꾼 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_Hunter</defName>
+		<title>moyo hunter</title>
+		<titleShort>hunter</titleShort>
+		<baseDescription>[PAWN_nameDef] wandered the seas hunting or capturing marine creatures. [PAWN_possessive] mainly brought back meat, luxury items, or rare animals. When dangerous creatures threatened the lighthouse, [PAWN_pronoun] was drafted by the council to aid in repelling the beast.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>5</amount>
+			</li>					
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_TopCivil</li>
+			<li>Moyo_MiddleCivil</li>
+			<li>Moyo_TopCriminal</li>
+			<li>Moyo_MiddleCriminal</li>
+			<li>Moyo_SoldierKind</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 밀수업자 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_Smuggler</defName>
+		<title>moyo smuggler</title>
+		<titleShort>smuggler</titleShort>
+		<baseDescription>The surface is full of treasures. [PAWN_nameDef] brought those treasures to the lighthouse. The council forbade all unauthorized trading with the surface, but for [PAWN_nameDef], the money brought in by the goods where more important than the law, and [PAWN_pronoun] continued to sneak out to the surface.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>				
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<li>
+				<defName>Greedy</defName>
+			</li>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo_TopCriminal</li>
+			<li>Moyo_MiddleCriminal</li>
+			<li>Moyo_FullCrime</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 군인 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_Soldier</defName>
+		<title>moyo soldier</title>
+		<titleShort>soldier</titleShort>
+		<baseDescription>[PAWN_nameDef] was a professional soldier, tasked with maintaining order within the lighthouse and fighting off attacking creatures. But as smugglers rose in numbers and civil unrest grew, a civil war broke out and [PAWN_pronoun] had to fight other moyos.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>2</amount>
+			</li>		
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<disallowedTraits>
+			<li>
+				<defName>Wimp</defName>
+				<chance>100</chance>
+			</li>
+		</disallowedTraits>	
+		<spawnCategories>
+			<li>Moyo_SoldierKind</li>
+			<li>Moyo_MiddleCriminal</li>
+			<li>Moyo_FullCrime</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 심층광부 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_DeepCoreMiner</defName>
+		<title>moyo deep core miner</title>
+		<titleShort>deep core miner</titleShort>
+		<baseDescription>[PAWN_nameDef] is a miner who gathers ore from the core. Equipped with a heavy duty diving suit, deep core mining is a relatively new job that appeared as operating mechanoids became less and less feasible, and became one of the main reasons for moving between levels.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>7</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>-3</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>-4</amount>
+			</li>		
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_MiddleCivil</li>
+			<li>Moyo_Engineer</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 지리학자 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_Geologist</defName>
+		<title>moyo geologist</title>
+		<titleShort>geologist</titleShort>
+		<baseDescription>[PAWN_nameDef]’s job is to survey and study the ocean floor. [PAWN_possessive] job meant spending many hours in the submarine with her team, and [PAWN_pronoun] had to get accustomed to a lot of things.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Mining</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>2</amount>
+			</li>	
+			<li>
+				<defName>Intellectual</defName>
+				<amount>3</amount>
+			</li>						
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_MiddleCivil</li>
+			<li>Moyo_Resercher</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 지상 무역가 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_SurfaceTrader</defName>
+		<title>moyo surface trader</title>
+		<titleShort>surface trader</titleShort>
+		<baseDescription>Trade between the surface and the lighthouse is strictly regulated by the council and official traders like [PAWN_nameDef]. As most of the goods from the surface where considered luxury items [PAWN_pronoun] was able to reap massive profits. [PAWN_pronoun] was ruthless in suppressing smugglers that threatened her trade, and personally took care of some as well.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>-2</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>-2</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>-2</amount>
+			</li>		
+			<li>
+				<defName>Artistic</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>6</amount>
+			</li>				
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_BotCivil</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 생물학자 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_Biologist</defName>
+		<title>moyo biologist</title>
+		<titleShort>biologist</titleShort>
+		<baseDescription>[PAWN_nameDef]’s research was about the modifications that made the moyo race. This into the ‘evolution’ of the moyo allowed [PAWN_objective] and [PAWN_possessive] team to discover deepblue, a discovery that had far-reaching effects in the moyo society.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Construction</defName>
+				<amount>-8</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>-8</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>2</amount>
+			</li>	
+			<li>
+				<defName>Intellectual</defName>
+				<amount>5</amount>
+			</li>						
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_MiddleCivil</li>
+			<li>Moyo_Resercher</li>
+			<li>Moyo_MiddleCriminal</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>	
+	<!-- 착한고아원장 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_KindOrphanageMaster</defName>
+		<title>moyo orphanage master</title>
+		<titleShort>orphanage master</titleShort>
+		<baseDescription>[PAWN_nameDef] took care of orphans separated from their parents. [PAWN_pronoun] worked hard to reunite the children with their parents, or teach them so they could be proud members of society. No one knows why [PAWN_pronoun] started this job, but assume it has something to do with [PAWN_possessive] personal experiences.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>-3</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>-3</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>3</amount>
+			</li>	
+			<li>
+				<defName>Artistic</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>				
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<li>
+				<defName>Kind</defName>
+			</li>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo_TopCivil</li>
+			<li>Moyo_MiddleCivil</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 나쁜고아원장 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_EvilOrphanageMaster</defName>
+		<title>moyo orphanage master</title>
+		<titleShort>orphanage master</titleShort>
+		<baseDescription>[PAWN_nameDef] took care of orphans separated from their parents. [PAWN_pronoun] taught the children that the outside was dangerous, and abandoned children would be hunted. After all, the children where precious resources both for the lighthouse and for [PAWN_possessive].</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-6</amount>
+			</li>					
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+			<li>Intellectual</li>
+		</workDisables>
+		<forcedTraits>
+			<li>
+				<defName>Psychopath</defName>
+			</li>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo_TopCivil</li>
+			<li>Moyo_MiddleCivil</li>		
+			<li>Moyo_TopCriminal</li>
+			<li>Moyo_MiddleCriminal</li>
+			<li>Moyo_FullCrime</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 하인 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_Servant</defName>
+		<title>moyo servant</title>
+		<titleShort>servant</titleShort>
+		<baseDescription>[PAWN_nameDef] was a servant for rich moyos. [PAWN_pronoun] took care of everything from cleaning to cooking, to any special requests [PAWN_possessive] masters might have. Unable to deal with the ever more demanding requests, [PAWN_pronoun] disappeared one day, leaving only a dead body behind.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>-2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-2</amount>
+			</li>				
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_MiddleCivil</li>
+			<li>Moyo_TopCriminal</li>
+			<li>Moyo_MiddleCriminal</li>
+			<li>Moyo_FullCrime</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 칵테일제조가 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_CocktailMixer</defName>
+		<title>moyo cocktail mixer</title>
+		<titleShort>cocktail mixer</titleShort>
+		<baseDescription>[PAWN_nameDef] experimented mixing surface drugs with deepblue to make new substances. Usually made with psychite, [PAWN_possessive] chemical cocktails where a big hit, both in the lighthouse and on the surface.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Medicine</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>3</amount>
+			</li>			
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>						
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<li>
+				<defName>DrugDesire</defName>
+				<degree>1</degree>
+				<chance>50</chance>
+			</li>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo_MiddleCivil</li>
+			<li>Moyo_Resercher</li>
+			<li>Moyo_MiddleCriminal</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 수경재배 농부 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_HydroponicsFarmer</defName>
+		<title>moyo hydroponics farmer</title>
+		<titleShort>hydroponics farmer</titleShort>
+		<baseDescription>[PAWN_nameDef] grew surface crops in a hydroponics system. [PAWN_pronoun] was unable to sell [PAWN_possessive] produce for the full price, and occasionally faced hardships from the moyos who traded in surface goods. In the light of things, [PAWN_nameDef] set [PAWN_possessive] sights on obtaining a farm on the surface.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Construction</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>5</amount>
+			</li>				
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_MiddleCivil</li>
+			<li>Moyo_Resercher</li>
+			<li>Moyo_MiddleCriminal</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 지상 예술가 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_SurfaceArtist</defName>
+		<title>moyo surface artist</title>
+		<titleShort>surface artist</titleShort>
+		<baseDescription>[PAWN_nameDef] made artwork based on scenery from the surface. [PAWN_pronoun] never saw the surface [PAWN_objective]self, nor did [PAWN_pronoun] have much material on it. The artwork of the surface [PAWN_pronoun] created were based almost solely on her imagination and quite fantastical. [PAWN_pronoun] never faced much problems, as [PAWN_possessive] had never seen the surface either.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Artistic</defName>
+				<amount>8</amount>
+			</li>					
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_MiddleCivil</li>
+			<li>Moyo_BotCivil</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 세이렌 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_Siren</defName>
+		<title>moyo Siren</title>
+		<titleShort>Siren</titleShort>
+		<baseDescription>[PAWN_nameDef] was known throughout the entire lower level. With her beautiful looks and voice, [PAWN_nameDef] made [PAWN_possessive] way through the lighthouse’s high society. The moyo gave [PAWN_nameDef] the name Siren in reverence to [PAWN_possessive] beauty.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>	
+			<li>
+				<defName>Artistic</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>6</amount>
+			</li>			
+			<li>
+				<defName>Intellectual</defName>
+				<amount>6</amount>
+			</li>						
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<li>
+				<defName>Beauty</defName>
+				<degree>2</degree>
+			</li>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo_BotCivil</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>	
+	<!-- 청부업자 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_Hitman</defName>
+		<title>moyo hitman</title>
+		<titleShort>hitman</titleShort>
+		<baseDescription>[PAWN_nameDef] is a gun for hire. Someone is bound to need some dirt work done for them, and that is [PAWN_nameDef]’s specialty. What happened between the client and target doesn’t matter. What matters is that [PAWN_pronoun] gets payed.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-4</amount>
+			</li>			
+			<li>
+				<defName>Intellectual</defName>
+				<amount>-4</amount>
+			</li>						
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<disallowedTraits>
+			<li>
+				<defName>Wimp</defName>
+				<chance>100</chance>
+			</li>
+		</disallowedTraits>			
+		<spawnCategories>
+			<li>Moyo_MiddleCriminal</li>
+			<li>Moyo_SoldierKind</li>
+			<li>Moyo_FullCrime</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 근위대 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_GuardianStory</defName>
+		<title>moyo royalGuard</title>
+		<titleShort>royalGuard</titleShort>
+		<baseDescription>[PAWN_nameDef] is a member of the royal guard, trained to be absolute loyalty towards the three elders. As to why or how a member of the royal guard has ended up here, only [PAWN_nameDef] and the elders will know.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-12</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<disallowedTraits>
+			<li>
+				<defName>Wimp</defName>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>Immunity</defName>
+				<degree>-1</degree>
+				<chance>100</chance>
+			</li>
+		</disallowedTraits>		
+		<spawnCategories>
+			<li>Moyo_Guardian</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>		
+</Defs>

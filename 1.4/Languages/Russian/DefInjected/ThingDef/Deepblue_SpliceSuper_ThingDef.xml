@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--/1.3/Defs/Drugs/Deepblue_SpliceSuper.xml-->
+                   <!-- abysstech healer mech serum -->
+<Moyo_HealerSerum.label>сыворотка исцеления бездны</Moyo_HealerSerum.label>
+                         <!-- A pinnacle of abysstech, a solution of mechanites tuned with deepblue to heal health conditions. Its effects are the same as contemporary healer mech serum, and its free of deepblue-related effect despite a huge amount was used in production.
+
+Seemed to be the current limit of medicinal deepblue, this is a masterwork of biological and mechanical engineering combined that has been achived by the lighthouse. -->
+<Moyo_HealerSerum.description>Вершина бездны, решение механитов, настроенных с помощью глубокой синевы для лечения заболеваний. Его действие такое же, как у современной сыворотки целителя, и он свободен от эффекта, связанного с глубокой синевой, несмотря на то, что при производстве было использовано огромное её количество.\n\nСчитается, что это текущий предел лекарственной глубокой синевы, это шедевр биологической и механической инженерии в сочетании, который был достигнут маяком.</Moyo_HealerSerum.description>
+                                        <!-- Use abysstech healer mech serum -->
+<Moyo_HealerSerum.comps.Comp_Usable.useLabel>Использовать сыворотку исцеления бездны</Moyo_HealerSerum.comps.Comp_Usable.useLabel>
+                         <!-- abysstech neurotrainer serum(Combat) -->
+<Moyo_neuroSerum_combat.label>сыворотка нейротренера бездны (Боевая)</Moyo_neuroSerum_combat.label>
+                                              <!-- Use abysstech neurotrainer serum to learn skill -->
+<Moyo_neuroSerum_combat.comps.Comp_Usable.useLabel>Используйте сыворотку нейротренера бездны для обучения навыкам</Moyo_neuroSerum_combat.comps.Comp_Usable.useLabel>
+                               <!-- A pinnacle of abysstech, a solution of mechanites tuned with deepblue to accelerate experience gaining. Though its effect is minor compared to the contemporary one, but its free of deepblue-related effect despite a huge amount was used in production.
+
+Seemed to be the current limit of medicinal deepblue, this is a masterwork of biological and mechanical engineering combined that has been achived by the lighthouse. -->
+<Moyo_neuroSerum_combat.description>Вершина бездны, решение механитов, настроенное с помощью глубокой синевы для ускорения получения опыта. Хотя его эффект незначителен по сравнению с современным, но он свободен от эффекта, связанного с глубокой синевой, несмотря на то, что при производстве было использовано огромное её количество.\n\nКажется, что это текущий предел лекарственной глубокой синевы, это шедевр биологической и механической инженерии в сочетании, который был достигнут маяком.</Moyo_neuroSerum_combat.description>
+                        <!-- abysstech neurotrainer serum(Labor) -->
+<Moyo_neuroSerum_labor.label>сыворотка для нейротренера бездны (Работа)</Moyo_neuroSerum_labor.label>
+                                             <!-- Use abysstech neurotrainer serum to learn skill -->
+<Moyo_neuroSerum_labor.comps.Comp_Usable.useLabel>Используйте сыворотку нейротренера бездны для изучения навыка</Moyo_neuroSerum_labor.comps.Comp_Usable.useLabel>
+                              <!-- A pinnacle of abysstech, a solution of mechanites tuned with deepblue to accelerate experience gaining. Though its effect is minor compared to the contemporary one, but its free of deepblue-related effect despite a huge amount was used in production.
+
+Seemed to be the current limit of medicinal deepblue, this is a masterwork of biological and mechanical engineering combined that has been achived by the lighthouse. -->
+<Moyo_neuroSerum_labor.description>Вершина Abysstech, решение механитов, настроенных с помощью deepblue для ускорения получения опыта. Хотя его эффект незначителен по сравнению с современным, но он свободен от эффекта, связанного с глубоким синим, несмотря на то, что в производстве было использовано огромное количество.\n\nСчитается, что это текущий предел лекарственного глубокого синего, это шедевр биологической и механической инженерии в сочетании, который был достигнут маяком.</Moyo_neuroSerum_labor.description>
+                               <!-- abysstech neurotrainer serum(Housekeeping) -->
+<Moyo_neuroSerum_housekeeping.label>abysstech сыворотка нейротренера ( Уборка дома )</Moyo_neuroSerum_housekeeping.label>
+                                                    <!-- Use abysstech neurotrainer serum to learn skill -->
+<Moyo_neuroSerum_housekeeping.comps.Comp_Usable.useLabel>Используйте сыворотку abysstech neurotrainer для обучения навыкам</Moyo_neuroSerum_housekeeping.comps.Comp_Usable.useLabel>
+                                     <!-- A pinnacle of abysstech, a solution of mechanites tuned with deepblue to accelerate experience gaining. Though its effect is minor compared to the contemporary one, but its free of deepblue-related effect despite a huge amount was used in production.
+
+Seemed to be the current limit of medicinal deepblue, this is a masterwork of biological and mechanical engineering combined that has been achived by the lighthouse. -->
+<Moyo_neuroSerum_housekeeping.description>Вершина Abysstech, решение механитов, настроенных с помощью deepblue для ускорения получения опыта. Хотя его эффект незначителен по сравнению с современным, но он свободен от эффекта, связанного с глубоким синим, несмотря на то, что в производстве было использовано огромное количество.\n\nСчитается, что это текущий предел лекарственного глубокого синего, это шедевр биологической и механической инженерии в сочетании, который был достигнут маяком.</Moyo_neuroSerum_housekeeping.description>
+                                <!-- abysstech neurotrainer serum(Craftsmanship) -->
+<Moyo_neuroSerum_craftsmanship.label>сыворотка нейротренера abysstech (Ремесло)</Moyo_neuroSerum_craftsmanship.label>
+                                                     <!-- Use abysstech neurotrainer serum to learn skill -->
+<Moyo_neuroSerum_craftsmanship.comps.Comp_Usable.useLabel>Используйте сыворотку abysstech нейротренера для обучения навыкам</Moyo_neuroSerum_craftsmanship.comps.Comp_Usable.useLabel>
+                                      <!-- A pinnacle of abysstech, a solution of mechanites tuned with deepblue to accelerate experience gaining. Though its effect is minor compared to the contemporary one, but its free of deepblue-related effect despite a huge amount was used in production.
+
+Seemed to be the current limit of medicinal deepblue, this is a masterwork of biological and mechanical engineering combined that has been achived by the lighthouse. -->
+<Moyo_neuroSerum_craftsmanship.description>Вершина Abysstech, решение механитов, настроенных с помощью deepblue для ускорения получения опыта. Хотя его эффект незначителен по сравнению с современным, но он свободен от эффекта, связанного с глубоким синим, несмотря на то, что в производстве было использовано огромное количество.\n\nСчитается, что это текущий предел лекарственного глубокого синего, это шедевр биологической и механической инженерии в сочетании, который был достигнут маяком.</Moyo_neuroSerum_craftsmanship.description>
+               <!-- Belial-V -->
+<Moyo_BelialV.label>Белиал-V</Moyo_BelialV.label>
+                     <!-- A mechanite solution similar to lufciferum. Large amount of deepblue included in it prevents mechanites from losing cohesion. This have made its effects uneven, thus expected to have various outcomes.
+
+If there lives a red devil on the surface, here lies a violet demon in the abyss. This name comes from the absurd amount of deepblue required to make a single dose of it. Sacrificing many Moyo's life in the process. This frightful, both fascinating drug is known to be a masterpiece of the Moyo cartel. -->
+<Moyo_BelialV.description>Механитовый раствор, похожий на lufciferum. Большое количество глубокого синего цвета, входящего в его состав, не позволяет механитам терять сплоченность. Это делает его действие неравномерным, поэтому ожидаются различные результаты.\n\nЕсли на поверхности живет красный дьявол, то в бездне скрывается фиолетовый демон. Это название происходит от абсурдного количества deepblue, необходимого для изготовления одной дозы. При этом в жертву приносится жизнь многих Мойо. Этот пугающий и одновременно завораживающий наркотик известен как шедевр картеля Мойо.</Moyo_BelialV.description>
+                                        <!-- Inject {0} -->
+<Moyo_BelialV.ingestible.ingestCommandString>Ввести {0}</Moyo_BelialV.ingestible.ingestCommandString>
+                                       <!-- Injecting {0}. -->
+<Moyo_BelialV.ingestible.ingestReportString>Вводит {0}.</Moyo_BelialV.ingestible.ingestReportString>
+
+</LanguageData>
